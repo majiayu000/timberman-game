@@ -66,6 +66,21 @@ const SKINS = {
                 axeHandle: '#FFD54F', axeHead: '#FFC107', axeHighlight: '#FFEB3B', axeBlade: '#FFFFFF',
                 hasGlow: true // 特殊标记：有光晕
             }
+        },
+        {
+            id: 'santa',
+            name: '圣诞老人',
+            icon: '🎅',
+            desc: '节日快乐的圣诞伐木工',
+            unlockCondition: { type: 'score', value: 30 },
+            colors: {
+                hat: '#C62828', hatBrim: '#FFFFFF', hatHighlight: '#E53935',
+                body: '#C62828', bodyHighlight: '#E53935', bodyShadow: '#B71C1C',
+                pants: '#2E7D32', pantsHighlight: '#43A047',
+                shoes: '#1B5E20', skin: '#FFCC80', beard: '#FFFFFF',
+                axeHandle: '#4CAF50', axeHead: '#C62828', axeHighlight: '#E53935', axeBlade: '#FFFFFF',
+                hasSantaHat: true // 特殊标记：圣诞帽（有白色毛球）
+            }
         }
     ],
 
@@ -1394,6 +1409,7 @@ function init() {
         pauseScreen: document.getElementById('pause-screen'),
         resumeBtn: document.getElementById('resume-btn'),
         muteBtn: document.getElementById('mute-btn'),
+        fullscreenBtn: document.getElementById('fullscreen-btn'),
         skinsBtn: document.getElementById('skin-btn'),
         skinsScreen: document.getElementById('skin-screen'),
         skinsBackBtn: document.getElementById('skin-back-btn'),
@@ -1415,7 +1431,18 @@ function init() {
         dailyMaxCombo: document.getElementById('daily-max-combo'),
         dailyNewRecord: document.getElementById('daily-new-record'),
         dailyRetryBtn: document.getElementById('daily-retry-btn'),
-        dailyExitBtn: document.getElementById('daily-exit-btn')
+        dailyExitBtn: document.getElementById('daily-exit-btn'),
+        // 教程相关元素
+        tutorialBtn: document.getElementById('tutorial-btn'),
+        tutorialScreen: document.getElementById('tutorial-screen'),
+        tutorialSkipBtn: document.getElementById('tutorial-skip-btn'),
+        tutorialPrevBtn: document.getElementById('tutorial-prev-btn'),
+        tutorialNextBtn: document.getElementById('tutorial-next-btn'),
+        // 排行榜相关元素
+        leaderboardBtn: document.getElementById('leaderboard-btn'),
+        leaderboardScreen: document.getElementById('leaderboard-screen'),
+        leaderboardBackBtn: document.getElementById('leaderboard-back-btn'),
+        leaderboardClearBtn: document.getElementById('leaderboard-clear-btn')
     };
 
     // 设置画布
@@ -1440,6 +1467,9 @@ function init() {
     // 加载每日挑战数据
     DAILY_CHALLENGE.load();
 
+    // 加载排行榜数据
+    LEADERBOARD.load();
+
     // 绑定事件
     bindEvents();
 
@@ -1455,6 +1485,9 @@ function init() {
 
     // 加载静音设置
     loadMuteSetting();
+
+    // 初始化教程（首次运行检测、进度点点击）
+    initTutorial();
 
     // 绘制初始画面
     draw();
@@ -1497,6 +1530,9 @@ function bindEvents() {
     // 静音按钮
     elements.muteBtn.addEventListener('click', toggleMute);
 
+    // 全屏按钮
+    elements.fullscreenBtn.addEventListener('click', toggleFullscreen);
+
     // 皮肤选择按钮
     elements.skinsBtn.addEventListener('click', showSkinsScreen);
     elements.skinsBackBtn.addEventListener('click', hideSkinsScreen);
@@ -1507,6 +1543,24 @@ function bindEvents() {
     elements.dailyStartBtn.addEventListener('click', startDailyChallenge);
     elements.dailyRetryBtn.addEventListener('click', startDailyChallenge);
     elements.dailyExitBtn.addEventListener('click', dailyReturnToStart);
+
+    // 排行榜按钮
+    elements.leaderboardBtn.addEventListener('click', showLeaderboard);
+    elements.leaderboardBackBtn.addEventListener('click', hideLeaderboard);
+    elements.leaderboardClearBtn.addEventListener('click', clearLeaderboard);
+
+    // 教程按钮
+    elements.tutorialBtn.addEventListener('click', showTutorial);
+    elements.tutorialSkipBtn.addEventListener('click', hideTutorial);
+    elements.tutorialPrevBtn.addEventListener('click', tutorialPrev);
+    elements.tutorialNextBtn.addEventListener('click', tutorialNext);
+    // 教程导航点击
+    document.querySelectorAll('.tutorial-dots .dot').forEach(dot => {
+        dot.addEventListener('click', () => {
+            const step = parseInt(dot.dataset.step);
+            goToTutorialStep(step);
+        });
+    });
 
     // 窗口调整
     window.addEventListener('resize', resizeCanvas);
@@ -1523,6 +1577,139 @@ function showAchievements() {
 function hideAchievements() {
     elements.achievementsScreen.classList.add('hidden');
     elements.gameOverScreen.classList.remove('hidden');
+}
+
+// ============ 排行榜功能 ============
+
+// 显示排行榜
+function showLeaderboard() {
+    LEADERBOARD.render();
+    elements.startScreen.classList.add('hidden');
+    elements.leaderboardScreen.classList.remove('hidden');
+}
+
+// 隐藏排行榜
+function hideLeaderboard() {
+    elements.leaderboardScreen.classList.add('hidden');
+    elements.startScreen.classList.remove('hidden');
+}
+
+// 清空排行榜
+function clearLeaderboard() {
+    if (confirm('确定要清空所有排行榜记录吗？此操作不可撤销！')) {
+        LEADERBOARD.clear();
+        LEADERBOARD.render();
+    }
+}
+
+// ============ 教程功能 ============
+
+// 教程状态
+let tutorialCurrentStep = 1;
+const TUTORIAL_TOTAL_STEPS = 5;
+let tutorialSeen = false;
+
+// 初始化教程系统
+function initTutorial() {
+    // 加载教程状态
+    tutorialSeen = localStorage.getItem('timberman_tutorial_seen') === 'true';
+
+    // 绑定进度点点击事件
+    const dots = document.querySelectorAll('.tutorial-dots .dot');
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            goToTutorialStep(parseInt(dot.dataset.step));
+        });
+    });
+
+    // 首次运行自动显示教程
+    if (!tutorialSeen) {
+        setTimeout(() => showTutorial(), 500);
+    }
+}
+
+// 标记教程已看过
+function markTutorialSeen() {
+    tutorialSeen = true;
+    localStorage.setItem('timberman_tutorial_seen', 'true');
+}
+
+// 显示教程
+function showTutorial() {
+    tutorialCurrentStep = 1;
+    updateTutorialUI();
+    elements.startScreen.classList.add('hidden');
+    elements.tutorialScreen.classList.remove('hidden');
+    audio.playChop(0);
+}
+
+// 隐藏教程
+function hideTutorial() {
+    elements.tutorialScreen.classList.add('hidden');
+    elements.startScreen.classList.remove('hidden');
+    markTutorialSeen();
+}
+
+// 下一步
+function tutorialNext() {
+    if (tutorialCurrentStep < TUTORIAL_TOTAL_STEPS) {
+        tutorialCurrentStep++;
+        updateTutorialUI();
+    } else {
+        // 最后一步，返回主界面
+        hideTutorial();
+    }
+}
+
+// 上一步
+function tutorialPrev() {
+    if (tutorialCurrentStep > 1) {
+        tutorialCurrentStep--;
+        updateTutorialUI();
+    }
+}
+
+// 跳转到指定步骤
+function goToTutorialStep(step) {
+    if (step >= 1 && step <= TUTORIAL_TOTAL_STEPS) {
+        tutorialCurrentStep = step;
+        updateTutorialUI();
+    }
+}
+
+// 更新教程 UI
+function updateTutorialUI() {
+    // 更新步骤显示
+    const steps = document.querySelectorAll('.tutorial-step');
+    steps.forEach(step => {
+        const stepNum = parseInt(step.dataset.step);
+        if (stepNum === tutorialCurrentStep) {
+            step.classList.remove('hidden');
+        } else {
+            step.classList.add('hidden');
+        }
+    });
+
+    // 更新导航点
+    const dots = document.querySelectorAll('.tutorial-dots .dot');
+    dots.forEach(dot => {
+        const stepNum = parseInt(dot.dataset.step);
+        if (stepNum === tutorialCurrentStep) {
+            dot.classList.add('active');
+        } else {
+            dot.classList.remove('active');
+        }
+    });
+
+    // 更新按钮状态
+    elements.tutorialPrevBtn.disabled = tutorialCurrentStep === 1;
+
+    // 更新"下一步"按钮文案
+    if (tutorialCurrentStep === TUTORIAL_TOTAL_STEPS) {
+        elements.tutorialNextBtn.textContent = '开始游戏';
+    } else {
+        elements.tutorialNextBtn.textContent = '下一步';
+    }
 }
 
 // ============ 皮肤选择功能 ============
@@ -2274,6 +2461,10 @@ function gameOver() {
                 });
             }
         }
+
+        // 保存成绩到排行榜（普通模式才记录）
+        const level = getDifficultyLevel() + 1;
+        LEADERBOARD.add(game.score, game.combo.maxCount, level, SKINS.currentSkin);
 
         // 显示普通结束界面
         elements.finalScore.textContent = game.score;

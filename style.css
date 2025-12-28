@@ -95,6 +95,47 @@ body {
     border-color: rgba(255, 100, 100, 0.5);
 }
 
+/* 全屏按钮 */
+.fullscreen-btn {
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    pointer-events: auto;
+    transition: background 0.2s, transform 0.1s;
+    cursor: pointer;
+}
+
+.fullscreen-btn:hover {
+    background: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+.fullscreen-btn:active {
+    transform: scale(0.95);
+}
+
+.fullscreen-btn.active {
+    background: rgba(100, 200, 100, 0.4);
+    border-color: rgba(100, 200, 100, 0.5);
+}
+
+/* 全屏模式隐藏全屏按钮外框 */
+:fullscreen .fullscreen-btn,
+:-webkit-full-screen .fullscreen-btn {
+    background: rgba(100, 200, 100, 0.4);
+    border-color: rgba(100, 200, 100, 0.5);
+}
+
 /* 分数显示 */
 #score-display {
     text-align: center;
@@ -1279,4 +1320,139 @@ button:active {
 
 #tutorial-next-btn {
     background: linear-gradient(180deg, #4ECB71, #2E8B57);
+}
+
+/* ============ 排行榜样式 ============ */
+
+#leaderboard-screen {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#leaderboard-screen h2 {
+    color: #FFB300;
+    margin-bottom: 15px;
+}
+
+.leaderboard-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.lb-col-rank { width: 40px; text-align: center; }
+.lb-col-skin { width: 30px; text-align: center; }
+.lb-col-score { flex: 1; text-align: center; }
+.lb-col-combo { width: 50px; text-align: center; }
+.lb-col-date { width: 70px; text-align: right; }
+
+#leaderboard-list {
+    width: 100%;
+    max-width: 350px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.leaderboard-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    margin-bottom: 6px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.leaderboard-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(3px);
+}
+
+/* 前三名特殊样式 */
+.leaderboard-item.rank-1 {
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.05));
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.leaderboard-item.rank-2 {
+    background: linear-gradient(90deg, rgba(192, 192, 192, 0.2), rgba(192, 192, 192, 0.05));
+    border: 1px solid rgba(192, 192, 192, 0.3);
+}
+
+.leaderboard-item.rank-3 {
+    background: linear-gradient(90deg, rgba(205, 127, 50, 0.2), rgba(205, 127, 50, 0.05));
+    border: 1px solid rgba(205, 127, 50, 0.3);
+}
+
+.lb-rank {
+    width: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.leaderboard-item.rank-1 .lb-rank { color: #FFD700; }
+.leaderboard-item.rank-2 .lb-rank { color: #C0C0C0; }
+.leaderboard-item.rank-3 .lb-rank { color: #CD7F32; }
+
+.lb-skin {
+    width: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.lb-score {
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFE66D;
+}
+
+.lb-combo {
+    width: 50px;
+    text-align: center;
+    font-size: 12px;
+    color: #FF9800;
+}
+
+.lb-date {
+    width: 70px;
+    text-align: right;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.leaderboard-empty {
+    padding: 40px 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+
+.leaderboard-btns {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.danger-btn {
+    background: linear-gradient(180deg, #EF5350, #C62828);
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.danger-btn:hover {
+    background: linear-gradient(180deg, #F44336, #D32F2F);
 }
