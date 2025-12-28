@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Timberman - 伐木人</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- 游戏标题 -->
+        <h1 id="title">伐木人</h1>
+
+        <!-- 游戏画布 -->
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- 游戏 UI 覆盖层 -->
+        <div id="ui-overlay">
+            <!-- 静音按钮 -->
+            <button id="mute-btn" class="mute-btn" title="切换音效">🔊</button>
+
+            <!-- 分数显示 -->
+            <div id="score-display">
+                <span id="score">0</span>
+                <span id="difficulty-level" class="difficulty-badge">Lv.1</span>
+            </div>
+
+            <!-- 连击显示 -->
+            <div id="combo-display" class="combo-display hidden">0 COMBO</div>
+
+            <!-- 时间条 -->
+            <div id="timer-bar">
+                <div id="timer-fill"></div>
+            </div>
+        </div>
+
+        <!-- 开始界面 -->
+        <div id="start-screen" class="screen">
+            <h2>伐木人</h2>
+            <p>按 ← → 或 A/D 砍树</p>
+            <p>也可点击屏幕左右侧</p>
+            <p>躲避树枝，别让时间耗尽！</p>
+            <p class="hint-text">空格/回车 开始 | ESC/P 暂停</p>
+            <div id="start-btns">
+                <button id="start-btn">开始游戏</button>
+                <button id="daily-btn" class="daily-btn">📅 每日挑战</button>
+                <button id="skin-btn" class="secondary-btn">👕 皮肤</button>
+                <button id="leaderboard-btn" class="secondary-btn">📊 排行榜</button>
+                <button id="tutorial-btn" class="secondary-btn">❓ 教程</button>
+            </div>
+        </div>
+
+        <!-- 每日挑战界面 -->
+        <div id="daily-screen" class="screen hidden">
+            <h2>📅 每日挑战</h2>
+            <div class="daily-info">
+                <p class="daily-date-label">今日日期</p>
+                <p class="daily-date-value" id="daily-date">2025-01-01</p>
+            </div>
+            <div class="daily-stats">
+                <div class="daily-stat">
+                    <span class="stat-label">今日最高</span>
+                    <span class="stat-value" id="daily-best-score">0</span>
+                </div>
+                <div class="daily-stat">
+                    <span class="stat-label">挑战次数</span>
+                    <span class="stat-value" id="daily-total-attempts">0</span>
+                </div>
+            </div>
+            <p class="daily-hint">每天的关卡相同，挑战最高分！</p>
+            <div class="daily-btns">
+                <button id="daily-start-btn">开始挑战</button>
+                <button id="daily-back-btn" class="secondary-btn">返回</button>
+            </div>
+        </div>
+
+        <!-- 每日挑战结束界面 -->
+        <div id="daily-game-over-screen" class="screen hidden">
+            <h2>📅 挑战结束</h2>
+            <p id="daily-new-record" class="new-record hidden">🎉 新纪录！</p>
+            <p>得分: <span id="daily-final-score">0</span></p>
+            <p>今日最高: <span id="daily-high-score">0</span></p>
+            <p class="daily-combo-text">最高连击: <span id="daily-max-combo">0</span></p>
+            <p class="daily-attempts-text">今日挑战: <span id="daily-attempts">0</span> 次</p>
+            <div id="daily-game-over-btns">
+                <button id="daily-retry-btn">再来一次</button>
+                <button id="daily-exit-btn" class="secondary-btn">返回首页</button>
+            </div>
+        </div>
+
+        <!-- 皮肤选择界面 -->
+        <div id="skin-screen" class="screen hidden">
+            <h2>👕 皮肤</h2>
+            <!-- 皮肤预览区域 -->
+            <div id="skin-preview-container">
+                <canvas id="skin-preview-canvas" width="120" height="150"></canvas>
+                <div id="skin-preview-name">伐木工</div>
+            </div>
+            <div id="skin-list"></div>
+            <p id="skin-progress">已解锁: <span id="skin-unlocked-count">0</span>/4</p>
+            <button id="skin-back-btn">返回</button>
+        </div>
+
+        <!-- 结束界面 -->
+        <div id="game-over-screen" class="screen hidden">
+            <h2>游戏结束</h2>
+            <p>得分: <span id="final-score">0</span></p>
+            <p id="max-combo-text">最高连击: <span id="max-combo">0</span></p>
+            <p id="high-score-text">最高分: <span id="high-score">0</span></p>
+            <div id="game-over-btns">
+                <button id="restart-btn">再来一次</button>
+                <button id="achievements-btn" class="secondary-btn">🏆 成就</button>
+            </div>
+        </div>
+
+        <!-- 成就界面 -->
+        <div id="achievements-screen" class="screen hidden">
+            <h2>🏆 成就</h2>
+            <div id="achievements-list"></div>
+            <p id="achievements-progress">已解锁: <span id="unlocked-count">0</span>/12</p>
+            <button id="achievements-back-btn">返回</button>
+        </div>
+
+        <!-- 排行榜界面 -->
+        <div id="leaderboard-screen" class="screen hidden">
+            <h2>📊 排行榜</h2>
+            <div class="leaderboard-header">
+                <span class="lb-col-rank">排名</span>
+                <span class="lb-col-skin"></span>
+                <span class="lb-col-score">分数</span>
+                <span class="lb-col-combo">连击</span>
+                <span class="lb-col-date">时间</span>
+            </div>
+            <div id="leaderboard-list"></div>
+            <div class="leaderboard-btns">
+                <button id="leaderboard-back-btn">返回</button>
+                <button id="leaderboard-clear-btn" class="danger-btn">清空记录</button>
+            </div>
+        </div>
+
+        <!-- 成就解锁弹窗 -->
+        <div id="achievement-popup" class="achievement-popup hidden">
+            <div class="achievement-icon">🏆</div>
+            <div class="achievement-info">
+                <div class="achievement-label">成就解锁!</div>
+                <div id="achievement-name"></div>
+            </div>
+        </div>
+
+        <!-- 皮肤解锁弹窗 -->
+        <div id="skin-unlock-popup" class="skin-unlock-popup hidden">
+            <div class="skin-popup-icon">👕</div>
+            <div class="skin-popup-info">
+                <div class="skin-popup-label">新皮肤解锁!</div>
+                <div id="skin-unlock-name"></div>
+            </div>
+        </div>
+
+        <!-- 暂停界面 -->
+        <div id="pause-screen" class="screen hidden">
+            <h2>⏸️ 暂停</h2>
+            <p>按 ESC 或 P 键继续</p>
+            <button id="resume-btn">继续游戏</button>
+        </div>
+
+        <!-- 教程界面 -->
+        <div id="tutorial-screen" class="screen hidden">
+            <div class="tutorial-content">
+                <!-- 步骤 1: 欢迎 -->
+                <div class="tutorial-step" data-step="1">
+                    <div class="tutorial-icon">🪓</div>
+                    <h2>欢迎来到伐木人!</h2>
+                    <p>你是一名勇敢的伐木工</p>
+                    <p>目标是砍倒尽可能多的树</p>
+                    <p>同时躲避危险的树枝</p>
+                </div>
+                <!-- 步骤 2: 控制方式 -->
+                <div class="tutorial-step hidden" data-step="2">
+                    <div class="tutorial-icon">⌨️</div>
+                    <h2>控制方式</h2>
+                    <div class="tutorial-controls">
+                        <div class="control-item">
+                            <span class="key">← A</span>
+                            <span>移动到左边砍树</span>
+                        </div>
+                        <div class="control-item">
+                            <span class="key">D →</span>
+                            <span>移动到右边砍树</span>
+                        </div>
+                    </div>
+                    <p class="tutorial-hint">也可以点击屏幕左/右侧</p>
+                </div>
+                <!-- 步骤 3: 躲避树枝 -->
+                <div class="tutorial-step hidden" data-step="3">
+                    <div class="tutorial-icon">⚠️</div>
+                    <h2>躲避树枝!</h2>
+                    <div class="tutorial-demo">
+                        <div class="demo-tree">
+                            <div class="demo-branch left">🌿</div>
+                            <div class="demo-trunk">🪵</div>
+                            <div class="demo-player left danger">👷</div>
+                        </div>
+                    </div>
+                    <p class="tutorial-warning">碰到树枝 = 游戏结束!</p>
+                    <p>砍树前看清树枝在哪边</p>
+                </div>
+                <!-- 步骤 4: 时间管理 -->
+                <div class="tutorial-step hidden" data-step="4">
+                    <div class="tutorial-icon">⏱️</div>
+                    <h2>时间管理</h2>
+                    <div class="tutorial-timer-demo">
+                        <div class="demo-timer-bar">
+                            <div class="demo-timer-fill"></div>
+                        </div>
+                    </div>
+                    <p>时间条会不断减少</p>
+                    <p class="tutorial-tip">每次砍树会 <strong>+时间</strong></p>
+                    <p class="tutorial-tip">时间耗尽也会游戏结束</p>
+                </div>
+                <!-- 步骤 5: 高级技巧 -->
+                <div class="tutorial-step hidden" data-step="5">
+                    <div class="tutorial-icon">🏆</div>
+                    <h2>高级技巧</h2>
+                    <div class="tutorial-tips-list">
+                        <p>⚡ <strong>连击</strong> - 快速砍树提高分数</p>
+                        <p>📈 <strong>难度递增</strong> - 分数越高越难</p>
+                        <p>🎖️ <strong>成就系统</strong> - 解锁12个成就</p>
+                        <p>👕 <strong>皮肤</strong> - 高分解锁新角色</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tutorial-nav">
+                <div class="tutorial-dots">
+                    <span class="dot active" data-step="1"></span>
+                    <span class="dot" data-step="2"></span>
+                    <span class="dot" data-step="3"></span>
+                    <span class="dot" data-step="4"></span>
+                    <span class="dot" data-step="5"></span>
+                </div>
+                <div class="tutorial-buttons">
+                    <button id="tutorial-skip-btn" class="secondary-btn">跳过</button>
+                    <button id="tutorial-prev-btn" class="secondary-btn" disabled>上一步</button>
+                    <button id="tutorial-next-btn">下一步</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 移动端触摸区域指示 -->
+        <div id="touch-zones" class="touch-zones hidden">
+            <div class="touch-zone touch-zone-left">
+                <span class="touch-arrow">←</span>
+                <div class="touch-ripple"></div>
+            </div>
+            <div class="touch-zone touch-zone-right">
+                <span class="touch-arrow">→</span>
+                <div class="touch-ripple"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 操作提示 -->
+    <div id="controls-hint">
+        <span class="hint-left">← 点击左侧</span>
+        <span class="hint-right">点击右侧 →</span>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
