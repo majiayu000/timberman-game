@@ -4407,11 +4407,255 @@ const I18N = {
                 level_max: 'Nå maksimal sværhedsgrad 11',
                 close_call: 'Hug 20 gange når tiden er under 10%'
             }
+        },
+
+        // ============ 希腊语 (Greek) ============
+        el: {
+            // Τίτλος
+            title: 'Ξυλοκόπος',
+
+            // Αρχική οθόνη
+            startTitle: 'Ξυλοκόπος',
+            startHint1: 'Πάτα ← → ή A/D για κόψιμο',
+            startHint2: 'Πάτα αριστερά/δεξιά της οθόνης',
+            startHint3: 'Απόφυγε τα κλαδιά, νίκησε το ρολόι!',
+            startHint4: 'Space/Enter Έναρξη | ESC/P Παύση',
+            startBtn: 'Έναρξη παιχνιδιού',
+            dailyBtn: '📅 Ημερήσια πρόκληση',
+            skinBtn: '👕 Εμφανίσεις',
+            leaderboardBtn: '📊 Κατάταξη',
+            statsBtn: '📈 Στατιστικά',
+            tutorialBtn: '❓ Οδηγός',
+
+            // Τέλος παιχνιδιού
+            gameOver: 'Τέλος παιχνιδιού',
+            score: 'Σκορ',
+            maxCombo: 'Μέγ. κόμπο',
+            highScore: 'Ρεκόρ',
+            restartBtn: 'Ξαναπροσπάθησε',
+            achievementsBtn: '🏆 Επιτεύγματα',
+
+            // Παύση
+            paused: '⏸️ Παύση',
+            pauseHint: 'Πάτα ESC ή P για συνέχεια',
+            resumeBtn: 'Συνέχεια',
+
+            // Ημερήσια πρόκληση
+            dailyTitle: '📅 Ημερήσια πρόκληση',
+            todayDate: 'Σήμερα',
+            todayBest: 'Καλύτερο σήμερα',
+            attempts: 'Προσπάθειες',
+            dailyHint: 'Ίδιο επίπεδο για όλους, σπάσε το ρεκόρ!',
+            startChallenge: 'Έναρξη πρόκλησης',
+            back: 'Πίσω',
+            challengeOver: '📅 Πρόκληση ολοκληρώθηκε',
+            newRecord: '🎉 Νέο ρεκόρ!',
+            todayHighScore: 'Καλύτερο σήμερα',
+            todayAttempts: 'Σημερινές προσπάθειες',
+            times: 'φορές',
+            retry: 'Ξαναπροσπάθησε',
+            backHome: 'Αρχική',
+
+            // Εμφανίσεις
+            skinTitle: '👕 Εμφανίσεις',
+            skinUnlocked: 'Ξεκλειδώθηκε',
+            skinLocked: '🔒',
+            skinUnlockAt: 'πόντοι απαιτούνται',
+
+            // Κατάταξη
+            leaderboardTitle: '📊 Κατάταξη',
+            rank: 'Θέση',
+            lbScore: 'Σκορ',
+            lbCombo: 'Κόμπο',
+            lbDate: 'Ημ/νία',
+            clearRecords: 'Διαγραφή όλων',
+            clearConfirm: 'Σίγουρα θέλεις να διαγράψεις όλα τα ρεκόρ;',
+            noRecords: 'Κανένα ρεκόρ',
+
+            // Επιτεύγματα
+            achievementsTitle: '🏆 Επιτεύγματα',
+            achievementUnlock: 'Επίτευγμα ξεκλειδώθηκε!',
+
+            // Στατιστικά
+            statsTitle: '📈 Στατιστικά παιχνιδιού',
+            totalGames: 'Συνολικά παιχνίδια',
+            totalChops: 'Συνολικά κοψίματα',
+            totalTime: 'Συνολικός χρόνος',
+            bestCombo: 'Καλύτερο κόμπο',
+            avgScore: 'Μέσο σκορ',
+            unlockedAchievements: '🎖️ Επιτεύγματα',
+            unlockedSkins: '👕 Εμφανίσεις',
+            dailyAttempts: '📅 Ημερήσιες προκλήσεις',
+            resetStats: 'Επαναφορά',
+            resetConfirm: 'Σίγουρα θέλεις να επαναφέρεις τα στατιστικά; Αυτό δεν μπορεί να αναιρεθεί.',
+
+            // Οδηγός
+            tutorialWelcome: 'Καλώς ήρθες στον Ξυλοκόπο!',
+            tutorialWelcome1: 'Είσαι ένας γενναίος ξυλοκόπος',
+            tutorialWelcome2: 'Κόψε όσα περισσότερα δέντρα μπορείς',
+            tutorialWelcome3: 'Αποφεύγοντας τα επικίνδυνα κλαδιά',
+            tutorialControls: 'Χειρισμός',
+            tutorialMoveLeft: 'Πήγαινε αριστερά και κόψε',
+            tutorialMoveRight: 'Πήγαινε δεξιά και κόψε',
+            tutorialTouchHint: 'Ή πάτα αριστερά/δεξιά της οθόνης',
+            tutorialBranch: 'Απόφυγε τα κλαδιά!',
+            tutorialBranchWarn: 'Χτύπημα κλαδιού = Τέλος παιχνιδιού!',
+            tutorialBranchHint: 'Κοίτα πριν κόψεις',
+            tutorialTime: 'Διαχείριση χρόνου',
+            tutorialTimeHint1: 'Η μπάρα χρόνου μειώνεται συνεχώς',
+            tutorialTimeHint2: 'Κάθε κόψιμο δίνει',
+            tutorialTimeHint3: '+χρόνο',
+            tutorialTimeHint4: 'Τέλος χρόνου = Τέλος παιχνιδιού',
+            tutorialAdvanced: 'Προχωρημένες συμβουλές',
+            tutorialCombo: 'Κόμπο',
+            tutorialComboHint: 'Κόψε γρήγορα για υψηλότερο σκορ',
+            tutorialDifficulty: 'Δυσκολία',
+            tutorialDifficultyHint: 'Όσο υψηλότερο σκορ, τόσο δυσκολότερο',
+            tutorialAchievement: 'Επιτεύγματα',
+            tutorialAchievementHint: 'Ξεκλείδωσε 12 επιτεύγματα',
+            tutorialSkin: 'Εμφανίσεις',
+            tutorialSkinHint: 'Υψηλό σκορ ξεκλειδώνει νέες εμφανίσεις',
+            skip: 'Παράλειψη',
+            prev: 'Προηγούμενο',
+            next: 'Επόμενο',
+            finish: 'Τέλος',
+
+            // Συμβουλές αφής
+            tapLeft: '← Πάτα αριστερά',
+            tapRight: 'Πάτα δεξιά →',
+
+            // Ρυθμίσεις ήχου
+            volumeSettings: '🎵 Ρυθμίσεις ήχου',
+            sfxVolume: '🔊 Εφέ ήχου',
+            bgmVolume: '🎵 Μουσική',
+            vibration: '📳 Δόνηση',
+
+            // Αναδυόμενο
+            skinUnlockPopup: 'Νέα εμφάνιση ξεκλειδώθηκε!',
+
+            // Σύστημα επανάληψης
+            replayBtn: '🎬 Επανάληψη',
+            replayTitle: '🎬 Προηγούμενο παιχνίδι',
+            replayScore: 'Σκορ',
+            replayCombo: 'Μέγ. κόμπο',
+            replayChops: 'Κοψίματα',
+            replayDuration: 'Διάρκεια',
+            replayStart: 'Έναρξη επανάληψης',
+            replayStop: 'Σταμάτα',
+            replayNoData: 'Δεν υπάρχουν δεδομένα',
+            replayPlaying: '🎬 Αναπαραγωγή...',
+            replaySeconds: 'δ',
+
+            // Κοινοποίηση
+            shareBtn: '📤 Κοινοποίηση',
+            shareTitle: 'Ξυλοκόπος',
+            shareScoreLabel: 'Σκορ',
+            shareComboLabel: 'Κόμπο',
+            shareLevelLabel: 'Επίπεδο',
+            shareHighScoreLabel: 'Ρεκόρ',
+            shareDownloading: 'Δημιουργία εικόνας...',
+            shareSuccess: 'Η εικόνα αποθηκεύτηκε!',
+            shareFailed: 'Η κοινοποίηση απέτυχε, δοκίμασε ξανά',
+            sharePanelTitle: '📤 Κοινοποίηση σκορ',
+            shareNativeBtn: '📱 Κοινοποίηση',
+            shareDownloadBtn: '💾 Αποθήκευση εικόνας',
+            shareCopyBtn: '📋 Αντιγραφή κειμένου',
+            shareCopySuccess: '✓ Αντιγράφηκε στο πρόχειρο!',
+
+            // Ατελείωτη λειτουργία
+            endlessBtn: '∞ Ατελείωτη λειτουργία',
+            endlessTitle: '∞ Ατελείωτη λειτουργία',
+            endlessDesc: 'Χωρίς χρονικό όριο, δοκίμασε τη συγκέντρωσή σου!',
+            endlessBest: 'Καλύτερο σκορ',
+            endlessTotal: 'Συνολικά παιχνίδια',
+            endlessStart: 'Έναρξη πρόκλησης',
+            endlessOver: '∞ Πρόκληση ολοκληρώθηκε',
+            endlessNewRecord: '🎉 Νέο ρεκόρ!',
+            endlessHint: 'Μόνο απόφυγε κλαδιά, χωρίς πίεση χρόνου',
+
+            // Αντίστροφη μέτρηση
+            countdownGo: 'ΠΑΜΕ!',
+
+            // Θέμα
+            themeDarkTip: 'Αλλαγή σε σκοτεινή λειτουργία',
+            themeLightTip: 'Αλλαγή σε φωτεινή λειτουργία',
+
+            // Ρυθμίσεις ταχύτητας
+            speedBtn: '⚡ Ταχύτητα',
+            speedTitle: '⚡ Ταχύτητα παιχνιδιού',
+            speedSelectDesc: 'Επέλεξε την προτιμώμενη ταχύτητα',
+            speedSlow: '🐢 Αργή',
+            speedNormal: '🚶 Κανονική',
+            speedFast: '🏃 Γρήγορη',
+            speedSlowDesc: 'Πιο αργή μείωση χρόνου, για αρχάριους',
+            speedNormalDesc: 'Κανονική ταχύτητα παιχνιδιού',
+            speedFastDesc: 'Πιο γρήγορη μείωση χρόνου, πρόκληση',
+            speedCurrent: 'Τρέχουσα',
+
+            // Ονόματα εμφανίσεων
+            skinNames: {
+                default: 'Ξυλοκόπος',
+                ninja: 'Νίντζα',
+                robot: 'Ρομπότ',
+                golden: 'Χρυσός θρύλος',
+                santa: 'Άγιος Βασίλης',
+                pumpkin: 'Κολοκυθοκεφαλή',
+                pirate: 'Πειρατής καπετάνιος',
+                snowman: 'Χιονάνθρωπος',
+                chinese_new_year: 'Θεός πλούτου',
+                valentine: 'Έρωτας',
+                easter_bunny: 'Πασχαλινό λαγουδάκι',
+                summer_surfer: 'Καλοκαιρινός σέρφερ'
+            },
+            skinDescs: {
+                default: 'Κλασικός ξυλοκόπος με κόκκινο πουκάμισο',
+                ninja: 'Μυστηριώδης νίντζα στα μαύρα',
+                robot: 'Μηχανικός ξυλοκόπος από ατσάλι',
+                golden: 'Θρυλικός χρυσός ξυλοκόπος',
+                santa: 'Χαρούμενος ξυλοκόπος με χριστουγεννιάτικο πνεύμα',
+                pumpkin: 'Τρομακτικός ξυλοκόπος Halloween',
+                pirate: 'Γενναίος θαλασσοπόρος',
+                snowman: 'Ξυλοκόπος από τον κόσμο του πάγου',
+                chinese_new_year: 'Καλή Χρονιά! Καλή τύχη!',
+                valentine: 'Θεός έρωτα που σκορπά αγάπη',
+                easter_bunny: 'Χαριτωμένο λαγουδάκι με πασχαλινά αυγά',
+                summer_surfer: 'Κουλ σέρφερ της παραλίας'
+            },
+
+            // Ονόματα επιτευγμάτων
+            achievementNames: {
+                first_chop: 'Πρώτο κόψιμο',
+                score_10: 'Αρχάριος ξυλοκόπος',
+                score_50: 'Έμπειρος ξυλοκόπος',
+                score_100: 'Επαγγελματίας ξυλοκόπος',
+                score_200: 'Μάστορας ξυλοκόπος',
+                combo_5: 'Μίνι κόμπο',
+                combo_10: 'Ειδικός κόμπο',
+                combo_20: 'Βασιλιάς κόμπο',
+                level_5: 'Επίπεδο 5',
+                level_8: 'Επίπεδο 8',
+                level_max: 'Μέγιστο επίπεδο',
+                close_call: 'Παρά τρίχα'
+            },
+            achievementDescs: {
+                first_chop: 'Κόψε το πρώτο σου δέντρο',
+                score_10: 'Πέτυχε 10 πόντους σε ένα παιχνίδι',
+                score_50: 'Πέτυχε 50 πόντους σε ένα παιχνίδι',
+                score_100: 'Πέτυχε 100 πόντους σε ένα παιχνίδι',
+                score_200: 'Πέτυχε 200 πόντους σε ένα παιχνίδι',
+                combo_5: 'Φτάσε σε 5-κόμπο',
+                combo_10: 'Φτάσε σε 10-κόμπο',
+                combo_20: 'Φτάσε σε 20-κόμπο',
+                level_5: 'Φτάσε στο επίπεδο δυσκολίας 5',
+                level_8: 'Φτάσε στο επίπεδο δυσκολίας 8',
+                level_max: 'Φτάσε στο μέγιστο επίπεδο δυσκολίας 11',
+                close_call: 'Κόψε 20 φορές με χρόνο κάτω από 10%'
+            }
         }
     },
 
     // 支持的语言列表（循环切换顺序）
-    langOrder: ['zh', 'en', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'it', 'ru', 'tr', 'pl', 'nl', 'sv', 'fi', 'no', 'da'],
+    langOrder: ['zh', 'en', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'it', 'ru', 'tr', 'pl', 'nl', 'sv', 'fi', 'no', 'da', 'el'],
 
     // 语言按钮显示文本
     langLabels: {
@@ -4431,7 +4675,8 @@ const I18N = {
         sv: 'SV',
         fi: 'FI',
         no: 'NO',
-        da: 'DA'
+        da: 'DA',
+        el: 'EL'
     },
 
     // 加载语言设置
@@ -4474,6 +4719,8 @@ const I18N = {
                 this.currentLang = 'no';
             } else if (browserLang.startsWith('da')) {
                 this.currentLang = 'da';
+            } else if (browserLang.startsWith('el')) {
+                this.currentLang = 'el';
             } else {
                 this.currentLang = 'en';
             }
@@ -4518,7 +4765,7 @@ const I18N = {
         const t = this.t;
 
         // 更新HTML lang属性
-        const langCodes = { zh: 'zh-CN', en: 'en', ja: 'ja', ko: 'ko', es: 'es', fr: 'fr', de: 'de', pt: 'pt-BR', it: 'it', ru: 'ru', tr: 'tr', pl: 'pl', nl: 'nl', sv: 'sv', fi: 'fi', no: 'no', da: 'da' };
+        const langCodes = { zh: 'zh-CN', en: 'en', ja: 'ja', ko: 'ko', es: 'es', fr: 'fr', de: 'de', pt: 'pt-BR', it: 'it', ru: 'ru', tr: 'tr', pl: 'pl', nl: 'nl', sv: 'sv', fi: 'fi', no: 'no', da: 'da', el: 'el' };
         document.documentElement.lang = langCodes[this.currentLang] || 'en';
 
         // 标题
@@ -4806,7 +5053,8 @@ const I18N = {
                 sv: 'Byt till Svenska',
                 fi: 'Vaihda Suomeksi',
                 no: 'Bytt til Norsk',
-                da: 'Skift til Dansk'
+                da: 'Skift til Dansk',
+                el: 'Αλλαγή σε Ελληνικά'
             };
             langBtn.title = tooltips[nextLang];
         }
