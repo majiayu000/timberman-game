@@ -458,12 +458,13 @@ const I18N = {
             // 速度选项
             speedBtn: '⚡ 速度',
             speedTitle: '⚡ 游戏速度',
-            speedSlow: '🐢 慢速',
-            speedNormal: '🚶 普通',
-            speedFast: '🏃 快速',
-            speedSlowDesc: '时间消耗更慢，适合新手',
-            speedNormalDesc: '标准游戏速度',
-            speedFastDesc: '时间消耗更快，挑战模式',
+            speedSelectDesc: '选择适合你的游戏速度',
+            speedSlow: '慢速',
+            speedNormal: '标准',
+            speedFast: '快速',
+            speedSlowDesc: '时间衰减 -40%，适合新手',
+            speedNormalDesc: '默认游戏速度',
+            speedFastDesc: '时间衰减 +50%，挑战高手',
             speedCurrent: '当前',
 
             // 皮肤名称
@@ -699,12 +700,13 @@ const I18N = {
             // Speed options
             speedBtn: '⚡ Speed',
             speedTitle: '⚡ Game Speed',
-            speedSlow: '🐢 Slow',
-            speedNormal: '🚶 Normal',
-            speedFast: '🏃 Fast',
-            speedSlowDesc: 'Slower time decay, for beginners',
-            speedNormalDesc: 'Standard game speed',
-            speedFastDesc: 'Faster time decay, challenge mode',
+            speedSelectDesc: 'Choose your preferred game speed',
+            speedSlow: 'Slow',
+            speedNormal: 'Normal',
+            speedFast: 'Fast',
+            speedSlowDesc: '-40% time decay, for beginners',
+            speedNormalDesc: 'Default game speed',
+            speedFastDesc: '+50% time decay, challenge mode',
             speedCurrent: 'Current',
 
             // Skin names
@@ -940,12 +942,13 @@ const I18N = {
             // 速度オプション
             speedBtn: '⚡ 速度',
             speedTitle: '⚡ ゲーム速度',
-            speedSlow: '🐢 スロー',
-            speedNormal: '🚶 ノーマル',
-            speedFast: '🏃 ファスト',
-            speedSlowDesc: '時間減少が遅い、初心者向け',
-            speedNormalDesc: '標準ゲーム速度',
-            speedFastDesc: '時間減少が速い、チャレンジモード',
+            speedSelectDesc: 'お好みのゲーム速度を選択',
+            speedSlow: 'スロー',
+            speedNormal: 'ノーマル',
+            speedFast: 'ファスト',
+            speedSlowDesc: '時間減少 -40%、初心者向け',
+            speedNormalDesc: 'デフォルトのゲーム速度',
+            speedFastDesc: '時間減少 +50%、チャレンジモード',
             speedCurrent: '現在',
 
             // スキン名
@@ -1181,12 +1184,13 @@ const I18N = {
             // 속도 옵션
             speedBtn: '⚡ 속도',
             speedTitle: '⚡ 게임 속도',
-            speedSlow: '🐢 느림',
-            speedNormal: '🚶 보통',
-            speedFast: '🏃 빠름',
-            speedSlowDesc: '시간 감소가 느림, 초보자용',
-            speedNormalDesc: '표준 게임 속도',
-            speedFastDesc: '시간 감소가 빠름, 도전 모드',
+            speedSelectDesc: '원하는 게임 속도를 선택하세요',
+            speedSlow: '느림',
+            speedNormal: '보통',
+            speedFast: '빠름',
+            speedSlowDesc: '시간 감소 -40%, 초보자용',
+            speedNormalDesc: '기본 게임 속도',
+            speedFastDesc: '시간 감소 +50%, 도전 모드',
             speedCurrent: '현재',
 
             // 스킨 이름
@@ -1423,12 +1427,13 @@ const I18N = {
             // Opciones de velocidad
             speedBtn: '⚡ Velocidad',
             speedTitle: '⚡ Velocidad del Juego',
-            speedSlow: '🐢 Lento',
-            speedNormal: '🚶 Normal',
-            speedFast: '🏃 Rápido',
-            speedSlowDesc: 'Tiempo más lento, para principiantes',
-            speedNormalDesc: 'Velocidad estándar del juego',
-            speedFastDesc: 'Tiempo más rápido, modo desafío',
+            speedSelectDesc: 'Elige tu velocidad de juego preferida',
+            speedSlow: 'Lento',
+            speedNormal: 'Normal',
+            speedFast: 'Rápido',
+            speedSlowDesc: '-40% consumo de tiempo, para principiantes',
+            speedNormalDesc: 'Velocidad de juego predeterminada',
+            speedFastDesc: '+50% consumo de tiempo, modo desafío',
             speedCurrent: 'Actual',
 
             // 皮肤名称
@@ -1665,12 +1670,13 @@ const I18N = {
             // Options de vitesse
             speedBtn: '⚡ Vitesse',
             speedTitle: '⚡ Vitesse du Jeu',
-            speedSlow: '🐢 Lent',
-            speedNormal: '🚶 Normal',
-            speedFast: '🏃 Rapide',
-            speedSlowDesc: 'Temps plus lent, pour débutants',
-            speedNormalDesc: 'Vitesse de jeu standard',
-            speedFastDesc: 'Temps plus rapide, mode défi',
+            speedSelectDesc: 'Choisissez votre vitesse de jeu préférée',
+            speedSlow: 'Lent',
+            speedNormal: 'Normal',
+            speedFast: 'Rapide',
+            speedSlowDesc: '-40% décroissance du temps, pour débutants',
+            speedNormalDesc: 'Vitesse de jeu par défaut',
+            speedFastDesc: '+50% décroissance du temps, mode défi',
             speedCurrent: 'Actuel',
 
             // Noms des skins
@@ -1906,6 +1912,7 @@ const I18N = {
             // Geschwindigkeitsoptionen
             speedBtn: '⚡ Tempo',
             speedTitle: '⚡ Spielgeschwindigkeit',
+            speedSelectDesc: 'Wähle deine bevorzugte Spielgeschwindigkeit',
             speedSlow: '🐢 Langsam',
             speedNormal: '🚶 Normal',
             speedFast: '🏃 Schnell',
@@ -2147,6 +2154,7 @@ const I18N = {
             // Opções de velocidade
             speedBtn: '⚡ Velocidade',
             speedTitle: '⚡ Velocidade do Jogo',
+            speedSelectDesc: 'Escolha sua velocidade de jogo preferida',
             speedSlow: '🐢 Lento',
             speedNormal: '🚶 Normal',
             speedFast: '🏃 Rápido',
@@ -2389,6 +2397,7 @@ const I18N = {
             // Opzioni velocità
             speedBtn: '⚡ Velocità',
             speedTitle: '⚡ Velocità di Gioco',
+            speedSelectDesc: 'Scegli la tua velocità di gioco preferita',
             speedSlow: '🐢 Lento',
             speedNormal: '🚶 Normale',
             speedFast: '🏃 Veloce',
@@ -2630,6 +2639,7 @@ const I18N = {
             // Параметры скорости
             speedBtn: '⚡ Скорость',
             speedTitle: '⚡ Скорость игры',
+            speedSelectDesc: 'Выберите предпочтительную скорость игры',
             speedSlow: '🐢 Медленно',
             speedNormal: '🚶 Обычно',
             speedFast: '🏃 Быстро',
@@ -2868,6 +2878,7 @@ const I18N = {
             // Hız seçenekleri
             speedBtn: '⚡ Hız',
             speedTitle: '⚡ Oyun Hızı',
+            speedSelectDesc: 'Tercih ettiğiniz oyun hızını seçin',
             speedSlow: '🐢 Yavaş',
             speedNormal: '🚶 Normal',
             speedFast: '🏃 Hızlı',
@@ -2935,11 +2946,1472 @@ const I18N = {
                 level_max: 'Maks. zorluk seviyesi 11\'e ulaş',
                 close_call: 'Zaman %10\'un altındayken 20 kez kes'
             }
+        },
+        pl: {
+            // Tytuł
+            title: 'Drwal',
+
+            // Ekran startowy
+            startTitle: 'Drwal',
+            startHint1: 'Naciśnij ← → lub A/D aby rąbać',
+            startHint2: 'Dotknij lewej/prawej strony ekranu',
+            startHint3: 'Unikaj gałęzi, pokonaj czas!',
+            startHint4: 'Spacja/Enter Start | ESC/P Pauza',
+            startBtn: 'Rozpocznij grę',
+            dailyBtn: '📅 Wyzwanie dnia',
+            skinBtn: '👕 Skórki',
+            leaderboardBtn: '📊 Ranking',
+            statsBtn: '📈 Statystyki',
+            tutorialBtn: '❓ Samouczek',
+
+            // Koniec gry
+            gameOver: 'Koniec gry',
+            score: 'Wynik',
+            maxCombo: 'Maks. kombo',
+            highScore: 'Rekord',
+            restartBtn: 'Spróbuj ponownie',
+            achievementsBtn: '🏆 Osiągnięcia',
+
+            // Pauza
+            paused: '⏸️ Pauza',
+            pauseHint: 'Naciśnij ESC lub P aby kontynuować',
+            resumeBtn: 'Wznów',
+
+            // Wyzwanie dnia
+            dailyTitle: '📅 Wyzwanie dnia',
+            todayDate: 'Dzisiaj',
+            todayBest: 'Najlepszy dziś',
+            attempts: 'Próby',
+            dailyHint: 'Ten sam poziom dla wszystkich, pobij swój rekord!',
+            startChallenge: 'Rozpocznij wyzwanie',
+            back: 'Powrót',
+            challengeOver: '📅 Wyzwanie zakończone',
+            newRecord: '🎉 Nowy rekord!',
+            todayHighScore: 'Najlepszy dziś',
+            todayAttempts: 'Dzisiejsze próby',
+            times: 'razy',
+            retry: 'Spróbuj ponownie',
+            backHome: 'Strona główna',
+
+            // Skórki
+            skinTitle: '👕 Skórki',
+            skinUnlocked: 'Odblokowane',
+            skinLocked: '🔒',
+            skinUnlockAt: 'pkt do odblokowania',
+
+            // Ranking
+            leaderboardTitle: '📊 Ranking',
+            rank: 'Pozycja',
+            lbScore: 'Wynik',
+            lbCombo: 'Kombo',
+            lbDate: 'Data',
+            clearRecords: 'Wyczyść wszystko',
+            clearConfirm: 'Czy na pewno chcesz wyczyścić wszystkie rekordy?',
+            noRecords: 'Brak rekordów',
+
+            // Osiągnięcia
+            achievementsTitle: '🏆 Osiągnięcia',
+            achievementUnlock: 'Osiągnięcie odblokowane!',
+
+            // Statystyki
+            statsTitle: '📈 Statystyki gry',
+            totalGames: 'Łączna liczba gier',
+            totalChops: 'Łączne cięcia',
+            totalTime: 'Łączny czas',
+            bestCombo: 'Najlepsze kombo',
+            avgScore: 'Średni wynik',
+            unlockedAchievements: '🎖️ Osiągnięcia',
+            unlockedSkins: '👕 Skórki',
+            dailyAttempts: '📅 Wyzwania dnia',
+            resetStats: 'Resetuj',
+            resetConfirm: 'Czy na pewno chcesz zresetować wszystkie statystyki? Tej operacji nie można cofnąć.',
+
+            // Samouczek
+            tutorialWelcome: 'Witaj w grze Drwal!',
+            tutorialWelcome1: 'Jesteś dzielnym drwalem',
+            tutorialWelcome2: 'Zetnij jak najwięcej drzew',
+            tutorialWelcome3: 'Unikając niebezpiecznych gałęzi',
+            tutorialControls: 'Sterowanie',
+            tutorialMoveLeft: 'Idź w lewo i rąbaj',
+            tutorialMoveRight: 'Idź w prawo i rąbaj',
+            tutorialTouchHint: 'Lub dotknij lewej/prawej strony ekranu',
+            tutorialBranch: 'Unikaj gałęzi!',
+            tutorialBranchWarn: 'Uderzenie w gałąź = Koniec gry!',
+            tutorialBranchHint: 'Patrz zanim rąbniesz',
+            tutorialTime: 'Zarządzanie czasem',
+            tutorialTimeHint1: 'Pasek czasu ciągle się zmniejsza',
+            tutorialTimeHint2: 'Każde cięcie daje',
+            tutorialTimeHint3: '+czas',
+            tutorialTimeHint4: 'Koniec czasu = Koniec gry',
+            tutorialAdvanced: 'Porady dla zaawansowanych',
+            tutorialCombo: 'Kombo',
+            tutorialComboHint: 'Rąbaj szybko dla wyższego wyniku',
+            tutorialDifficulty: 'Trudność',
+            tutorialDifficultyHint: 'Im wyższy wynik, tym trudniej',
+            tutorialAchievement: 'Osiągnięcia',
+            tutorialAchievementHint: 'Odblokuj 12 osiągnięć',
+            tutorialSkin: 'Skórki',
+            tutorialSkinHint: 'Wysokie wyniki odblokowują nowe skórki',
+            skip: 'Pomiń',
+            prev: 'Wstecz',
+            next: 'Dalej',
+            finish: 'Zakończ',
+
+            // Wskazówki dotykowe
+            tapLeft: '← Dotknij lewej',
+            tapRight: 'Dotknij prawej →',
+
+            // Ustawienia głośności
+            volumeSettings: '🎵 Ustawienia dźwięku',
+            sfxVolume: '🔊 Efekty',
+            bgmVolume: '🎵 Muzyka',
+            vibration: '📳 Wibracje',
+
+            // Okno popup
+            skinUnlockPopup: 'Nowa skórka odblokowana!',
+
+            // System powtórek
+            replayBtn: '🎬 Powtórka',
+            replayTitle: '🎬 Ostatnia gra',
+            replayScore: 'Wynik',
+            replayCombo: 'Maks. kombo',
+            replayChops: 'Cięcia',
+            replayDuration: 'Czas trwania',
+            replayStart: 'Rozpocznij powtórkę',
+            replayStop: 'Zatrzymaj',
+            replayNoData: 'Brak danych',
+            replayPlaying: '🎬 Odtwarzanie...',
+            replaySeconds: 's',
+
+            // Udostępnianie
+            shareBtn: '📤 Udostępnij',
+            shareTitle: 'Drwal',
+            shareScoreLabel: 'Wynik',
+            shareComboLabel: 'Kombo',
+            shareLevelLabel: 'Poziom',
+            shareHighScoreLabel: 'Rekord',
+            shareDownloading: 'Generowanie obrazu...',
+            shareSuccess: 'Obraz zapisany!',
+            shareFailed: 'Udostępnianie nie powiodło się, spróbuj ponownie',
+            sharePanelTitle: '📤 Udostępnij wynik',
+            shareNativeBtn: '📱 Udostępnij',
+            shareDownloadBtn: '💾 Zapisz obraz',
+            shareCopyBtn: '📋 Kopiuj tekst',
+            shareCopySuccess: '✓ Skopiowano do schowka!',
+
+            // Tryb nieskończony
+            endlessBtn: '∞ Tryb nieskończony',
+            endlessTitle: '∞ Tryb nieskończony',
+            endlessDesc: 'Bez limitu czasu, sprawdź swoją koncentrację!',
+            endlessBest: 'Najlepszy wynik',
+            endlessTotal: 'Łączna liczba gier',
+            endlessStart: 'Rozpocznij wyzwanie',
+            endlessOver: '∞ Wyzwanie zakończone',
+            endlessNewRecord: '🎉 Nowy rekord!',
+            endlessHint: 'Tylko unikaj gałęzi, bez presji czasu',
+
+            // Odliczanie
+            countdownGo: 'START!',
+
+            // Motyw
+            themeDarkTip: 'Przełącz na tryb ciemny',
+            themeLightTip: 'Przełącz na tryb jasny',
+
+            // Opcje prędkości
+            speedBtn: '⚡ Prędkość',
+            speedTitle: '⚡ Prędkość gry',
+            speedSelectDesc: 'Wybierz preferowaną prędkość gry',
+            speedSlow: '🐢 Wolna',
+            speedNormal: '🚶 Normalna',
+            speedFast: '🏃 Szybka',
+            speedSlowDesc: 'Wolniejszy spadek czasu, dla początkujących',
+            speedNormalDesc: 'Standardowa prędkość gry',
+            speedFastDesc: 'Szybszy spadek czasu, tryb wyzwania',
+            speedCurrent: 'Aktualna',
+
+            // Nazwy skórek
+            skinNames: {
+                default: 'Drwal',
+                ninja: 'Ninja',
+                robot: 'Robot',
+                golden: 'Złota legenda',
+                santa: 'Święty Mikołaj',
+                pumpkin: 'Dyniowa głowa',
+                pirate: 'Kapitan piratów',
+                snowman: 'Bałwan',
+                chinese_new_year: 'Bóg bogactwa',
+                valentine: 'Kupidyn',
+                easter_bunny: 'Zajączek wielkanocny',
+                summer_surfer: 'Letni surfer'
+            },
+            skinDescs: {
+                default: 'Klasyczny drwal w czerwonej koszuli',
+                ninja: 'Tajemniczy ninja w czerni',
+                robot: 'Stalowy mechaniczny drwal',
+                golden: 'Legendarny złoty drwal',
+                santa: 'Radosny świąteczny drwal',
+                pumpkin: 'Przerażający halloweenowy drwal',
+                pirate: 'Odważny morski poszukiwacz przygód',
+                snowman: 'Drwal z lodowego świata',
+                chinese_new_year: 'Szczęśliwego Nowego Roku! Powodzenia!',
+                valentine: 'Bóg miłości, rozsiewa miłość',
+                easter_bunny: 'Słodki króliczek z pisankami',
+                summer_surfer: 'Fajny plażowy surfer'
+            },
+
+            // Nazwy osiągnięć
+            achievementNames: {
+                first_chop: 'Pierwsze cięcie',
+                score_10: 'Początkujący drwal',
+                score_50: 'Doświadczony drwal',
+                score_100: 'Profesjonalny drwal',
+                score_200: 'Mistrz drwal',
+                combo_5: 'Mini kombo',
+                combo_10: 'Ekspert kombo',
+                combo_20: 'Król kombo',
+                level_5: 'Poziom 5',
+                level_8: 'Poziom 8',
+                level_max: 'Maks. poziom',
+                close_call: 'O włos'
+            },
+            achievementDescs: {
+                first_chop: 'Zetnij swoje pierwsze drzewo',
+                score_10: 'Zdobądź 10 punktów w jednej grze',
+                score_50: 'Zdobądź 50 punktów w jednej grze',
+                score_100: 'Zdobądź 100 punktów w jednej grze',
+                score_200: 'Zdobądź 200 punktów w jednej grze',
+                combo_5: 'Osiągnij 5 kombo',
+                combo_10: 'Osiągnij 10 kombo',
+                combo_20: 'Osiągnij 20 kombo',
+                level_5: 'Osiągnij poziom trudności 5',
+                level_8: 'Osiągnij poziom trudności 8',
+                level_max: 'Osiągnij maks. poziom trudności 11',
+                close_call: 'Zetnij 20 razy gdy czas jest poniżej 10%'
+            }
+        },
+        // 荷兰语 (Nederlands)
+        nl: {
+            // Titel
+            title: 'Houthakker',
+
+            // Startscherm
+            startTitle: 'Houthakker',
+            startHint1: 'Druk ← → of A/D om te hakken',
+            startHint2: 'Tik links/rechts op het scherm',
+            startHint3: 'Vermijd takken, versla de klok!',
+            startHint4: 'Spatie/Enter Start | ESC/P Pauze',
+            startBtn: 'Start Spel',
+            dailyBtn: '📅 Dagelijkse Uitdaging',
+            skinBtn: '👕 Skins',
+            leaderboardBtn: '📊 Ranglijst',
+            statsBtn: '📈 Statistieken',
+            tutorialBtn: '❓ Handleiding',
+
+            // Game over
+            gameOver: 'Game Over',
+            score: 'Score',
+            maxCombo: 'Max. Combo',
+            highScore: 'Hoogste Score',
+            restartBtn: 'Opnieuw Proberen',
+            achievementsBtn: '🏆 Prestaties',
+
+            // Pauze
+            paused: '⏸️ Gepauzeerd',
+            pauseHint: 'Druk ESC of P om door te gaan',
+            resumeBtn: 'Hervatten',
+
+            // Dagelijkse uitdaging
+            dailyTitle: '📅 Dagelijkse Uitdaging',
+            todayDate: 'Vandaag',
+            todayBest: 'Beste Vandaag',
+            attempts: 'Pogingen',
+            dailyHint: 'Hetzelfde level voor iedereen, versla je record!',
+            startChallenge: 'Start Uitdaging',
+            back: 'Terug',
+            challengeOver: '📅 Uitdaging Voltooid',
+            newRecord: '🎉 Nieuw Record!',
+            todayHighScore: 'Beste Vandaag',
+            todayAttempts: 'Pogingen Vandaag',
+            times: 'keer',
+            retry: 'Opnieuw Proberen',
+            backHome: 'Hoofdmenu',
+
+            // Skins
+            skinTitle: '👕 Skins',
+            skinUnlocked: 'Ontgrendeld',
+            skinLocked: '🔒',
+            skinUnlockAt: 'ptn om te ontgrendelen',
+
+            // Ranglijst
+            leaderboardTitle: '📊 Ranglijst',
+            rank: 'Rang',
+            lbScore: 'Score',
+            lbCombo: 'Combo',
+            lbDate: 'Datum',
+            clearRecords: 'Alles Wissen',
+            clearConfirm: 'Weet je zeker dat je alle records wilt wissen?',
+            noRecords: 'Geen records',
+
+            // Prestaties
+            achievementsTitle: '🏆 Prestaties',
+            achievementUnlock: 'Prestatie Ontgrendeld!',
+
+            // Statistieken
+            statsTitle: '📈 Spelstatistieken',
+            totalGames: 'Totaal Gespeeld',
+            totalChops: 'Totaal Gehakt',
+            totalTime: 'Totale Tijd',
+            bestCombo: 'Beste Combo',
+            avgScore: 'Gem. Score',
+            unlockedAchievements: '🎖️ Prestaties',
+            unlockedSkins: '👕 Skins',
+            dailyAttempts: '📅 Dagelijkse Uitdagingen',
+            resetStats: 'Resetten',
+            resetConfirm: 'Weet je zeker dat je alle statistieken wilt resetten? Dit kan niet ongedaan worden gemaakt.',
+
+            // Handleiding
+            tutorialWelcome: 'Welkom bij Houthakker!',
+            tutorialWelcome1: 'Je bent een dappere houthakker',
+            tutorialWelcome2: 'Hak zoveel mogelijk bomen',
+            tutorialWelcome3: 'Terwijl je gevaarlijke takken vermijdt',
+            tutorialControls: 'Besturing',
+            tutorialMoveLeft: 'Ga naar links en hak',
+            tutorialMoveRight: 'Ga naar rechts en hak',
+            tutorialTouchHint: 'Of tik links/rechts op het scherm',
+            tutorialBranch: 'Vermijd Takken!',
+            tutorialBranchWarn: 'Tak raken = Game Over!',
+            tutorialBranchHint: 'Kijk voordat je hakt',
+            tutorialTime: 'Tijdbeheer',
+            tutorialTimeHint1: 'Tijdbalk neemt constant af',
+            tutorialTimeHint2: 'Elke hak geeft',
+            tutorialTimeHint3: '+tijd',
+            tutorialTimeHint4: 'Tijd op = Game Over',
+            tutorialAdvanced: 'Gevorderde Tips',
+            tutorialCombo: 'Combo',
+            tutorialComboHint: 'Hak snel voor hogere scores',
+            tutorialDifficulty: 'Moeilijkheid',
+            tutorialDifficultyHint: 'Wordt moeilijker bij hogere score',
+            tutorialAchievement: 'Prestaties',
+            tutorialAchievementHint: 'Ontgrendel 12 prestaties',
+            tutorialSkin: 'Skins',
+            tutorialSkinHint: 'Hoge scores ontgrendelen nieuwe skins',
+            skip: 'Overslaan',
+            prev: 'Vorige',
+            next: 'Volgende',
+            finish: 'Klaar',
+
+            // Aanraakhints
+            tapLeft: '← Tik Links',
+            tapRight: 'Tik Rechts →',
+
+            // Volume-instellingen
+            volumeSettings: '🎵 Volume-instellingen',
+            sfxVolume: '🔊 Effecten',
+            bgmVolume: '🎵 Muziek',
+            vibration: '📳 Trillen',
+
+            // Pop-ups
+            skinUnlockPopup: 'Nieuwe Skin Ontgrendeld!',
+
+            // Herhaling systeem
+            replayBtn: '🎬 Herhaling',
+            replayTitle: '🎬 Laatste Spel',
+            replayScore: 'Score',
+            replayCombo: 'Max. Combo',
+            replayChops: 'Hakken',
+            replayDuration: 'Duur',
+            replayStart: 'Start Herhaling',
+            replayStop: 'Stoppen',
+            replayNoData: 'Geen gegevens',
+            replayPlaying: '🎬 Afspelen...',
+            replaySeconds: 's',
+
+            // Delen
+            shareBtn: '📤 Delen',
+            shareTitle: 'Houthakker',
+            shareScoreLabel: 'Score',
+            shareComboLabel: 'Combo',
+            shareLevelLabel: 'Level',
+            shareHighScoreLabel: 'Hoogste Score',
+            shareDownloading: 'Afbeelding genereren...',
+            shareSuccess: 'Afbeelding opgeslagen!',
+            shareFailed: 'Delen mislukt, probeer opnieuw',
+            sharePanelTitle: '📤 Score Delen',
+            shareNativeBtn: '📱 Delen',
+            shareDownloadBtn: '💾 Afbeelding Opslaan',
+            shareCopyBtn: '📋 Tekst Kopiëren',
+            shareCopySuccess: '✓ Naar klembord gekopieerd!',
+
+            // Eindeloze modus
+            endlessBtn: '∞ Eindeloze Modus',
+            endlessTitle: '∞ Eindeloze Modus',
+            endlessDesc: 'Geen tijdslimiet, test je concentratie!',
+            endlessBest: 'Beste Score',
+            endlessTotal: 'Totaal Gespeeld',
+            endlessStart: 'Start Uitdaging',
+            endlessOver: '∞ Uitdaging Voltooid',
+            endlessNewRecord: '🎉 Nieuw Record!',
+            endlessHint: 'Vermijd alleen takken, geen tijdsdruk',
+
+            // Aftellen
+            countdownGo: 'START!',
+
+            // Thema
+            themeDarkTip: 'Schakel naar Donkere Modus',
+            themeLightTip: 'Schakel naar Lichte Modus',
+
+            // Snelheidsopties
+            speedBtn: '⚡ Snelheid',
+            speedTitle: '⚡ Spelsnelheid',
+            speedSelectDesc: 'Kies je voorkeursnelheid',
+            speedSlow: '🐢 Langzaam',
+            speedNormal: '🚶 Normaal',
+            speedFast: '🏃 Snel',
+            speedSlowDesc: 'Langzamere tijdafname, voor beginners',
+            speedNormalDesc: 'Standaard spelsnelheid',
+            speedFastDesc: 'Snellere tijdafname, uitdagingsmodus',
+            speedCurrent: 'Huidig',
+
+            // Skin namen
+            skinNames: {
+                default: 'Houthakker',
+                ninja: 'Ninja',
+                robot: 'Robot',
+                golden: 'Gouden Legende',
+                santa: 'Kerstman',
+                pumpkin: 'Pompoenhoofd',
+                pirate: 'Piratenkapitein',
+                snowman: 'Sneeuwpop',
+                chinese_new_year: 'God van Rijkdom',
+                valentine: 'Cupido',
+                easter_bunny: 'Paashaas',
+                summer_surfer: 'Zomersurfer'
+            },
+            skinDescs: {
+                default: 'Klassieke houthakker in het rood',
+                ninja: 'Mysterieuze ninja in het zwart',
+                robot: 'Stalen mechanische houthakker',
+                golden: 'Legendarische gouden houthakker',
+                santa: 'Vrolijke feestelijke houthakker',
+                pumpkin: 'Enge Halloween houthakker',
+                pirate: 'Dappere zeeavonturier',
+                snowman: 'Houthakker uit de ijswereld',
+                chinese_new_year: 'Gelukkig Nieuwjaar! Veel geluk!',
+                valentine: 'God van de liefde, verspreidt liefde',
+                easter_bunny: 'Schattig konijntje met eieren',
+                summer_surfer: 'Coole strandsurfer'
+            },
+
+            // Prestatie namen
+            achievementNames: {
+                first_chop: 'Eerste Hak',
+                score_10: 'Beginnende Houthakker',
+                score_50: 'Ervaren Houthakker',
+                score_100: 'Professionele Houthakker',
+                score_200: 'Meester Houthakker',
+                combo_5: 'Mini Combo',
+                combo_10: 'Combo Expert',
+                combo_20: 'Combo Koning',
+                level_5: 'Level 5',
+                level_8: 'Level 8',
+                level_max: 'Max. Level',
+                close_call: 'Op het Nippertje'
+            },
+            achievementDescs: {
+                first_chop: 'Hak je eerste boom',
+                score_10: 'Behaal 10 punten in één spel',
+                score_50: 'Behaal 50 punten in één spel',
+                score_100: 'Behaal 100 punten in één spel',
+                score_200: 'Behaal 200 punten in één spel',
+                combo_5: 'Behaal een 5 combo',
+                combo_10: 'Behaal een 10 combo',
+                combo_20: 'Behaal een 20 combo',
+                level_5: 'Bereik moeilijkheidsgraad 5',
+                level_8: 'Bereik moeilijkheidsgraad 8',
+                level_max: 'Bereik max. moeilijkheidsgraad 11',
+                close_call: 'Hak 20 keer terwijl tijd onder 10%'
+            }
+        },
+
+        // 瑞典语 (Svenska)
+        sv: {
+            // Titel
+            title: 'Skogshuggare',
+
+            // Startskärm
+            startTitle: 'Skogshuggare',
+            startHint1: 'Tryck ← → eller A/D för att hugga',
+            startHint2: 'Tryck på vänster/höger sida av skärmen',
+            startHint3: 'Undvik grenar, slå klockan!',
+            startHint4: 'Mellanslag/Enter Starta | ESC/P Paus',
+            startBtn: 'Starta spel',
+            dailyBtn: '📅 Daglig utmaning',
+            skinBtn: '👕 Skins',
+            leaderboardBtn: '📊 Topplista',
+            statsBtn: '📈 Statistik',
+            tutorialBtn: '❓ Handledning',
+
+            // Spelet slut
+            gameOver: 'Spelet slut',
+            score: 'Poäng',
+            maxCombo: 'Max combo',
+            highScore: 'Rekord',
+            restartBtn: 'Försök igen',
+            achievementsBtn: '🏆 Prestationer',
+
+            // Paus
+            paused: '⏸️ Pausad',
+            pauseHint: 'Tryck ESC eller P för att fortsätta',
+            resumeBtn: 'Fortsätt',
+
+            // Daglig utmaning
+            dailyTitle: '📅 Daglig utmaning',
+            todayDate: 'Idag',
+            todayBest: 'Bäst idag',
+            attempts: 'Försök',
+            dailyHint: 'Samma nivå för alla, slå ditt rekord!',
+            startChallenge: 'Starta utmaning',
+            back: 'Tillbaka',
+            challengeOver: '📅 Utmaning klar',
+            newRecord: '🎉 Nytt rekord!',
+            todayHighScore: 'Bäst idag',
+            todayAttempts: 'Försök idag',
+            times: 'gånger',
+            retry: 'Försök igen',
+            backHome: 'Startsida',
+
+            // Skins
+            skinTitle: '👕 Skins',
+            skinUnlocked: 'Upplåst',
+            skinLocked: '🔒',
+            skinUnlockAt: 'poäng krävs',
+
+            // Topplista
+            leaderboardTitle: '📊 Topplista',
+            rank: 'Plats',
+            lbScore: 'Poäng',
+            lbCombo: 'Combo',
+            lbDate: 'Datum',
+            clearRecords: 'Rensa allt',
+            clearConfirm: 'Är du säker på att du vill rensa alla rekord?',
+            noRecords: 'Inga rekord',
+
+            // Prestationer
+            achievementsTitle: '🏆 Prestationer',
+            achievementUnlock: 'Prestation upplåst!',
+
+            // Statistik
+            statsTitle: '📈 Spelstatistik',
+            totalGames: 'Totalt antal spel',
+            totalChops: 'Totalt antal hugg',
+            totalTime: 'Total speltid',
+            bestCombo: 'Bästa combo',
+            avgScore: 'Genomsnittlig poäng',
+            unlockedAchievements: '🎖️ Prestationer',
+            unlockedSkins: '👕 Skins',
+            dailyAttempts: '📅 Dagliga utmaningar',
+            resetStats: 'Återställ',
+            resetConfirm: 'Är du säker på att du vill återställa all statistik? Detta kan inte ångras.',
+
+            // Handledning
+            tutorialWelcome: 'Välkommen till Skogshuggare!',
+            tutorialWelcome1: 'Du är en modig skogshuggare',
+            tutorialWelcome2: 'Hugga så många träd du kan',
+            tutorialWelcome3: 'Medan du undviker farliga grenar',
+            tutorialControls: 'Kontroller',
+            tutorialMoveLeft: 'Gå vänster och hugga',
+            tutorialMoveRight: 'Gå höger och hugga',
+            tutorialTouchHint: 'Eller tryck på vänster/höger sida av skärmen',
+            tutorialBranch: 'Undvik grenar!',
+            tutorialBranchWarn: 'Träffa gren = Spelet slut!',
+            tutorialBranchHint: 'Titta innan du hugger',
+            tutorialTime: 'Tidshantering',
+            tutorialTimeHint1: 'Tidsfältet minskar konstant',
+            tutorialTimeHint2: 'Varje hugg ger',
+            tutorialTimeHint3: '+tid',
+            tutorialTimeHint4: 'Tiden slut = Spelet slut',
+            tutorialAdvanced: 'Avancerade tips',
+            tutorialCombo: 'Combo',
+            tutorialComboHint: 'Hugga snabbt för högre poäng',
+            tutorialDifficulty: 'Svårighet',
+            tutorialDifficultyHint: 'Ju högre poäng, desto svårare',
+            tutorialAchievement: 'Prestationer',
+            tutorialAchievementHint: 'Lås upp 12 prestationer',
+            tutorialSkin: 'Skins',
+            tutorialSkinHint: 'Höga poäng låser upp nya skins',
+            skip: 'Hoppa över',
+            prev: 'Föregående',
+            next: 'Nästa',
+            finish: 'Slutför',
+
+            // Tryck tips
+            tapLeft: '← Tryck vänster',
+            tapRight: 'Tryck höger →',
+
+            // Voluminställningar
+            volumeSettings: '🎵 Ljudinställningar',
+            sfxVolume: '🔊 Ljudeffekter',
+            bgmVolume: '🎵 Musik',
+            vibration: '📳 Vibration',
+
+            // Popup
+            skinUnlockPopup: 'Ny skin upplåst!',
+
+            // Replay system
+            replayBtn: '🎬 Repris',
+            replayTitle: '🎬 Senaste spelet',
+            replayScore: 'Poäng',
+            replayCombo: 'Max combo',
+            replayChops: 'Hugg',
+            replayDuration: 'Längd',
+            replayStart: 'Starta repris',
+            replayStop: 'Stoppa',
+            replayNoData: 'Ingen data',
+            replayPlaying: '🎬 Spelar...',
+            replaySeconds: 's',
+
+            // Dela
+            shareBtn: '📤 Dela',
+            shareTitle: 'Skogshuggare',
+            shareScoreLabel: 'Poäng',
+            shareComboLabel: 'Combo',
+            shareLevelLabel: 'Nivå',
+            shareHighScoreLabel: 'Rekord',
+            shareDownloading: 'Genererar bild...',
+            shareSuccess: 'Bilden sparad!',
+            shareFailed: 'Delning misslyckades, försök igen',
+            sharePanelTitle: '📤 Dela poäng',
+            shareNativeBtn: '📱 Dela',
+            shareDownloadBtn: '💾 Spara bild',
+            shareCopyBtn: '📋 Kopiera text',
+            shareCopySuccess: '✓ Kopierat till urklipp!',
+
+            // Oändligt läge
+            endlessBtn: '∞ Oändligt läge',
+            endlessTitle: '∞ Oändligt läge',
+            endlessDesc: 'Ingen tidsgräns, testa din fokus!',
+            endlessBest: 'Bästa poäng',
+            endlessTotal: 'Totalt antal spel',
+            endlessStart: 'Starta utmaning',
+            endlessOver: '∞ Utmaning klar',
+            endlessNewRecord: '🎉 Nytt rekord!',
+            endlessHint: 'Bara undvik grenar, ingen tidspress',
+
+            // Nedräkning
+            countdownGo: 'KÖR!',
+
+            // Tema
+            themeDarkTip: 'Byt till mörkt läge',
+            themeLightTip: 'Byt till ljust läge',
+
+            // Hastighetsinställningar
+            speedBtn: '⚡ Hastighet',
+            speedTitle: '⚡ Spelhastighet',
+            speedSelectDesc: 'Välj din önskade spelhastighet',
+            speedSlow: '🐢 Långsam',
+            speedNormal: '🚶 Normal',
+            speedFast: '🏃 Snabb',
+            speedSlowDesc: 'Långsammare tidsminskning, för nybörjare',
+            speedNormalDesc: 'Standard spelhastighet',
+            speedFastDesc: 'Snabbare tidsminskning, utmaningsläge',
+            speedCurrent: 'Nuvarande',
+
+            // Skin namn
+            skinNames: {
+                default: 'Skogshuggare',
+                ninja: 'Ninja',
+                robot: 'Robot',
+                golden: 'Gyllene legend',
+                santa: 'Jultomten',
+                pumpkin: 'Pumpahuvud',
+                pirate: 'Piratkapten',
+                snowman: 'Snögubbe',
+                chinese_new_year: 'Lyckans gud',
+                valentine: 'Cupido',
+                easter_bunny: 'Påskharen',
+                summer_surfer: 'Sommarsurfare'
+            },
+            skinDescs: {
+                default: 'Klassisk skogshuggare i röd tröja',
+                ninja: 'Mystisk ninja i svart',
+                robot: 'Mekanisk skogshuggare av stål',
+                golden: 'Legendarisk gyllene skogshuggare',
+                santa: 'Glad julhuggare',
+                pumpkin: 'Skrämmande Halloween-huggare',
+                pirate: 'Modig havsäventyrare',
+                snowman: 'Skogshuggare från isvärlden',
+                chinese_new_year: 'Gott Nytt År! Lycka till!',
+                valentine: 'Kärleksgud som sprider kärlek',
+                easter_bunny: 'Söt kanin med påskägg',
+                summer_surfer: 'Cool strandsurfare'
+            },
+
+            // Prestation namn
+            achievementNames: {
+                first_chop: 'Första hugg',
+                score_10: 'Nybörjarhuggare',
+                score_50: 'Erfaren huggare',
+                score_100: 'Professionell huggare',
+                score_200: 'Mästarhuggare',
+                combo_5: 'Mini combo',
+                combo_10: 'Combo expert',
+                combo_20: 'Combo kung',
+                level_5: 'Nivå 5',
+                level_8: 'Nivå 8',
+                level_max: 'Max nivå',
+                close_call: 'På håret'
+            },
+            achievementDescs: {
+                first_chop: 'Hugga ditt första träd',
+                score_10: 'Få 10 poäng i ett spel',
+                score_50: 'Få 50 poäng i ett spel',
+                score_100: 'Få 100 poäng i ett spel',
+                score_200: 'Få 200 poäng i ett spel',
+                combo_5: 'Nå en 5-combo',
+                combo_10: 'Nå en 10-combo',
+                combo_20: 'Nå en 20-combo',
+                level_5: 'Nå svårighetsgrad 5',
+                level_8: 'Nå svårighetsgrad 8',
+                level_max: 'Nå maximal svårighetsgrad 11',
+                close_call: 'Hugga 20 gånger när tiden är under 10%'
+            }
+        },
+
+        // ============ 芬兰语 (Finnish) ============
+        fi: {
+            // Otsikko
+            title: 'Metsuri',
+
+            // Aloitusnäyttö
+            startTitle: 'Metsuri',
+            startHint1: 'Paina ← → tai A/D hakataksesi',
+            startHint2: 'Napauta ruudun vasenta/oikeaa puolta',
+            startHint3: 'Vältä oksia, voita aika!',
+            startHint4: 'Välilyönti/Enter Aloita | ESC/P Tauko',
+            startBtn: 'Aloita peli',
+            dailyBtn: '📅 Päivän haaste',
+            skinBtn: '👕 Ulkoasut',
+            leaderboardBtn: '📊 Tuloslista',
+            statsBtn: '📈 Tilastot',
+            tutorialBtn: '❓ Opas',
+
+            // Peli ohi
+            gameOver: 'Peli ohi',
+            score: 'Pisteet',
+            maxCombo: 'Paras combo',
+            highScore: 'Ennätys',
+            restartBtn: 'Yritä uudelleen',
+            achievementsBtn: '🏆 Saavutukset',
+
+            // Tauko
+            paused: '⏸️ Tauolla',
+            pauseHint: 'Paina ESC tai P jatkaaksesi',
+            resumeBtn: 'Jatka',
+
+            // Päivän haaste
+            dailyTitle: '📅 Päivän haaste',
+            todayDate: 'Tänään',
+            todayBest: 'Päivän paras',
+            attempts: 'Yritykset',
+            dailyHint: 'Sama taso kaikille, voita ennätyksesi!',
+            startChallenge: 'Aloita haaste',
+            back: 'Takaisin',
+            challengeOver: '📅 Haaste päättyi',
+            newRecord: '🎉 Uusi ennätys!',
+            todayHighScore: 'Päivän paras',
+            todayAttempts: 'Yritykset tänään',
+            times: 'kertaa',
+            retry: 'Yritä uudelleen',
+            backHome: 'Alkuun',
+
+            // Ulkoasut
+            skinTitle: '👕 Ulkoasut',
+            skinUnlocked: 'Avattu',
+            skinLocked: '🔒',
+            skinUnlockAt: 'pistettä vaaditaan',
+
+            // Tuloslista
+            leaderboardTitle: '📊 Tuloslista',
+            rank: 'Sija',
+            lbScore: 'Pisteet',
+            lbCombo: 'Combo',
+            lbDate: 'Päivämäärä',
+            clearRecords: 'Tyhjennä',
+            clearConfirm: 'Haluatko varmasti tyhjentää kaikki tulokset?',
+            noRecords: 'Ei tuloksia',
+
+            // Saavutukset
+            achievementsTitle: '🏆 Saavutukset',
+            achievementUnlock: 'Saavutus avattu!',
+
+            // Tilastot
+            statsTitle: '📈 Pelitilastot',
+            totalGames: 'Pelejä yhteensä',
+            totalChops: 'Hakkauksia yhteensä',
+            totalTime: 'Peliaika yhteensä',
+            bestCombo: 'Paras combo',
+            avgScore: 'Keskimääräiset pisteet',
+            unlockedAchievements: '🎖️ Saavutukset',
+            unlockedSkins: '👕 Ulkoasut',
+            dailyAttempts: '📅 Päivän haasteet',
+            resetStats: 'Nollaa',
+            resetConfirm: 'Haluatko varmasti nollata kaikki tilastot? Tätä ei voi perua.',
+
+            // Opas
+            tutorialWelcome: 'Tervetuloa Metsuri-peliin!',
+            tutorialWelcome1: 'Olet rohkea metsuri',
+            tutorialWelcome2: 'Tavoitteesi on hakata mahdollisimman monta puuta',
+            tutorialWelcome3: 'Samalla vältellen vaarallisia oksia',
+            tutorialControls: 'Ohjaus',
+            tutorialMoveLeft: 'Siirry vasemmalle ja hakkaa',
+            tutorialMoveRight: 'Siirry oikealle ja hakkaa',
+            tutorialTouchHint: 'Tai napauta ruudun vasenta/oikeaa puolta',
+            tutorialBranch: 'Vältä oksia!',
+            tutorialBranchWarn: 'Osumat oksaan = Peli ohi!',
+            tutorialBranchHint: 'Katso ennen hakkausta',
+            tutorialTime: 'Ajanhallinta',
+            tutorialTimeHint1: 'Aikapalkki vähenee jatkuvasti',
+            tutorialTimeHint2: 'Jokainen hakkaus antaa',
+            tutorialTimeHint3: '+aikaa',
+            tutorialTimeHint4: 'Aika loppuu = Peli ohi',
+            tutorialAdvanced: 'Edistyneet vinkit',
+            tutorialCombo: 'Combo',
+            tutorialComboHint: 'Hakkaa nopeasti saadaksesi lisäpisteitä',
+            tutorialDifficulty: 'Vaikeus',
+            tutorialDifficultyHint: 'Mitä enemmän pisteitä, sitä vaikeampaa',
+            tutorialAchievement: 'Saavutukset',
+            tutorialAchievementHint: 'Avaa 12 saavutusta',
+            tutorialSkin: 'Ulkoasut',
+            tutorialSkinHint: 'Korkeat pisteet avaavat uusia ulkoasuja',
+            skip: 'Ohita',
+            prev: 'Edellinen',
+            next: 'Seuraava',
+            finish: 'Valmis',
+
+            // Kosketusvihjeet
+            tapLeft: '← Napauta vasemmalle',
+            tapRight: 'Napauta oikealle →',
+
+            // Ääniasetukset
+            volumeSettings: '🎵 Ääniasetukset',
+            sfxVolume: '🔊 Äänitehosteet',
+            bgmVolume: '🎵 Musiikki',
+            vibration: '📳 Värinä',
+
+            // Ponnahdusikkunat
+            skinUnlockPopup: 'Uusi ulkoasu avattu!',
+
+            // Toistojärjestelmä
+            replayBtn: '🎬 Toisto',
+            replayTitle: '🎬 Viimeisin peli',
+            replayScore: 'Pisteet',
+            replayCombo: 'Paras combo',
+            replayChops: 'Hakkaukset',
+            replayDuration: 'Kesto',
+            replayStart: 'Aloita toisto',
+            replayStop: 'Pysäytä',
+            replayNoData: 'Ei dataa',
+            replayPlaying: '🎬 Toistetaan...',
+            replaySeconds: 's',
+
+            // Jakaminen
+            shareBtn: '📤 Jaa',
+            shareTitle: 'Metsuri',
+            shareScoreLabel: 'Pisteet',
+            shareComboLabel: 'Combo',
+            shareLevelLabel: 'Taso',
+            shareHighScoreLabel: 'Ennätys',
+            shareDownloading: 'Luodaan kuvaa...',
+            shareSuccess: 'Kuva tallennettu!',
+            shareFailed: 'Jakaminen epäonnistui, yritä uudelleen',
+            sharePanelTitle: '📤 Jaa tulos',
+            shareNativeBtn: '📱 Jaa',
+            shareDownloadBtn: '💾 Tallenna kuva',
+            shareCopyBtn: '📋 Kopioi teksti',
+            shareCopySuccess: '✓ Kopioitu leikepöydälle!',
+
+            // Loputon tila
+            endlessBtn: '∞ Loputon tila',
+            endlessTitle: '∞ Loputon tila',
+            endlessDesc: 'Ei aikarajaa, testaa keskittymiskykyäsi!',
+            endlessBest: 'Paras tulos',
+            endlessTotal: 'Pelejä yhteensä',
+            endlessStart: 'Aloita haaste',
+            endlessOver: '∞ Haaste päättyi',
+            endlessNewRecord: '🎉 Uusi ennätys!',
+            endlessHint: 'Vältä vain oksia, ei aikapainetta',
+
+            // Lähtölaskenta
+            countdownGo: 'MENE!',
+
+            // Teema
+            themeDarkTip: 'Vaihda tummaan tilaan',
+            themeLightTip: 'Vaihda valoisaan tilaan',
+
+            // Nopeusasetukset
+            speedBtn: '⚡ Nopeus',
+            speedTitle: '⚡ Pelinopeus',
+            speedSelectDesc: 'Valitse haluamasi pelinopeus',
+            speedSlow: '🐢 Hidas',
+            speedNormal: '🚶 Normaali',
+            speedFast: '🏃 Nopea',
+            speedSlowDesc: 'Hitaampi ajanvähennys, aloittelijoille',
+            speedNormalDesc: 'Oletus pelinopeus',
+            speedFastDesc: 'Nopeampi ajanvähennys, haasteellinen',
+            speedCurrent: 'Nykyinen',
+
+            // Ulkoasujen nimet
+            skinNames: {
+                default: 'Metsuri',
+                ninja: 'Ninja',
+                robot: 'Robotti',
+                golden: 'Kultainen legenda',
+                santa: 'Joulupukki',
+                pumpkin: 'Kurpitsapää',
+                pirate: 'Merirosvokapteeni',
+                snowman: 'Lumiukko',
+                chinese_new_year: 'Onnen jumala',
+                valentine: 'Cupido',
+                easter_bunny: 'Pääsiäispupu',
+                summer_surfer: 'Kesäsurffaaja'
+            },
+            skinDescs: {
+                default: 'Klassinen punapaitainen metsuri',
+                ninja: 'Mystinen ninja mustissa',
+                robot: 'Teräksinen mekaaninen metsuri',
+                golden: 'Legendaarinen kultainen metsuri',
+                santa: 'Iloinen joulumetsuri',
+                pumpkin: 'Pelottava Halloween-metsuri',
+                pirate: 'Rohkea meriseikkailija',
+                snowman: 'Metsuri jäämaailmasta',
+                chinese_new_year: 'Hyvää uutta vuotta! Onnea!',
+                valentine: 'Rakkauden jumala levittää rakkautta',
+                easter_bunny: 'Söpö pupu pääsiäismunilla',
+                summer_surfer: 'Siisti rantasurffaaja'
+            },
+
+            // Saavutusten nimet
+            achievementNames: {
+                first_chop: 'Ensimmäinen hakkaus',
+                score_10: 'Aloittelija metsuri',
+                score_50: 'Kokenut metsuri',
+                score_100: 'Ammattimetsuri',
+                score_200: 'Mestari metsuri',
+                combo_5: 'Mini combo',
+                combo_10: 'Combo-asiantuntija',
+                combo_20: 'Combo-kuningas',
+                level_5: 'Taso 5',
+                level_8: 'Taso 8',
+                level_max: 'Maksimitaso',
+                close_call: 'Täpärä tilanne'
+            },
+            achievementDescs: {
+                first_chop: 'Hakkaa ensimmäinen puusi',
+                score_10: 'Saa 10 pistettä yhdessä pelissä',
+                score_50: 'Saa 50 pistettä yhdessä pelissä',
+                score_100: 'Saa 100 pistettä yhdessä pelissä',
+                score_200: 'Saa 200 pistettä yhdessä pelissä',
+                combo_5: 'Saavuta 5-combo',
+                combo_10: 'Saavuta 10-combo',
+                combo_20: 'Saavuta 20-combo',
+                level_5: 'Saavuta vaikeustaso 5',
+                level_8: 'Saavuta vaikeustaso 8',
+                level_max: 'Saavuta maksimivaikeustaso 11',
+                close_call: 'Hakkaa 20 kertaa kun aikaa on alle 10%'
+            }
+        },
+
+        // ============ 挪威语 (Norwegian) ============
+        no: {
+            // Tittel
+            title: 'Tømmerhugger',
+
+            // Startskjerm
+            startTitle: 'Tømmerhugger',
+            startHint1: 'Trykk ← → eller A/D for å hogge',
+            startHint2: 'Trykk på venstre/høyre side av skjermen',
+            startHint3: 'Unngå grener, slå klokken!',
+            startHint4: 'Mellomrom/Enter Start | ESC/P Pause',
+            startBtn: 'Start spill',
+            dailyBtn: '📅 Daglig utfordring',
+            skinBtn: '👕 Skinn',
+            leaderboardBtn: '📊 Poengtavle',
+            statsBtn: '📈 Statistikk',
+            tutorialBtn: '❓ Veiledning',
+
+            // Spillet slutt
+            gameOver: 'Spillet slutt',
+            score: 'Poeng',
+            maxCombo: 'Maks kombo',
+            highScore: 'Rekord',
+            restartBtn: 'Prøv igjen',
+            achievementsBtn: '🏆 Prestasjoner',
+
+            // Pause
+            paused: '⏸️ Pauset',
+            pauseHint: 'Trykk ESC eller P for å fortsette',
+            resumeBtn: 'Fortsett',
+
+            // Daglig utfordring
+            dailyTitle: '📅 Daglig utfordring',
+            todayDate: 'I dag',
+            todayBest: 'Dagens beste',
+            attempts: 'Forsøk',
+            dailyHint: 'Samme nivå for alle, slå din rekord!',
+            startChallenge: 'Start utfordring',
+            back: 'Tilbake',
+            challengeOver: '📅 Utfordring fullført',
+            newRecord: '🎉 Ny rekord!',
+            todayHighScore: 'Dagens beste',
+            todayAttempts: 'Forsøk i dag',
+            times: 'ganger',
+            retry: 'Prøv igjen',
+            backHome: 'Hjem',
+
+            // Skinn
+            skinTitle: '👕 Skinn',
+            skinUnlocked: 'Låst opp',
+            skinLocked: '🔒',
+            skinUnlockAt: 'poeng kreves',
+
+            // Poengtavle
+            leaderboardTitle: '📊 Poengtavle',
+            rank: 'Plass',
+            lbScore: 'Poeng',
+            lbCombo: 'Kombo',
+            lbDate: 'Dato',
+            clearRecords: 'Slett alt',
+            clearConfirm: 'Er du sikker på at du vil slette alle rekorder?',
+            noRecords: 'Ingen rekorder',
+
+            // Prestasjoner
+            achievementsTitle: '🏆 Prestasjoner',
+            achievementUnlock: 'Prestasjon låst opp!',
+
+            // Statistikk
+            statsTitle: '📈 Spillstatistikk',
+            totalGames: 'Totalt antall spill',
+            totalChops: 'Totalt antall hugg',
+            totalTime: 'Total spilletid',
+            bestCombo: 'Beste kombo',
+            avgScore: 'Gjennomsnittspoeng',
+            unlockedAchievements: '🎖️ Prestasjoner',
+            unlockedSkins: '👕 Skinn',
+            dailyAttempts: '📅 Daglige utfordringer',
+            resetStats: 'Nullstill',
+            resetConfirm: 'Er du sikker på at du vil nullstille all statistikk? Dette kan ikke angres.',
+
+            // Veiledning
+            tutorialWelcome: 'Velkommen til Tømmerhugger!',
+            tutorialWelcome1: 'Du er en modig tømmerhugger',
+            tutorialWelcome2: 'Hogg så mange trær du kan',
+            tutorialWelcome3: 'Mens du unngår farlige grener',
+            tutorialControls: 'Kontroller',
+            tutorialMoveLeft: 'Gå til venstre og hogg',
+            tutorialMoveRight: 'Gå til høyre og hogg',
+            tutorialTouchHint: 'Eller trykk på venstre/høyre side av skjermen',
+            tutorialBranch: 'Unngå grener!',
+            tutorialBranchWarn: 'Treff gren = Spillet slutt!',
+            tutorialBranchHint: 'Se før du hogger',
+            tutorialTime: 'Tidshåndtering',
+            tutorialTimeHint1: 'Tidsfeltet minsker konstant',
+            tutorialTimeHint2: 'Hvert hugg gir',
+            tutorialTimeHint3: '+tid',
+            tutorialTimeHint4: 'Tiden ute = Spillet slutt',
+            tutorialAdvanced: 'Avanserte tips',
+            tutorialCombo: 'Kombo',
+            tutorialComboHint: 'Hogg raskt for høyere poeng',
+            tutorialDifficulty: 'Vanskelighetsgrad',
+            tutorialDifficultyHint: 'Jo høyere poeng, desto vanskeligere',
+            tutorialAchievement: 'Prestasjoner',
+            tutorialAchievementHint: 'Lås opp 12 prestasjoner',
+            tutorialSkin: 'Skinn',
+            tutorialSkinHint: 'Høye poeng låser opp nye skinn',
+            skip: 'Hopp over',
+            prev: 'Forrige',
+            next: 'Neste',
+            finish: 'Fullfør',
+
+            // Trykk tips
+            tapLeft: '← Trykk venstre',
+            tapRight: 'Trykk høyre →',
+
+            // Lydinnstillinger
+            volumeSettings: '🎵 Lydinnstillinger',
+            sfxVolume: '🔊 Lydeffekter',
+            bgmVolume: '🎵 Musikk',
+            vibration: '📳 Vibrasjon',
+
+            // Popup
+            skinUnlockPopup: 'Nytt skinn låst opp!',
+
+            // Replay system
+            replayBtn: '🎬 Avspilling',
+            replayTitle: '🎬 Forrige spill',
+            replayScore: 'Poeng',
+            replayCombo: 'Maks kombo',
+            replayChops: 'Hugg',
+            replayDuration: 'Varighet',
+            replayStart: 'Start avspilling',
+            replayStop: 'Stopp',
+            replayNoData: 'Ingen data',
+            replayPlaying: '🎬 Spiller...',
+            replaySeconds: 's',
+
+            // Deling
+            shareBtn: '📤 Del',
+            shareTitle: 'Tømmerhugger',
+            shareScoreLabel: 'Poeng',
+            shareComboLabel: 'Kombo',
+            shareLevelLabel: 'Nivå',
+            shareHighScoreLabel: 'Rekord',
+            shareDownloading: 'Genererer bilde...',
+            shareSuccess: 'Bildet lagret!',
+            shareFailed: 'Deling mislyktes, prøv igjen',
+            sharePanelTitle: '📤 Del poeng',
+            shareNativeBtn: '📱 Del',
+            shareDownloadBtn: '💾 Lagre bilde',
+            shareCopyBtn: '📋 Kopier tekst',
+            shareCopySuccess: '✓ Kopiert til utklippstavlen!',
+
+            // Uendelig modus
+            endlessBtn: '∞ Uendelig modus',
+            endlessTitle: '∞ Uendelig modus',
+            endlessDesc: 'Ingen tidsbegrensning, test fokuset ditt!',
+            endlessBest: 'Beste poeng',
+            endlessTotal: 'Totalt antall spill',
+            endlessStart: 'Start utfordring',
+            endlessOver: '∞ Utfordring fullført',
+            endlessNewRecord: '🎉 Ny rekord!',
+            endlessHint: 'Bare unngå grener, ingen tidspress',
+
+            // Nedtelling
+            countdownGo: 'KJØR!',
+
+            // Tema
+            themeDarkTip: 'Bytt til mørk modus',
+            themeLightTip: 'Bytt til lys modus',
+
+            // Hastighetsinnstillinger
+            speedBtn: '⚡ Hastighet',
+            speedTitle: '⚡ Spillhastighet',
+            speedSelectDesc: 'Velg din foretrukne spillhastighet',
+            speedSlow: '🐢 Langsom',
+            speedNormal: '🚶 Normal',
+            speedFast: '🏃 Rask',
+            speedSlowDesc: 'Langsommere tidsreduksjon, for nybegynnere',
+            speedNormalDesc: 'Standard spillhastighet',
+            speedFastDesc: 'Raskere tidsreduksjon, utfordringsmodus',
+            speedCurrent: 'Nåværende',
+
+            // Skinn navn
+            skinNames: {
+                default: 'Tømmerhugger',
+                ninja: 'Ninja',
+                robot: 'Robot',
+                golden: 'Gyllen legende',
+                santa: 'Julenissen',
+                pumpkin: 'Gresshode',
+                pirate: 'Piratkapten',
+                snowman: 'Snømann',
+                chinese_new_year: 'Lykkegud',
+                valentine: 'Cupido',
+                easter_bunny: 'Påskeharen',
+                summer_surfer: 'Sommersurfer'
+            },
+            skinDescs: {
+                default: 'Klassisk tømmerhugger i rød skjorte',
+                ninja: 'Mystisk ninja i svart',
+                robot: 'Mekanisk tømmerhugger av stål',
+                golden: 'Legendarisk gyllen tømmerhugger',
+                santa: 'Gladtømmerhugger med julestemning',
+                pumpkin: 'Skummel Halloween-hugger',
+                pirate: 'Modig havseventyrere',
+                snowman: 'Tømmerhugger fra isens verden',
+                chinese_new_year: 'Godt Nyttår! Lykke til!',
+                valentine: 'Kjærlighetsgud som sprer kjærlighet',
+                easter_bunny: 'Søt kanin med påskeegg',
+                summer_surfer: 'Kul strandsurfer'
+            },
+
+            // Prestasjon navn
+            achievementNames: {
+                first_chop: 'Første hugg',
+                score_10: 'Nybegynner hugger',
+                score_50: 'Erfaren hugger',
+                score_100: 'Profesjonell hugger',
+                score_200: 'Mester hugger',
+                combo_5: 'Mini kombo',
+                combo_10: 'Kombo ekspert',
+                combo_20: 'Kombo konge',
+                level_5: 'Nivå 5',
+                level_8: 'Nivå 8',
+                level_max: 'Maks nivå',
+                close_call: 'På hengende håret'
+            },
+            achievementDescs: {
+                first_chop: 'Hogg ditt første tre',
+                score_10: 'Få 10 poeng i ett spill',
+                score_50: 'Få 50 poeng i ett spill',
+                score_100: 'Få 100 poeng i ett spill',
+                score_200: 'Få 200 poeng i ett spill',
+                combo_5: 'Nå en 5-kombo',
+                combo_10: 'Nå en 10-kombo',
+                combo_20: 'Nå en 20-kombo',
+                level_5: 'Nå vanskelighetsgrad 5',
+                level_8: 'Nå vanskelighetsgrad 8',
+                level_max: 'Nå maksimal vanskelighetsgrad 11',
+                close_call: 'Hogg 20 ganger når tiden er under 10%'
+            }
+        },
+
+        // ============ 丹麦语 (Danish) ============
+        da: {
+            // Titel
+            title: 'Skovhugger',
+
+            // Startskærm
+            startTitle: 'Skovhugger',
+            startHint1: 'Tryk ← → eller A/D for at hugge',
+            startHint2: 'Tryk på venstre/højre side af skærmen',
+            startHint3: 'Undgå grene, slå uret!',
+            startHint4: 'Mellemrum/Enter Start | ESC/P Pause',
+            startBtn: 'Start spil',
+            dailyBtn: '📅 Daglig udfordring',
+            skinBtn: '👕 Skins',
+            leaderboardBtn: '📊 Rangliste',
+            statsBtn: '📈 Statistik',
+            tutorialBtn: '❓ Vejledning',
+
+            // Spillet slut
+            gameOver: 'Spillet slut',
+            score: 'Point',
+            maxCombo: 'Maks kombo',
+            highScore: 'Rekord',
+            restartBtn: 'Prøv igen',
+            achievementsBtn: '🏆 Præstationer',
+
+            // Pause
+            paused: '⏸️ Pauset',
+            pauseHint: 'Tryk ESC eller P for at fortsætte',
+            resumeBtn: 'Fortsæt',
+
+            // Daglig udfordring
+            dailyTitle: '📅 Daglig udfordring',
+            todayDate: 'I dag',
+            todayBest: 'Dagens bedste',
+            attempts: 'Forsøg',
+            dailyHint: 'Samme niveau for alle, slå din rekord!',
+            startChallenge: 'Start udfordring',
+            back: 'Tilbage',
+            challengeOver: '📅 Udfordring afsluttet',
+            newRecord: '🎉 Ny rekord!',
+            todayHighScore: 'Dagens bedste',
+            todayAttempts: 'Forsøg i dag',
+            times: 'gange',
+            retry: 'Prøv igen',
+            backHome: 'Hjem',
+
+            // Skins
+            skinTitle: '👕 Skins',
+            skinUnlocked: 'Låst op',
+            skinLocked: '🔒',
+            skinUnlockAt: 'point kræves',
+
+            // Rangliste
+            leaderboardTitle: '📊 Rangliste',
+            rank: 'Plads',
+            lbScore: 'Point',
+            lbCombo: 'Kombo',
+            lbDate: 'Dato',
+            clearRecords: 'Slet alt',
+            clearConfirm: 'Er du sikker på, at du vil slette alle rekorder?',
+            noRecords: 'Ingen rekorder',
+
+            // Præstationer
+            achievementsTitle: '🏆 Præstationer',
+            achievementUnlock: 'Præstation låst op!',
+
+            // Statistik
+            statsTitle: '📈 Spilstatistik',
+            totalGames: 'Antal spil i alt',
+            totalChops: 'Antal hugg i alt',
+            totalTime: 'Samlet spilletid',
+            bestCombo: 'Bedste kombo',
+            avgScore: 'Gennemsnitlige point',
+            unlockedAchievements: '🎖️ Præstationer',
+            unlockedSkins: '👕 Skins',
+            dailyAttempts: '📅 Daglige udfordringer',
+            resetStats: 'Nulstil',
+            resetConfirm: 'Er du sikker på, at du vil nulstille al statistik? Dette kan ikke fortrydes.',
+
+            // Vejledning
+            tutorialWelcome: 'Velkommen til Skovhugger!',
+            tutorialWelcome1: 'Du er en modig skovhugger',
+            tutorialWelcome2: 'Hug så mange træer som muligt',
+            tutorialWelcome3: 'Mens du undgår farlige grene',
+            tutorialControls: 'Kontroller',
+            tutorialMoveLeft: 'Gå til venstre og hug',
+            tutorialMoveRight: 'Gå til højre og hug',
+            tutorialTouchHint: 'Eller tryk på venstre/højre side af skærmen',
+            tutorialBranch: 'Undgå grene!',
+            tutorialBranchWarn: 'Rammer du en gren = Spillet slut!',
+            tutorialBranchHint: 'Se før du hugger',
+            tutorialTime: 'Tidsstyring',
+            tutorialTimeHint1: 'Tidslinjen falder konstant',
+            tutorialTimeHint2: 'Hvert hug giver',
+            tutorialTimeHint3: '+tid',
+            tutorialTimeHint4: 'Tiden udløber = Spillet slut',
+            tutorialAdvanced: 'Avancerede tips',
+            tutorialCombo: 'Kombo',
+            tutorialComboHint: 'Hug hurtigt for højere point',
+            tutorialDifficulty: 'Sværhedsgrad',
+            tutorialDifficultyHint: 'Jo højere point, desto sværere',
+            tutorialAchievement: 'Præstationer',
+            tutorialAchievementHint: 'Lås op for 12 præstationer',
+            tutorialSkin: 'Skins',
+            tutorialSkinHint: 'Høje point låser nye skins op',
+            skip: 'Spring over',
+            prev: 'Forrige',
+            next: 'Næste',
+            finish: 'Færdig',
+
+            // Tryk tips
+            tapLeft: '← Tryk venstre',
+            tapRight: 'Tryk højre →',
+
+            // Lydindstillinger
+            volumeSettings: '🎵 Lydindstillinger',
+            sfxVolume: '🔊 Lydeffekter',
+            bgmVolume: '🎵 Musik',
+            vibration: '📳 Vibration',
+
+            // Popup
+            skinUnlockPopup: 'Nyt skin låst op!',
+
+            // Replay system
+            replayBtn: '🎬 Afspilning',
+            replayTitle: '🎬 Forrige spil',
+            replayScore: 'Point',
+            replayCombo: 'Maks kombo',
+            replayChops: 'Hugg',
+            replayDuration: 'Varighed',
+            replayStart: 'Start afspilning',
+            replayStop: 'Stop',
+            replayNoData: 'Ingen data',
+            replayPlaying: '🎬 Afspiller...',
+            replaySeconds: 's',
+
+            // Deling
+            shareBtn: '📤 Del',
+            shareTitle: 'Skovhugger',
+            shareScoreLabel: 'Point',
+            shareComboLabel: 'Kombo',
+            shareLevelLabel: 'Niveau',
+            shareHighScoreLabel: 'Rekord',
+            shareDownloading: 'Genererer billede...',
+            shareSuccess: 'Billedet gemt!',
+            shareFailed: 'Deling mislykkedes, prøv igen',
+            sharePanelTitle: '📤 Del point',
+            shareNativeBtn: '📱 Del',
+            shareDownloadBtn: '💾 Gem billede',
+            shareCopyBtn: '📋 Kopier tekst',
+            shareCopySuccess: '✓ Kopieret til udklipsholder!',
+
+            // Uendelig tilstand
+            endlessBtn: '∞ Uendelig tilstand',
+            endlessTitle: '∞ Uendelig tilstand',
+            endlessDesc: 'Ingen tidsbegrænsning, test dit fokus!',
+            endlessBest: 'Bedste point',
+            endlessTotal: 'Antal spil i alt',
+            endlessStart: 'Start udfordring',
+            endlessOver: '∞ Udfordring afsluttet',
+            endlessNewRecord: '🎉 Ny rekord!',
+            endlessHint: 'Undgå kun grene, intet tidspres',
+
+            // Nedtælling
+            countdownGo: 'KØR!',
+
+            // Tema
+            themeDarkTip: 'Skift til mørk tilstand',
+            themeLightTip: 'Skift til lys tilstand',
+
+            // Hastighedsindstillinger
+            speedBtn: '⚡ Hastighed',
+            speedTitle: '⚡ Spilhastighed',
+            speedSelectDesc: 'Vælg din foretrukne spilhastighed',
+            speedSlow: '🐢 Langsom',
+            speedNormal: '🚶 Normal',
+            speedFast: '🏃 Hurtig',
+            speedSlowDesc: 'Langsommere tidsreduktion, for begyndere',
+            speedNormalDesc: 'Standard spilhastighed',
+            speedFastDesc: 'Hurtigere tidsreduktion, udfordringstilstand',
+            speedCurrent: 'Nuværende',
+
+            // Skin navne
+            skinNames: {
+                default: 'Skovhugger',
+                ninja: 'Ninja',
+                robot: 'Robot',
+                golden: 'Gylden legende',
+                santa: 'Julemanden',
+                pumpkin: 'Græskarhoved',
+                pirate: 'Piratkaptajn',
+                snowman: 'Snemand',
+                chinese_new_year: 'Lykkegud',
+                valentine: 'Cupido',
+                easter_bunny: 'Påskeharen',
+                summer_surfer: 'Sommersurfer'
+            },
+            skinDescs: {
+                default: 'Klassisk skovhugger i rød skjorte',
+                ninja: 'Mystisk ninja i sort',
+                robot: 'Mekanisk skovhugger af stål',
+                golden: 'Legendarisk gylden skovhugger',
+                santa: 'Glad skovhugger med julestemning',
+                pumpkin: 'Uhyggelig Halloween-hugger',
+                pirate: 'Modig havseventyreren',
+                snowman: 'Skovhugger fra isens verden',
+                chinese_new_year: 'Godt Nytår! Held og lykke!',
+                valentine: 'Kærlighedsgud der spreder kærlighed',
+                easter_bunny: 'Sød kanin med påskeæg',
+                summer_surfer: 'Sej strandsurfer'
+            },
+
+            // Præstation navne
+            achievementNames: {
+                first_chop: 'Første hug',
+                score_10: 'Begynderhugger',
+                score_50: 'Erfaren hugger',
+                score_100: 'Professionel hugger',
+                score_200: 'Mesterhugger',
+                combo_5: 'Mini kombo',
+                combo_10: 'Kombo ekspert',
+                combo_20: 'Kombo konge',
+                level_5: 'Niveau 5',
+                level_8: 'Niveau 8',
+                level_max: 'Maks niveau',
+                close_call: 'På et hængende hår'
+            },
+            achievementDescs: {
+                first_chop: 'Hug dit første træ',
+                score_10: 'Få 10 point i ét spil',
+                score_50: 'Få 50 point i ét spil',
+                score_100: 'Få 100 point i ét spil',
+                score_200: 'Få 200 point i ét spil',
+                combo_5: 'Nå en 5-kombo',
+                combo_10: 'Nå en 10-kombo',
+                combo_20: 'Nå en 20-kombo',
+                level_5: 'Nå sværhedsgrad 5',
+                level_8: 'Nå sværhedsgrad 8',
+                level_max: 'Nå maksimal sværhedsgrad 11',
+                close_call: 'Hug 20 gange når tiden er under 10%'
+            }
         }
     },
 
     // 支持的语言列表（循环切换顺序）
-    langOrder: ['zh', 'en', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'it', 'ru', 'tr'],
+    langOrder: ['zh', 'en', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'it', 'ru', 'tr', 'pl', 'nl', 'sv', 'fi', 'no', 'da'],
 
     // 语言按钮显示文本
     langLabels: {
@@ -2953,7 +4425,13 @@ const I18N = {
         de: 'DE',
         it: 'IT',
         ru: 'RU',
-        tr: 'TR'
+        tr: 'TR',
+        pl: 'PL',
+        nl: 'NL',
+        sv: 'SV',
+        fi: 'FI',
+        no: 'NO',
+        da: 'DA'
     },
 
     // 加载语言设置
@@ -2984,6 +4462,18 @@ const I18N = {
                 this.currentLang = 'ru';
             } else if (browserLang.startsWith('tr')) {
                 this.currentLang = 'tr';
+            } else if (browserLang.startsWith('pl')) {
+                this.currentLang = 'pl';
+            } else if (browserLang.startsWith('nl')) {
+                this.currentLang = 'nl';
+            } else if (browserLang.startsWith('sv')) {
+                this.currentLang = 'sv';
+            } else if (browserLang.startsWith('fi')) {
+                this.currentLang = 'fi';
+            } else if (browserLang.startsWith('no') || browserLang.startsWith('nb') || browserLang.startsWith('nn')) {
+                this.currentLang = 'no';
+            } else if (browserLang.startsWith('da')) {
+                this.currentLang = 'da';
             } else {
                 this.currentLang = 'en';
             }
@@ -3028,7 +4518,7 @@ const I18N = {
         const t = this.t;
 
         // 更新HTML lang属性
-        const langCodes = { zh: 'zh-CN', en: 'en', ja: 'ja', ko: 'ko', es: 'es', fr: 'fr', de: 'de', pt: 'pt-BR', it: 'it', ru: 'ru', tr: 'tr' };
+        const langCodes = { zh: 'zh-CN', en: 'en', ja: 'ja', ko: 'ko', es: 'es', fr: 'fr', de: 'de', pt: 'pt-BR', it: 'it', ru: 'ru', tr: 'tr', pl: 'pl', nl: 'nl', sv: 'sv', fi: 'fi', no: 'no', da: 'da' };
         document.documentElement.lang = langCodes[this.currentLang] || 'en';
 
         // 标题
@@ -3257,6 +4747,37 @@ const I18N = {
             if (span) span.textContent = t.replayPlaying;
         }
 
+        // 速度设置界面
+        const speedScreen = document.getElementById('speed-screen');
+        if (speedScreen) {
+            speedScreen.querySelector('h2').textContent = t.speedTitle;
+            const descEl = speedScreen.querySelector('.speed-desc');
+            if (descEl) descEl.textContent = t.speedSelectDesc || '选择适合你的游戏速度';
+            // 更新速度选项文本
+            const items = speedScreen.querySelectorAll('.speed-item');
+            items.forEach(item => {
+                const speed = item.dataset.speed;
+                const nameEl = item.querySelector('.speed-name');
+                const descElItem = item.querySelector('.speed-detail');
+                if (nameEl) {
+                    if (speed === 'slow') nameEl.textContent = t.speedSlow;
+                    if (speed === 'normal') nameEl.textContent = t.speedNormal;
+                    if (speed === 'fast') nameEl.textContent = t.speedFast;
+                }
+                if (descElItem) {
+                    if (speed === 'slow') descElItem.textContent = t.speedSlowDesc;
+                    if (speed === 'normal') descElItem.textContent = t.speedNormalDesc;
+                    if (speed === 'fast') descElItem.textContent = t.speedFastDesc;
+                }
+            });
+        }
+        setBtn('speed-back-btn', t.back);
+
+        // 更新速度按钮显示
+        if (typeof SPEED_SETTING !== 'undefined') {
+            SPEED_SETTING.updateUI();
+        }
+
         // 教程界面
         this.updateTutorialTexts();
 
@@ -3279,7 +4800,13 @@ const I18N = {
                 pt: 'Mudar para Português',
                 it: 'Passa all\'Italiano',
                 ru: 'Переключить на Русский',
-                tr: 'Türkçe\'ye geç'
+                tr: 'Türkçe\'ye geç',
+                pl: 'Przełącz na Polski',
+                nl: 'Overschakelen naar Nederlands',
+                sv: 'Byt till Svenska',
+                fi: 'Vaihda Suomeksi',
+                no: 'Bytt til Norsk',
+                da: 'Skift til Dansk'
             };
             langBtn.title = tooltips[nextLang];
         }
@@ -3408,10 +4935,98 @@ const THEME = {
                 pt: this.current === 'light' ? 'Mudar para tema escuro' : 'Mudar para tema claro',
                 it: this.current === 'light' ? 'Passa al tema scuro' : 'Passa al tema chiaro',
                 ru: this.current === 'light' ? 'Переключить на тёмную тему' : 'Переключить на светлую тему',
-                tr: this.current === 'light' ? 'Karanlık temaya geç' : 'Açık temaya geç'
+                tr: this.current === 'light' ? 'Karanlık temaya geç' : 'Açık temaya geç',
+                pl: this.current === 'light' ? 'Przełącz na ciemny motyw' : 'Przełącz na jasny motyw',
+                nl: this.current === 'light' ? 'Schakel naar donker thema' : 'Schakel naar licht thema',
+                sv: this.current === 'light' ? 'Byt till mörkt tema' : 'Byt till ljust tema',
+                fi: this.current === 'light' ? 'Vaihda tummaan teemaan' : 'Vaihda valoisaan teemaan',
+                no: this.current === 'light' ? 'Bytt til mørk modus' : 'Bytt til lys modus',
+                da: this.current === 'light' ? 'Skift til mørk tilstand' : 'Skift til lys tilstand'
             };
             btn.title = tooltips[I18N.currentLang] || tooltips.en;
         }
+    }
+};
+
+// ============ 速度设置系统 ============
+const SPEED_SETTING = {
+    current: 'normal', // 当前速度: 'slow' | 'normal' | 'fast'
+
+    // 速度配置（与CONFIG.SPEED_MODES一致）
+    modes: {
+        slow: { id: 'slow', decayMultiplier: 0.6, bonusMultiplier: 1.3, icon: '🐢' },
+        normal: { id: 'normal', decayMultiplier: 1.0, bonusMultiplier: 1.0, icon: '🏃' },
+        fast: { id: 'fast', decayMultiplier: 1.5, bonusMultiplier: 0.75, icon: '🚀' }
+    },
+
+    // 加载速度设置
+    load() {
+        const saved = localStorage.getItem('timberman_speed');
+        if (saved && this.modes[saved]) {
+            this.current = saved;
+        }
+        this.apply();
+    },
+
+    // 保存速度设置
+    save() {
+        localStorage.setItem('timberman_speed', this.current);
+    },
+
+    // 应用速度设置
+    apply() {
+        game.speedMode = this.current;
+        this.updateUI();
+    },
+
+    // 设置速度
+    set(speed) {
+        if (this.modes[speed]) {
+            this.current = speed;
+            this.save();
+            this.apply();
+        }
+    },
+
+    // 更新UI显示
+    updateUI() {
+        const items = document.querySelectorAll('.speed-item');
+        items.forEach(item => {
+            if (item.dataset.speed === this.current) {
+                item.classList.add('selected');
+            } else {
+                item.classList.remove('selected');
+            }
+        });
+
+        // 更新开始界面的速度按钮显示
+        const speedBtn = document.getElementById('speed-btn');
+        if (speedBtn) {
+            const mode = this.modes[this.current];
+            speedBtn.textContent = `${mode.icon} ${this.getSpeedName(this.current)}`;
+        }
+    },
+
+    // 获取速度名称（多语言，去掉表情符号前缀）
+    getSpeedName(speed) {
+        const t = I18N.t();
+        const names = {
+            slow: t.speedSlow || '🐢 慢速',
+            normal: t.speedNormal || '🚶 普通',
+            fast: t.speedFast || '🏃 快速'
+        };
+        // 移除表情符号前缀（如 "🐢 慢速" → "慢速"）
+        const name = names[speed] || speed;
+        return name.replace(/^[\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}]\s*/u, '');
+    },
+
+    // 获取当前速度的乘数
+    getDecayMultiplier() {
+        return this.modes[this.current].decayMultiplier;
+    },
+
+    getBonusMultiplier() {
+        return this.modes[this.current].bonusMultiplier;
     }
 };
 
@@ -5374,6 +6989,10 @@ function init() {
         langBtn: document.getElementById('lang-btn'),
         // 主题切换按钮
         themeBtn: document.getElementById('theme-btn'),
+        // 速度选择相关元素
+        speedBtn: document.getElementById('speed-btn'),
+        speedScreen: document.getElementById('speed-screen'),
+        speedBackBtn: document.getElementById('speed-back-btn'),
         // 回放相关元素
         replayBtn: document.getElementById('replay-btn'),
         replayScreen: document.getElementById('replay-screen'),
@@ -5395,7 +7014,11 @@ function init() {
         shareNativeBtn: document.getElementById('share-native-btn'),
         shareDownloadBtn: document.getElementById('share-download-btn'),
         shareCopyBtn: document.getElementById('share-copy-btn'),
-        shareCopyHint: document.getElementById('share-copy-hint')
+        shareCopyHint: document.getElementById('share-copy-hint'),
+        // 速度设置相关元素
+        speedBtn: document.getElementById('speed-btn'),
+        speedScreen: document.getElementById('speed-screen'),
+        speedBackBtn: document.getElementById('speed-back-btn')
     };
 
     // 设置画布
@@ -5437,6 +7060,9 @@ function init() {
 
     // 加载主题设置
     THEME.load();
+
+    // 加载速度设置
+    SPEED_SETTING.load();
 
     // 绑定事件
     bindEvents();
@@ -5578,6 +7204,18 @@ function bindEvents() {
         THEME.toggle();
     });
 
+    // 速度设置按钮
+    elements.speedBtn.addEventListener('click', showSpeedScreen);
+    elements.speedBackBtn.addEventListener('click', hideSpeedScreen);
+    // 速度选项点击
+    document.querySelectorAll('.speed-item').forEach(item => {
+        item.addEventListener('click', () => {
+            SPEED_SETTING.set(item.dataset.speed);
+            // 播放音效反馈
+            audio.play('chop');
+        });
+    });
+
     // 回放按钮
     elements.replayBtn.addEventListener('click', showReplayScreen);
     elements.replayBackBtn.addEventListener('click', hideReplayScreen);
@@ -5655,6 +7293,21 @@ function resetStats() {
         GAME_STATS.clear();
         renderStats();
     }
+}
+
+// ============ 速度设置功能 ============
+
+// 显示速度设置界面
+function showSpeedScreen() {
+    elements.startScreen.classList.add('hidden');
+    elements.speedScreen.classList.remove('hidden');
+    SPEED_SETTING.updateUI();
+}
+
+// 隐藏速度设置界面
+function hideSpeedScreen() {
+    elements.speedScreen.classList.add('hidden');
+    elements.startScreen.classList.remove('hidden');
 }
 
 // ============ 回放功能 ============
