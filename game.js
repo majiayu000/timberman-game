@@ -4651,11 +4651,1475 @@ const I18N = {
                 level_max: 'Φτάσε στο μέγιστο επίπεδο δυσκολίας 11',
                 close_call: 'Κόψε 20 φορές με χρόνο κάτω από 10%'
             }
+        },
+
+        // ============ 捷克语 (Czech) ============
+        cs: {
+            // Název
+            title: 'Dřevorubec',
+
+            // Úvodní obrazovka
+            startTitle: 'Dřevorubec',
+            startHint1: 'Stiskni ← → nebo A/D pro sekání',
+            startHint2: 'Klepni vlevo/vpravo na obrazovku',
+            startHint3: 'Vyhni se větvím, poraz čas!',
+            startHint4: 'Mezerník/Enter Start | ESC/P Pauza',
+            startBtn: 'Spustit hru',
+            dailyBtn: '📅 Denní výzva',
+            skinBtn: '👕 Vzhledy',
+            leaderboardBtn: '📊 Žebříček',
+            statsBtn: '📈 Statistiky',
+            tutorialBtn: '❓ Návod',
+
+            // Konec hry
+            gameOver: 'Konec hry',
+            score: 'Skóre',
+            maxCombo: 'Max kombo',
+            highScore: 'Rekord',
+            restartBtn: 'Zkusit znovu',
+            achievementsBtn: '🏆 Úspěchy',
+
+            // Pauza
+            paused: '⏸️ Pozastaveno',
+            pauseHint: 'Stiskni ESC nebo P pro pokračování',
+            resumeBtn: 'Pokračovat',
+
+            // Denní výzva
+            dailyTitle: '📅 Denní výzva',
+            todayDate: 'Dnes',
+            todayBest: 'Dnešní nejlepší',
+            attempts: 'Pokusy',
+            dailyHint: 'Stejná úroveň pro všechny, překonej svůj rekord!',
+            startChallenge: 'Začít výzvu',
+            back: 'Zpět',
+            challengeOver: '📅 Výzva dokončena',
+            newRecord: '🎉 Nový rekord!',
+            todayHighScore: 'Dnešní nejlepší',
+            todayAttempts: 'Dnešní pokusy',
+            times: 'krát',
+            retry: 'Zkusit znovu',
+            backHome: 'Domů',
+
+            // Vzhledy
+            skinTitle: '👕 Vzhledy',
+            skinUnlocked: 'Odemčeno',
+            skinLocked: '🔒',
+            skinUnlockAt: 'bodů k odemčení',
+
+            // Žebříček
+            leaderboardTitle: '📊 Žebříček',
+            rank: 'Pořadí',
+            lbScore: 'Skóre',
+            lbCombo: 'Kombo',
+            lbDate: 'Datum',
+            clearRecords: 'Smazat vše',
+            clearConfirm: 'Opravdu chceš smazat všechny záznamy?',
+            noRecords: 'Žádné záznamy',
+
+            // Úspěchy
+            achievementsTitle: '🏆 Úspěchy',
+            achievementUnlock: 'Úspěch odemčen!',
+
+            // Statistiky
+            statsTitle: '📈 Statistiky hry',
+            totalGames: 'Celkem her',
+            totalChops: 'Celkem seknutí',
+            totalTime: 'Celkový čas',
+            bestCombo: 'Nejlepší kombo',
+            avgScore: 'Průměrné skóre',
+            unlockedAchievements: '🎖️ Úspěchy',
+            unlockedSkins: '👕 Vzhledy',
+            dailyAttempts: '📅 Denní výzvy',
+            resetStats: 'Resetovat',
+            resetConfirm: 'Opravdu chceš resetovat všechny statistiky? Toto nelze vrátit.',
+
+            // Návod
+            tutorialWelcome: 'Vítej v Dřevorubci!',
+            tutorialWelcome1: 'Jsi statečný dřevorubec',
+            tutorialWelcome2: 'Posekej co nejvíce stromů',
+            tutorialWelcome3: 'Vyhýbej se nebezpečným větvím',
+            tutorialControls: 'Ovládání',
+            tutorialMoveLeft: 'Jdi doleva a sekni',
+            tutorialMoveRight: 'Jdi doprava a sekni',
+            tutorialTouchHint: 'Nebo klepni vlevo/vpravo na obrazovku',
+            tutorialBranch: 'Vyhni se větvím!',
+            tutorialBranchWarn: 'Zásah větví = Konec hry!',
+            tutorialBranchHint: 'Dívej se, než sekneš',
+            tutorialTime: 'Správa času',
+            tutorialTimeHint1: 'Časová lišta neustále klesá',
+            tutorialTimeHint2: 'Každé seknutí dává',
+            tutorialTimeHint3: '+čas',
+            tutorialTimeHint4: 'Čas vyprší = Konec hry',
+            tutorialAdvanced: 'Pokročilé tipy',
+            tutorialCombo: 'Kombo',
+            tutorialComboHint: 'Sekej rychle pro vyšší skóre',
+            tutorialDifficulty: 'Obtížnost',
+            tutorialDifficultyHint: 'Čím vyšší skóre, tím těžší',
+            tutorialAchievement: 'Úspěchy',
+            tutorialAchievementHint: 'Odemkni 12 úspěchů',
+            tutorialSkin: 'Vzhledy',
+            tutorialSkinHint: 'Vysoké skóre odemyká nové vzhledy',
+            skip: 'Přeskočit',
+            prev: 'Předchozí',
+            next: 'Další',
+            finish: 'Dokončit',
+
+            // Tipy pro dotyk
+            tapLeft: '← Klepni vlevo',
+            tapRight: 'Klepni vpravo →',
+
+            // Nastavení hlasitosti
+            volumeSettings: '🎵 Nastavení hlasitosti',
+            sfxVolume: '🔊 Zvukové efekty',
+            bgmVolume: '🎵 Hudba',
+            vibration: '📳 Vibrace',
+
+            // Vyskakovací okno
+            skinUnlockPopup: 'Nový vzhled odemčen!',
+
+            // Systém přehrávání
+            replayBtn: '🎬 Přehrát',
+            replayTitle: '🎬 Předchozí hra',
+            replayScore: 'Skóre',
+            replayCombo: 'Max kombo',
+            replayChops: 'Seknutí',
+            replayDuration: 'Trvání',
+            replayStart: 'Spustit přehrávání',
+            replayStop: 'Zastavit',
+            replayNoData: 'Žádná data',
+            replayPlaying: '🎬 Přehrávání...',
+            replaySeconds: 's',
+
+            // Sdílení
+            shareBtn: '📤 Sdílet',
+            shareTitle: 'Dřevorubec',
+            shareScoreLabel: 'Skóre',
+            shareComboLabel: 'Kombo',
+            shareLevelLabel: 'Úroveň',
+            shareHighScoreLabel: 'Rekord',
+            shareDownloading: 'Generování obrázku...',
+            shareSuccess: 'Obrázek uložen!',
+            shareFailed: 'Sdílení selhalo, zkus to znovu',
+            sharePanelTitle: '📤 Sdílet skóre',
+            shareNativeBtn: '📱 Sdílet',
+            shareDownloadBtn: '💾 Uložit obrázek',
+            shareCopyBtn: '📋 Kopírovat text',
+            shareCopySuccess: '✓ Zkopírováno do schránky!',
+
+            // Nekonečný režim
+            endlessBtn: '∞ Nekonečný režim',
+            endlessTitle: '∞ Nekonečný režim',
+            endlessDesc: 'Bez časového limitu, otestuj svou soustředěnost!',
+            endlessBest: 'Nejlepší skóre',
+            endlessTotal: 'Celkem her',
+            endlessStart: 'Začít výzvu',
+            endlessOver: '∞ Výzva dokončena',
+            endlessNewRecord: '🎉 Nový rekord!',
+            endlessHint: 'Jen se vyhýbej větvím, žádný časový tlak',
+
+            // Odpočet
+            countdownGo: 'JEDEM!',
+
+            // Téma
+            themeDarkTip: 'Přepnout na tmavý režim',
+            themeLightTip: 'Přepnout na světlý režim',
+
+            // Nastavení rychlosti
+            speedBtn: '⚡ Rychlost',
+            speedTitle: '⚡ Rychlost hry',
+            speedSelectDesc: 'Vyber si preferovanou rychlost hry',
+            speedSlow: '🐢 Pomalá',
+            speedNormal: '🚶 Normální',
+            speedFast: '🏃 Rychlá',
+            speedSlowDesc: 'Pomalejší úbytek času, pro začátečníky',
+            speedNormalDesc: 'Výchozí rychlost hry',
+            speedFastDesc: 'Rychlejší úbytek času, výzva',
+            speedCurrent: 'Aktuální',
+
+            // Názvy vzhledů
+            skinNames: {
+                default: 'Dřevorubec',
+                ninja: 'Ninja',
+                robot: 'Robot',
+                golden: 'Zlatá legenda',
+                santa: 'Santa Claus',
+                pumpkin: 'Dýňová hlava',
+                pirate: 'Pirátský kapitán',
+                snowman: 'Sněhulák',
+                chinese_new_year: 'Bůh bohatství',
+                valentine: 'Amor',
+                easter_bunny: 'Velikonoční zajíček',
+                summer_surfer: 'Letní surfař'
+            },
+            skinDescs: {
+                default: 'Klasický dřevorubec v červené košili',
+                ninja: 'Tajemný ninja v černém',
+                robot: 'Mechanický dřevorubec z oceli',
+                golden: 'Legendární zlatý dřevorubec',
+                santa: 'Veselý dřevorubec s vánočním duchem',
+                pumpkin: 'Strašidelný halloweenský sekáč',
+                pirate: 'Statečný mořský dobrodruh',
+                snowman: 'Dřevorubec ze světa ledu',
+                chinese_new_year: 'Šťastný Nový rok! Hodně štěstí!',
+                valentine: 'Bůh lásky šířící lásku',
+                easter_bunny: 'Roztomilý zajíček s velikonočními vajíčky',
+                summer_surfer: 'Skvělý plážový surfař'
+            },
+
+            // Názvy úspěchů
+            achievementNames: {
+                first_chop: 'První seknutí',
+                score_10: 'Začátečník dřevorubec',
+                score_50: 'Zkušený dřevorubec',
+                score_100: 'Profesionální dřevorubec',
+                score_200: 'Mistr dřevorubec',
+                combo_5: 'Mini kombo',
+                combo_10: 'Kombo expert',
+                combo_20: 'Kombo král',
+                level_5: 'Úroveň 5',
+                level_8: 'Úroveň 8',
+                level_max: 'Maximální úroveň',
+                close_call: 'O fous'
+            },
+            achievementDescs: {
+                first_chop: 'Sekni svůj první strom',
+                score_10: 'Získej 10 bodů v jedné hře',
+                score_50: 'Získej 50 bodů v jedné hře',
+                score_100: 'Získej 100 bodů v jedné hře',
+                score_200: 'Získej 200 bodů v jedné hře',
+                combo_5: 'Dosáhni 5-komba',
+                combo_10: 'Dosáhni 10-komba',
+                combo_20: 'Dosáhni 20-komba',
+                level_5: 'Dosáhni obtížnosti 5',
+                level_8: 'Dosáhni obtížnosti 8',
+                level_max: 'Dosáhni maximální obtížnosti 11',
+                close_call: 'Sekni 20krát s časem pod 10%'
+            }
+        },
+
+        // ============ 越南语 (Vietnamese) ============
+        vi: {
+            // Tiêu đề
+            title: 'Thợ Đốn Cây',
+
+            // Màn hình bắt đầu
+            startTitle: 'Thợ Đốn Cây',
+            startHint1: 'Nhấn ← → hoặc A/D để chặt',
+            startHint2: 'Chạm trái/phải màn hình',
+            startHint3: 'Tránh cành cây, vượt thời gian!',
+            startHint4: 'Space/Enter Bắt đầu | ESC/P Tạm dừng',
+            startBtn: 'Bắt đầu trò chơi',
+            dailyBtn: '📅 Thử thách hàng ngày',
+            skinBtn: '👕 Trang phục',
+            leaderboardBtn: '📊 Bảng xếp hạng',
+            statsBtn: '📈 Thống kê',
+            tutorialBtn: '❓ Hướng dẫn',
+
+            // Kết thúc trò chơi
+            gameOver: 'Kết thúc',
+            score: 'Điểm',
+            maxCombo: 'Combo tối đa',
+            highScore: 'Điểm cao',
+            restartBtn: 'Chơi lại',
+            achievementsBtn: '🏆 Thành tích',
+
+            // Tạm dừng
+            paused: '⏸️ Tạm dừng',
+            pauseHint: 'Nhấn ESC hoặc P để tiếp tục',
+            resumeBtn: 'Tiếp tục',
+
+            // Thử thách hàng ngày
+            dailyTitle: '📅 Thử thách hàng ngày',
+            todayDate: 'Hôm nay',
+            todayBest: 'Tốt nhất hôm nay',
+            attempts: 'Số lần thử',
+            dailyHint: 'Cùng màn chơi cho tất cả, phá kỷ lục!',
+            startChallenge: 'Bắt đầu thử thách',
+            back: 'Quay lại',
+            challengeOver: '📅 Kết thúc thử thách',
+            newRecord: '🎉 Kỷ lục mới!',
+            todayHighScore: 'Tốt nhất hôm nay',
+            todayAttempts: 'Thử thách hôm nay',
+            times: 'lần',
+            retry: 'Thử lại',
+            backHome: 'Trang chủ',
+
+            // Trang phục
+            skinTitle: '👕 Trang phục',
+            skinUnlocked: 'Đã mở khóa',
+            skinLocked: '🔒',
+            skinUnlockAt: 'điểm để mở khóa',
+
+            // Bảng xếp hạng
+            leaderboardTitle: '📊 Bảng xếp hạng',
+            rank: 'Hạng',
+            lbScore: 'Điểm',
+            lbCombo: 'Combo',
+            lbDate: 'Ngày',
+            clearRecords: 'Xóa tất cả',
+            clearConfirm: 'Bạn có chắc muốn xóa tất cả kỷ lục?',
+            noRecords: 'Chưa có kỷ lục',
+
+            // Thành tích
+            achievementsTitle: '🏆 Thành tích',
+            achievementUnlock: 'Đã mở khóa thành tích!',
+
+            // Thống kê
+            statsTitle: '📈 Thống kê trò chơi',
+            totalGames: 'Tổng số ván',
+            totalChops: 'Tổng số chặt',
+            totalTime: 'Tổng thời gian',
+            bestCombo: 'Combo cao nhất',
+            avgScore: 'Điểm trung bình',
+            unlockedAchievements: '🎖️ Thành tích',
+            unlockedSkins: '👕 Trang phục',
+            dailyAttempts: '📅 Thử thách hàng ngày',
+            resetStats: 'Đặt lại',
+            resetConfirm: 'Bạn có chắc muốn đặt lại tất cả thống kê? Không thể hoàn tác.',
+
+            // Hướng dẫn
+            tutorialWelcome: 'Chào mừng đến Thợ Đốn Cây!',
+            tutorialWelcome1: 'Bạn là một thợ đốn cây dũng cảm',
+            tutorialWelcome2: 'Chặt càng nhiều cây càng tốt',
+            tutorialWelcome3: 'Tránh những cành cây nguy hiểm',
+            tutorialControls: 'Điều khiển',
+            tutorialMoveLeft: 'Di chuyển trái và chặt',
+            tutorialMoveRight: 'Di chuyển phải và chặt',
+            tutorialTouchHint: 'Hoặc chạm trái/phải màn hình',
+            tutorialBranch: 'Tránh cành cây!',
+            tutorialBranchWarn: 'Chạm cành = Kết thúc!',
+            tutorialBranchHint: 'Nhìn trước khi chặt',
+            tutorialTime: 'Quản lý thời gian',
+            tutorialTimeHint1: 'Thanh thời gian giảm dần',
+            tutorialTimeHint2: 'Mỗi lần chặt cho',
+            tutorialTimeHint3: '+thời gian',
+            tutorialTimeHint4: 'Hết giờ = Kết thúc',
+            tutorialAdvanced: 'Mẹo nâng cao',
+            tutorialCombo: 'Combo',
+            tutorialComboHint: 'Chặt nhanh để điểm cao hơn',
+            tutorialDifficulty: 'Độ khó',
+            tutorialDifficultyHint: 'Càng chơi càng khó hơn',
+            tutorialAchievement: 'Thành tích',
+            tutorialAchievementHint: 'Mở khóa 12 thành tích',
+            tutorialSkin: 'Trang phục',
+            tutorialSkinHint: 'Điểm cao mở khóa trang phục mới',
+            skip: 'Bỏ qua',
+            prev: 'Trước',
+            next: 'Tiếp',
+            finish: 'Hoàn thành',
+
+            // Gợi ý chạm
+            tapLeft: '← Chạm trái',
+            tapRight: 'Chạm phải →',
+
+            // Cài đặt âm lượng
+            volumeSettings: '🎵 Cài đặt âm thanh',
+            sfxVolume: '🔊 Hiệu ứng',
+            bgmVolume: '🎵 Nhạc nền',
+            vibration: '📳 Rung',
+
+            // Popup
+            skinUnlockPopup: 'Đã mở khóa trang phục mới!',
+
+            // Hệ thống phát lại
+            replayBtn: '🎬 Phát lại',
+            replayTitle: '🎬 Phát lại ván trước',
+            replayScore: 'Điểm',
+            replayCombo: 'Combo tối đa',
+            replayChops: 'Số lần chặt',
+            replayDuration: 'Thời gian',
+            replayStart: 'Bắt đầu phát lại',
+            replayStop: 'Dừng phát lại',
+            replayNoData: 'Không có dữ liệu',
+            replayPlaying: '🎬 Đang phát lại...',
+            replaySeconds: 'giây',
+
+            // Chia sẻ
+            shareBtn: '📤 Chia sẻ',
+            shareTitle: 'Thợ Đốn Cây',
+            shareScoreLabel: 'Điểm',
+            shareComboLabel: 'Combo',
+            shareLevelLabel: 'Cấp độ',
+            shareHighScoreLabel: 'Điểm cao',
+            shareDownloading: 'Đang tạo hình ảnh...',
+            shareSuccess: 'Đã lưu hình ảnh!',
+            shareFailed: 'Chia sẻ thất bại, thử lại',
+            sharePanelTitle: '📤 Chia sẻ điểm số',
+            shareNativeBtn: '📱 Chia sẻ',
+            shareDownloadBtn: '💾 Lưu hình ảnh',
+            shareCopyBtn: '📋 Sao chép văn bản',
+            shareCopySuccess: '✓ Đã sao chép!',
+
+            // Chế độ vô tận
+            endlessBtn: '∞ Chế độ vô tận',
+            endlessTitle: '∞ Chế độ vô tận',
+            endlessDesc: 'Không giới hạn thời gian, thử sự tập trung!',
+            endlessBest: 'Điểm cao nhất',
+            endlessTotal: 'Tổng số ván',
+            endlessStart: 'Bắt đầu thử thách',
+            endlessOver: '∞ Kết thúc thử thách',
+            endlessNewRecord: '🎉 Kỷ lục mới!',
+            endlessHint: 'Chỉ cần tránh cành, không áp lực thời gian',
+
+            // Đếm ngược
+            countdownGo: 'BẮT ĐẦU!',
+
+            // Chủ đề
+            themeDarkTip: 'Chuyển sang chế độ tối',
+            themeLightTip: 'Chuyển sang chế độ sáng',
+
+            // Cài đặt tốc độ
+            speedBtn: '⚡ Tốc độ',
+            speedTitle: '⚡ Tốc độ trò chơi',
+            speedSelectDesc: 'Chọn tốc độ phù hợp với bạn',
+            speedSlow: '🐢 Chậm',
+            speedNormal: '🚶 Bình thường',
+            speedFast: '🏃 Nhanh',
+            speedSlowDesc: 'Thời gian giảm -40%, cho người mới',
+            speedNormalDesc: 'Tốc độ trò chơi mặc định',
+            speedFastDesc: 'Thời gian giảm +50%, thử thách',
+            speedCurrent: 'Hiện tại',
+
+            // Tên trang phục
+            skinNames: {
+                default: 'Thợ đốn cây',
+                ninja: 'Ninja',
+                robot: 'Robot',
+                golden: 'Huyền thoại vàng',
+                santa: 'Ông già Noel',
+                pumpkin: 'Đầu bí ngô',
+                pirate: 'Thuyền trưởng cướp biển',
+                snowman: 'Người tuyết',
+                chinese_new_year: 'Thần tài',
+                valentine: 'Thần tình yêu',
+                easter_bunny: 'Thỏ Phục sinh',
+                summer_surfer: 'Lướt sóng mùa hè'
+            },
+            skinDescs: {
+                default: 'Thợ đốn cây áo đỏ cổ điển',
+                ninja: 'Ninja bí ẩn trong bóng tối',
+                robot: 'Thợ đốn cây cơ khí thép',
+                golden: 'Thợ đốn cây vàng huyền thoại',
+                santa: 'Thợ đốn cây vui vẻ mùa Giáng sinh',
+                pumpkin: 'Thợ đốn cây kinh dị Halloween',
+                pirate: 'Nhà thám hiểm biển dũng cảm',
+                snowman: 'Thợ đốn cây từ thế giới băng tuyết',
+                chinese_new_year: 'Chúc mừng năm mới! Phát tài!',
+                valentine: 'Thần tình yêu rải tình yêu',
+                easter_bunny: 'Thỏ dễ thương với trứng Phục sinh',
+                summer_surfer: 'Tay lướt sóng mát mẻ'
+            },
+
+            // Tên thành tích
+            achievementNames: {
+                first_chop: 'Lần chặt đầu tiên',
+                score_10: 'Thợ mới',
+                score_50: 'Thợ lành nghề',
+                score_100: 'Thợ chuyên nghiệp',
+                score_200: 'Bậc thầy đốn cây',
+                combo_5: 'Combo nhỏ',
+                combo_10: 'Chuyên gia combo',
+                combo_20: 'Vua combo',
+                level_5: 'Cấp độ 5',
+                level_8: 'Cấp độ 8',
+                level_max: 'Cấp độ tối đa',
+                close_call: 'Thoát hiểm'
+            },
+            achievementDescs: {
+                first_chop: 'Chặt cây đầu tiên của bạn',
+                score_10: 'Đạt 10 điểm trong một ván',
+                score_50: 'Đạt 50 điểm trong một ván',
+                score_100: 'Đạt 100 điểm trong một ván',
+                score_200: 'Đạt 200 điểm trong một ván',
+                combo_5: 'Đạt combo 5',
+                combo_10: 'Đạt combo 10',
+                combo_20: 'Đạt combo 20',
+                level_5: 'Đạt cấp độ khó 5',
+                level_8: 'Đạt cấp độ khó 8',
+                level_max: 'Đạt cấp độ khó tối đa 11',
+                close_call: 'Chặt 20 lần khi thời gian dưới 10%'
+            }
+        },
+
+        // ============ 匈牙利语 (Hungarian) ============
+        hu: {
+            // Cím
+            title: 'Favágó',
+
+            // Kezdőképernyő
+            startTitle: 'Favágó',
+            startHint1: 'Nyomd meg a ← → vagy A/D vágáshoz',
+            startHint2: 'Érintsd a képernyő bal/jobb oldalát',
+            startHint3: 'Kerüld el az ágakat, győzd le az időt!',
+            startHint4: 'Space/Enter Indítás | ESC/P Szünet',
+            startBtn: 'Játék indítása',
+            dailyBtn: '📅 Napi kihívás',
+            skinBtn: '👕 Skinek',
+            leaderboardBtn: '📊 Ranglista',
+            statsBtn: '📈 Statisztikák',
+            tutorialBtn: '❓ Útmutató',
+
+            // Játék vége
+            gameOver: 'Játék vége',
+            score: 'Pontszám',
+            maxCombo: 'Max kombó',
+            highScore: 'Rekord',
+            restartBtn: 'Újra',
+            achievementsBtn: '🏆 Eredmények',
+
+            // Szünet
+            paused: '⏸️ Szünet',
+            pauseHint: 'Nyomd meg az ESC vagy P gombot a folytatáshoz',
+            resumeBtn: 'Folytatás',
+
+            // Napi kihívás
+            dailyTitle: '📅 Napi kihívás',
+            todayDate: 'Ma',
+            todayBest: 'Mai legjobb',
+            attempts: 'Próbálkozások',
+            dailyHint: 'Ugyanaz a pálya mindenkinek, döntsd meg a rekordod!',
+            startChallenge: 'Kihívás indítása',
+            back: 'Vissza',
+            challengeOver: '📅 Kihívás vége',
+            newRecord: '🎉 Új rekord!',
+            todayHighScore: 'Mai legjobb',
+            todayAttempts: 'Mai próbálkozások',
+            times: 'x',
+            retry: 'Újra',
+            backHome: 'Főmenü',
+
+            // Skinek
+            skinTitle: '👕 Skinek',
+            skinUnlocked: 'Feloldva',
+            skinLocked: '🔒',
+            skinUnlockAt: 'pont a feloldáshoz',
+
+            // Ranglista
+            leaderboardTitle: '📊 Ranglista',
+            rank: 'Helyezés',
+            lbScore: 'Pont',
+            lbCombo: 'Kombó',
+            lbDate: 'Dátum',
+            clearRecords: 'Törlés',
+            clearConfirm: 'Biztosan törölni akarod az összes rekordot?',
+            noRecords: 'Nincs rekord',
+
+            // Eredmények
+            achievementsTitle: '🏆 Eredmények',
+            achievementUnlock: 'Eredmény feloldva!',
+
+            // Statisztikák
+            statsTitle: '📈 Játékstatisztikák',
+            totalGames: 'Összes játék',
+            totalChops: 'Összes vágás',
+            totalTime: 'Összes idő',
+            bestCombo: 'Legjobb kombó',
+            avgScore: 'Átlagpont',
+            unlockedAchievements: '🎖️ Eredmények',
+            unlockedSkins: '👕 Skinek',
+            dailyAttempts: '📅 Napi kihívások',
+            resetStats: 'Visszaállítás',
+            resetConfirm: 'Biztosan visszaállítod az összes statisztikát? Ez nem vonható vissza.',
+
+            // Útmutató
+            tutorialWelcome: 'Üdv a Favágóban!',
+            tutorialWelcome1: 'Te egy bátor favágó vagy',
+            tutorialWelcome2: 'Vágd ki a lehető legtöbb fát',
+            tutorialWelcome3: 'Kerüld el a veszélyes ágakat',
+            tutorialControls: 'Irányítás',
+            tutorialMoveLeft: 'Balra mozogj és vágj',
+            tutorialMoveRight: 'Jobbra mozogj és vágj',
+            tutorialTouchHint: 'Vagy érintsd a képernyő bal/jobb oldalát',
+            tutorialBranch: 'Kerüld az ágakat!',
+            tutorialBranchWarn: 'Ágnak ütközés = Játék vége!',
+            tutorialBranchHint: 'Nézz mielőtt vágsz',
+            tutorialTime: 'Időgazdálkodás',
+            tutorialTimeHint1: 'Az idősáv folyamatosan csökken',
+            tutorialTimeHint2: 'Minden vágás ad',
+            tutorialTimeHint3: '+időt',
+            tutorialTimeHint4: 'Lejárt idő = Játék vége',
+            tutorialAdvanced: 'Haladó tippek',
+            tutorialCombo: 'Kombó',
+            tutorialComboHint: 'Vágj gyorsan több pontért',
+            tutorialDifficulty: 'Nehézség',
+            tutorialDifficultyHint: 'Magasabb pont = nehezebb',
+            tutorialAchievement: 'Eredmények',
+            tutorialAchievementHint: '12 eredmény feloldása',
+            tutorialSkin: 'Skinek',
+            tutorialSkinHint: 'Magas pontszám új skineket old fel',
+            skip: 'Kihagyás',
+            prev: 'Előző',
+            next: 'Következő',
+            finish: 'Befejezés',
+
+            // Érintési tippek
+            tapLeft: '← Bal érintés',
+            tapRight: 'Jobb érintés →',
+
+            // Hangerő beállítások
+            volumeSettings: '🎵 Hangerő beállítások',
+            sfxVolume: '🔊 Hangeffektek',
+            bgmVolume: '🎵 Zene',
+            vibration: '📳 Rezgés',
+
+            // Felugró ablak
+            skinUnlockPopup: 'Új skin feloldva!',
+
+            // Visszajátszás
+            replayBtn: '🎬 Visszajátszás',
+            replayTitle: '🎬 Előző játék',
+            replayScore: 'Pontszám',
+            replayCombo: 'Max kombó',
+            replayChops: 'Vágások',
+            replayDuration: 'Időtartam',
+            replayStart: 'Visszajátszás indítása',
+            replayStop: 'Leállítás',
+            replayNoData: 'Nincs adat',
+            replayPlaying: '🎬 Visszajátszás...',
+            replaySeconds: 'mp',
+
+            // Megosztás
+            shareBtn: '📤 Megosztás',
+            shareTitle: 'Favágó',
+            shareScoreLabel: 'Pont',
+            shareComboLabel: 'Kombó',
+            shareLevelLabel: 'Szint',
+            shareHighScoreLabel: 'Rekord',
+            shareDownloading: 'Kép generálása...',
+            shareSuccess: 'Kép elmentve!',
+            shareFailed: 'Megosztás sikertelen, próbáld újra',
+            sharePanelTitle: '📤 Eredmény megosztása',
+            shareNativeBtn: '📱 Megosztás',
+            shareDownloadBtn: '💾 Kép mentése',
+            shareCopyBtn: '📋 Szöveg másolása',
+            shareCopySuccess: '✓ Vágólapra másolva!',
+
+            // Végtelen mód
+            endlessBtn: '∞ Végtelen mód',
+            endlessTitle: '∞ Végtelen mód',
+            endlessDesc: 'Nincs időkorlát, teszteld a koncentrációdat!',
+            endlessBest: 'Legjobb eredmény',
+            endlessTotal: 'Összes játék',
+            endlessStart: 'Kihívás indítása',
+            endlessOver: '∞ Kihívás vége',
+            endlessNewRecord: '🎉 Új rekord!',
+            endlessHint: 'Csak kerüld az ágakat, nincs időnyomás',
+
+            // Visszaszámlálás
+            countdownGo: 'RAJT!',
+
+            // Téma
+            themeDarkTip: 'Váltás sötét módra',
+            themeLightTip: 'Váltás világos módra',
+
+            // Sebesség beállítások
+            speedBtn: '⚡ Sebesség',
+            speedTitle: '⚡ Játéksebesség',
+            speedSelectDesc: 'Válaszd ki a neked megfelelő sebességet',
+            speedSlow: '🐢 Lassú',
+            speedNormal: '🚶 Normál',
+            speedFast: '🏃 Gyors',
+            speedSlowDesc: 'Időcsökkenés -40%, kezdőknek',
+            speedNormalDesc: 'Alapértelmezett játéksebesség',
+            speedFastDesc: 'Időcsökkenés +50%, kihívás',
+            speedCurrent: 'Jelenlegi',
+
+            // Skin nevek
+            skinNames: {
+                default: 'Favágó',
+                ninja: 'Nindzsa',
+                robot: 'Robot',
+                golden: 'Arany legenda',
+                santa: 'Mikulás',
+                pumpkin: 'Tökfej',
+                pirate: 'Kalózkapitány',
+                snowman: 'Hóember',
+                chinese_new_year: 'Gazdagság istene',
+                valentine: 'Cupido',
+                easter_bunny: 'Húsvéti nyuszi',
+                summer_surfer: 'Nyári szörfös'
+            },
+            skinDescs: {
+                default: 'Klasszikus piros inges favágó',
+                ninja: 'Titokzatos fekete nindzsa',
+                robot: 'Acél mechanikus favágó',
+                golden: 'Legendás arany favágó',
+                santa: 'Vidám karácsonyi favágó',
+                pumpkin: 'Ijesztő halloweeni favágó',
+                pirate: 'Bátor tengeri kalandor',
+                snowman: 'Favágó a jég világából',
+                chinese_new_year: 'Boldog új évet! Sok szerencsét!',
+                valentine: 'A szerelem istene szeretetet szór',
+                easter_bunny: 'Aranyos nyuszi húsvéti tojásokkal',
+                summer_surfer: 'Menő strandon szörföző'
+            },
+
+            // Eredmény nevek
+            achievementNames: {
+                first_chop: 'Első vágás',
+                score_10: 'Kezdő favágó',
+                score_50: 'Gyakorlott favágó',
+                score_100: 'Profi favágó',
+                score_200: 'Favágó mester',
+                combo_5: 'Mini kombó',
+                combo_10: 'Kombó szakértő',
+                combo_20: 'Kombó király',
+                level_5: '5. szint',
+                level_8: '8. szint',
+                level_max: 'Maximum szint',
+                close_call: 'Hajszálon múlt'
+            },
+            achievementDescs: {
+                first_chop: 'Vágd ki az első fádat',
+                score_10: 'Szerezz 10 pontot egy játékban',
+                score_50: 'Szerezz 50 pontot egy játékban',
+                score_100: 'Szerezz 100 pontot egy játékban',
+                score_200: 'Szerezz 200 pontot egy játékban',
+                combo_5: 'Érj el 5-ös kombót',
+                combo_10: 'Érj el 10-es kombót',
+                combo_20: 'Érj el 20-as kombót',
+                level_5: 'Érj el 5-ös nehézségi szintet',
+                level_8: 'Érj el 8-as nehézségi szintet',
+                level_max: 'Érj el maximális 11-es nehézségi szintet',
+                close_call: 'Vágj 20-szor 10% alatt lévő idővel'
+            }
+        },
+
+        // ============ 泰语 (Thai) ============
+        th: {
+            // หัวข้อ
+            title: 'คนตัดไม้',
+
+            // หน้าจอเริ่มต้น
+            startTitle: 'คนตัดไม้',
+            startHint1: 'กด ← → หรือ A/D เพื่อตัด',
+            startHint2: 'แตะซ้าย/ขวาของหน้าจอ',
+            startHint3: 'หลบกิ่งไม้ เอาชนะเวลา!',
+            startHint4: 'Space/Enter เริ่ม | ESC/P หยุด',
+            startBtn: 'เริ่มเกม',
+            dailyBtn: '📅 ท้าทายประจำวัน',
+            skinBtn: '👕 สกิน',
+            leaderboardBtn: '📊 อันดับ',
+            statsBtn: '📈 สถิติ',
+            tutorialBtn: '❓ สอนเล่น',
+
+            // จบเกม
+            gameOver: 'จบเกม',
+            score: 'คะแนน',
+            maxCombo: 'คอมโบสูงสุด',
+            highScore: 'คะแนนสูงสุด',
+            restartBtn: 'เล่นอีกครั้ง',
+            achievementsBtn: '🏆 ความสำเร็จ',
+
+            // หยุดชั่วคราว
+            paused: '⏸️ หยุดชั่วคราว',
+            pauseHint: 'กด ESC หรือ P เพื่อเล่นต่อ',
+            resumeBtn: 'เล่นต่อ',
+
+            // ท้าทายประจำวัน
+            dailyTitle: '📅 ท้าทายประจำวัน',
+            todayDate: 'วันนี้',
+            todayBest: 'ดีที่สุดวันนี้',
+            attempts: 'จำนวนครั้ง',
+            dailyHint: 'ด่านเดียวกันสำหรับทุกคน ทำลายสถิติ!',
+            startChallenge: 'เริ่มท้าทาย',
+            back: 'กลับ',
+            challengeOver: '📅 จบการท้าทาย',
+            newRecord: '🎉 สถิติใหม่!',
+            todayHighScore: 'ดีที่สุดวันนี้',
+            todayAttempts: 'ท้าทายวันนี้',
+            times: 'ครั้ง',
+            retry: 'ลองอีกครั้ง',
+            backHome: 'หน้าหลัก',
+
+            // สกิน
+            skinTitle: '👕 สกิน',
+            skinUnlocked: 'ปลดล็อกแล้ว',
+            skinLocked: '🔒',
+            skinUnlockAt: 'คะแนนเพื่อปลดล็อก',
+
+            // อันดับ
+            leaderboardTitle: '📊 อันดับ',
+            rank: 'อันดับ',
+            lbScore: 'คะแนน',
+            lbCombo: 'คอมโบ',
+            lbDate: 'วันที่',
+            clearRecords: 'ล้างข้อมูล',
+            clearConfirm: 'คุณแน่ใจหรือไม่ที่จะล้างข้อมูลทั้งหมด?',
+            noRecords: 'ยังไม่มีข้อมูล',
+
+            // ความสำเร็จ
+            achievementsTitle: '🏆 ความสำเร็จ',
+            achievementUnlock: 'ปลดล็อกความสำเร็จ!',
+
+            // สถิติ
+            statsTitle: '📈 สถิติเกม',
+            totalGames: 'เกมทั้งหมด',
+            totalChops: 'ตัดทั้งหมด',
+            totalTime: 'เวลาทั้งหมด',
+            bestCombo: 'คอมโบสูงสุด',
+            avgScore: 'คะแนนเฉลี่ย',
+            unlockedAchievements: '🎖️ ความสำเร็จ',
+            unlockedSkins: '👕 สกิน',
+            dailyAttempts: '📅 ท้าทายประจำวัน',
+            resetStats: 'รีเซ็ต',
+            resetConfirm: 'คุณแน่ใจหรือไม่ที่จะรีเซ็ตข้อมูลทั้งหมด? ไม่สามารถยกเลิกได้',
+
+            // สอนเล่น
+            tutorialWelcome: 'ยินดีต้อนรับสู่คนตัดไม้!',
+            tutorialWelcome1: 'คุณคือคนตัดไม้ผู้กล้าหาญ',
+            tutorialWelcome2: 'ตัดต้นไม้ให้ได้มากที่สุด',
+            tutorialWelcome3: 'หลบกิ่งไม้อันตราย',
+            tutorialControls: 'การควบคุม',
+            tutorialMoveLeft: 'เคลื่อนซ้ายและตัด',
+            tutorialMoveRight: 'เคลื่อนขวาและตัด',
+            tutorialTouchHint: 'หรือแตะซ้าย/ขวาหน้าจอ',
+            tutorialBranch: 'หลบกิ่งไม้!',
+            tutorialBranchWarn: 'โดนกิ่ง = จบเกม!',
+            tutorialBranchHint: 'มองก่อนตัด',
+            tutorialTime: 'จัดการเวลา',
+            tutorialTimeHint1: 'แถบเวลาจะลดลงเรื่อยๆ',
+            tutorialTimeHint2: 'ตัดแต่ละครั้งจะได้',
+            tutorialTimeHint3: '+เวลา',
+            tutorialTimeHint4: 'หมดเวลา = จบเกม',
+            tutorialAdvanced: 'เทคนิคขั้นสูง',
+            tutorialCombo: 'คอมโบ',
+            tutorialComboHint: 'ตัดเร็วเพื่อคะแนนสูง',
+            tutorialDifficulty: 'ความยาก',
+            tutorialDifficultyHint: 'ยิ่งเล่นยิ่งยาก',
+            tutorialAchievement: 'ความสำเร็จ',
+            tutorialAchievementHint: 'ปลดล็อก 12 ความสำเร็จ',
+            tutorialSkin: 'สกิน',
+            tutorialSkinHint: 'คะแนนสูงปลดล็อกสกินใหม่',
+            skip: 'ข้าม',
+            prev: 'ก่อนหน้า',
+            next: 'ถัดไป',
+            finish: 'เสร็จสิ้น',
+
+            // พื้นที่แตะ
+            tapLeft: '← แตะซ้าย',
+            tapRight: 'แตะขวา →',
+
+            // ตั้งค่าเสียง
+            volumeSettings: '🎵 ตั้งค่าเสียง',
+            sfxVolume: '🔊 เสียงเอฟเฟกต์',
+            bgmVolume: '🎵 เพลงพื้นหลัง',
+            vibration: '📳 สั่น',
+
+            // ป๊อปอัพ
+            skinUnlockPopup: 'ปลดล็อกสกินใหม่!',
+
+            // ระบบเล่นซ้ำ
+            replayBtn: '🎬 เล่นซ้ำ',
+            replayTitle: '🎬 เล่นซ้ำรอบที่แล้ว',
+            replayScore: 'คะแนน',
+            replayCombo: 'คอมโบสูงสุด',
+            replayChops: 'จำนวนตัด',
+            replayDuration: 'เวลา',
+            replayStart: 'เริ่มเล่นซ้ำ',
+            replayStop: 'หยุดเล่นซ้ำ',
+            replayNoData: 'ไม่มีข้อมูล',
+            replayPlaying: '🎬 กำลังเล่นซ้ำ...',
+            replaySeconds: 'วินาที',
+
+            // แชร์
+            shareBtn: '📤 แชร์',
+            shareTitle: 'คนตัดไม้',
+            shareScoreLabel: 'คะแนน',
+            shareComboLabel: 'คอมโบ',
+            shareLevelLabel: 'ระดับ',
+            shareHighScoreLabel: 'คะแนนสูงสุด',
+            shareDownloading: 'กำลังสร้างรูปภาพ...',
+            shareSuccess: 'บันทึกรูปแล้ว!',
+            shareFailed: 'แชร์ล้มเหลว ลองอีกครั้ง',
+            sharePanelTitle: '📤 แชร์คะแนน',
+            shareNativeBtn: '📱 แชร์',
+            shareDownloadBtn: '💾 บันทึกรูป',
+            shareCopyBtn: '📋 คัดลอกข้อความ',
+            shareCopySuccess: '✓ คัดลอกแล้ว!',
+
+            // โหมดไม่สิ้นสุด
+            endlessBtn: '∞ โหมดไม่สิ้นสุด',
+            endlessTitle: '∞ โหมดไม่สิ้นสุด',
+            endlessDesc: 'ไม่จำกัดเวลา ทดสอบสมาธิของคุณ!',
+            endlessBest: 'คะแนนสูงสุด',
+            endlessTotal: 'เกมทั้งหมด',
+            endlessStart: 'เริ่มท้าทาย',
+            endlessOver: '∞ จบการท้าทาย',
+            endlessNewRecord: '🎉 สถิติใหม่!',
+            endlessHint: 'แค่หลบกิ่ง ไม่มีแรงกดดันเรื่องเวลา',
+
+            // นับถอยหลัง
+            countdownGo: 'เริ่ม!',
+
+            // ธีม
+            themeDarkTip: 'เปลี่ยนเป็นโหมดมืด',
+            themeLightTip: 'เปลี่ยนเป็นโหมดสว่าง',
+
+            // ตั้งค่าความเร็ว
+            speedBtn: '⚡ ความเร็ว',
+            speedTitle: '⚡ ความเร็วเกม',
+            speedSelectDesc: 'เลือกความเร็วที่เหมาะกับคุณ',
+            speedSlow: '🐢 ช้า',
+            speedNormal: '🚶 ปกติ',
+            speedFast: '🏃 เร็ว',
+            speedSlowDesc: 'เวลาลด -40% สำหรับมือใหม่',
+            speedNormalDesc: 'ความเร็วเกมปกติ',
+            speedFastDesc: 'เวลาลด +50% ท้าทาย',
+            speedCurrent: 'ปัจจุบัน',
+
+            // ชื่อสกิน
+            skinNames: {
+                default: 'คนตัดไม้',
+                ninja: 'นินจา',
+                robot: 'หุ่นยนต์',
+                golden: 'ตำนานทอง',
+                santa: 'ซานตาคลอส',
+                pumpkin: 'หัวฟักทอง',
+                pirate: 'กัปตันโจรสลัด',
+                snowman: 'มนุษย์หิมะ',
+                chinese_new_year: 'เทพเจ้าแห่งความมั่งคั่ง',
+                valentine: 'คิวปิด',
+                easter_bunny: 'กระต่ายอีสเตอร์',
+                summer_surfer: 'นักเซิร์ฟฤดูร้อน'
+            },
+            skinDescs: {
+                default: 'คนตัดไม้เสื้อแดงคลาสสิก',
+                ninja: 'นินจาลึกลับในชุดดำ',
+                robot: 'คนตัดไม้เครื่องจักรเหล็ก',
+                golden: 'คนตัดไม้ทองคำตำนาน',
+                santa: 'คนตัดไม้คริสต์มาสสุขสันต์',
+                pumpkin: 'คนตัดไม้ฮาโลวีนน่ากลัว',
+                pirate: 'นักผจญภัยทะเลผู้กล้าหาญ',
+                snowman: 'คนตัดไม้จากโลกน้ำแข็ง',
+                chinese_new_year: 'สุขสันต์วันปีใหม่! โชคดี!',
+                valentine: 'เทพแห่งความรักกระจายความรัก',
+                easter_bunny: 'กระต่ายน่ารักกับไข่อีสเตอร์',
+                summer_surfer: 'นักเซิร์ฟเท่ๆ บนชายหาด'
+            },
+
+            // ชื่อความสำเร็จ
+            achievementNames: {
+                first_chop: 'ตัดครั้งแรก',
+                score_10: 'มือใหม่',
+                score_50: 'ชำนาญ',
+                score_100: 'มืออาชีพ',
+                score_200: 'ปรมาจารย์',
+                combo_5: 'มินิคอมโบ',
+                combo_10: 'ผู้เชี่ยวชาญคอมโบ',
+                combo_20: 'ราชาคอมโบ',
+                level_5: 'ระดับ 5',
+                level_8: 'ระดับ 8',
+                level_max: 'ระดับสูงสุด',
+                close_call: 'หวุดหวิด'
+            },
+            achievementDescs: {
+                first_chop: 'ตัดต้นไม้ต้นแรกของคุณ',
+                score_10: 'ทำ 10 คะแนนในเกมเดียว',
+                score_50: 'ทำ 50 คะแนนในเกมเดียว',
+                score_100: 'ทำ 100 คะแนนในเกมเดียว',
+                score_200: 'ทำ 200 คะแนนในเกมเดียว',
+                combo_5: 'ทำ 5 คอมโบ',
+                combo_10: 'ทำ 10 คอมโบ',
+                combo_20: 'ทำ 20 คอมโบ',
+                level_5: 'ถึงระดับความยาก 5',
+                level_8: 'ถึงระดับความยาก 8',
+                level_max: 'ถึงระดับความยากสูงสุด 11',
+                close_call: 'ตัด 20 ครั้งเมื่อเวลาต่ำกว่า 10%'
+            }
+        },
+
+        // ============ 印尼语 (Indonesian) ============
+        id: {
+            // Judul
+            title: 'Penebang Kayu',
+
+            // Layar mulai
+            startTitle: 'Penebang Kayu',
+            startHint1: 'Tekan ← → atau A/D untuk menebang',
+            startHint2: 'Ketuk kiri/kanan layar',
+            startHint3: 'Hindari dahan, kalahkan waktu!',
+            startHint4: 'Space/Enter Mulai | ESC/P Jeda',
+            startBtn: 'Mulai Game',
+            dailyBtn: '📅 Tantangan Harian',
+            skinBtn: '👕 Skin',
+            leaderboardBtn: '📊 Peringkat',
+            statsBtn: '📈 Statistik',
+            tutorialBtn: '❓ Tutorial',
+
+            // Game selesai
+            gameOver: 'Game Selesai',
+            score: 'Skor',
+            maxCombo: 'Kombo Maks',
+            highScore: 'Skor Tertinggi',
+            restartBtn: 'Main Lagi',
+            achievementsBtn: '🏆 Prestasi',
+
+            // Jeda
+            paused: '⏸️ Jeda',
+            pauseHint: 'Tekan ESC atau P untuk melanjutkan',
+            resumeBtn: 'Lanjutkan',
+
+            // Tantangan harian
+            dailyTitle: '📅 Tantangan Harian',
+            todayDate: 'Hari ini',
+            todayBest: 'Terbaik hari ini',
+            attempts: 'Percobaan',
+            dailyHint: 'Level sama untuk semua, pecahkan rekor!',
+            startChallenge: 'Mulai Tantangan',
+            back: 'Kembali',
+            challengeOver: '📅 Tantangan Selesai',
+            newRecord: '🎉 Rekor Baru!',
+            todayHighScore: 'Terbaik hari ini',
+            todayAttempts: 'Percobaan hari ini',
+            times: 'kali',
+            retry: 'Coba lagi',
+            backHome: 'Menu Utama',
+
+            // Skin
+            skinTitle: '👕 Skin',
+            skinUnlocked: 'Terbuka',
+            skinLocked: '🔒',
+            skinUnlockAt: 'skor untuk membuka',
+
+            // Peringkat
+            leaderboardTitle: '📊 Peringkat',
+            rank: 'Peringkat',
+            lbScore: 'Skor',
+            lbCombo: 'Kombo',
+            lbDate: 'Tanggal',
+            clearRecords: 'Hapus',
+            clearConfirm: 'Yakin ingin menghapus semua catatan?',
+            noRecords: 'Belum ada catatan',
+
+            // Prestasi
+            achievementsTitle: '🏆 Prestasi',
+            achievementUnlock: 'Prestasi terbuka!',
+
+            // Statistik
+            statsTitle: '📈 Statistik Game',
+            totalGames: 'Total game',
+            totalChops: 'Total tebangan',
+            totalTime: 'Total waktu',
+            bestCombo: 'Kombo terbaik',
+            avgScore: 'Skor rata-rata',
+            unlockedAchievements: '🎖️ Prestasi',
+            unlockedSkins: '👕 Skin',
+            dailyAttempts: '📅 Tantangan harian',
+            resetStats: 'Reset',
+            resetConfirm: 'Yakin ingin mereset semua statistik? Tidak dapat dibatalkan.',
+
+            // Tutorial
+            tutorialWelcome: 'Selamat datang di Penebang Kayu!',
+            tutorialWelcome1: 'Kamu adalah penebang kayu pemberani',
+            tutorialWelcome2: 'Tebang sebanyak mungkin pohon',
+            tutorialWelcome3: 'Hindari dahan berbahaya',
+            tutorialControls: 'Kontrol',
+            tutorialMoveLeft: 'Gerak kiri dan tebang',
+            tutorialMoveRight: 'Gerak kanan dan tebang',
+            tutorialTouchHint: 'Atau ketuk kiri/kanan layar',
+            tutorialBranch: 'Hindari dahan!',
+            tutorialBranchWarn: 'Terkena dahan = Game selesai!',
+            tutorialBranchHint: 'Lihat sebelum menebang',
+            tutorialTime: 'Manajemen Waktu',
+            tutorialTimeHint1: 'Bar waktu terus berkurang',
+            tutorialTimeHint2: 'Setiap tebangan memberi',
+            tutorialTimeHint3: '+waktu',
+            tutorialTimeHint4: 'Waktu habis = Game selesai',
+            tutorialAdvanced: 'Tips Lanjutan',
+            tutorialCombo: 'Kombo',
+            tutorialComboHint: 'Tebang cepat untuk skor tinggi',
+            tutorialDifficulty: 'Kesulitan',
+            tutorialDifficultyHint: 'Semakin tinggi skor, semakin sulit',
+            tutorialAchievement: 'Prestasi',
+            tutorialAchievementHint: 'Buka 12 prestasi',
+            tutorialSkin: 'Skin',
+            tutorialSkinHint: 'Skor tinggi membuka skin baru',
+            skip: 'Lewati',
+            prev: 'Sebelumnya',
+            next: 'Berikutnya',
+            finish: 'Selesai',
+
+            // Area ketuk
+            tapLeft: '← Ketuk Kiri',
+            tapRight: 'Ketuk Kanan →',
+
+            // Pengaturan volume
+            volumeSettings: '🎵 Pengaturan Volume',
+            sfxVolume: '🔊 Efek Suara',
+            bgmVolume: '🎵 Musik Latar',
+            vibration: '📳 Getar',
+
+            // Popup
+            skinUnlockPopup: 'Skin baru terbuka!',
+
+            // Sistem replay
+            replayBtn: '🎬 Putar Ulang',
+            replayTitle: '🎬 Game Terakhir',
+            replayScore: 'Skor',
+            replayCombo: 'Kombo Maks',
+            replayChops: 'Tebangan',
+            replayDuration: 'Durasi',
+            replayStart: 'Mulai Putar Ulang',
+            replayStop: 'Berhenti',
+            replayNoData: 'Tidak ada data',
+            replayPlaying: '🎬 Memutar ulang...',
+            replaySeconds: 'detik',
+
+            // Berbagi
+            shareBtn: '📤 Bagikan',
+            shareTitle: 'Penebang Kayu',
+            shareScoreLabel: 'Skor',
+            shareComboLabel: 'Kombo',
+            shareLevelLabel: 'Level',
+            shareHighScoreLabel: 'Skor Tertinggi',
+            shareDownloading: 'Membuat gambar...',
+            shareSuccess: 'Gambar tersimpan!',
+            shareFailed: 'Gagal berbagi, coba lagi',
+            sharePanelTitle: '📤 Bagikan Skor',
+            shareNativeBtn: '📱 Bagikan',
+            shareDownloadBtn: '💾 Simpan Gambar',
+            shareCopyBtn: '📋 Salin Teks',
+            shareCopySuccess: '✓ Tersalin!',
+
+            // Mode tanpa batas
+            endlessBtn: '∞ Mode Tanpa Batas',
+            endlessTitle: '∞ Mode Tanpa Batas',
+            endlessDesc: 'Tanpa batas waktu, uji konsentrasimu!',
+            endlessBest: 'Skor Tertinggi',
+            endlessTotal: 'Total Game',
+            endlessStart: 'Mulai Tantangan',
+            endlessOver: '∞ Tantangan Selesai',
+            endlessNewRecord: '🎉 Rekor Baru!',
+            endlessHint: 'Cukup hindari dahan, tanpa tekanan waktu',
+
+            // Hitung mundur
+            countdownGo: 'MULAI!',
+
+            // Tema
+            themeDarkTip: 'Beralih ke mode gelap',
+            themeLightTip: 'Beralih ke mode terang',
+
+            // Pengaturan kecepatan
+            speedBtn: '⚡ Kecepatan',
+            speedTitle: '⚡ Kecepatan Game',
+            speedSelectDesc: 'Pilih kecepatan yang sesuai untukmu',
+            speedSlow: '🐢 Lambat',
+            speedNormal: '🚶 Normal',
+            speedFast: '🏃 Cepat',
+            speedSlowDesc: 'Pengurangan waktu -40%, untuk pemula',
+            speedNormalDesc: 'Kecepatan game standar',
+            speedFastDesc: 'Pengurangan waktu +50%, tantangan',
+            speedCurrent: 'Saat ini',
+
+            // Nama skin
+            skinNames: {
+                default: 'Penebang Kayu',
+                ninja: 'Ninja',
+                robot: 'Robot',
+                golden: 'Legenda Emas',
+                santa: 'Sinterklas',
+                pumpkin: 'Kepala Labu',
+                pirate: 'Kapten Bajak Laut',
+                snowman: 'Manusia Salju',
+                chinese_new_year: 'Dewa Kekayaan',
+                valentine: 'Cupid',
+                easter_bunny: 'Kelinci Paskah',
+                summer_surfer: 'Peselancar Musim Panas'
+            },
+            skinDescs: {
+                default: 'Penebang kayu klasik berbaju merah',
+                ninja: 'Ninja misterius berbaju hitam',
+                robot: 'Penebang kayu mekanik baja',
+                golden: 'Penebang kayu emas legendaris',
+                santa: 'Penebang kayu Natal yang ceria',
+                pumpkin: 'Penebang kayu Halloween yang menyeramkan',
+                pirate: 'Petualang laut yang berani',
+                snowman: 'Penebang kayu dari dunia es',
+                chinese_new_year: 'Selamat Tahun Baru! Semoga beruntung!',
+                valentine: 'Dewa cinta menyebarkan kasih',
+                easter_bunny: 'Kelinci lucu dengan telur Paskah',
+                summer_surfer: 'Peselancar keren di pantai'
+            },
+
+            // Nama prestasi
+            achievementNames: {
+                first_chop: 'Tebangan Pertama',
+                score_10: 'Pemula',
+                score_50: 'Terampil',
+                score_100: 'Profesional',
+                score_200: 'Master',
+                combo_5: 'Mini Kombo',
+                combo_10: 'Ahli Kombo',
+                combo_20: 'Raja Kombo',
+                level_5: 'Level 5',
+                level_8: 'Level 8',
+                level_max: 'Level Maksimal',
+                close_call: 'Hampir Saja'
+            },
+            achievementDescs: {
+                first_chop: 'Tebang pohon pertamamu',
+                score_10: 'Raih 10 skor dalam satu game',
+                score_50: 'Raih 50 skor dalam satu game',
+                score_100: 'Raih 100 skor dalam satu game',
+                score_200: 'Raih 200 skor dalam satu game',
+                combo_5: 'Raih 5 kombo',
+                combo_10: 'Raih 10 kombo',
+                combo_20: 'Raih 20 kombo',
+                level_5: 'Mencapai level kesulitan 5',
+                level_8: 'Mencapai level kesulitan 8',
+                level_max: 'Mencapai level kesulitan maksimal 11',
+                close_call: 'Tebang 20 kali saat waktu di bawah 10%'
+            }
+        },
+
+        // 马来语 (Malay)
+        ms: {
+            // Tajuk
+            title: 'Penebang Pokok',
+
+            // Skrin mula
+            startTitle: 'Penebang Pokok',
+            startHint1: 'Tekan ← → atau A/D untuk menebang',
+            startHint2: 'Ketik kiri/kanan skrin',
+            startHint3: 'Elak dahan, kalahkan masa!',
+            startHint4: 'Space/Enter Mula | ESC/P Jeda',
+            startBtn: 'Mula Permainan',
+            dailyBtn: '📅 Cabaran Harian',
+            skinBtn: '👕 Kulit',
+            leaderboardBtn: '📊 Papan Kedudukan',
+            statsBtn: '📈 Statistik',
+            tutorialBtn: '❓ Tutorial',
+
+            // Permainan tamat
+            gameOver: 'Tamat Permainan',
+            score: 'Skor',
+            maxCombo: 'Kombo Maks',
+            highScore: 'Skor Tertinggi',
+            restartBtn: 'Main Lagi',
+            achievementsBtn: '🏆 Pencapaian',
+
+            // Jeda
+            paused: '⏸️ Jeda',
+            pauseHint: 'Tekan ESC atau P untuk teruskan',
+            resumeBtn: 'Teruskan',
+
+            // Cabaran harian
+            dailyTitle: '📅 Cabaran Harian',
+            todayDate: 'Hari ini',
+            todayBest: 'Terbaik hari ini',
+            attempts: 'Percubaan',
+            dailyHint: 'Level sama untuk semua, pecahkan rekod!',
+            startChallenge: 'Mula Cabaran',
+            back: 'Kembali',
+            challengeOver: '📅 Cabaran Tamat',
+            newRecord: '🎉 Rekod Baru!',
+            todayHighScore: 'Terbaik hari ini',
+            todayAttempts: 'Percubaan hari ini',
+            times: 'kali',
+            retry: 'Cuba lagi',
+            backHome: 'Menu Utama',
+
+            // Kulit
+            skinTitle: '👕 Kulit',
+            skinUnlocked: 'Dibuka',
+            skinLocked: '🔒',
+            skinUnlockAt: 'skor untuk buka',
+
+            // Papan kedudukan
+            leaderboardTitle: '📊 Papan Kedudukan',
+            rank: 'Kedudukan',
+            lbScore: 'Skor',
+            lbCombo: 'Kombo',
+            lbDate: 'Tarikh',
+            clearRecords: 'Padam',
+            clearConfirm: 'Pasti mahu padam semua rekod?',
+            noRecords: 'Tiada rekod',
+
+            // Pencapaian
+            achievementsTitle: '🏆 Pencapaian',
+            achievementUnlock: 'Pencapaian dibuka!',
+
+            // Statistik
+            statsTitle: '📈 Statistik Permainan',
+            totalGames: 'Jumlah permainan',
+            totalChops: 'Jumlah tebangan',
+            totalTime: 'Jumlah masa',
+            bestCombo: 'Kombo terbaik',
+            avgScore: 'Skor purata',
+            unlockedAchievements: '🎖️ Pencapaian',
+            unlockedSkins: '👕 Kulit',
+            dailyAttempts: '📅 Cabaran harian',
+            resetStats: 'Set semula',
+            resetConfirm: 'Pasti mahu set semula semua statistik? Tidak boleh batal.',
+
+            // Tutorial
+            tutorialWelcome: 'Selamat datang ke Penebang Pokok!',
+            tutorialWelcome1: 'Anda adalah penebang pokok yang berani',
+            tutorialWelcome2: 'Tebang sebanyak mungkin pokok',
+            tutorialWelcome3: 'Elak dahan berbahaya',
+            tutorialControls: 'Kawalan',
+            tutorialMoveLeft: 'Gerak kiri dan tebang',
+            tutorialMoveRight: 'Gerak kanan dan tebang',
+            tutorialTouchHint: 'Atau ketik kiri/kanan skrin',
+            tutorialBranch: 'Elak dahan!',
+            tutorialBranchWarn: 'Kena dahan = Tamat permainan!',
+            tutorialBranchHint: 'Lihat sebelum menebang',
+            tutorialTime: 'Pengurusan Masa',
+            tutorialTimeHint1: 'Bar masa terus berkurang',
+            tutorialTimeHint2: 'Setiap tebangan memberi',
+            tutorialTimeHint3: '+masa',
+            tutorialTimeHint4: 'Masa habis = Tamat permainan',
+            tutorialAdvanced: 'Petua Lanjutan',
+            tutorialCombo: 'Kombo',
+            tutorialComboHint: 'Tebang cepat untuk skor tinggi',
+            tutorialDifficulty: 'Kesukaran',
+            tutorialDifficultyHint: 'Semakin tinggi skor, semakin sukar',
+            tutorialAchievement: 'Pencapaian',
+            tutorialAchievementHint: 'Buka 12 pencapaian',
+            tutorialSkin: 'Kulit',
+            tutorialSkinHint: 'Skor tinggi membuka kulit baru',
+            skip: 'Langkau',
+            prev: 'Sebelumnya',
+            next: 'Seterusnya',
+            finish: 'Selesai',
+
+            // Kawasan ketik
+            tapLeft: '← Ketik Kiri',
+            tapRight: 'Ketik Kanan →',
+
+            // Tetapan volum
+            volumeSettings: '🎵 Tetapan Volum',
+            sfxVolume: '🔊 Kesan Bunyi',
+            bgmVolume: '🎵 Muzik Latar',
+            vibration: '📳 Getaran',
+
+            // Popup
+            skinUnlockPopup: 'Kulit baru dibuka!',
+
+            // Sistem main semula
+            replayBtn: '🎬 Main Semula',
+            replayTitle: '🎬 Permainan Lepas',
+            replayScore: 'Skor',
+            replayCombo: 'Kombo Maks',
+            replayChops: 'Tebangan',
+            replayDuration: 'Tempoh',
+            replayStart: 'Mula Main Semula',
+            replayStop: 'Berhenti',
+            replayNoData: 'Tiada data',
+            replayPlaying: '🎬 Sedang main semula...',
+            replaySeconds: 'saat',
+
+            // Kongsi
+            shareBtn: '📤 Kongsi',
+            shareTitle: 'Penebang Pokok',
+            shareScoreLabel: 'Skor',
+            shareComboLabel: 'Kombo',
+            shareLevelLabel: 'Tahap',
+            shareHighScoreLabel: 'Skor Tertinggi',
+            shareDownloading: 'Mencipta gambar...',
+            shareSuccess: 'Gambar disimpan!',
+            shareFailed: 'Gagal kongsi, cuba lagi',
+            sharePanelTitle: '📤 Kongsi Skor',
+            shareNativeBtn: '📱 Kongsi',
+            shareDownloadBtn: '💾 Simpan Gambar',
+            shareCopyBtn: '📋 Salin Teks',
+            shareCopySuccess: '✓ Disalin!',
+
+            // Mod tanpa had
+            endlessBtn: '∞ Mod Tanpa Had',
+            endlessTitle: '∞ Mod Tanpa Had',
+            endlessDesc: 'Tanpa had masa, uji fokus anda!',
+            endlessBest: 'Skor Tertinggi',
+            endlessTotal: 'Jumlah Permainan',
+            endlessStart: 'Mula Cabaran',
+            endlessOver: '∞ Cabaran Tamat',
+            endlessNewRecord: '🎉 Rekod Baru!',
+            endlessHint: 'Cuma elak dahan, tanpa tekanan masa',
+
+            // Kira mundur
+            countdownGo: 'MULA!',
+
+            // Tema
+            themeDarkTip: 'Tukar ke mod gelap',
+            themeLightTip: 'Tukar ke mod cerah',
+
+            // Tetapan kelajuan
+            speedBtn: '⚡ Kelajuan',
+            speedTitle: '⚡ Kelajuan Permainan',
+            speedSelectDesc: 'Pilih kelajuan yang sesuai untuk anda',
+            speedSlow: '🐢 Perlahan',
+            speedNormal: '🚶 Normal',
+            speedFast: '🏃 Laju',
+            speedSlowDesc: 'Pengurangan masa -40%, untuk pemula',
+            speedNormalDesc: 'Kelajuan permainan standard',
+            speedFastDesc: 'Pengurangan masa +50%, cabaran',
+            speedCurrent: 'Semasa',
+
+            // Nama kulit
+            skinNames: {
+                default: 'Penebang Pokok',
+                ninja: 'Ninja',
+                robot: 'Robot',
+                golden: 'Legenda Emas',
+                santa: 'Santa Claus',
+                pumpkin: 'Kepala Labu',
+                pirate: 'Kapten Lanun',
+                snowman: 'Orang Salji',
+                chinese_new_year: 'Dewa Kekayaan',
+                valentine: 'Cupid',
+                easter_bunny: 'Arnab Easter',
+                summer_surfer: 'Peluncur Musim Panas'
+            },
+            skinDescs: {
+                default: 'Penebang pokok klasik berbaju merah',
+                ninja: 'Ninja misteri berbaju hitam',
+                robot: 'Penebang pokok mekanikal besi',
+                golden: 'Penebang pokok emas legenda',
+                santa: 'Penebang pokok Krismas yang ceria',
+                pumpkin: 'Penebang pokok Halloween yang menyeramkan',
+                pirate: 'Pengembara laut yang berani',
+                snowman: 'Penebang pokok dari dunia ais',
+                chinese_new_year: 'Selamat Tahun Baru! Semoga bertuah!',
+                valentine: 'Dewa cinta menyebarkan kasih',
+                easter_bunny: 'Arnab comel dengan telur Easter',
+                summer_surfer: 'Peluncur bergaya di pantai'
+            },
+
+            // Nama pencapaian
+            achievementNames: {
+                first_chop: 'Tebangan Pertama',
+                score_10: 'Pemula',
+                score_50: 'Mahir',
+                score_100: 'Profesional',
+                score_200: 'Master',
+                combo_5: 'Mini Kombo',
+                combo_10: 'Pakar Kombo',
+                combo_20: 'Raja Kombo',
+                level_5: 'Tahap 5',
+                level_8: 'Tahap 8',
+                level_max: 'Tahap Maksimum',
+                close_call: 'Hampir Saja'
+            },
+            achievementDescs: {
+                first_chop: 'Tebang pokok pertama anda',
+                score_10: 'Raih 10 skor dalam satu permainan',
+                score_50: 'Raih 50 skor dalam satu permainan',
+                score_100: 'Raih 100 skor dalam satu permainan',
+                score_200: 'Raih 200 skor dalam satu permainan',
+                combo_5: 'Raih 5 kombo',
+                combo_10: 'Raih 10 kombo',
+                combo_20: 'Raih 20 kombo',
+                level_5: 'Mencapai tahap kesukaran 5',
+                level_8: 'Mencapai tahap kesukaran 8',
+                level_max: 'Mencapai tahap kesukaran maksimum 11',
+                close_call: 'Tebang 20 kali apabila masa di bawah 10%'
+            }
         }
     },
 
     // 支持的语言列表（循环切换顺序）
-    langOrder: ['zh', 'en', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'it', 'ru', 'tr', 'pl', 'nl', 'sv', 'fi', 'no', 'da', 'el'],
+    langOrder: ['zh', 'en', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'it', 'ru', 'tr', 'pl', 'nl', 'sv', 'fi', 'no', 'da', 'el', 'cs', 'vi', 'hu', 'th', 'id', 'ms'],
 
     // 语言按钮显示文本
     langLabels: {
@@ -4676,7 +6140,13 @@ const I18N = {
         fi: 'FI',
         no: 'NO',
         da: 'DA',
-        el: 'EL'
+        el: 'EL',
+        cs: 'CS',
+        vi: 'VI',
+        hu: 'HU',
+        th: 'TH',
+        id: 'ID',
+        ms: 'MS'
     },
 
     // 加载语言设置
@@ -4721,6 +6191,16 @@ const I18N = {
                 this.currentLang = 'da';
             } else if (browserLang.startsWith('el')) {
                 this.currentLang = 'el';
+            } else if (browserLang.startsWith('cs')) {
+                this.currentLang = 'cs';
+            } else if (browserLang.startsWith('vi')) {
+                this.currentLang = 'vi';
+            } else if (browserLang.startsWith('hu')) {
+                this.currentLang = 'hu';
+            } else if (browserLang.startsWith('th')) {
+                this.currentLang = 'th';
+            } else if (browserLang.startsWith('id') || browserLang.startsWith('in')) {
+                this.currentLang = 'id';
             } else {
                 this.currentLang = 'en';
             }
@@ -4765,7 +6245,7 @@ const I18N = {
         const t = this.t;
 
         // 更新HTML lang属性
-        const langCodes = { zh: 'zh-CN', en: 'en', ja: 'ja', ko: 'ko', es: 'es', fr: 'fr', de: 'de', pt: 'pt-BR', it: 'it', ru: 'ru', tr: 'tr', pl: 'pl', nl: 'nl', sv: 'sv', fi: 'fi', no: 'no', da: 'da', el: 'el' };
+        const langCodes = { zh: 'zh-CN', en: 'en', ja: 'ja', ko: 'ko', es: 'es', fr: 'fr', de: 'de', pt: 'pt-BR', it: 'it', ru: 'ru', tr: 'tr', pl: 'pl', nl: 'nl', sv: 'sv', fi: 'fi', no: 'no', da: 'da', el: 'el', cs: 'cs', vi: 'vi', hu: 'hu', th: 'th', id: 'id' };
         document.documentElement.lang = langCodes[this.currentLang] || 'en';
 
         // 标题
@@ -5054,7 +6534,12 @@ const I18N = {
                 fi: 'Vaihda Suomeksi',
                 no: 'Bytt til Norsk',
                 da: 'Skift til Dansk',
-                el: 'Αλλαγή σε Ελληνικά'
+                el: 'Αλλαγή σε Ελληνικά',
+                cs: 'Přepnout na Čeština',
+                vi: 'Chuyển sang Tiếng Việt',
+                hu: 'Váltás Magyarra',
+                th: 'เปลี่ยนเป็นภาษาไทย',
+                id: 'Beralih ke Bahasa Indonesia'
             };
             langBtn.title = tooltips[nextLang];
         }
@@ -5190,7 +6675,12 @@ const THEME = {
                 fi: this.current === 'light' ? 'Vaihda tummaan teemaan' : 'Vaihda valoisaan teemaan',
                 no: this.current === 'light' ? 'Bytt til mørk modus' : 'Bytt til lys modus',
                 da: this.current === 'light' ? 'Skift til mørk tilstand' : 'Skift til lys tilstand',
-                el: this.current === 'light' ? 'Αλλαγή σε σκοτεινό θέμα' : 'Αλλαγή σε φωτεινό θέμα'
+                el: this.current === 'light' ? 'Αλλαγή σε σκοτεινό θέμα' : 'Αλλαγή σε φωτεινό θέμα',
+                cs: this.current === 'light' ? 'Přepnout na tmavý režim' : 'Přepnout na světlý režim',
+                vi: this.current === 'light' ? 'Chuyển sang chế độ tối' : 'Chuyển sang chế độ sáng',
+                hu: this.current === 'light' ? 'Váltás sötét témára' : 'Váltás világos témára',
+                th: this.current === 'light' ? 'เปลี่ยนเป็นธีมมืด' : 'เปลี่ยนเป็นธีมสว่าง',
+                id: this.current === 'light' ? 'Beralih ke tema gelap' : 'Beralih ke tema terang'
             };
             btn.title = tooltips[I18N.currentLang] || tooltips.en;
         }
@@ -5258,7 +6748,7 @@ const SPEED_SETTING = {
 
     // 获取速度名称（多语言，去掉表情符号前缀）
     getSpeedName(speed) {
-        const t = I18N.t();
+        const t = I18N.t;
         const names = {
             slow: t.speedSlow || '🐢 慢速',
             normal: t.speedNormal || '🚶 普通',
@@ -6917,7 +8407,9 @@ const audio = {
         noteGain.gain.setValueAtTime(0, now);
         noteGain.gain.linearRampToValueAtTime(0.3, now + attackTime);
         noteGain.gain.linearRampToValueAtTime(0.3 * sustainLevel, now + attackTime + decayTime);
-        noteGain.gain.setValueAtTime(0.3 * sustainLevel, now + duration - releaseTime);
+        // 确保 releaseStart 不为负数
+        const releaseStart = Math.max(now + attackTime + decayTime, now + duration - releaseTime);
+        noteGain.gain.setValueAtTime(0.3 * sustainLevel, releaseStart);
         noteGain.gain.linearRampToValueAtTime(0.001, now + duration);
 
         osc.start(now);
