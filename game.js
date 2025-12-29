@@ -11487,9 +11487,10 @@ function endlessReturnToStart() {
 // 初始化树干
 function initTrunks() {
     game.trunks = [];
+    game.lastBranches = []; // 记录最近的树枝方向，防止必死局
     for (let i = 0; i < CONFIG.TRUNK_COUNT; i++) {
         game.trunks.push({
-            branch: generateBranch(i < 2) // 底部两节不生成树枝
+            branch: generateBranch(i < 3) // 底部三节不生成树枝，给玩家更多反应时间
         });
     }
 }
@@ -11503,11 +11504,36 @@ function generateBranch(forceNone = false) {
         return DAILY_CHALLENGE.getNextBranch(forceNone);
     }
 
+    // 检查最近的树枝，防止连续交替导致必死局
+    // 如果最近2个树枝是 左-右 或 右-左 的交替模式，强制生成 none
+    if (game.lastBranches && game.lastBranches.length >= 2) {
+        const last = game.lastBranches;
+        const len = last.length;
+        // 检测交替模式：左右左右 或 右左右左
+        if (len >= 2 &&
+            last[len-1] !== 'none' &&
+            last[len-2] !== 'none' &&
+            last[len-1] !== last[len-2]) {
+            // 已经有连续交替，这次强制无树枝，给玩家喘息
+            game.lastBranches.push('none');
+            if (game.lastBranches.length > 4) game.lastBranches.shift();
+            return 'none';
+        }
+    }
+
     // 普通模式随机生成
     const rand = Math.random();
-    if (rand < 0.3) return 'left';
-    if (rand < 0.6) return 'right';
-    return 'none';
+    let branch;
+    if (rand < 0.3) branch = 'left';
+    else if (rand < 0.6) branch = 'right';
+    else branch = 'none';
+
+    // 记录树枝历史
+    if (!game.lastBranches) game.lastBranches = [];
+    game.lastBranches.push(branch);
+    if (game.lastBranches.length > 4) game.lastBranches.shift();
+
+    return branch;
 }
 
 // 砍树动作
