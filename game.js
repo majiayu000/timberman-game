@@ -6115,11 +6115,497 @@ const I18N = {
                 level_max: 'Mencapai tahap kesukaran maksimum 11',
                 close_call: 'Tebang 20 kali apabila masa di bawah 10%'
             }
+        },
+
+        // 乌克兰语
+        uk: {
+            // Заголовок
+            title: 'Лісоруб',
+
+            // Стартовий екран
+            startTitle: 'Лісоруб',
+            startHint1: 'Натисніть ← → або A/D для рубки',
+            startHint2: 'Торкніться лівої/правої частини екрана',
+            startHint3: 'Уникайте гілок, перемагайте час!',
+            startHint4: 'Пробіл/Enter Старт | ESC/P Пауза',
+            startBtn: 'Почати гру',
+            dailyBtn: '📅 Щоденний виклик',
+            skinBtn: '👕 Скіни',
+            leaderboardBtn: '📊 Таблиця лідерів',
+            statsBtn: '📈 Статистика',
+            tutorialBtn: '❓ Навчання',
+
+            // Кінець гри
+            gameOver: 'Гра закінчена',
+            score: 'Рахунок',
+            maxCombo: 'Макс. комбо',
+            highScore: 'Рекорд',
+            restartBtn: 'Грати знову',
+            achievementsBtn: '🏆 Досягнення',
+
+            // Пауза
+            paused: '⏸️ Пауза',
+            pauseHint: 'Натисніть ESC або P для продовження',
+            resumeBtn: 'Продовжити',
+
+            // Щоденний виклик
+            dailyTitle: '📅 Щоденний виклик',
+            todayDate: 'Сьогодні',
+            todayBest: 'Кращий сьогодні',
+            attempts: 'Спроби',
+            dailyHint: 'Однаковий рівень для всіх, побийте рекорд!',
+            startChallenge: 'Почати виклик',
+            back: 'Назад',
+            challengeOver: '📅 Виклик завершено',
+            newRecord: '🎉 Новий рекорд!',
+            todayHighScore: 'Кращий сьогодні',
+            todayAttempts: 'Спроби сьогодні',
+            times: 'разів',
+            retry: 'Повторити',
+            backHome: 'Головне меню',
+
+            // Скіни
+            skinTitle: '👕 Скіни',
+            skinUnlocked: 'Розблоковано',
+            skinLocked: '🔒',
+            skinUnlockAt: 'очок для розблокування',
+
+            // Таблиця лідерів
+            leaderboardTitle: '📊 Таблиця лідерів',
+            rank: 'Місце',
+            lbScore: 'Рахунок',
+            lbCombo: 'Комбо',
+            lbDate: 'Дата',
+            clearRecords: 'Очистити',
+            clearConfirm: 'Дійсно видалити всі записи?',
+            noRecords: 'Немає записів',
+
+            // Досягнення
+            achievementsTitle: '🏆 Досягнення',
+            achievementUnlock: 'Досягнення розблоковано!',
+
+            // Статистика
+            statsTitle: '📈 Статистика гри',
+            totalGames: 'Всього ігор',
+            totalChops: 'Всього ударів',
+            totalTime: 'Загальний час',
+            bestCombo: 'Найкраще комбо',
+            avgScore: 'Середній рахунок',
+            unlockedAchievements: '🎖️ Досягнення',
+            unlockedSkins: '👕 Скіни',
+            dailyAttempts: '📅 Щоденні виклики',
+            resetStats: 'Скинути',
+            resetConfirm: 'Дійсно скинути всю статистику? Це не можна скасувати.',
+
+            // Навчання
+            tutorialWelcome: 'Ласкаво просимо до Лісоруба!',
+            tutorialWelcome1: 'Ви - відважний лісоруб',
+            tutorialWelcome2: 'Рубайте якомога більше дерев',
+            tutorialWelcome3: 'Уникайте небезпечних гілок',
+            tutorialControls: 'Керування',
+            tutorialMoveLeft: 'Рух вліво та удар',
+            tutorialMoveRight: 'Рух вправо та удар',
+            tutorialTouchHint: 'Або торкніться лівої/правої частини екрана',
+            tutorialBranch: 'Уникайте гілок!',
+            tutorialBranchWarn: 'Зачепили гілку = Гра закінчена!',
+            tutorialBranchHint: 'Дивіться перед тим як рубати',
+            tutorialTime: 'Управління часом',
+            tutorialTimeHint1: 'Шкала часу постійно зменшується',
+            tutorialTimeHint2: 'Кожен удар дає',
+            tutorialTimeHint3: '+час',
+            tutorialTimeHint4: 'Час вичерпано = Гра закінчена',
+            tutorialAdvanced: 'Просунуті поради',
+            tutorialCombo: 'Комбо',
+            tutorialComboHint: 'Швидко рубайте для високого рахунку',
+            tutorialDifficulty: 'Складність',
+            tutorialDifficultyHint: 'Чим вищий рахунок, тим складніше',
+            tutorialAchievement: 'Досягнення',
+            tutorialAchievementHint: 'Розблокуйте 12 досягнень',
+            tutorialSkin: 'Скіни',
+            tutorialSkinHint: 'Високий рахунок розблоковує нові скіни',
+            skip: 'Пропустити',
+            prev: 'Назад',
+            next: 'Далі',
+            finish: 'Готово',
+
+            // Зона дотику
+            tapLeft: '← Торкнутися зліва',
+            tapRight: 'Торкнутися справа →',
+
+            // Налаштування гучності
+            volumeSettings: '🎵 Налаштування звуку',
+            sfxVolume: '🔊 Звукові ефекти',
+            bgmVolume: '🎵 Фонова музика',
+            vibration: '📳 Вібрація',
+
+            // Спливаюче вікно
+            skinUnlockPopup: 'Новий скін розблоковано!',
+
+            // Система повтору
+            replayBtn: '🎬 Повтор',
+            replayTitle: '🎬 Остання гра',
+            replayScore: 'Рахунок',
+            replayCombo: 'Макс. комбо',
+            replayChops: 'Ударів',
+            replayDuration: 'Тривалість',
+            replayStart: 'Почати повтор',
+            replayStop: 'Зупинити',
+            replayNoData: 'Немає даних',
+            replayPlaying: '🎬 Відтворення...',
+            replaySeconds: 'сек.',
+
+            // Поділитися
+            shareBtn: '📤 Поділитися',
+            shareTitle: 'Лісоруб',
+            shareScoreLabel: 'Рахунок',
+            shareComboLabel: 'Комбо',
+            shareLevelLabel: 'Рівень',
+            shareHighScoreLabel: 'Рекорд',
+            shareDownloading: 'Створення зображення...',
+            shareSuccess: 'Зображення збережено!',
+            shareFailed: 'Помилка поширення, спробуйте ще',
+            sharePanelTitle: '📤 Поділитися рахунком',
+            shareNativeBtn: '📱 Поділитися',
+            shareDownloadBtn: '💾 Зберегти зображення',
+            shareCopyBtn: '📋 Копіювати текст',
+            shareCopySuccess: '✓ Скопійовано!',
+
+            // Безкінечний режим
+            endlessBtn: '∞ Безкінечний режим',
+            endlessTitle: '∞ Безкінечний режим',
+            endlessDesc: 'Без обмеження часу, випробуй свою зосередженість!',
+            endlessBest: 'Рекорд',
+            endlessTotal: 'Всього ігор',
+            endlessStart: 'Почати виклик',
+            endlessOver: '∞ Виклик завершено',
+            endlessNewRecord: '🎉 Новий рекорд!',
+            endlessHint: 'Тільки уникай гілок, без тиску часу',
+
+            // Зворотний відлік
+            countdownGo: 'СТАРТ!',
+
+            // Тема
+            themeDarkTip: 'Перемкнути на темну тему',
+            themeLightTip: 'Перемкнути на світлу тему',
+
+            // Налаштування швидкості
+            speedBtn: '⚡ Швидкість',
+            speedTitle: '⚡ Швидкість гри',
+            speedSelectDesc: 'Виберіть зручну для вас швидкість',
+            speedSlow: '🐢 Повільно',
+            speedNormal: '🚶 Нормально',
+            speedFast: '🏃 Швидко',
+            speedSlowDesc: 'Зменшення часу -40%, для новачків',
+            speedNormalDesc: 'Стандартна швидкість гри',
+            speedFastDesc: 'Зменшення часу +50%, виклик',
+            speedCurrent: 'Поточний',
+
+            // Назви скінів
+            skinNames: {
+                default: 'Лісоруб',
+                ninja: 'Ніндзя',
+                robot: 'Робот',
+                golden: 'Золота легенда',
+                santa: 'Санта Клаус',
+                pumpkin: 'Гарбузова голова',
+                pirate: 'Капітан піратів',
+                snowman: 'Сніговик',
+                chinese_new_year: 'Бог багатства',
+                valentine: 'Купідон',
+                easter_bunny: 'Великодній кролик',
+                summer_surfer: 'Літній серфер'
+            },
+            skinDescs: {
+                default: 'Класичний лісоруб у червоному',
+                ninja: 'Таємничий ніндзя в чорному',
+                robot: 'Механічний сталевий лісоруб',
+                golden: 'Легендарний золотий лісоруб',
+                santa: 'Веселий різдвяний лісоруб',
+                pumpkin: 'Моторошний хелловінський лісоруб',
+                pirate: 'Відважний морський мандрівник',
+                snowman: 'Лісоруб з крижаного світу',
+                chinese_new_year: 'З Новим роком! Бажаю удачі!',
+                valentine: 'Бог кохання поширює романтику',
+                easter_bunny: 'Милий кролик з великодніми яйцями',
+                summer_surfer: 'Стильний серфер на пляжі'
+            },
+
+            // Назви досягнень
+            achievementNames: {
+                first_chop: 'Перший удар',
+                score_10: 'Початківець',
+                score_50: 'Досвідчений',
+                score_100: 'Професіонал',
+                score_200: 'Майстер',
+                combo_5: 'Міні комбо',
+                combo_10: 'Експерт комбо',
+                combo_20: 'Король комбо',
+                level_5: 'Рівень 5',
+                level_8: 'Рівень 8',
+                level_max: 'Максимальний рівень',
+                close_call: 'На волосині'
+            },
+            achievementDescs: {
+                first_chop: 'Зрубайте своє перше дерево',
+                score_10: 'Наберіть 10 очок за одну гру',
+                score_50: 'Наберіть 50 очок за одну гру',
+                score_100: 'Наберіть 100 очок за одну гру',
+                score_200: 'Наберіть 200 очок за одну гру',
+                combo_5: 'Досягніть 5 комбо',
+                combo_10: 'Досягніть 10 комбо',
+                combo_20: 'Досягніть 20 комбо',
+                level_5: 'Досягніть рівня складності 5',
+                level_8: 'Досягніть рівня складності 8',
+                level_max: 'Досягніть максимального рівня складності 11',
+                close_call: 'Зрубайте 20 разів коли часу менше 10%'
+            }
+        },
+        ro: {
+            // Titlu
+            title: 'Tăietor de Lemne',
+
+            // Ecran de start
+            startTitle: 'Tăietor de Lemne',
+            startHint1: 'Apăsați ← → sau A/D pentru a tăia',
+            startHint2: 'Atingeți stânga/dreapta ecranului',
+            startHint3: 'Evitați ramurile, învingeți timpul!',
+            startHint4: 'Spațiu/Enter Start | ESC/P Pauză',
+            startBtn: 'Începe jocul',
+            dailyBtn: '📅 Provocare zilnică',
+            skinBtn: '👕 Skinuri',
+            leaderboardBtn: '📊 Clasament',
+            statsBtn: '📈 Statistici',
+            tutorialBtn: '❓ Tutorial',
+
+            // Sfârșit de joc
+            gameOver: 'Joc terminat',
+            score: 'Scor',
+            maxCombo: 'Combo max.',
+            highScore: 'Scor record',
+            restartBtn: 'Joacă din nou',
+            achievementsBtn: '🏆 Realizări',
+
+            // Pauză
+            paused: '⏸️ Pauză',
+            pauseHint: 'Apăsați ESC sau P pentru a continua',
+            resumeBtn: 'Continuă',
+
+            // Provocare zilnică
+            dailyTitle: '📅 Provocare zilnică',
+            todayDate: 'Astăzi',
+            todayBest: 'Cel mai bun azi',
+            attempts: 'Încercări',
+            dailyHint: 'Același nivel pentru toți, depășește recordul!',
+            startChallenge: 'Începe provocarea',
+            back: 'Înapoi',
+            challengeOver: '📅 Provocare terminată',
+            newRecord: '🎉 Nou record!',
+            todayHighScore: 'Cel mai bun azi',
+            todayAttempts: 'Încercări azi',
+            times: 'ori',
+            retry: 'Reîncearcă',
+            backHome: 'Meniu principal',
+
+            // Skinuri
+            skinTitle: '👕 Skinuri',
+            skinUnlocked: 'Deblocat',
+            skinLocked: '🔒',
+            skinUnlockAt: 'puncte pentru deblocare',
+
+            // Clasament
+            leaderboardTitle: '📊 Clasament',
+            rank: 'Loc',
+            lbScore: 'Scor',
+            lbCombo: 'Combo',
+            lbDate: 'Data',
+            clearRecords: 'Șterge',
+            clearConfirm: 'Ștergeți toate înregistrările?',
+            noRecords: 'Nu există înregistrări',
+
+            // Realizări
+            achievementsTitle: '🏆 Realizări',
+            achievementUnlock: 'Realizare deblocată!',
+
+            // Statistici
+            statsTitle: '📈 Statistici joc',
+            totalGames: 'Total jocuri',
+            totalChops: 'Total tăieri',
+            totalTime: 'Timp total',
+            bestCombo: 'Cel mai bun combo',
+            avgScore: 'Scor mediu',
+            unlockedAchievements: '🎖️ Realizări',
+            unlockedSkins: '👕 Skinuri',
+            dailyAttempts: '📅 Provocări zilnice',
+            resetStats: 'Resetează',
+            resetConfirm: 'Resetați toate statisticile? Această acțiune nu poate fi anulată.',
+
+            // Tutorial
+            tutorialWelcome: 'Bun venit la Tăietor de Lemne!',
+            tutorialWelcome1: 'Ești un tăietor de lemne curajos',
+            tutorialWelcome2: 'Taie cât mai multe lemne poți',
+            tutorialWelcome3: 'Evită ramurile periculoase',
+            tutorialControls: 'Controale',
+            tutorialMoveLeft: 'Mișcare stânga și tăiere',
+            tutorialMoveRight: 'Mișcare dreapta și tăiere',
+            tutorialTouchHint: 'Sau atingeți stânga/dreapta ecranului',
+            tutorialBranch: 'Evitați ramurile!',
+            tutorialBranchWarn: 'Ai atins ramura = Joc terminat!',
+            tutorialBranchHint: 'Privește înainte de a tăia',
+            tutorialTime: 'Managementul timpului',
+            tutorialTimeHint1: 'Bara de timp scade constant',
+            tutorialTimeHint2: 'Fiecare tăiere adaugă',
+            tutorialTimeHint3: '+timp',
+            tutorialTimeHint4: 'Timpul expirat = Joc terminat',
+            tutorialAdvanced: 'Sfaturi avansate',
+            tutorialCombo: 'Combo',
+            tutorialComboHint: 'Taie rapid pentru scor mare',
+            tutorialDifficulty: 'Dificultate',
+            tutorialDifficultyHint: 'Cu cât scorul e mai mare, cu atât e mai greu',
+            tutorialAchievement: 'Realizări',
+            tutorialAchievementHint: 'Deblochează 12 realizări',
+            tutorialSkin: 'Skinuri',
+            tutorialSkinHint: 'Scor mare deblochează skinuri noi',
+            skip: 'Sari',
+            prev: 'Înapoi',
+            next: 'Înainte',
+            finish: 'Gata',
+
+            // Zona de atingere
+            tapLeft: '← Atingeți stânga',
+            tapRight: 'Atingeți dreapta →',
+
+            // Setări volum
+            volumeSettings: '🎵 Setări sunet',
+            sfxVolume: '🔊 Efecte sonore',
+            bgmVolume: '🎵 Muzică de fundal',
+            vibration: '📳 Vibrație',
+
+            // Popup
+            skinUnlockPopup: 'Skin nou deblocat!',
+
+            // Sistem replay
+            replayBtn: '🎬 Replay',
+            replayTitle: '🎬 Ultimul joc',
+            replayScore: 'Scor',
+            replayCombo: 'Combo max.',
+            replayChops: 'Tăieri',
+            replayDuration: 'Durată',
+            replayStart: 'Începe replay',
+            replayStop: 'Oprește',
+            replayNoData: 'Nu există date',
+            replayPlaying: '🎬 Redare...',
+            replaySeconds: 'sec.',
+
+            // Partajare
+            shareBtn: '📤 Partajează',
+            shareTitle: 'Tăietor de Lemne',
+            shareScoreLabel: 'Scor',
+            shareComboLabel: 'Combo',
+            shareLevelLabel: 'Nivel',
+            shareHighScoreLabel: 'Record',
+            shareDownloading: 'Generare imagine...',
+            shareSuccess: 'Imagine salvată!',
+            shareFailed: 'Partajare eșuată, încearcă din nou',
+            sharePanelTitle: '📤 Partajează scorul',
+            shareNativeBtn: '📱 Partajează',
+            shareDownloadBtn: '💾 Salvează imagine',
+            shareCopyBtn: '📋 Copiază text',
+            shareCopySuccess: '✓ Copiat!',
+
+            // Mod nesfârșit
+            endlessBtn: '∞ Mod nesfârșit',
+            endlessTitle: '∞ Mod nesfârșit',
+            endlessDesc: 'Fără limită de timp, testează-ți concentrarea!',
+            endlessBest: 'Record',
+            endlessTotal: 'Total jocuri',
+            endlessStart: 'Începe provocarea',
+            endlessOver: '∞ Provocare terminată',
+            endlessNewRecord: '🎉 Nou record!',
+            endlessHint: 'Doar evită ramurile, fără presiunea timpului',
+
+            // Numărătoare inversă
+            countdownGo: 'START!',
+
+            // Temă
+            themeDarkTip: 'Comută la modul întunecat',
+            themeLightTip: 'Comută la modul luminos',
+
+            // Setări viteză
+            speedBtn: '⚡ Viteză',
+            speedTitle: '⚡ Viteza jocului',
+            speedSelectDesc: 'Alege viteza potrivită pentru tine',
+            speedSlow: '🐢 Lent',
+            speedNormal: '🚶 Normal',
+            speedFast: '🏃 Rapid',
+            speedSlowDesc: 'Scădere timp -40%, pentru începători',
+            speedNormalDesc: 'Viteza standard a jocului',
+            speedFastDesc: 'Scădere timp +50%, provocare',
+            speedCurrent: 'Curent',
+
+            // Nume skinuri
+            skinNames: {
+                default: 'Tăietor de Lemne',
+                ninja: 'Ninja',
+                robot: 'Robot',
+                golden: 'Legendă de Aur',
+                santa: 'Moș Crăciun',
+                pumpkin: 'Cap de Dovleac',
+                pirate: 'Căpitan Pirat',
+                snowman: 'Om de Zăpadă',
+                chinese_new_year: 'Zeul Bogăției',
+                valentine: 'Cupidon',
+                easter_bunny: 'Iepuraș de Paște',
+                summer_surfer: 'Surfer de Vară'
+            },
+            skinDescs: {
+                default: 'Clasic tăietor de lemne în roșu',
+                ninja: 'Ninja misterios în negru',
+                robot: 'Tăietor de lemne mecanic de oțel',
+                golden: 'Legendarul tăietor de aur',
+                santa: 'Tăietor vesel de Crăciun',
+                pumpkin: 'Tăietor înfricoșător de Halloween',
+                pirate: 'Aventurier curajos al mărilor',
+                snowman: 'Tăietor din lumea înghețată',
+                chinese_new_year: 'An Nou Fericit! Mult noroc!',
+                valentine: 'Zeul iubirii răspândește romantism',
+                easter_bunny: 'Iepuraș drăguț cu ouă de Paște',
+                summer_surfer: 'Surfer cool pe plajă'
+            },
+
+            // Nume realizări
+            achievementNames: {
+                first_chop: 'Prima tăiere',
+                score_10: 'Începător',
+                score_50: 'Experimentat',
+                score_100: 'Profesionist',
+                score_200: 'Maestru',
+                combo_5: 'Mini combo',
+                combo_10: 'Expert combo',
+                combo_20: 'Rege combo',
+                level_5: 'Nivel 5',
+                level_8: 'Nivel 8',
+                level_max: 'Nivel maxim',
+                close_call: 'La limită'
+            },
+            achievementDescs: {
+                first_chop: 'Taie primul tău lemn',
+                score_10: 'Obține 10 puncte într-un joc',
+                score_50: 'Obține 50 puncte într-un joc',
+                score_100: 'Obține 100 puncte într-un joc',
+                score_200: 'Obține 200 puncte într-un joc',
+                combo_5: 'Atinge combo 5',
+                combo_10: 'Atinge combo 10',
+                combo_20: 'Atinge combo 20',
+                level_5: 'Atinge nivelul de dificultate 5',
+                level_8: 'Atinge nivelul de dificultate 8',
+                level_max: 'Atinge nivelul maxim de dificultate 11',
+                close_call: 'Taie de 20 ori când timpul e sub 10%'
+            }
         }
     },
 
     // 支持的语言列表（循环切换顺序）
-    langOrder: ['zh', 'en', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'it', 'ru', 'tr', 'pl', 'nl', 'sv', 'fi', 'no', 'da', 'el', 'cs', 'vi', 'hu', 'th', 'id', 'ms'],
+    langOrder: ['zh', 'en', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'it', 'ru', 'tr', 'pl', 'nl', 'sv', 'fi', 'no', 'da', 'el', 'cs', 'vi', 'hu', 'th', 'id', 'ms', 'uk', 'ro', 'ar'],
 
     // 语言按钮显示文本
     langLabels: {
@@ -6146,7 +6632,10 @@ const I18N = {
         hu: 'HU',
         th: 'TH',
         id: 'ID',
-        ms: 'MS'
+        ms: 'MS',
+        uk: 'UK',
+        ro: 'RO',
+        ar: 'ع'
     },
 
     // 加载语言设置
@@ -6201,6 +6690,14 @@ const I18N = {
                 this.currentLang = 'th';
             } else if (browserLang.startsWith('id') || browserLang.startsWith('in')) {
                 this.currentLang = 'id';
+            } else if (browserLang.startsWith('ms')) {
+                this.currentLang = 'ms';
+            } else if (browserLang.startsWith('uk')) {
+                this.currentLang = 'uk';
+            } else if (browserLang.startsWith('ro')) {
+                this.currentLang = 'ro';
+            } else if (browserLang.startsWith('ar')) {
+                this.currentLang = 'ar';
             } else {
                 this.currentLang = 'en';
             }
@@ -6245,7 +6742,7 @@ const I18N = {
         const t = this.t;
 
         // 更新HTML lang属性
-        const langCodes = { zh: 'zh-CN', en: 'en', ja: 'ja', ko: 'ko', es: 'es', fr: 'fr', de: 'de', pt: 'pt-BR', it: 'it', ru: 'ru', tr: 'tr', pl: 'pl', nl: 'nl', sv: 'sv', fi: 'fi', no: 'no', da: 'da', el: 'el', cs: 'cs', vi: 'vi', hu: 'hu', th: 'th', id: 'id' };
+        const langCodes = { zh: 'zh-CN', en: 'en', ja: 'ja', ko: 'ko', es: 'es', fr: 'fr', de: 'de', pt: 'pt-BR', it: 'it', ru: 'ru', tr: 'tr', pl: 'pl', nl: 'nl', sv: 'sv', fi: 'fi', no: 'no', da: 'da', el: 'el', cs: 'cs', vi: 'vi', hu: 'hu', th: 'th', id: 'id', ms: 'ms', uk: 'uk', ro: 'ro' };
         document.documentElement.lang = langCodes[this.currentLang] || 'en';
 
         // 标题
@@ -6508,40 +7005,16 @@ const I18N = {
         // 教程界面
         this.updateTutorialTexts();
 
-        // 更新语言切换按钮显示（显示下一个语言）
-        const langBtn = document.getElementById('lang-btn');
-        if (langBtn) {
-            const currentIndex = this.langOrder.indexOf(this.currentLang);
-            const nextIndex = (currentIndex + 1) % this.langOrder.length;
-            const nextLang = this.langOrder[nextIndex];
-            langBtn.textContent = this.langLabels[nextLang];
-            // 多语言提示文本
-            const tooltips = {
-                zh: '切换为中文',
-                en: 'Switch to English',
-                ja: '日本語に切り替え',
-                ko: '한국어로 전환',
-                es: 'Cambiar a Español',
-                fr: 'Passer au Français',
-                de: 'Auf Deutsch wechseln',
-                pt: 'Mudar para Português',
-                it: 'Passa all\'Italiano',
-                ru: 'Переключить на Русский',
-                tr: 'Türkçe\'ye geç',
-                pl: 'Przełącz na Polski',
-                nl: 'Overschakelen naar Nederlands',
-                sv: 'Byt till Svenska',
-                fi: 'Vaihda Suomeksi',
-                no: 'Bytt til Norsk',
-                da: 'Skift til Dansk',
-                el: 'Αλλαγή σε Ελληνικά',
-                cs: 'Přepnout na Čeština',
-                vi: 'Chuyển sang Tiếng Việt',
-                hu: 'Váltás Magyarra',
-                th: 'เปลี่ยนเป็นภาษาไทย',
-                id: 'Beralih ke Bahasa Indonesia'
-            };
-            langBtn.title = tooltips[nextLang];
+        // 更新语言下拉选择器
+        const langSelect = document.getElementById('lang-select');
+        if (langSelect) {
+            langSelect.value = this.currentLang;
+        }
+
+        // 更新返回首页按钮文本
+        const homeBtn = document.getElementById('home-btn');
+        if (homeBtn) {
+            homeBtn.textContent = '🏠 ' + (t.backHome || '返回首页');
         }
 
         // 更新主题按钮提示文本
@@ -6680,7 +7153,10 @@ const THEME = {
                 vi: this.current === 'light' ? 'Chuyển sang chế độ tối' : 'Chuyển sang chế độ sáng',
                 hu: this.current === 'light' ? 'Váltás sötét témára' : 'Váltás világos témára',
                 th: this.current === 'light' ? 'เปลี่ยนเป็นธีมมืด' : 'เปลี่ยนเป็นธีมสว่าง',
-                id: this.current === 'light' ? 'Beralih ke tema gelap' : 'Beralih ke tema terang'
+                id: this.current === 'light' ? 'Beralih ke tema gelap' : 'Beralih ke tema terang',
+                ms: this.current === 'light' ? 'Tukar ke tema gelap' : 'Tukar ke tema cerah',
+                uk: this.current === 'light' ? 'Перемкнути на темну тему' : 'Перемкнути на світлу тему',
+                ro: this.current === 'light' ? 'Comută la tema întunecată' : 'Comută la tema luminoasă'
             };
             btn.title = tooltips[I18N.currentLang] || tooltips.en;
         }
@@ -8726,8 +9202,10 @@ function init() {
         statsScreen: document.getElementById('stats-screen'),
         statsBackBtn: document.getElementById('stats-back-btn'),
         statsResetBtn: document.getElementById('stats-reset-btn'),
-        // 语言切换按钮
-        langBtn: document.getElementById('lang-btn'),
+        // 语言切换下拉
+        langSelect: document.getElementById('lang-select'),
+        // 返回首页按钮
+        homeBtn: document.getElementById('home-btn'),
         // 主题切换按钮
         themeBtn: document.getElementById('theme-btn'),
         // 速度选择相关元素
@@ -8935,10 +9413,13 @@ function bindEvents() {
         });
     });
 
-    // 语言切换按钮
-    elements.langBtn.addEventListener('click', () => {
-        I18N.toggle();
+    // 语言切换下拉
+    elements.langSelect.addEventListener('change', (e) => {
+        I18N.setLang(e.target.value);
     });
+
+    // 返回首页按钮
+    elements.homeBtn.addEventListener('click', returnToTitle);
 
     // 主题切换按钮
     elements.themeBtn.addEventListener('click', () => {
@@ -10413,6 +10894,13 @@ function hideDailyScreen() {
 // 从每日挑战结束界面返回开始界面
 function dailyReturnToStart() {
     elements.dailyGameOverScreen.classList.add('hidden');
+    elements.startScreen.classList.remove('hidden');
+    elements.title.style.display = 'block';
+}
+
+// 从普通游戏结束界面返回开始界面
+function returnToTitle() {
+    elements.gameOverScreen.classList.add('hidden');
     elements.startScreen.classList.remove('hidden');
     elements.title.style.display = 'block';
 }
