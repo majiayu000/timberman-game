@@ -5189,7 +5189,8 @@ const THEME = {
                 sv: this.current === 'light' ? 'Byt till mörkt tema' : 'Byt till ljust tema',
                 fi: this.current === 'light' ? 'Vaihda tummaan teemaan' : 'Vaihda valoisaan teemaan',
                 no: this.current === 'light' ? 'Bytt til mørk modus' : 'Bytt til lys modus',
-                da: this.current === 'light' ? 'Skift til mørk tilstand' : 'Skift til lys tilstand'
+                da: this.current === 'light' ? 'Skift til mørk tilstand' : 'Skift til lys tilstand',
+                el: this.current === 'light' ? 'Αλλαγή σε σκοτεινό θέμα' : 'Αλλαγή σε φωτεινό θέμα'
             };
             btn.title = tooltips[I18N.currentLang] || tooltips.en;
         }
