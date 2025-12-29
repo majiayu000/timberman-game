@@ -6843,11 +6843,253 @@ const I18N = {
                 level_max: 'الوصول للمستوى الأقصى 11',
                 close_call: 'اقطع 20 مرة والوقت أقل من 10%'
             }
+        },
+        he: {
+            // כותרת
+            title: 'חוֹטֵב עֵצִים',
+
+            // מסך פתיחה
+            startTitle: 'חוֹטֵב עֵצִים',
+            startHint1: 'לחץ ← → או A/D לחטוב',
+            startHint2: 'או לחץ על שמאל/ימין המסך',
+            startHint3: 'התחמק מענפים, נצח את הזמן!',
+            startHint4: 'רווח/Enter להתחלה | ESC/P להשהיה',
+            startBtn: 'התחל משחק',
+            dailyBtn: '📅 אתגר יומי',
+            skinBtn: '👕 סקינים',
+            leaderboardBtn: '📊 טבלת הישגים',
+            statsBtn: '📈 סטטיסטיקות',
+            tutorialBtn: '❓ מדריך',
+
+            // סיום משחק
+            gameOver: 'המשחק נגמר',
+            score: 'ניקוד',
+            maxCombo: 'קומבו מקסימלי',
+            highScore: 'שיא',
+            restartBtn: 'נסה שוב',
+            achievementsBtn: '🏆 הישגים',
+
+            // השהיה
+            paused: '⏸️ מושהה',
+            pauseHint: 'לחץ ESC או P להמשך',
+            resumeBtn: 'המשך',
+
+            // אתגר יומי
+            dailyTitle: '📅 אתגר יומי',
+            todayDate: 'תאריך היום',
+            todayBest: 'השיא של היום',
+            attempts: 'ניסיונות',
+            dailyHint: 'אותה רמה לכולם, שבור את השיא!',
+            startChallenge: 'התחל אתגר',
+            back: 'חזרה',
+            challengeOver: '📅 האתגר הסתיים',
+            newRecord: '🎉 שיא חדש!',
+            todayHighScore: 'שיא היום',
+            todayAttempts: 'ניסיונות היום',
+            times: 'פעמים',
+            retry: 'נסה שוב',
+            backHome: 'חזרה לדף הבית',
+
+            // סקינים
+            skinTitle: '👕 סקינים',
+            skinUnlocked: 'פתוח',
+            skinLocked: '🔒',
+            skinUnlockAt: 'נק׳ לפתיחה',
+
+            // טבלת הישגים
+            leaderboardTitle: '📊 טבלת הישגים',
+            rank: 'דירוג',
+            lbScore: 'ניקוד',
+            lbCombo: 'קומבו',
+            lbDate: 'תאריך',
+            clearRecords: 'נקה הכל',
+            clearConfirm: 'בטוח למחוק את כל הרשומות?',
+            noRecords: 'אין רשומות',
+
+            // הישגים
+            achievementsTitle: '🏆 הישגים',
+            achievementUnlock: 'הישג נפתח!',
+
+            // סטטיסטיקות
+            statsTitle: '📈 סטטיסטיקות',
+            totalGames: 'סה״כ משחקים',
+            totalChops: 'סה״כ חטיבות',
+            totalTime: 'סה״כ זמן',
+            bestCombo: 'קומבו הכי טוב',
+            avgScore: 'ניקוד ממוצע',
+            unlockedAchievements: '🎖️ הישגים',
+            unlockedSkins: '👕 סקינים',
+            dailyAttempts: '📅 אתגרים יומיים',
+            resetStats: 'אפס נתונים',
+            resetConfirm: 'בטוח לאפס את כל הנתונים? לא ניתן לבטל.',
+
+            // מדריך
+            tutorialWelcome: 'ברוכים הבאים לחוטב עצים!',
+            tutorialWelcome1: 'אתה חוטב עצים אמיץ',
+            tutorialWelcome2: 'חטוב כמה שיותר עצים',
+            tutorialWelcome3: 'והתחמק מענפים מסוכנים',
+            tutorialControls: 'שליטה',
+            tutorialMoveLeft: 'זוז שמאלה וחטוב',
+            tutorialMoveRight: 'זוז ימינה וחטוב',
+            tutorialTouchHint: 'או לחץ על שמאל/ימין המסך',
+            tutorialBranch: 'התחמק מענפים!',
+            tutorialBranchWarn: 'פגיעה בענף = סוף המשחק!',
+            tutorialBranchHint: 'בדוק לפני שאתה חוטב',
+            tutorialTime: 'ניהול זמן',
+            tutorialTimeHint1: 'סרגל הזמן יורד כל הזמן',
+            tutorialTimeHint2: 'כל חטיבה נותנת',
+            tutorialTimeHint3: '+זמן',
+            tutorialTimeHint4: 'הזמן נגמר = סוף המשחק',
+            tutorialAdvanced: 'טיפים מתקדמים',
+            tutorialCombo: 'קומבו',
+            tutorialComboHint: 'חטוב מהר לניקוד גבוה יותר',
+            tutorialDifficulty: 'קושי',
+            tutorialDifficultyHint: 'הקושי עולה עם הניקוד',
+            tutorialAchievement: 'הישגים',
+            tutorialAchievementHint: 'פתח 12 הישגים',
+            tutorialSkin: 'סקינים',
+            tutorialSkinHint: 'ניקוד גבוה פותח סקינים חדשים',
+            skip: 'דלג',
+            prev: 'הקודם',
+            next: 'הבא',
+            finish: 'סיום',
+
+            // אזור מגע
+            tapLeft: '← לחץ שמאלה',
+            tapRight: 'לחץ ימינה →',
+
+            // הגדרות שמע
+            volumeSettings: '🎵 הגדרות שמע',
+            sfxVolume: '🔊 אפקטים',
+            bgmVolume: '🎵 מוזיקה',
+            vibration: '📳 רטט',
+
+            // חלונות קופצים
+            skinUnlockPopup: 'סקין חדש נפתח!',
+
+            // מערכת הקלטה
+            replayBtn: '🎬 הקלטה',
+            replayTitle: '🎬 צפה במשחק האחרון',
+            replayScore: 'ניקוד',
+            replayCombo: 'קומבו מקסימלי',
+            replayChops: 'חטיבות',
+            replayDuration: 'משך',
+            replayStart: 'התחל צפייה',
+            replayStop: 'עצור',
+            replayNoData: 'אין נתונים',
+            replayPlaying: '🎬 מציג...',
+            replaySeconds: 'שנ׳',
+
+            // שיתוף
+            shareBtn: '📤 שתף',
+            shareTitle: 'חוֹטֵב עֵצִים',
+            shareScoreLabel: 'ניקוד',
+            shareComboLabel: 'קומבו',
+            shareLevelLabel: 'רמה',
+            shareHighScoreLabel: 'שיא',
+            shareDownloading: 'יוצר תמונה...',
+            shareSuccess: 'התמונה נשמרה!',
+            shareFailed: 'השיתוף נכשל, נסה שוב',
+            sharePanelTitle: '📤 שתף תוצאה',
+            shareNativeBtn: '📱 שתף',
+            shareDownloadBtn: '💾 שמור תמונה',
+            shareCopyBtn: '📋 העתק טקסט',
+            shareCopySuccess: '✓ הועתק!',
+
+            // מצב אינסופי
+            endlessBtn: '∞ מצב אינסופי',
+            endlessTitle: '∞ מצב אינסופי',
+            endlessDesc: 'בלי הגבלת זמן, אתגר את הריכוז!',
+            endlessBest: 'השיא שלך',
+            endlessTotal: 'סה״כ משחקים',
+            endlessStart: 'התחל אתגר',
+            endlessOver: '∞ האתגר הסתיים',
+            endlessNewRecord: '🎉 שיא חדש!',
+            endlessHint: 'רק התחמק מענפים, בלי לחץ זמן',
+
+            // ספירה לאחור
+            countdownGo: 'קדימה!',
+
+            // ערכת נושא
+            themeDarkTip: 'עבור למצב כהה',
+            themeLightTip: 'עבור למצב בהיר',
+
+            // אפשרויות מהירות
+            speedBtn: '⚡ מהירות',
+            speedTitle: '⚡ מהירות משחק',
+            speedSelectDesc: 'בחר את המהירות המתאימה לך',
+            speedSlow: '🐢 איטי',
+            speedNormal: '🚶 רגיל',
+            speedFast: '🏃 מהיר',
+            speedSlowDesc: 'ירידת זמן -40%, למתחילים',
+            speedNormalDesc: 'מהירות משחק רגילה',
+            speedFastDesc: 'ירידת זמן +50%, מצב אתגר',
+            speedCurrent: 'נוכחי',
+
+            // שמות סקינים
+            skinNames: {
+                default: 'חוטב עצים',
+                ninja: 'נינג׳ה',
+                robot: 'רובוט',
+                golden: 'אגדה זהובה',
+                santa: 'סנטה קלאוס',
+                pumpkin: 'ראש דלעת',
+                pirate: 'קפטן פיראט',
+                snowman: 'איש שלג',
+                chinese_new_year: 'אל העושר',
+                valentine: 'קופידון',
+                easter_bunny: 'ארנב פסחא',
+                summer_surfer: 'גולש קיץ'
+            },
+            skinDescs: {
+                default: 'חוטב העצים הקלאסי בחולצה אדומה',
+                ninja: 'הנינג׳ה המסתורי בשחור',
+                robot: 'חוטב העצים המכני מפלדה',
+                golden: 'חוטב העצים הזהוב האגדי',
+                santa: 'חוטב העצים החגיגי השמח',
+                pumpkin: 'חוטב העצים המפחיד של האלווין',
+                pirate: 'הרפתקן הים האמיץ',
+                snowman: 'חוטב העצים מעולם הקרח',
+                chinese_new_year: 'שנה טובה! מזל טוב!',
+                valentine: 'אל האהבה מפיץ אהבה',
+                easter_bunny: 'הארנב החמוד עם ביצי צבע',
+                summer_surfer: 'גולש החוף המגניב'
+            },
+
+            // שמות הישגים
+            achievementNames: {
+                first_chop: 'החטיבה הראשונה',
+                score_10: 'חוטב מתחיל',
+                score_50: 'חוטב מיומן',
+                score_100: 'חוטב מקצועי',
+                score_200: 'חוטב מומחה',
+                combo_5: 'קומבו קטן',
+                combo_10: 'מאסטר קומבו',
+                combo_20: 'מלך הקומבו',
+                level_5: 'רמה 5',
+                level_8: 'רמה 8',
+                level_max: 'רמה מקסימלית',
+                close_call: 'הצלה ברגע האחרון'
+            },
+            achievementDescs: {
+                first_chop: 'חטוב את העץ הראשון שלך',
+                score_10: 'השג 10 נקודות במשחק אחד',
+                score_50: 'השג 50 נקודות במשחק אחד',
+                score_100: 'השג 100 נקודות במשחק אחד',
+                score_200: 'השג 200 נקודות במשחק אחד',
+                combo_5: 'השג קומבו של 5',
+                combo_10: 'השג קומבו של 10',
+                combo_20: 'השג קומבו של 20',
+                level_5: 'הגע לרמה 5',
+                level_8: 'הגע לרמה 8',
+                level_max: 'הגע לרמה המקסימלית 11',
+                close_call: 'חטוב 20 פעמים כשהזמן מתחת ל-10%'
+            }
         }
     },
 
     // 支持的语言列表（循环切换顺序）
-    langOrder: ['zh', 'en', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'it', 'ru', 'tr', 'pl', 'nl', 'sv', 'fi', 'no', 'da', 'el', 'cs', 'vi', 'hu', 'th', 'id', 'ms', 'uk', 'ro', 'ar'],
+    langOrder: ['zh', 'en', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'it', 'ru', 'tr', 'pl', 'nl', 'sv', 'fi', 'no', 'da', 'el', 'cs', 'vi', 'hu', 'th', 'id', 'ms', 'uk', 'ro', 'ar', 'he'],
 
     // 语言按钮显示文本
     langLabels: {
@@ -6877,7 +7119,8 @@ const I18N = {
         ms: 'MS',
         uk: 'UK',
         ro: 'RO',
-        ar: 'ع'
+        ar: 'ع',
+        he: 'עב'
     },
 
     // 加载语言设置
@@ -6940,6 +7183,8 @@ const I18N = {
                 this.currentLang = 'ro';
             } else if (browserLang.startsWith('ar')) {
                 this.currentLang = 'ar';
+            } else if (browserLang.startsWith('he') || browserLang.startsWith('iw')) {
+                this.currentLang = 'he';
             } else {
                 this.currentLang = 'en';
             }
@@ -6984,7 +7229,7 @@ const I18N = {
         const t = this.t;
 
         // 更新HTML lang属性
-        const langCodes = { zh: 'zh-CN', en: 'en', ja: 'ja', ko: 'ko', es: 'es', fr: 'fr', de: 'de', pt: 'pt-BR', it: 'it', ru: 'ru', tr: 'tr', pl: 'pl', nl: 'nl', sv: 'sv', fi: 'fi', no: 'no', da: 'da', el: 'el', cs: 'cs', vi: 'vi', hu: 'hu', th: 'th', id: 'id', ms: 'ms', uk: 'uk', ro: 'ro', ar: 'ar' };
+        const langCodes = { zh: 'zh-CN', en: 'en', ja: 'ja', ko: 'ko', es: 'es', fr: 'fr', de: 'de', pt: 'pt-BR', it: 'it', ru: 'ru', tr: 'tr', pl: 'pl', nl: 'nl', sv: 'sv', fi: 'fi', no: 'no', da: 'da', el: 'el', cs: 'cs', vi: 'vi', hu: 'hu', th: 'th', id: 'id', ms: 'ms', uk: 'uk', ro: 'ro', ar: 'ar', he: 'he' };
         document.documentElement.lang = langCodes[this.currentLang] || 'en';
 
         // 标题
@@ -7399,7 +7644,8 @@ const THEME = {
                 ms: this.current === 'light' ? 'Tukar ke tema gelap' : 'Tukar ke tema cerah',
                 uk: this.current === 'light' ? 'Перемкнути на темну тему' : 'Перемкнути на світлу тему',
                 ro: this.current === 'light' ? 'Comută la tema întunecată' : 'Comută la tema luminoasă',
-                ar: this.current === 'light' ? 'التبديل إلى الوضع الداكن' : 'التبديل إلى الوضع الفاتح'
+                ar: this.current === 'light' ? 'التبديل إلى الوضع الداكن' : 'التبديل إلى الوضع الفاتح',
+                he: this.current === 'light' ? 'עבור לערכת נושא כהה' : 'עבור לערכת נושא בהיר'
             };
             btn.title = tooltips[I18N.currentLang] || tooltips.en;
         }
