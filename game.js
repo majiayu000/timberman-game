@@ -81,6 +81,122 @@ const SKINS = {
                 axeHandle: '#4CAF50', axeHead: '#C62828', axeHighlight: '#E53935', axeBlade: '#FFFFFF',
                 hasSantaHat: true // 特殊标记：圣诞帽（有白色毛球）
             }
+        },
+        {
+            id: 'pumpkin',
+            name: '南瓜头',
+            icon: '🎃',
+            desc: '万圣节的恐怖伐木工',
+            unlockCondition: { type: 'score', value: 75 },
+            colors: {
+                hat: '#4E342E', hatBrim: '#3E2723', hatHighlight: '#5D4037',
+                body: '#1A1A1A', bodyHighlight: '#333', bodyShadow: '#000',
+                pants: '#1A1A1A', pantsHighlight: '#333',
+                shoes: '#212121', skin: '#FF6F00', beard: null,
+                axeHandle: '#4E342E', axeHead: '#424242', axeHighlight: '#616161', axeBlade: '#9E9E9E',
+                hasPumpkinHead: true // 特殊标记：南瓜头
+            }
+        },
+        {
+            id: 'pirate',
+            name: '海盗船长',
+            icon: '🏴‍☠️',
+            desc: '勇敢的海上冒险家',
+            unlockCondition: { type: 'score', value: 150 },
+            colors: {
+                hat: '#1A1A1A', hatBrim: '#FFD700', hatHighlight: '#333',
+                body: '#5D4037', bodyHighlight: '#6D4C41', bodyShadow: '#4E342E',
+                pants: '#1A1A1A', pantsHighlight: '#333',
+                shoes: '#5D4037', skin: '#FFCC80', beard: '#3E2723',
+                axeHandle: '#8D6E63', axeHead: '#FFD700', axeHighlight: '#FFEB3B', axeBlade: '#FFF',
+                hasPirateHat: true, // 特殊标记：海盗帽
+                hasEyePatch: true   // 特殊标记：眼罩
+            }
+        },
+        {
+            id: 'snowman',
+            name: '雪人',
+            icon: '⛄',
+            desc: '来自冰雪世界的伐木工',
+            unlockCondition: { type: 'score', value: 200 },
+            colors: {
+                hat: '#1565C0', hatBrim: '#0D47A1', hatHighlight: '#1976D2',
+                body: '#ECEFF1', bodyHighlight: '#FFFFFF', bodyShadow: '#CFD8DC',
+                pants: '#B0BEC5', pantsHighlight: '#CFD8DC',
+                shoes: '#455A64', skin: '#FFFFFF', beard: null,
+                axeHandle: '#90CAF9', axeHead: '#42A5F5', axeHighlight: '#64B5F6', axeBlade: '#E3F2FD',
+                hasSnowEffect: true, // 特殊标记：冰霜光环
+                eyeColor: '#1565C0', // 蓝色眼睛
+                noseColor: '#FF5722' // 胡萝卜鼻子
+            }
+        },
+        {
+            id: 'chinese_new_year',
+            name: '财神爷',
+            icon: '🧧',
+            desc: '新年快乐，恭喜发财！',
+            unlockCondition: { type: 'score', value: 125 },
+            colors: {
+                hat: '#C62828', hatBrim: '#FFD700', hatHighlight: '#E53935',
+                body: '#C62828', bodyHighlight: '#E53935', bodyShadow: '#B71C1C',
+                pants: '#FFD700', pantsHighlight: '#FFEB3B',
+                shoes: '#1A1A1A', skin: '#FFCC80', beard: '#4E342E',
+                axeHandle: '#FFD700', axeHead: '#C62828', axeHighlight: '#E53935', axeBlade: '#FFD700',
+                hasChineseHat: true, // 特殊标记：中国财神帽
+                hasGoldGlow: true    // 特殊标记：金色光晕
+            }
+        },
+        {
+            id: 'valentine',
+            name: '丘比特',
+            icon: '💘',
+            desc: '爱神降临，散播爱意',
+            unlockCondition: { type: 'score', value: 175 },
+            colors: {
+                hat: '#E91E63', hatBrim: '#F48FB1', hatHighlight: '#F06292',
+                body: '#E91E63', bodyHighlight: '#F06292', bodyShadow: '#C2185B',
+                pants: '#FCE4EC', pantsHighlight: '#F8BBD0',
+                shoes: '#F48FB1', skin: '#FFCC80', beard: null,
+                axeHandle: '#F48FB1', axeHead: '#E91E63', axeHighlight: '#F06292', axeBlade: '#FFFFFF',
+                hasWings: true,       // 特殊标记：天使翅膀
+                hasHeartAura: true,   // 特殊标记：爱心光环
+                eyeColor: '#E91E63'   // 粉色眼睛
+            }
+        },
+        {
+            id: 'easter_bunny',
+            name: '复活节兔子',
+            icon: '🐰',
+            desc: '可爱的彩蛋小兔子',
+            unlockCondition: { type: 'score', value: 85 },
+            colors: {
+                hat: '#F8BBD0', hatBrim: '#F48FB1', hatHighlight: '#FCE4EC',
+                body: '#E1BEE7', bodyHighlight: '#F3E5F5', bodyShadow: '#CE93D8',
+                pants: '#BBDEFB', pantsHighlight: '#E3F2FD',
+                shoes: '#F48FB1', skin: '#FFFFFF', beard: null,
+                axeHandle: '#F8BBD0', axeHead: '#BA68C8', axeHighlight: '#CE93D8', axeBlade: '#F3E5F5',
+                hasBunnyEars: true,    // 特殊标记：兔子耳朵
+                hasEasterEgg: true,    // 特殊标记：彩蛋装饰
+                eyeColor: '#E91E63',   // 粉色眼睛
+                noseColor: '#F48FB1'   // 粉色鼻子
+            }
+        },
+        {
+            id: 'summer_surfer',
+            name: '夏日冲浪者',
+            icon: '🏄',
+            desc: '阳光沙滩的酷炫伐木工',
+            unlockCondition: { type: 'score', value: 160 },
+            colors: {
+                hat: '#FFF59D', hatBrim: '#FFF176', hatHighlight: '#FFFF8D',
+                body: '#4FC3F7', bodyHighlight: '#81D4FA', bodyShadow: '#29B6F6',
+                pants: '#FF8A65', pantsHighlight: '#FFAB91',
+                shoes: '#FFCC80', skin: '#FFCC80', beard: null,
+                axeHandle: '#A1887F', axeHead: '#29B6F6', axeHighlight: '#4FC3F7', axeBlade: '#E1F5FE',
+                hasStrawHat: true,     // 特殊标记：草帽
+                hasSunglasses: true,   // 特殊标记：太阳镜
+                hasFlowerShirt: true   // 特殊标记：花衬衫
+            }
         }
     ],
 
@@ -160,6 +276,3523 @@ const SKINS = {
     // 获取已解锁皮肤数量
     getUnlockedCount() {
         return this.unlockedSkins.length;
+    }
+};
+
+// ============ 多语言系统 ============
+const I18N = {
+    currentLang: 'zh', // 默认中文
+
+    // 语言包定义
+    languages: {
+        zh: {
+            // 标题
+            title: '伐木人',
+
+            // 开始界面
+            startTitle: '伐木人',
+            startHint1: '按 ← → 或 A/D 砍树',
+            startHint2: '也可点击屏幕左右侧',
+            startHint3: '躲避树枝，别让时间耗尽！',
+            startHint4: '空格/回车 开始 | ESC/P 暂停',
+            startBtn: '开始游戏',
+            dailyBtn: '📅 每日挑战',
+            skinBtn: '👕 皮肤',
+            leaderboardBtn: '📊 排行榜',
+            statsBtn: '📈 统计',
+            tutorialBtn: '❓ 教程',
+
+            // 游戏结束
+            gameOver: '游戏结束',
+            score: '得分',
+            maxCombo: '最高连击',
+            highScore: '最高分',
+            restartBtn: '再来一次',
+            achievementsBtn: '🏆 成就',
+
+            // 暂停
+            paused: '⏸️ 暂停',
+            pauseHint: '按 ESC 或 P 键继续',
+            resumeBtn: '继续游戏',
+
+            // 每日挑战
+            dailyTitle: '📅 每日挑战',
+            todayDate: '今日日期',
+            todayBest: '今日最高',
+            attempts: '挑战次数',
+            dailyHint: '每天的关卡相同，挑战最高分！',
+            startChallenge: '开始挑战',
+            back: '返回',
+            challengeOver: '📅 挑战结束',
+            newRecord: '🎉 新纪录！',
+            todayHighScore: '今日最高',
+            todayAttempts: '今日挑战',
+            times: '次',
+            retry: '再来一次',
+            backHome: '返回首页',
+
+            // 皮肤
+            skinTitle: '👕 皮肤',
+            skinUnlocked: '已解锁',
+            skinLocked: '🔒',
+            skinUnlockAt: '分解锁',
+
+            // 排行榜
+            leaderboardTitle: '📊 排行榜',
+            rank: '排名',
+            lbScore: '分数',
+            lbCombo: '连击',
+            lbDate: '时间',
+            clearRecords: '清空记录',
+            clearConfirm: '确定要清空所有排行榜记录吗？',
+            noRecords: '暂无记录',
+
+            // 成就
+            achievementsTitle: '🏆 成就',
+            achievementUnlock: '成就解锁!',
+
+            // 统计
+            statsTitle: '📈 游戏统计',
+            totalGames: '总游戏次数',
+            totalChops: '总砍树次数',
+            totalTime: '总游戏时长',
+            bestCombo: '最高连击',
+            avgScore: '平均分数',
+            unlockedAchievements: '🎖️ 解锁成就',
+            unlockedSkins: '👕 解锁皮肤',
+            dailyAttempts: '📅 每日挑战',
+            resetStats: '重置统计',
+            resetConfirm: '确定要重置所有统计数据吗？此操作不可撤销。',
+
+            // 教程
+            tutorialWelcome: '欢迎来到伐木人!',
+            tutorialWelcome1: '你是一名勇敢的伐木工',
+            tutorialWelcome2: '目标是砍倒尽可能多的树',
+            tutorialWelcome3: '同时躲避危险的树枝',
+            tutorialControls: '控制方式',
+            tutorialMoveLeft: '移动到左边砍树',
+            tutorialMoveRight: '移动到右边砍树',
+            tutorialTouchHint: '也可以点击屏幕左/右侧',
+            tutorialBranch: '躲避树枝!',
+            tutorialBranchWarn: '碰到树枝 = 游戏结束!',
+            tutorialBranchHint: '砍树前看清树枝在哪边',
+            tutorialTime: '时间管理',
+            tutorialTimeHint1: '时间条会不断减少',
+            tutorialTimeHint2: '每次砍树会',
+            tutorialTimeHint3: '+时间',
+            tutorialTimeHint4: '时间耗尽也会游戏结束',
+            tutorialAdvanced: '高级技巧',
+            tutorialCombo: '连击',
+            tutorialComboHint: '快速砍树提高分数',
+            tutorialDifficulty: '难度递增',
+            tutorialDifficultyHint: '分数越高越难',
+            tutorialAchievement: '成就系统',
+            tutorialAchievementHint: '解锁12个成就',
+            tutorialSkin: '皮肤',
+            tutorialSkinHint: '高分解锁新角色',
+            skip: '跳过',
+            prev: '上一步',
+            next: '下一步',
+            finish: '完成',
+
+            // 触摸区域提示
+            tapLeft: '← 点击左侧',
+            tapRight: '点击右侧 →',
+
+            // 音量设置
+            volumeSettings: '🎵 音量设置',
+            sfxVolume: '🔊 音效',
+            bgmVolume: '🎵 音乐',
+            vibration: '📳 振动',
+
+            // 弹窗
+            skinUnlockPopup: '新皮肤解锁!',
+
+            // 回放系统
+            replayBtn: '🎬 回放',
+            replayTitle: '🎬 回放上局',
+            replayScore: '得分',
+            replayCombo: '最高连击',
+            replayChops: '砍树次数',
+            replayDuration: '用时',
+            replayStart: '开始回放',
+            replayStop: '停止回放',
+            replayNoData: '暂无回放数据',
+            replayPlaying: '🎬 回放中...',
+            replaySeconds: '秒',
+
+            // 分享功能
+            shareBtn: '📤 分享',
+            shareTitle: '伐木人',
+            shareScoreLabel: '得分',
+            shareComboLabel: '连击',
+            shareLevelLabel: '难度',
+            shareHighScoreLabel: '最高分',
+            shareDownloading: '正在生成图片...',
+            shareSuccess: '图片已保存！',
+            shareFailed: '分享失败，请重试',
+            sharePanelTitle: '📤 分享成绩',
+            shareNativeBtn: '📱 分享',
+            shareDownloadBtn: '💾 保存图片',
+            shareCopyBtn: '📋 复制文字',
+            shareCopySuccess: '✓ 已复制到剪贴板！',
+
+            // 无限模式
+            endlessBtn: '∞ 无限模式',
+            endlessTitle: '∞ 无限模式',
+            endlessDesc: '没有时间限制，挑战你的专注力！',
+            endlessBest: '最高分',
+            endlessTotal: '总游戏次数',
+            endlessStart: '开始挑战',
+            endlessOver: '∞ 挑战结束',
+            endlessNewRecord: '🎉 新纪录！',
+            endlessHint: '只需躲避树枝，没有时间压力',
+
+            // 倒计时
+            countdownGo: '开始!',
+
+            // 主题
+            themeDarkTip: '切换到暗色模式',
+            themeLightTip: '切换到亮色模式',
+
+            // 速度选项
+            speedBtn: '⚡ 速度',
+            speedTitle: '⚡ 游戏速度',
+            speedSlow: '🐢 慢速',
+            speedNormal: '🚶 普通',
+            speedFast: '🏃 快速',
+            speedSlowDesc: '时间消耗更慢，适合新手',
+            speedNormalDesc: '标准游戏速度',
+            speedFastDesc: '时间消耗更快，挑战模式',
+            speedCurrent: '当前',
+
+            // 皮肤名称
+            skinNames: {
+                default: '伐木工',
+                ninja: '忍者',
+                robot: '机器人',
+                golden: '黄金传奇',
+                santa: '圣诞老人',
+                pumpkin: '南瓜头',
+                pirate: '海盗船长',
+                snowman: '雪人',
+                chinese_new_year: '财神爷',
+                valentine: '丘比特',
+                easter_bunny: '复活节兔子',
+                summer_surfer: '夏日冲浪者'
+            },
+            skinDescs: {
+                default: '经典红衣伐木工',
+                ninja: '神秘的黑衣忍者',
+                robot: '钢铁机械伐木者',
+                golden: '传说中的黄金伐木工',
+                santa: '节日快乐的圣诞伐木工',
+                pumpkin: '万圣节的恐怖伐木工',
+                pirate: '勇敢的海上冒险家',
+                snowman: '来自冰雪世界的伐木工',
+                chinese_new_year: '新年快乐，恭喜发财！',
+                valentine: '爱神降临，散播爱意',
+                easter_bunny: '可爱的彩蛋小兔子',
+                summer_surfer: '阳光沙滩的酷炫伐木工'
+            },
+
+            // 成就名称
+            achievementNames: {
+                first_chop: '初次砍伐',
+                score_10: '入门伐木工',
+                score_50: '熟练伐木工',
+                score_100: '专业伐木工',
+                score_200: '伐木大师',
+                combo_5: '小连击',
+                combo_10: '连击达人',
+                combo_20: '连击之王',
+                level_5: '难度5级',
+                level_8: '难度8级',
+                level_max: '最高难度',
+                close_call: '绝处逢生'
+            },
+            achievementDescs: {
+                first_chop: '成功砍下第一棵树',
+                score_10: '单局得分达到10分',
+                score_50: '单局得分达到50分',
+                score_100: '单局得分达到100分',
+                score_200: '单局得分达到200分',
+                combo_5: '达成5连击',
+                combo_10: '达成10连击',
+                combo_20: '达成20连击',
+                level_5: '达到难度等级5',
+                level_8: '达到难度等级8',
+                level_max: '达到最高难度等级11',
+                close_call: '时间低于10%时砍树20次'
+            }
+        },
+        en: {
+            // Title
+            title: 'Timberman',
+
+            // Start screen
+            startTitle: 'Timberman',
+            startHint1: 'Press ← → or A/D to chop',
+            startHint2: 'Tap left/right of screen',
+            startHint3: 'Avoid branches, beat the clock!',
+            startHint4: 'Space/Enter Start | ESC/P Pause',
+            startBtn: 'Start Game',
+            dailyBtn: '📅 Daily Challenge',
+            skinBtn: '👕 Skins',
+            leaderboardBtn: '📊 Leaderboard',
+            statsBtn: '📈 Stats',
+            tutorialBtn: '❓ Tutorial',
+
+            // Game over
+            gameOver: 'Game Over',
+            score: 'Score',
+            maxCombo: 'Max Combo',
+            highScore: 'High Score',
+            restartBtn: 'Try Again',
+            achievementsBtn: '🏆 Achievements',
+
+            // Pause
+            paused: '⏸️ Paused',
+            pauseHint: 'Press ESC or P to continue',
+            resumeBtn: 'Resume',
+
+            // Daily challenge
+            dailyTitle: '📅 Daily Challenge',
+            todayDate: 'Today',
+            todayBest: 'Today Best',
+            attempts: 'Attempts',
+            dailyHint: 'Same level for everyone, beat your best!',
+            startChallenge: 'Start Challenge',
+            back: 'Back',
+            challengeOver: '📅 Challenge Over',
+            newRecord: '🎉 New Record!',
+            todayHighScore: 'Today Best',
+            todayAttempts: 'Today Attempts',
+            times: '',
+            retry: 'Try Again',
+            backHome: 'Home',
+
+            // Skins
+            skinTitle: '👕 Skins',
+            skinUnlocked: 'Unlocked',
+            skinLocked: '🔒',
+            skinUnlockAt: 'pts to unlock',
+
+            // Leaderboard
+            leaderboardTitle: '📊 Leaderboard',
+            rank: 'Rank',
+            lbScore: 'Score',
+            lbCombo: 'Combo',
+            lbDate: 'Date',
+            clearRecords: 'Clear All',
+            clearConfirm: 'Are you sure you want to clear all records?',
+            noRecords: 'No records yet',
+
+            // Achievements
+            achievementsTitle: '🏆 Achievements',
+            achievementUnlock: 'Achievement Unlocked!',
+
+            // Stats
+            statsTitle: '📈 Game Stats',
+            totalGames: 'Total Games',
+            totalChops: 'Total Chops',
+            totalTime: 'Total Time',
+            bestCombo: 'Best Combo',
+            avgScore: 'Avg Score',
+            unlockedAchievements: '🎖️ Achievements',
+            unlockedSkins: '👕 Skins',
+            dailyAttempts: '📅 Daily Challenges',
+            resetStats: 'Reset Stats',
+            resetConfirm: 'Are you sure you want to reset all stats? This cannot be undone.',
+
+            // Tutorial
+            tutorialWelcome: 'Welcome to Timberman!',
+            tutorialWelcome1: 'You are a brave lumberjack',
+            tutorialWelcome2: 'Chop as many trees as you can',
+            tutorialWelcome3: 'While avoiding dangerous branches',
+            tutorialControls: 'Controls',
+            tutorialMoveLeft: 'Move left and chop',
+            tutorialMoveRight: 'Move right and chop',
+            tutorialTouchHint: 'Or tap left/right of screen',
+            tutorialBranch: 'Avoid Branches!',
+            tutorialBranchWarn: 'Hit branch = Game Over!',
+            tutorialBranchHint: 'Look before you chop',
+            tutorialTime: 'Time Management',
+            tutorialTimeHint1: 'Time bar decreases constantly',
+            tutorialTimeHint2: 'Each chop gives',
+            tutorialTimeHint3: '+time',
+            tutorialTimeHint4: 'Time out = Game Over',
+            tutorialAdvanced: 'Pro Tips',
+            tutorialCombo: 'Combo',
+            tutorialComboHint: 'Chop fast for higher scores',
+            tutorialDifficulty: 'Difficulty',
+            tutorialDifficultyHint: 'Gets harder as you score',
+            tutorialAchievement: 'Achievements',
+            tutorialAchievementHint: 'Unlock 12 achievements',
+            tutorialSkin: 'Skins',
+            tutorialSkinHint: 'High scores unlock new skins',
+            skip: 'Skip',
+            prev: 'Back',
+            next: 'Next',
+            finish: 'Finish',
+
+            // Touch hints
+            tapLeft: '← Tap Left',
+            tapRight: 'Tap Right →',
+
+            // Volume settings
+            volumeSettings: '🎵 Volume Settings',
+            sfxVolume: '🔊 SFX',
+            bgmVolume: '🎵 Music',
+            vibration: '📳 Vibration',
+
+            // Popups
+            skinUnlockPopup: 'New Skin Unlocked!',
+
+            // Replay system
+            replayBtn: '🎬 Replay',
+            replayTitle: '🎬 Last Game Replay',
+            replayScore: 'Score',
+            replayCombo: 'Max Combo',
+            replayChops: 'Chops',
+            replayDuration: 'Duration',
+            replayStart: 'Start Replay',
+            replayStop: 'Stop Replay',
+            replayNoData: 'No replay data',
+            replayPlaying: '🎬 Replaying...',
+            replaySeconds: 's',
+
+            // Share
+            shareBtn: '📤 Share',
+            shareTitle: 'Timberman',
+            shareScoreLabel: 'Score',
+            shareComboLabel: 'Combo',
+            shareLevelLabel: 'Level',
+            shareHighScoreLabel: 'High Score',
+            shareDownloading: 'Generating image...',
+            shareSuccess: 'Image saved!',
+            shareFailed: 'Share failed, please try again',
+            sharePanelTitle: '📤 Share Score',
+            shareNativeBtn: '📱 Share',
+            shareDownloadBtn: '💾 Save Image',
+            shareCopyBtn: '📋 Copy Text',
+            shareCopySuccess: '✓ Copied to clipboard!',
+
+            // Endless mode
+            endlessBtn: '∞ Endless Mode',
+            endlessTitle: '∞ Endless Mode',
+            endlessDesc: 'No time limit, test your focus!',
+            endlessBest: 'Best Score',
+            endlessTotal: 'Total Games',
+            endlessStart: 'Start Challenge',
+            endlessOver: '∞ Challenge Over',
+            endlessNewRecord: '🎉 New Record!',
+            endlessHint: 'Just avoid branches, no time pressure',
+
+            // Countdown
+            countdownGo: 'GO!',
+
+            // Theme
+            themeDarkTip: 'Switch to Dark Mode',
+            themeLightTip: 'Switch to Light Mode',
+
+            // Speed options
+            speedBtn: '⚡ Speed',
+            speedTitle: '⚡ Game Speed',
+            speedSlow: '🐢 Slow',
+            speedNormal: '🚶 Normal',
+            speedFast: '🏃 Fast',
+            speedSlowDesc: 'Slower time decay, for beginners',
+            speedNormalDesc: 'Standard game speed',
+            speedFastDesc: 'Faster time decay, challenge mode',
+            speedCurrent: 'Current',
+
+            // Skin names
+            skinNames: {
+                default: 'Lumberjack',
+                ninja: 'Ninja',
+                robot: 'Robot',
+                golden: 'Golden Legend',
+                santa: 'Santa Claus',
+                pumpkin: 'Pumpkin Head',
+                pirate: 'Pirate Captain',
+                snowman: 'Snowman',
+                chinese_new_year: 'God of Wealth',
+                valentine: 'Cupid',
+                easter_bunny: 'Easter Bunny',
+                summer_surfer: 'Summer Surfer'
+            },
+            skinDescs: {
+                default: 'Classic red-shirt lumberjack',
+                ninja: 'Mysterious black ninja',
+                robot: 'Steel mechanical chopper',
+                golden: 'Legendary golden lumberjack',
+                santa: 'Jolly holiday lumberjack',
+                pumpkin: 'Spooky Halloween chopper',
+                pirate: 'Brave sea adventurer',
+                snowman: 'Frosty winter chopper',
+                chinese_new_year: 'Happy New Year! Good fortune!',
+                valentine: 'Love god spreading love',
+                easter_bunny: 'Cute colorful egg bunny',
+                summer_surfer: 'Cool beach surfer'
+            },
+
+            // Achievement names
+            achievementNames: {
+                first_chop: 'First Chop',
+                score_10: 'Beginner Logger',
+                score_50: 'Skilled Logger',
+                score_100: 'Pro Logger',
+                score_200: 'Master Logger',
+                combo_5: 'Mini Combo',
+                combo_10: 'Combo Pro',
+                combo_20: 'Combo King',
+                level_5: 'Level 5',
+                level_8: 'Level 8',
+                level_max: 'Max Level',
+                close_call: 'Close Call'
+            },
+            achievementDescs: {
+                first_chop: 'Chop your first tree',
+                score_10: 'Score 10 in a single game',
+                score_50: 'Score 50 in a single game',
+                score_100: 'Score 100 in a single game',
+                score_200: 'Score 200 in a single game',
+                combo_5: 'Reach 5 combo',
+                combo_10: 'Reach 10 combo',
+                combo_20: 'Reach 20 combo',
+                level_5: 'Reach difficulty level 5',
+                level_8: 'Reach difficulty level 8',
+                level_max: 'Reach max difficulty level 11',
+                close_call: 'Chop 20 times with time below 10%'
+            }
+        },
+        ja: {
+            // タイトル
+            title: 'きこり',
+
+            // スタート画面
+            startTitle: 'きこり',
+            startHint1: '← → または A/D で木を切る',
+            startHint2: '画面の左右をタップ',
+            startHint3: '枝を避けて、時間切れ注意！',
+            startHint4: 'Space/Enter 開始 | ESC/P 一時停止',
+            startBtn: 'ゲーム開始',
+            dailyBtn: '📅 デイリー',
+            skinBtn: '👕 スキン',
+            leaderboardBtn: '📊 ランキング',
+            statsBtn: '📈 統計',
+            tutorialBtn: '❓ チュートリアル',
+
+            // ゲームオーバー
+            gameOver: 'ゲームオーバー',
+            score: 'スコア',
+            maxCombo: '最大コンボ',
+            highScore: 'ハイスコア',
+            restartBtn: 'もう一度',
+            achievementsBtn: '🏆 実績',
+
+            // 一時停止
+            paused: '⏸️ 一時停止',
+            pauseHint: 'ESC または P で再開',
+            resumeBtn: '再開',
+
+            // デイリーチャレンジ
+            dailyTitle: '📅 デイリーチャレンジ',
+            todayDate: '今日',
+            todayBest: '今日のベスト',
+            attempts: '挑戦回数',
+            dailyHint: '毎日同じステージ、最高記録を目指せ！',
+            startChallenge: '挑戦開始',
+            back: '戻る',
+            challengeOver: '📅 チャレンジ終了',
+            newRecord: '🎉 新記録！',
+            todayHighScore: '今日のベスト',
+            todayAttempts: '今日の挑戦',
+            times: '回',
+            retry: 'もう一度',
+            backHome: 'ホーム',
+
+            // スキン
+            skinTitle: '👕 スキン',
+            skinUnlocked: '解放済み',
+            skinLocked: '🔒',
+            skinUnlockAt: '点で解放',
+
+            // ランキング
+            leaderboardTitle: '📊 ランキング',
+            rank: '順位',
+            lbScore: 'スコア',
+            lbCombo: 'コンボ',
+            lbDate: '日付',
+            clearRecords: '記録削除',
+            clearConfirm: '全ての記録を削除しますか？',
+            noRecords: '記録なし',
+
+            // 実績
+            achievementsTitle: '🏆 実績',
+            achievementUnlock: '実績解除！',
+
+            // 統計
+            statsTitle: '📈 ゲーム統計',
+            totalGames: '総ゲーム数',
+            totalChops: '総伐採数',
+            totalTime: '総プレイ時間',
+            bestCombo: '最高コンボ',
+            avgScore: '平均スコア',
+            unlockedAchievements: '🎖️ 解放実績',
+            unlockedSkins: '👕 解放スキン',
+            dailyAttempts: '📅 デイリー挑戦',
+            resetStats: '統計リセット',
+            resetConfirm: '全ての統計をリセットしますか？この操作は取り消せません。',
+
+            // チュートリアル
+            tutorialWelcome: 'きこりへようこそ！',
+            tutorialWelcome1: 'あなたは勇敢なきこり',
+            tutorialWelcome2: 'できるだけ多くの木を切ろう',
+            tutorialWelcome3: '危険な枝を避けながら',
+            tutorialControls: '操作方法',
+            tutorialMoveLeft: '左に移動して切る',
+            tutorialMoveRight: '右に移動して切る',
+            tutorialTouchHint: '画面の左右タップも可',
+            tutorialBranch: '枝を避けろ！',
+            tutorialBranchWarn: '枝に当たる = ゲームオーバー！',
+            tutorialBranchHint: '切る前に枝の位置を確認',
+            tutorialTime: '時間管理',
+            tutorialTimeHint1: '時間ゲージは減り続ける',
+            tutorialTimeHint2: '木を切ると',
+            tutorialTimeHint3: '+時間',
+            tutorialTimeHint4: '時間切れもゲームオーバー',
+            tutorialAdvanced: '上級テクニック',
+            tutorialCombo: 'コンボ',
+            tutorialComboHint: '素早く切ってスコアアップ',
+            tutorialDifficulty: '難易度',
+            tutorialDifficultyHint: 'スコアが上がると難しく',
+            tutorialAchievement: '実績',
+            tutorialAchievementHint: '12個の実績を解放',
+            tutorialSkin: 'スキン',
+            tutorialSkinHint: 'ハイスコアで新キャラ解放',
+            skip: 'スキップ',
+            prev: '前へ',
+            next: '次へ',
+            finish: '完了',
+
+            // タッチヒント
+            tapLeft: '← 左タップ',
+            tapRight: '右タップ →',
+
+            // 音量設定
+            volumeSettings: '🎵 音量設定',
+            sfxVolume: '🔊 効果音',
+            bgmVolume: '🎵 音楽',
+            vibration: '📳 振動',
+
+            // ポップアップ
+            skinUnlockPopup: '新スキン解放！',
+
+            // リプレイシステム
+            replayBtn: '🎬 リプレイ',
+            replayTitle: '🎬 前回のリプレイ',
+            replayScore: 'スコア',
+            replayCombo: '最大コンボ',
+            replayChops: '伐採数',
+            replayDuration: '時間',
+            replayStart: 'リプレイ開始',
+            replayStop: 'リプレイ停止',
+            replayNoData: 'データなし',
+            replayPlaying: '🎬 リプレイ中...',
+            replaySeconds: '秒',
+
+            // シェア機能
+            shareBtn: '📤 シェア',
+            shareTitle: 'きこり',
+            shareScoreLabel: 'スコア',
+            shareComboLabel: 'コンボ',
+            shareLevelLabel: 'レベル',
+            shareHighScoreLabel: 'ハイスコア',
+            shareDownloading: '画像を生成中...',
+            shareSuccess: '画像を保存しました！',
+            shareFailed: 'シェアに失敗しました',
+            sharePanelTitle: '📤 スコアをシェア',
+            shareNativeBtn: '📱 シェア',
+            shareDownloadBtn: '💾 画像を保存',
+            shareCopyBtn: '📋 テキストをコピー',
+            shareCopySuccess: '✓ クリップボードにコピーしました！',
+
+            // エンドレスモード
+            endlessBtn: '∞ エンドレス',
+            endlessTitle: '∞ エンドレスモード',
+            endlessDesc: '時間制限なし、集中力を試せ！',
+            endlessBest: '最高スコア',
+            endlessTotal: '総プレイ回数',
+            endlessStart: 'チャレンジ開始',
+            endlessOver: '∞ チャレンジ終了',
+            endlessNewRecord: '🎉 新記録！',
+            endlessHint: '枝を避けるだけ、時間の心配なし',
+
+            // カウントダウン
+            countdownGo: 'スタート!',
+
+            // テーマ
+            themeDarkTip: 'ダークモードに切替',
+            themeLightTip: 'ライトモードに切替',
+
+            // 速度オプション
+            speedBtn: '⚡ 速度',
+            speedTitle: '⚡ ゲーム速度',
+            speedSlow: '🐢 スロー',
+            speedNormal: '🚶 ノーマル',
+            speedFast: '🏃 ファスト',
+            speedSlowDesc: '時間減少が遅い、初心者向け',
+            speedNormalDesc: '標準ゲーム速度',
+            speedFastDesc: '時間減少が速い、チャレンジモード',
+            speedCurrent: '現在',
+
+            // スキン名
+            skinNames: {
+                default: 'きこり',
+                ninja: '忍者',
+                robot: 'ロボット',
+                golden: '黄金伝説',
+                santa: 'サンタ',
+                pumpkin: 'パンプキン',
+                pirate: '海賊船長',
+                snowman: '雪だるま',
+                chinese_new_year: '財神',
+                valentine: 'キューピッド',
+                easter_bunny: 'イースターバニー',
+                summer_surfer: 'サーファー'
+            },
+            skinDescs: {
+                default: '定番の赤シャツきこり',
+                ninja: '謎の黒忍者',
+                robot: '鋼鉄メカきこり',
+                golden: '伝説の黄金きこり',
+                santa: '陽気なクリスマスきこり',
+                pumpkin: 'ハロウィンの恐怖きこり',
+                pirate: '勇敢な海の冒険者',
+                snowman: '氷雪世界のきこり',
+                chinese_new_year: '新年おめでとう！',
+                valentine: '愛を広める愛の神',
+                easter_bunny: 'カラフルエッグうさぎ',
+                summer_surfer: 'ビーチの酷暑サーファー'
+            },
+
+            // 実績名
+            achievementNames: {
+                first_chop: '初伐採',
+                score_10: '初心者きこり',
+                score_50: '熟練きこり',
+                score_100: 'プロきこり',
+                score_200: 'マスターきこり',
+                combo_5: 'ミニコンボ',
+                combo_10: 'コンボプロ',
+                combo_20: 'コンボ王',
+                level_5: 'レベル5',
+                level_8: 'レベル8',
+                level_max: '最高レベル',
+                close_call: '間一髪'
+            },
+            achievementDescs: {
+                first_chop: '最初の木を切る',
+                score_10: '1ゲームで10点獲得',
+                score_50: '1ゲームで50点獲得',
+                score_100: '1ゲームで100点獲得',
+                score_200: '1ゲームで200点獲得',
+                combo_5: '5コンボ達成',
+                combo_10: '10コンボ達成',
+                combo_20: '20コンボ達成',
+                level_5: '難易度レベル5到達',
+                level_8: '難易度レベル8到達',
+                level_max: '最高難易度レベル11到達',
+                close_call: '時間10%以下で20回伐採'
+            }
+        },
+        ko: {
+            // 제목
+            title: '나무꾼',
+
+            // 시작 화면
+            startTitle: '나무꾼',
+            startHint1: '← → 또는 A/D로 나무 베기',
+            startHint2: '화면 좌우를 터치',
+            startHint3: '나뭇가지를 피하고, 시간을 관리해요!',
+            startHint4: 'Space/Enter 시작 | ESC/P 일시정지',
+            startBtn: '게임 시작',
+            dailyBtn: '📅 데일리',
+            skinBtn: '👕 스킨',
+            leaderboardBtn: '📊 랭킹',
+            statsBtn: '📈 통계',
+            tutorialBtn: '❓ 튜토리얼',
+
+            // 게임 오버
+            gameOver: '게임 오버',
+            score: '점수',
+            maxCombo: '최대 콤보',
+            highScore: '최고 점수',
+            restartBtn: '다시 하기',
+            achievementsBtn: '🏆 업적',
+
+            // 일시정지
+            paused: '⏸️ 일시정지',
+            pauseHint: 'ESC 또는 P로 계속',
+            resumeBtn: '계속하기',
+
+            // 데일리 챌린지
+            dailyTitle: '📅 데일리 챌린지',
+            todayDate: '오늘',
+            todayBest: '오늘 최고',
+            attempts: '도전 횟수',
+            dailyHint: '매일 같은 스테이지, 최고 기록에 도전!',
+            startChallenge: '도전 시작',
+            back: '뒤로',
+            challengeOver: '📅 챌린지 종료',
+            newRecord: '🎉 신기록!',
+            todayHighScore: '오늘 최고',
+            todayAttempts: '오늘 도전',
+            times: '회',
+            retry: '다시 하기',
+            backHome: '홈',
+
+            // 스킨
+            skinTitle: '👕 스킨',
+            skinUnlocked: '해금됨',
+            skinLocked: '🔒',
+            skinUnlockAt: '점에 해금',
+
+            // 랭킹
+            leaderboardTitle: '📊 랭킹',
+            rank: '순위',
+            lbScore: '점수',
+            lbCombo: '콤보',
+            lbDate: '날짜',
+            clearRecords: '기록 삭제',
+            clearConfirm: '모든 기록을 삭제하시겠습니까?',
+            noRecords: '기록 없음',
+
+            // 업적
+            achievementsTitle: '🏆 업적',
+            achievementUnlock: '업적 달성!',
+
+            // 통계
+            statsTitle: '📈 게임 통계',
+            totalGames: '총 게임 수',
+            totalChops: '총 벌목 수',
+            totalTime: '총 플레이 시간',
+            bestCombo: '최고 콤보',
+            avgScore: '평균 점수',
+            unlockedAchievements: '🎖️ 해금 업적',
+            unlockedSkins: '👕 해금 스킨',
+            dailyAttempts: '📅 데일리 도전',
+            resetStats: '통계 초기화',
+            resetConfirm: '모든 통계를 초기화하시겠습니까? 이 작업은 취소할 수 없습니다.',
+
+            // 튜토리얼
+            tutorialWelcome: '나무꾼에 오신 것을 환영합니다!',
+            tutorialWelcome1: '당신은 용감한 나무꾼',
+            tutorialWelcome2: '가능한 많은 나무를 베세요',
+            tutorialWelcome3: '위험한 나뭇가지를 피하면서',
+            tutorialControls: '조작 방법',
+            tutorialMoveLeft: '왼쪽으로 이동하여 베기',
+            tutorialMoveRight: '오른쪽으로 이동하여 베기',
+            tutorialTouchHint: '화면 좌우 터치도 가능',
+            tutorialBranch: '나뭇가지를 피해요!',
+            tutorialBranchWarn: '나뭇가지에 닿으면 = 게임 오버!',
+            tutorialBranchHint: '베기 전에 가지 위치 확인',
+            tutorialTime: '시간 관리',
+            tutorialTimeHint1: '시간 바가 계속 줄어듭니다',
+            tutorialTimeHint2: '나무를 베면',
+            tutorialTimeHint3: '+시간',
+            tutorialTimeHint4: '시간이 다 되면 게임 오버',
+            tutorialAdvanced: '고급 팁',
+            tutorialCombo: '콤보',
+            tutorialComboHint: '빠르게 베서 점수 올리기',
+            tutorialDifficulty: '난이도',
+            tutorialDifficultyHint: '점수가 오르면 더 어려워져요',
+            tutorialAchievement: '업적',
+            tutorialAchievementHint: '12개의 업적을 달성',
+            tutorialSkin: '스킨',
+            tutorialSkinHint: '고득점으로 새 캐릭터 해금',
+            skip: '건너뛰기',
+            prev: '이전',
+            next: '다음',
+            finish: '완료',
+
+            // 터치 힌트
+            tapLeft: '← 왼쪽 터치',
+            tapRight: '오른쪽 터치 →',
+
+            // 볼륨 설정
+            volumeSettings: '🎵 볼륨 설정',
+            sfxVolume: '🔊 효과음',
+            bgmVolume: '🎵 음악',
+            vibration: '📳 진동',
+
+            // 팝업
+            skinUnlockPopup: '새 스킨 해금!',
+
+            // 리플레이 시스템
+            replayBtn: '🎬 리플레이',
+            replayTitle: '🎬 지난 게임 리플레이',
+            replayScore: '점수',
+            replayCombo: '최대 콤보',
+            replayChops: '벌목 수',
+            replayDuration: '시간',
+            replayStart: '리플레이 시작',
+            replayStop: '리플레이 중지',
+            replayNoData: '데이터 없음',
+            replayPlaying: '🎬 리플레이 중...',
+            replaySeconds: '초',
+
+            // 공유 기능
+            shareBtn: '📤 공유',
+            shareTitle: '나무꾼',
+            shareScoreLabel: '점수',
+            shareComboLabel: '콤보',
+            shareLevelLabel: '레벨',
+            shareHighScoreLabel: '최고 점수',
+            shareDownloading: '이미지 생성 중...',
+            shareSuccess: '이미지가 저장되었습니다!',
+            shareFailed: '공유에 실패했습니다',
+            sharePanelTitle: '📤 점수 공유',
+            shareNativeBtn: '📱 공유',
+            shareDownloadBtn: '💾 이미지 저장',
+            shareCopyBtn: '📋 텍스트 복사',
+            shareCopySuccess: '✓ 클립보드에 복사되었습니다!',
+
+            // 엔드리스 모드
+            endlessBtn: '∞ 엔드리스',
+            endlessTitle: '∞ 엔드리스 모드',
+            endlessDesc: '시간 제한 없음, 집중력을 테스트하세요!',
+            endlessBest: '최고 점수',
+            endlessTotal: '총 게임 횟수',
+            endlessStart: '도전 시작',
+            endlessOver: '∞ 도전 종료',
+            endlessNewRecord: '🎉 신기록!',
+            endlessHint: '나뭇가지만 피하면 돼요, 시간 걱정 없음',
+
+            // 카운트다운
+            countdownGo: '시작!',
+
+            // 테마
+            themeDarkTip: '다크 모드로 전환',
+            themeLightTip: '라이트 모드로 전환',
+
+            // 속도 옵션
+            speedBtn: '⚡ 속도',
+            speedTitle: '⚡ 게임 속도',
+            speedSlow: '🐢 느림',
+            speedNormal: '🚶 보통',
+            speedFast: '🏃 빠름',
+            speedSlowDesc: '시간 감소가 느림, 초보자용',
+            speedNormalDesc: '표준 게임 속도',
+            speedFastDesc: '시간 감소가 빠름, 도전 모드',
+            speedCurrent: '현재',
+
+            // 스킨 이름
+            skinNames: {
+                default: '나무꾼',
+                ninja: '닌자',
+                robot: '로봇',
+                golden: '황금 전설',
+                santa: '산타',
+                pumpkin: '호박 머리',
+                pirate: '해적 선장',
+                snowman: '눈사람',
+                chinese_new_year: '재신',
+                valentine: '큐피드',
+                easter_bunny: '부활절 토끼',
+                summer_surfer: '서퍼'
+            },
+            skinDescs: {
+                default: '클래식 빨간 셔츠 나무꾼',
+                ninja: '신비로운 검은 닌자',
+                robot: '강철 기계 나무꾼',
+                golden: '전설의 황금 나무꾼',
+                santa: '즐거운 크리스마스 나무꾼',
+                pumpkin: '할로윈의 무서운 나무꾼',
+                pirate: '용감한 바다 모험가',
+                snowman: '얼음 세계의 나무꾼',
+                chinese_new_year: '새해 복 많이 받으세요!',
+                valentine: '사랑을 전하는 사랑의 신',
+                easter_bunny: '귀여운 부활절 토끼',
+                summer_surfer: '해변의 멋진 서퍼'
+            },
+
+            // 업적 이름
+            achievementNames: {
+                first_chop: '첫 벌목',
+                score_10: '초보 나무꾼',
+                score_50: '숙련 나무꾼',
+                score_100: '프로 나무꾼',
+                score_200: '마스터 나무꾼',
+                combo_5: '미니 콤보',
+                combo_10: '콤보 프로',
+                combo_20: '콤보 킹',
+                level_5: '레벨 5',
+                level_8: '레벨 8',
+                level_max: '최고 레벨',
+                close_call: '아슬아슬'
+            },
+            achievementDescs: {
+                first_chop: '첫 나무 베기',
+                score_10: '한 게임에서 10점 달성',
+                score_50: '한 게임에서 50점 달성',
+                score_100: '한 게임에서 100점 달성',
+                score_200: '한 게임에서 200점 달성',
+                combo_5: '5콤보 달성',
+                combo_10: '10콤보 달성',
+                combo_20: '20콤보 달성',
+                level_5: '난이도 레벨 5 도달',
+                level_8: '난이도 레벨 8 도달',
+                level_max: '최고 난이도 레벨 11 도달',
+                close_call: '시간 10% 이하에서 20회 벌목'
+            }
+        },
+        // 西班牙语
+        es: {
+            // 标题
+            title: 'Leñador',
+
+            // 开始界面
+            startTitle: 'Leñador',
+            startHint1: 'Pulsa ← → o A/D para talar',
+            startHint2: 'También puedes tocar la pantalla',
+            startHint3: '¡Esquiva las ramas, no dejes que el tiempo se agote!',
+            startHint4: 'Espacio/Enter iniciar | ESC/P pausar',
+            startBtn: 'Iniciar Juego',
+            dailyBtn: '📅 Desafío Diario',
+            skinBtn: '👕 Skins',
+            leaderboardBtn: '📊 Ranking',
+            statsBtn: '📈 Estadísticas',
+            tutorialBtn: '❓ Tutorial',
+
+            // 游戏结束
+            gameOver: 'Fin del Juego',
+            score: 'Puntuación',
+            maxCombo: 'Combo Máximo',
+            highScore: 'Mejor Puntuación',
+            restartBtn: 'Reintentar',
+            achievementsBtn: '🏆 Logros',
+
+            // 暂停
+            paused: '⏸️ Pausado',
+            pauseHint: 'Pulsa ESC o P para continuar',
+            resumeBtn: 'Continuar',
+
+            // 每日挑战
+            dailyTitle: '📅 Desafío Diario',
+            todayDate: 'Fecha de Hoy',
+            todayBest: 'Mejor de Hoy',
+            attempts: 'Intentos',
+            dailyHint: '¡El mismo nivel cada día, consigue la mejor puntuación!',
+            startChallenge: 'Iniciar Desafío',
+            back: 'Volver',
+            challengeOver: '📅 Desafío Terminado',
+            newRecord: '🎉 ¡Nuevo Récord!',
+            todayHighScore: 'Mejor de Hoy',
+            todayAttempts: 'Intentos de Hoy',
+            times: 'veces',
+            retry: 'Reintentar',
+            backHome: 'Menú Principal',
+
+            // 皮肤
+            skinTitle: '👕 Skins',
+            skinUnlocked: 'Desbloqueado',
+            skinLocked: '🔒',
+            skinUnlockAt: 'pts para desbloquear',
+
+            // 排行榜
+            leaderboardTitle: '📊 Ranking',
+            rank: 'Pos.',
+            lbScore: 'Puntos',
+            lbCombo: 'Combo',
+            lbDate: 'Fecha',
+            clearRecords: 'Borrar Registros',
+            clearConfirm: '¿Seguro que quieres borrar todos los registros?',
+            noRecords: 'Sin registros',
+
+            // 成就
+            achievementsTitle: '🏆 Logros',
+            achievementUnlock: '¡Logro Desbloqueado!',
+
+            // 统计
+            statsTitle: '📈 Estadísticas',
+            totalGames: 'Partidas Totales',
+            totalChops: 'Árboles Talados',
+            totalTime: 'Tiempo Total',
+            bestCombo: 'Mejor Combo',
+            avgScore: 'Puntuación Media',
+            unlockedAchievements: '🎖️ Logros',
+            unlockedSkins: '👕 Skins',
+            dailyAttempts: '📅 Desafíos',
+            resetStats: 'Reiniciar Stats',
+            resetConfirm: '¿Seguro que quieres reiniciar todas las estadísticas? Esta acción no se puede deshacer.',
+
+            // 教程
+            tutorialWelcome: '¡Bienvenido a Leñador!',
+            tutorialWelcome1: 'Eres un valiente leñador',
+            tutorialWelcome2: 'Tu objetivo es talar tantos árboles como sea posible',
+            tutorialWelcome3: 'Mientras esquivas las ramas peligrosas',
+            tutorialControls: 'Controles',
+            tutorialMoveLeft: 'Muévete a la izquierda para talar',
+            tutorialMoveRight: 'Muévete a la derecha para talar',
+            tutorialTouchHint: 'También puedes tocar izquierda/derecha',
+            tutorialBranch: '¡Esquiva las Ramas!',
+            tutorialBranchWarn: '¡Tocar una rama = Fin del Juego!',
+            tutorialBranchHint: 'Mira dónde está la rama antes de talar',
+            tutorialTime: 'Gestión del Tiempo',
+            tutorialTimeHint1: 'La barra de tiempo disminuye constantemente',
+            tutorialTimeHint2: 'Cada tala añade',
+            tutorialTimeHint3: '+tiempo',
+            tutorialTimeHint4: 'Si el tiempo se agota, pierdes',
+            tutorialAdvanced: 'Técnicas Avanzadas',
+            tutorialCombo: 'Combo',
+            tutorialComboHint: 'Tala rápido para más puntos',
+            tutorialDifficulty: 'Dificultad',
+            tutorialDifficultyHint: 'Más puntos = más difícil',
+            tutorialAchievement: 'Logros',
+            tutorialAchievementHint: 'Desbloquea 12 logros',
+            tutorialSkin: 'Skins',
+            tutorialSkinHint: 'Puntuación alta desbloquea nuevos personajes',
+            skip: 'Saltar',
+            prev: 'Anterior',
+            next: 'Siguiente',
+            finish: 'Finalizar',
+
+            // 触摸区域提示
+            tapLeft: '← Toca Izquierda',
+            tapRight: 'Toca Derecha →',
+
+            // 音量设置
+            volumeSettings: '🎵 Volumen',
+            sfxVolume: '🔊 Efectos',
+            bgmVolume: '🎵 Música',
+            vibration: '📳 Vibración',
+
+            // 弹窗
+            skinUnlockPopup: '¡Nueva Skin Desbloqueada!',
+
+            // 回放系统
+            replayBtn: '🎬 Repetición',
+            replayTitle: '🎬 Ver Última Partida',
+            replayScore: 'Puntuación',
+            replayCombo: 'Mejor Combo',
+            replayChops: 'Árboles Talados',
+            replayDuration: 'Duración',
+            replayStart: 'Iniciar Repetición',
+            replayStop: 'Detener',
+            replayNoData: 'Sin datos de repetición',
+            replayPlaying: '🎬 Reproduciendo...',
+            replaySeconds: 's',
+
+            // 分享功能
+            shareBtn: '📤 Compartir',
+            shareTitle: 'Leñador',
+            shareScoreLabel: 'Puntuación',
+            shareComboLabel: 'Combo',
+            shareLevelLabel: 'Nivel',
+            shareHighScoreLabel: 'Récord',
+            shareDownloading: 'Generando imagen...',
+            shareSuccess: '¡Imagen guardada!',
+            shareFailed: 'Error al compartir, inténtalo de nuevo',
+            sharePanelTitle: '📤 Compartir Puntuación',
+            shareNativeBtn: '📱 Compartir',
+            shareDownloadBtn: '💾 Guardar Imagen',
+            shareCopyBtn: '📋 Copiar Texto',
+            shareCopySuccess: '✓ ¡Copiado al portapapeles!',
+
+            // Modo infinito
+            endlessBtn: '∞ Modo Infinito',
+            endlessTitle: '∞ Modo Infinito',
+            endlessDesc: '¡Sin límite de tiempo, prueba tu concentración!',
+            endlessBest: 'Mejor Puntuación',
+            endlessTotal: 'Partidas Totales',
+            endlessStart: 'Iniciar Desafío',
+            endlessOver: '∞ Desafío Terminado',
+            endlessNewRecord: '🎉 ¡Nuevo Récord!',
+            endlessHint: 'Solo evita las ramas, sin presión de tiempo',
+
+            // Cuenta regresiva
+            countdownGo: '¡YA!',
+
+            // Tema
+            themeDarkTip: 'Cambiar a Modo Oscuro',
+            themeLightTip: 'Cambiar a Modo Claro',
+
+            // Opciones de velocidad
+            speedBtn: '⚡ Velocidad',
+            speedTitle: '⚡ Velocidad del Juego',
+            speedSlow: '🐢 Lento',
+            speedNormal: '🚶 Normal',
+            speedFast: '🏃 Rápido',
+            speedSlowDesc: 'Tiempo más lento, para principiantes',
+            speedNormalDesc: 'Velocidad estándar del juego',
+            speedFastDesc: 'Tiempo más rápido, modo desafío',
+            speedCurrent: 'Actual',
+
+            // 皮肤名称
+            skinNames: {
+                default: 'Leñador',
+                ninja: 'Ninja',
+                robot: 'Robot',
+                golden: 'Leyenda Dorada',
+                santa: 'Papá Noel',
+                pumpkin: 'Cabeza de Calabaza',
+                pirate: 'Capitán Pirata',
+                snowman: 'Muñeco de Nieve',
+                chinese_new_year: 'Dios de la Fortuna',
+                valentine: 'Cupido',
+                easter_bunny: 'Conejo de Pascua',
+                summer_surfer: 'Surfista de Verano'
+            },
+            skinDescs: {
+                default: 'El clásico leñador de rojo',
+                ninja: 'El misterioso ninja de negro',
+                robot: 'El leñador mecánico de acero',
+                golden: 'El legendario leñador dorado',
+                santa: 'El alegre leñador navideño',
+                pumpkin: 'El aterrador leñador de Halloween',
+                pirate: 'El valiente aventurero del mar',
+                snowman: 'El leñador del mundo helado',
+                chinese_new_year: '¡Feliz Año Nuevo, buena fortuna!',
+                valentine: 'El dios del amor que esparce cariño',
+                easter_bunny: 'El adorable conejito con huevos de Pascua',
+                summer_surfer: 'El genial leñador de playa'
+            },
+
+            // 成就名称
+            achievementNames: {
+                first_chop: 'Primera Tala',
+                score_10: 'Leñador Novato',
+                score_50: 'Leñador Hábil',
+                score_100: 'Leñador Profesional',
+                score_200: 'Maestro Leñador',
+                combo_5: 'Mini Combo',
+                combo_10: 'Experto en Combos',
+                combo_20: 'Rey del Combo',
+                level_5: 'Nivel 5',
+                level_8: 'Nivel 8',
+                level_max: 'Nivel Máximo',
+                close_call: 'Por los Pelos'
+            },
+            achievementDescs: {
+                first_chop: 'Tala tu primer árbol',
+                score_10: 'Alcanza 10 puntos en una partida',
+                score_50: 'Alcanza 50 puntos en una partida',
+                score_100: 'Alcanza 100 puntos en una partida',
+                score_200: 'Alcanza 200 puntos en una partida',
+                combo_5: 'Alcanza un combo de 5',
+                combo_10: 'Alcanza un combo de 10',
+                combo_20: 'Alcanza un combo de 20',
+                level_5: 'Alcanza el nivel de dificultad 5',
+                level_8: 'Alcanza el nivel de dificultad 8',
+                level_max: 'Alcanza el nivel máximo 11',
+                close_call: 'Tala 20 árboles con menos del 10% de tiempo'
+            }
+        },
+        // 法语
+        fr: {
+            // Titre
+            title: 'Bûcheron',
+
+            // Écran de démarrage
+            startTitle: 'Bûcheron',
+            startHint1: 'Appuyez sur ← → ou A/D pour couper',
+            startHint2: 'Touchez à gauche/droite de l\'écran',
+            startHint3: 'Évitez les branches, battez le chrono !',
+            startHint4: 'Espace/Entrée Démarrer | ESC/P Pause',
+            startBtn: 'Jouer',
+            dailyBtn: '📅 Défi Quotidien',
+            skinBtn: '👕 Skins',
+            leaderboardBtn: '📊 Classement',
+            statsBtn: '📈 Stats',
+            tutorialBtn: '❓ Tutoriel',
+
+            // Fin de partie
+            gameOver: 'Fin de Partie',
+            score: 'Score',
+            maxCombo: 'Combo Max',
+            highScore: 'Meilleur Score',
+            restartBtn: 'Rejouer',
+            achievementsBtn: '🏆 Succès',
+
+            // Pause
+            paused: '⏸️ Pause',
+            pauseHint: 'Appuyez sur ESC ou P pour continuer',
+            resumeBtn: 'Reprendre',
+
+            // Défi quotidien
+            dailyTitle: '📅 Défi Quotidien',
+            todayDate: 'Aujourd\'hui',
+            todayBest: 'Meilleur Aujourd\'hui',
+            attempts: 'Tentatives',
+            dailyHint: 'Même niveau pour tous, battez votre record !',
+            startChallenge: 'Commencer le Défi',
+            back: 'Retour',
+            challengeOver: '📅 Défi Terminé',
+            newRecord: '🎉 Nouveau Record !',
+            todayHighScore: 'Meilleur Aujourd\'hui',
+            todayAttempts: 'Tentatives Aujourd\'hui',
+            times: 'fois',
+            retry: 'Rejouer',
+            backHome: 'Accueil',
+
+            // Skins
+            skinTitle: '👕 Skins',
+            skinUnlocked: 'Débloqué',
+            skinLocked: '🔒',
+            skinUnlockAt: 'pts pour débloquer',
+
+            // Classement
+            leaderboardTitle: '📊 Classement',
+            rank: 'Rang',
+            lbScore: 'Score',
+            lbCombo: 'Combo',
+            lbDate: 'Date',
+            clearRecords: 'Effacer Tout',
+            clearConfirm: 'Voulez-vous vraiment effacer tous les records ?',
+            noRecords: 'Aucun record',
+
+            // Succès
+            achievementsTitle: '🏆 Succès',
+            achievementUnlock: 'Succès Débloqué !',
+
+            // Statistiques
+            statsTitle: '📈 Statistiques',
+            totalGames: 'Parties Totales',
+            totalChops: 'Arbres Coupés',
+            totalTime: 'Temps Total',
+            bestCombo: 'Meilleur Combo',
+            avgScore: 'Score Moyen',
+            unlockedAchievements: '🎖️ Succès',
+            unlockedSkins: '👕 Skins',
+            dailyAttempts: '📅 Défis',
+            resetStats: 'Réinitialiser',
+            resetConfirm: 'Voulez-vous vraiment réinitialiser toutes les statistiques ? Cette action est irréversible.',
+
+            // Tutoriel
+            tutorialWelcome: 'Bienvenue dans Bûcheron !',
+            tutorialWelcome1: 'Vous êtes un brave bûcheron',
+            tutorialWelcome2: 'Coupez autant d\'arbres que possible',
+            tutorialWelcome3: 'Tout en évitant les branches dangereuses',
+            tutorialControls: 'Contrôles',
+            tutorialMoveLeft: 'Aller à gauche et couper',
+            tutorialMoveRight: 'Aller à droite et couper',
+            tutorialTouchHint: 'Ou touchez à gauche/droite',
+            tutorialBranch: 'Évitez les Branches !',
+            tutorialBranchWarn: 'Toucher une branche = Fin de Partie !',
+            tutorialBranchHint: 'Regardez avant de couper',
+            tutorialTime: 'Gestion du Temps',
+            tutorialTimeHint1: 'La barre de temps diminue',
+            tutorialTimeHint2: 'Chaque coupe donne',
+            tutorialTimeHint3: '+temps',
+            tutorialTimeHint4: 'Temps écoulé = Fin de Partie',
+            tutorialAdvanced: 'Astuces Pro',
+            tutorialCombo: 'Combo',
+            tutorialComboHint: 'Coupez vite pour plus de points',
+            tutorialDifficulty: 'Difficulté',
+            tutorialDifficultyHint: 'Plus dur à mesure que vous scorez',
+            tutorialAchievement: 'Succès',
+            tutorialAchievementHint: 'Débloquez 12 succès',
+            tutorialSkin: 'Skins',
+            tutorialSkinHint: 'Hauts scores débloquent des skins',
+            skip: 'Passer',
+            prev: 'Précédent',
+            next: 'Suivant',
+            finish: 'Terminer',
+
+            // Indications tactiles
+            tapLeft: '← Touchez Gauche',
+            tapRight: 'Touchez Droite →',
+
+            // Paramètres de volume
+            volumeSettings: '🎵 Volume',
+            sfxVolume: '🔊 Effets',
+            bgmVolume: '🎵 Musique',
+            vibration: '📳 Vibration',
+
+            // Pop-ups
+            skinUnlockPopup: 'Nouveau Skin Débloqué !',
+
+            // Système de replay
+            replayBtn: '🎬 Replay',
+            replayTitle: '🎬 Dernière Partie',
+            replayScore: 'Score',
+            replayCombo: 'Combo Max',
+            replayChops: 'Arbres Coupés',
+            replayDuration: 'Durée',
+            replayStart: 'Lancer le Replay',
+            replayStop: 'Arrêter',
+            replayNoData: 'Pas de données',
+            replayPlaying: '🎬 Lecture en cours...',
+            replaySeconds: 's',
+
+            // Partage
+            shareBtn: '📤 Partager',
+            shareTitle: 'Bûcheron',
+            shareScoreLabel: 'Score',
+            shareComboLabel: 'Combo',
+            shareLevelLabel: 'Niveau',
+            shareHighScoreLabel: 'Record',
+            shareDownloading: 'Génération de l\'image...',
+            shareSuccess: 'Image sauvegardée !',
+            shareFailed: 'Échec du partage, réessayez',
+            sharePanelTitle: '📤 Partager le Score',
+            shareNativeBtn: '📱 Partager',
+            shareDownloadBtn: '💾 Sauvegarder Image',
+            shareCopyBtn: '📋 Copier Texte',
+            shareCopySuccess: '✓ Copié dans le presse-papiers !',
+
+            // Mode infini
+            endlessBtn: '∞ Mode Infini',
+            endlessTitle: '∞ Mode Infini',
+            endlessDesc: 'Sans limite de temps, testez votre concentration !',
+            endlessBest: 'Meilleur Score',
+            endlessTotal: 'Parties Totales',
+            endlessStart: 'Commencer le Défi',
+            endlessOver: '∞ Défi Terminé',
+            endlessNewRecord: '🎉 Nouveau Record !',
+            endlessHint: 'Évitez les branches, pas de pression temporelle',
+
+            // Compte à rebours
+            countdownGo: 'GO!',
+
+            // Thème
+            themeDarkTip: 'Passer au Mode Sombre',
+            themeLightTip: 'Passer au Mode Clair',
+
+            // Options de vitesse
+            speedBtn: '⚡ Vitesse',
+            speedTitle: '⚡ Vitesse du Jeu',
+            speedSlow: '🐢 Lent',
+            speedNormal: '🚶 Normal',
+            speedFast: '🏃 Rapide',
+            speedSlowDesc: 'Temps plus lent, pour débutants',
+            speedNormalDesc: 'Vitesse de jeu standard',
+            speedFastDesc: 'Temps plus rapide, mode défi',
+            speedCurrent: 'Actuel',
+
+            // Noms des skins
+            skinNames: {
+                default: 'Bûcheron',
+                ninja: 'Ninja',
+                robot: 'Robot',
+                golden: 'Légende Dorée',
+                santa: 'Père Noël',
+                pumpkin: 'Tête de Citrouille',
+                pirate: 'Capitaine Pirate',
+                snowman: 'Bonhomme de Neige',
+                chinese_new_year: 'Dieu de la Fortune',
+                valentine: 'Cupidon',
+                easter_bunny: 'Lapin de Pâques',
+                summer_surfer: 'Surfeur d\'Été'
+            },
+            skinDescs: {
+                default: 'Le bûcheron classique en rouge',
+                ninja: 'Le mystérieux ninja en noir',
+                robot: 'Le bûcheron mécanique en acier',
+                golden: 'Le légendaire bûcheron doré',
+                santa: 'Le joyeux bûcheron de Noël',
+                pumpkin: 'Le terrifiant bûcheron d\'Halloween',
+                pirate: 'Le brave aventurier des mers',
+                snowman: 'Le bûcheron du monde glacé',
+                chinese_new_year: 'Bonne année, bonne fortune !',
+                valentine: 'Le dieu de l\'amour qui répand l\'affection',
+                easter_bunny: 'L\'adorable lapin aux œufs de Pâques',
+                summer_surfer: 'Le cool bûcheron de la plage'
+            },
+
+            // Noms des succès
+            achievementNames: {
+                first_chop: 'Première Coupe',
+                score_10: 'Bûcheron Débutant',
+                score_50: 'Bûcheron Confirmé',
+                score_100: 'Bûcheron Pro',
+                score_200: 'Maître Bûcheron',
+                combo_5: 'Mini Combo',
+                combo_10: 'Expert Combo',
+                combo_20: 'Roi du Combo',
+                level_5: 'Niveau 5',
+                level_8: 'Niveau 8',
+                level_max: 'Niveau Maximum',
+                close_call: 'Tout Juste'
+            },
+            achievementDescs: {
+                first_chop: 'Coupez votre premier arbre',
+                score_10: 'Atteignez 10 points en une partie',
+                score_50: 'Atteignez 50 points en une partie',
+                score_100: 'Atteignez 100 points en une partie',
+                score_200: 'Atteignez 200 points en une partie',
+                combo_5: 'Atteignez un combo de 5',
+                combo_10: 'Atteignez un combo de 10',
+                combo_20: 'Atteignez un combo de 20',
+                level_5: 'Atteignez le niveau de difficulté 5',
+                level_8: 'Atteignez le niveau de difficulté 8',
+                level_max: 'Atteignez le niveau maximum 11',
+                close_call: 'Coupez 20 arbres avec moins de 10% de temps'
+            }
+        },
+        de: {
+            // Titel
+            title: 'Holzfäller',
+
+            // Startbildschirm
+            startTitle: 'Holzfäller',
+            startHint1: 'Drücke ← → oder A/D zum Hacken',
+            startHint2: 'Tippe links/rechts auf den Bildschirm',
+            startHint3: 'Weiche Ästen aus, schlage die Uhr!',
+            startHint4: 'Leertaste/Enter Start | ESC/P Pause',
+            startBtn: 'Spiel starten',
+            dailyBtn: '📅 Tägliche Herausforderung',
+            skinBtn: '👕 Skins',
+            leaderboardBtn: '📊 Bestenliste',
+            statsBtn: '📈 Statistiken',
+            tutorialBtn: '❓ Anleitung',
+
+            // Spielende
+            gameOver: 'Spiel vorbei',
+            score: 'Punkte',
+            maxCombo: 'Max Combo',
+            highScore: 'Highscore',
+            restartBtn: 'Nochmal',
+            achievementsBtn: '🏆 Erfolge',
+
+            // Pause
+            paused: '⏸️ Pause',
+            pauseHint: 'Drücke ESC oder P zum Fortsetzen',
+            resumeBtn: 'Fortsetzen',
+
+            // Tägliche Herausforderung
+            dailyTitle: '📅 Tägliche Herausforderung',
+            todayDate: 'Heute',
+            todayBest: 'Heute Beste',
+            attempts: 'Versuche',
+            dailyHint: 'Gleiches Level für alle, schlage deinen Rekord!',
+            startChallenge: 'Herausforderung starten',
+            back: 'Zurück',
+            challengeOver: '📅 Herausforderung beendet',
+            newRecord: '🎉 Neuer Rekord!',
+            todayHighScore: 'Heute Beste',
+            todayAttempts: 'Heutige Versuche',
+            times: 'mal',
+            retry: 'Nochmal',
+            backHome: 'Startseite',
+
+            // Skins
+            skinTitle: '👕 Skins',
+            skinUnlocked: 'Freigeschaltet',
+            skinLocked: '🔒',
+            skinUnlockAt: 'Pkt. zum Freischalten',
+
+            // Bestenliste
+            leaderboardTitle: '📊 Bestenliste',
+            rank: 'Rang',
+            lbScore: 'Punkte',
+            lbCombo: 'Combo',
+            lbDate: 'Datum',
+            clearRecords: 'Alle löschen',
+            clearConfirm: 'Möchtest du wirklich alle Einträge löschen?',
+            noRecords: 'Keine Einträge',
+
+            // Erfolge
+            achievementsTitle: '🏆 Erfolge',
+            achievementUnlock: 'Erfolg freigeschaltet!',
+
+            // Statistiken
+            statsTitle: '📈 Spielstatistiken',
+            totalGames: 'Spiele gesamt',
+            totalChops: 'Bäume gefällt',
+            totalTime: 'Spielzeit gesamt',
+            bestCombo: 'Bester Combo',
+            avgScore: 'Durchschnitt',
+            unlockedAchievements: '🎖️ Erfolge',
+            unlockedSkins: '👕 Skins',
+            dailyAttempts: '📅 Tägliche Herausforderungen',
+            resetStats: 'Zurücksetzen',
+            resetConfirm: 'Möchtest du wirklich alle Statistiken zurücksetzen? Dies kann nicht rückgängig gemacht werden.',
+
+            // Tutorial
+            tutorialWelcome: 'Willkommen bei Holzfäller!',
+            tutorialWelcome1: 'Du bist ein mutiger Holzfäller',
+            tutorialWelcome2: 'Fälle so viele Bäume wie möglich',
+            tutorialWelcome3: 'Und weiche gefährlichen Ästen aus',
+            tutorialControls: 'Steuerung',
+            tutorialMoveLeft: 'Nach links bewegen und hacken',
+            tutorialMoveRight: 'Nach rechts bewegen und hacken',
+            tutorialTouchHint: 'Oder tippe links/rechts auf den Bildschirm',
+            tutorialBranch: 'Weiche Ästen aus!',
+            tutorialBranchWarn: 'Ast berührt = Spiel vorbei!',
+            tutorialBranchHint: 'Schau bevor du hackst',
+            tutorialTime: 'Zeitmanagement',
+            tutorialTimeHint1: 'Die Zeitleiste sinkt ständig',
+            tutorialTimeHint2: 'Jeder Hieb gibt',
+            tutorialTimeHint3: '+Zeit',
+            tutorialTimeHint4: 'Zeit abgelaufen = Spiel vorbei',
+            tutorialAdvanced: 'Profi-Tipps',
+            tutorialCombo: 'Combo',
+            tutorialComboHint: 'Schnell hacken für mehr Punkte',
+            tutorialDifficulty: 'Schwierigkeit',
+            tutorialDifficultyHint: 'Wird schwerer je mehr du punktest',
+            tutorialAchievement: 'Erfolge',
+            tutorialAchievementHint: '12 Erfolge freischalten',
+            tutorialSkin: 'Skins',
+            tutorialSkinHint: 'Hohe Punktzahlen schalten Skins frei',
+            skip: 'Überspringen',
+            prev: 'Zurück',
+            next: 'Weiter',
+            finish: 'Fertig',
+
+            // Touch-Hinweise
+            tapLeft: '← Links tippen',
+            tapRight: 'Rechts tippen →',
+
+            // Lautstärkeeinstellungen
+            volumeSettings: '🎵 Lautstärke',
+            sfxVolume: '🔊 Effekte',
+            bgmVolume: '🎵 Musik',
+            vibration: '📳 Vibration',
+
+            // Pop-ups
+            skinUnlockPopup: 'Neuer Skin freigeschaltet!',
+
+            // Wiedergabesystem
+            replayBtn: '🎬 Wiedergabe',
+            replayTitle: '🎬 Letztes Spiel',
+            replayScore: 'Punkte',
+            replayCombo: 'Max Combo',
+            replayChops: 'Bäume gefällt',
+            replayDuration: 'Dauer',
+            replayStart: 'Wiedergabe starten',
+            replayStop: 'Stoppen',
+            replayNoData: 'Keine Daten',
+            replayPlaying: '🎬 Wiedergabe läuft...',
+            replaySeconds: 's',
+
+            // Teilen
+            shareBtn: '📤 Teilen',
+            shareTitle: 'Holzfäller',
+            shareScoreLabel: 'Punkte',
+            shareComboLabel: 'Combo',
+            shareLevelLabel: 'Level',
+            shareHighScoreLabel: 'Highscore',
+            shareDownloading: 'Bild wird erstellt...',
+            shareSuccess: 'Bild gespeichert!',
+            shareFailed: 'Teilen fehlgeschlagen, bitte erneut versuchen',
+            sharePanelTitle: '📤 Ergebnis teilen',
+            shareNativeBtn: '📱 Teilen',
+            shareDownloadBtn: '💾 Bild speichern',
+            shareCopyBtn: '📋 Text kopieren',
+            shareCopySuccess: '✓ In die Zwischenablage kopiert!',
+
+            // Endlosmodus
+            endlessBtn: '∞ Endlosmodus',
+            endlessTitle: '∞ Endlosmodus',
+            endlessDesc: 'Ohne Zeitlimit, teste deine Konzentration!',
+            endlessBest: 'Highscore',
+            endlessTotal: 'Spiele Gesamt',
+            endlessStart: 'Herausforderung Starten',
+            endlessOver: '∞ Herausforderung Beendet',
+            endlessNewRecord: '🎉 Neuer Rekord!',
+            endlessHint: 'Nur Ästen ausweichen, kein Zeitdruck',
+
+            // Countdown
+            countdownGo: 'LOS!',
+
+            // Thema
+            themeDarkTip: 'Zum Dunkelmodus wechseln',
+            themeLightTip: 'Zum Hellmodus wechseln',
+
+            // Geschwindigkeitsoptionen
+            speedBtn: '⚡ Tempo',
+            speedTitle: '⚡ Spielgeschwindigkeit',
+            speedSlow: '🐢 Langsam',
+            speedNormal: '🚶 Normal',
+            speedFast: '🏃 Schnell',
+            speedSlowDesc: 'Langsamerer Zeitverbrauch, für Anfänger',
+            speedNormalDesc: 'Standard-Spielgeschwindigkeit',
+            speedFastDesc: 'Schnellerer Zeitverbrauch, Herausforderung',
+            speedCurrent: 'Aktuell',
+
+            // Skin-Namen
+            skinNames: {
+                default: 'Holzfäller',
+                ninja: 'Ninja',
+                robot: 'Roboter',
+                golden: 'Goldene Legende',
+                santa: 'Weihnachtsmann',
+                pumpkin: 'Kürbiskopf',
+                pirate: 'Piratenkapitän',
+                snowman: 'Schneemann',
+                chinese_new_year: 'Glücksgott',
+                valentine: 'Amor',
+                easter_bunny: 'Osterhase',
+                summer_surfer: 'Sommersurfer'
+            },
+            skinDescs: {
+                default: 'Der klassische Holzfäller in Rot',
+                ninja: 'Der geheimnisvolle Ninja in Schwarz',
+                robot: 'Der mechanische Stahl-Holzfäller',
+                golden: 'Der legendäre goldene Holzfäller',
+                santa: 'Der fröhliche Weihnachts-Holzfäller',
+                pumpkin: 'Der gruselige Halloween-Holzfäller',
+                pirate: 'Der mutige Seeabenteurer',
+                snowman: 'Der Holzfäller aus der Eiswelt',
+                chinese_new_year: 'Frohes neues Jahr, viel Glück!',
+                valentine: 'Der Liebesgott verbreitet Liebe',
+                easter_bunny: 'Der süße bunte Osterhase',
+                summer_surfer: 'Der coole Strand-Holzfäller'
+            },
+
+            // Erfolgsnamen
+            achievementNames: {
+                first_chop: 'Erster Hieb',
+                score_10: 'Anfänger-Holzfäller',
+                score_50: 'Erfahrener Holzfäller',
+                score_100: 'Profi-Holzfäller',
+                score_200: 'Meister-Holzfäller',
+                combo_5: 'Mini Combo',
+                combo_10: 'Combo-Experte',
+                combo_20: 'Combo-König',
+                level_5: 'Level 5',
+                level_8: 'Level 8',
+                level_max: 'Maximales Level',
+                close_call: 'Haarscharf'
+            },
+            achievementDescs: {
+                first_chop: 'Fälle deinen ersten Baum',
+                score_10: 'Erreiche 10 Punkte in einem Spiel',
+                score_50: 'Erreiche 50 Punkte in einem Spiel',
+                score_100: 'Erreiche 100 Punkte in einem Spiel',
+                score_200: 'Erreiche 200 Punkte in einem Spiel',
+                combo_5: 'Erreiche einen 5er Combo',
+                combo_10: 'Erreiche einen 10er Combo',
+                combo_20: 'Erreiche einen 20er Combo',
+                level_5: 'Erreiche Schwierigkeitsgrad 5',
+                level_8: 'Erreiche Schwierigkeitsgrad 8',
+                level_max: 'Erreiche maximalen Schwierigkeitsgrad 11',
+                close_call: 'Fälle 20 Bäume bei unter 10% Zeit'
+            }
+        },
+        pt: {
+            // Título
+            title: 'Lenhador',
+
+            // Tela inicial
+            startTitle: 'Lenhador',
+            startHint1: 'Pressione ← → ou A/D para cortar',
+            startHint2: 'Toque à esquerda/direita da tela',
+            startHint3: 'Desvie dos galhos, vença o tempo!',
+            startHint4: 'Espaço/Enter Iniciar | ESC/P Pausar',
+            startBtn: 'Iniciar Jogo',
+            dailyBtn: '📅 Desafio Diário',
+            skinBtn: '👕 Skins',
+            leaderboardBtn: '📊 Ranking',
+            statsBtn: '📈 Estatísticas',
+            tutorialBtn: '❓ Tutorial',
+
+            // Fim de jogo
+            gameOver: 'Fim de Jogo',
+            score: 'Pontuação',
+            maxCombo: 'Combo Máximo',
+            highScore: 'Recorde',
+            restartBtn: 'Tentar Novamente',
+            achievementsBtn: '🏆 Conquistas',
+
+            // Pausa
+            paused: '⏸️ Pausado',
+            pauseHint: 'Pressione ESC ou P para continuar',
+            resumeBtn: 'Continuar',
+
+            // Desafio diário
+            dailyTitle: '📅 Desafio Diário',
+            todayDate: 'Hoje',
+            todayBest: 'Melhor de Hoje',
+            attempts: 'Tentativas',
+            dailyHint: 'Mesmo nível para todos, supere seu recorde!',
+            startChallenge: 'Iniciar Desafio',
+            back: 'Voltar',
+            challengeOver: '📅 Desafio Encerrado',
+            newRecord: '🎉 Novo Recorde!',
+            todayHighScore: 'Melhor de Hoje',
+            todayAttempts: 'Tentativas Hoje',
+            times: 'vezes',
+            retry: 'Tentar Novamente',
+            backHome: 'Início',
+
+            // Skins
+            skinTitle: '👕 Skins',
+            skinUnlocked: 'Desbloqueado',
+            skinLocked: '🔒',
+            skinUnlockAt: 'pts para desbloquear',
+
+            // Ranking
+            leaderboardTitle: '📊 Ranking',
+            rank: 'Posição',
+            lbScore: 'Pontos',
+            lbCombo: 'Combo',
+            lbDate: 'Data',
+            clearRecords: 'Limpar Tudo',
+            clearConfirm: 'Tem certeza que deseja limpar todos os registros?',
+            noRecords: 'Sem registros',
+
+            // Conquistas
+            achievementsTitle: '🏆 Conquistas',
+            achievementUnlock: 'Conquista Desbloqueada!',
+
+            // Estatísticas
+            statsTitle: '📈 Estatísticas do Jogo',
+            totalGames: 'Total de Jogos',
+            totalChops: 'Total de Cortes',
+            totalTime: 'Tempo Total',
+            bestCombo: 'Melhor Combo',
+            avgScore: 'Média de Pontos',
+            unlockedAchievements: '🎖️ Conquistas',
+            unlockedSkins: '👕 Skins',
+            dailyAttempts: '📅 Desafios Diários',
+            resetStats: 'Resetar',
+            resetConfirm: 'Tem certeza que deseja resetar todas as estatísticas? Isso não pode ser desfeito.',
+
+            // Tutorial
+            tutorialWelcome: 'Bem-vindo ao Lenhador!',
+            tutorialWelcome1: 'Você é um corajoso lenhador',
+            tutorialWelcome2: 'Corte o máximo de árvores que puder',
+            tutorialWelcome3: 'Desviando dos galhos perigosos',
+            tutorialControls: 'Controles',
+            tutorialMoveLeft: 'Mover para esquerda e cortar',
+            tutorialMoveRight: 'Mover para direita e cortar',
+            tutorialTouchHint: 'Ou toque à esquerda/direita da tela',
+            tutorialBranch: 'Desvie dos Galhos!',
+            tutorialBranchWarn: 'Bater no galho = Fim de Jogo!',
+            tutorialBranchHint: 'Olhe antes de cortar',
+            tutorialTime: 'Gestão do Tempo',
+            tutorialTimeHint1: 'A barra de tempo diminui constantemente',
+            tutorialTimeHint2: 'Cada corte dá',
+            tutorialTimeHint3: '+tempo',
+            tutorialTimeHint4: 'Tempo esgotado = Fim de Jogo',
+            tutorialAdvanced: 'Dicas Pro',
+            tutorialCombo: 'Combo',
+            tutorialComboHint: 'Corte rápido para mais pontos',
+            tutorialDifficulty: 'Dificuldade',
+            tutorialDifficultyHint: 'Fica mais difícil conforme pontua',
+            tutorialAchievement: 'Conquistas',
+            tutorialAchievementHint: 'Desbloqueie 12 conquistas',
+            tutorialSkin: 'Skins',
+            tutorialSkinHint: 'Pontuações altas desbloqueiam skins',
+            skip: 'Pular',
+            prev: 'Voltar',
+            next: 'Próximo',
+            finish: 'Finalizar',
+
+            // Dicas de toque
+            tapLeft: '← Toque Esquerda',
+            tapRight: 'Toque Direita →',
+
+            // Configurações de volume
+            volumeSettings: '🎵 Volume',
+            sfxVolume: '🔊 Efeitos',
+            bgmVolume: '🎵 Música',
+            vibration: '📳 Vibração',
+
+            // Pop-ups
+            skinUnlockPopup: 'Nova Skin Desbloqueada!',
+
+            // Sistema de replay
+            replayBtn: '🎬 Replay',
+            replayTitle: '🎬 Último Jogo',
+            replayScore: 'Pontos',
+            replayCombo: 'Combo Máximo',
+            replayChops: 'Cortes',
+            replayDuration: 'Duração',
+            replayStart: 'Iniciar Replay',
+            replayStop: 'Parar',
+            replayNoData: 'Sem dados',
+            replayPlaying: '🎬 Reproduzindo...',
+            replaySeconds: 's',
+
+            // Compartilhar
+            shareBtn: '📤 Compartilhar',
+            shareTitle: 'Lenhador',
+            shareScoreLabel: 'Pontos',
+            shareComboLabel: 'Combo',
+            shareLevelLabel: 'Nível',
+            shareHighScoreLabel: 'Recorde',
+            shareDownloading: 'Gerando imagem...',
+            shareSuccess: 'Imagem salva!',
+            shareFailed: 'Falha ao compartilhar, tente novamente',
+            sharePanelTitle: '📤 Compartilhar Pontuação',
+            shareNativeBtn: '📱 Compartilhar',
+            shareDownloadBtn: '💾 Salvar Imagem',
+            shareCopyBtn: '📋 Copiar Texto',
+            shareCopySuccess: '✓ Copiado para a área de transferência!',
+
+            // Modo infinito
+            endlessBtn: '∞ Modo Infinito',
+            endlessTitle: '∞ Modo Infinito',
+            endlessDesc: 'Sem limite de tempo, teste sua concentração!',
+            endlessBest: 'Melhor Pontuação',
+            endlessTotal: 'Total de Jogos',
+            endlessStart: 'Iniciar Desafio',
+            endlessOver: '∞ Desafio Encerrado',
+            endlessNewRecord: '🎉 Novo Recorde!',
+            endlessHint: 'Apenas evite os galhos, sem pressão de tempo',
+
+            // Contagem regressiva
+            countdownGo: 'VAI!',
+
+            // Tema
+            themeDarkTip: 'Mudar para Modo Escuro',
+            themeLightTip: 'Mudar para Modo Claro',
+
+            // Opções de velocidade
+            speedBtn: '⚡ Velocidade',
+            speedTitle: '⚡ Velocidade do Jogo',
+            speedSlow: '🐢 Lento',
+            speedNormal: '🚶 Normal',
+            speedFast: '🏃 Rápido',
+            speedSlowDesc: 'Tempo mais lento, para iniciantes',
+            speedNormalDesc: 'Velocidade padrão do jogo',
+            speedFastDesc: 'Tempo mais rápido, modo desafio',
+            speedCurrent: 'Atual',
+
+            // Nomes das skins
+            skinNames: {
+                default: 'Lenhador',
+                ninja: 'Ninja',
+                robot: 'Robô',
+                golden: 'Lenda Dourada',
+                santa: 'Papai Noel',
+                pumpkin: 'Cabeça de Abóbora',
+                pirate: 'Capitão Pirata',
+                snowman: 'Boneco de Neve',
+                chinese_new_year: 'Deus da Riqueza',
+                valentine: 'Cupido',
+                easter_bunny: 'Coelho da Páscoa',
+                summer_surfer: 'Surfista de Verão'
+            },
+            skinDescs: {
+                default: 'O clássico lenhador de camisa vermelha',
+                ninja: 'O misterioso ninja de preto',
+                robot: 'O lenhador mecânico de aço',
+                golden: 'O lendário lenhador dourado',
+                santa: 'O alegre lenhador natalino',
+                pumpkin: 'O assustador lenhador de Halloween',
+                pirate: 'O corajoso aventureiro dos mares',
+                snowman: 'O lenhador do mundo gelado',
+                chinese_new_year: 'Feliz Ano Novo! Boa sorte!',
+                valentine: 'O deus do amor espalhando amor',
+                easter_bunny: 'O coelhinho colorido fofo',
+                summer_surfer: 'O surfista descolado da praia'
+            },
+
+            // Nomes das conquistas
+            achievementNames: {
+                first_chop: 'Primeiro Corte',
+                score_10: 'Lenhador Iniciante',
+                score_50: 'Lenhador Habilidoso',
+                score_100: 'Lenhador Profissional',
+                score_200: 'Mestre Lenhador',
+                combo_5: 'Mini Combo',
+                combo_10: 'Combo Pro',
+                combo_20: 'Rei do Combo',
+                level_5: 'Nível 5',
+                level_8: 'Nível 8',
+                level_max: 'Nível Máximo',
+                close_call: 'Por um Fio'
+            },
+            achievementDescs: {
+                first_chop: 'Corte sua primeira árvore',
+                score_10: 'Alcance 10 pontos em um jogo',
+                score_50: 'Alcance 50 pontos em um jogo',
+                score_100: 'Alcance 100 pontos em um jogo',
+                score_200: 'Alcance 200 pontos em um jogo',
+                combo_5: 'Alcance combo de 5',
+                combo_10: 'Alcance combo de 10',
+                combo_20: 'Alcance combo de 20',
+                level_5: 'Alcance nível de dificuldade 5',
+                level_8: 'Alcance nível de dificuldade 8',
+                level_max: 'Alcance nível máximo de dificuldade 11',
+                close_call: 'Corte 20 vezes com tempo abaixo de 10%'
+            }
+        },
+        // 意大利语
+        it: {
+            // Titolo
+            title: 'Boscaiolo',
+
+            // Schermata iniziale
+            startTitle: 'Boscaiolo',
+            startHint1: 'Premi ← → o A/D per tagliare',
+            startHint2: 'Tocca a sinistra/destra dello schermo',
+            startHint3: 'Evita i rami, batti il tempo!',
+            startHint4: 'Spazio/Invio Avvia | ESC/P Pausa',
+            startBtn: 'Inizia Gioco',
+            dailyBtn: '📅 Sfida Giornaliera',
+            skinBtn: '👕 Skin',
+            leaderboardBtn: '📊 Classifica',
+            statsBtn: '📈 Statistiche',
+            tutorialBtn: '❓ Tutorial',
+
+            // Fine gioco
+            gameOver: 'Fine Partita',
+            score: 'Punteggio',
+            maxCombo: 'Combo Max',
+            highScore: 'Record',
+            restartBtn: 'Riprova',
+            achievementsBtn: '🏆 Obiettivi',
+
+            // Pausa
+            paused: '⏸️ In Pausa',
+            pauseHint: 'Premi ESC o P per continuare',
+            resumeBtn: 'Riprendi',
+
+            // Sfida giornaliera
+            dailyTitle: '📅 Sfida Giornaliera',
+            todayDate: 'Oggi',
+            todayBest: 'Miglior Oggi',
+            attempts: 'Tentativi',
+            dailyHint: 'Stesso livello per tutti, batti il tuo record!',
+            startChallenge: 'Inizia Sfida',
+            back: 'Indietro',
+            challengeOver: '📅 Sfida Terminata',
+            newRecord: '🎉 Nuovo Record!',
+            todayHighScore: 'Miglior Oggi',
+            todayAttempts: 'Tentativi Oggi',
+            times: 'volte',
+            retry: 'Riprova',
+            backHome: 'Home',
+
+            // Skin
+            skinTitle: '👕 Skin',
+            skinUnlocked: 'Sbloccato',
+            skinLocked: '🔒',
+            skinUnlockAt: 'punti per sbloccare',
+
+            // Classifica
+            leaderboardTitle: '📊 Classifica',
+            rank: 'Pos.',
+            lbScore: 'Punti',
+            lbCombo: 'Combo',
+            lbDate: 'Data',
+            clearRecords: 'Cancella Tutto',
+            clearConfirm: 'Sei sicuro di voler cancellare tutti i record?',
+            noRecords: 'Nessun record',
+
+            // Obiettivi
+            achievementsTitle: '🏆 Obiettivi',
+            achievementUnlock: 'Obiettivo Sbloccato!',
+
+            // Statistiche
+            statsTitle: '📈 Statistiche di Gioco',
+            totalGames: 'Partite Totali',
+            totalChops: 'Alberi Tagliati',
+            totalTime: 'Tempo Totale',
+            bestCombo: 'Miglior Combo',
+            avgScore: 'Punteggio Medio',
+            unlockedAchievements: '🎖️ Obiettivi',
+            unlockedSkins: '👕 Skin',
+            dailyAttempts: '📅 Sfide Giornaliere',
+            resetStats: 'Resetta',
+            resetConfirm: 'Sei sicuro di voler resettare tutte le statistiche? Questa azione non può essere annullata.',
+
+            // Tutorial
+            tutorialWelcome: 'Benvenuto in Boscaiolo!',
+            tutorialWelcome1: 'Sei un coraggioso boscaiolo',
+            tutorialWelcome2: 'Taglia più alberi possibile',
+            tutorialWelcome3: 'Evitando i rami pericolosi',
+            tutorialControls: 'Controlli',
+            tutorialMoveLeft: 'Vai a sinistra e taglia',
+            tutorialMoveRight: 'Vai a destra e taglia',
+            tutorialTouchHint: 'O tocca a sinistra/destra dello schermo',
+            tutorialBranch: 'Evita i Rami!',
+            tutorialBranchWarn: 'Colpire un ramo = Fine Partita!',
+            tutorialBranchHint: 'Guarda prima di tagliare',
+            tutorialTime: 'Gestione del Tempo',
+            tutorialTimeHint1: 'La barra del tempo diminuisce costantemente',
+            tutorialTimeHint2: 'Ogni taglio dà',
+            tutorialTimeHint3: '+tempo',
+            tutorialTimeHint4: 'Tempo scaduto = Fine Partita',
+            tutorialAdvanced: 'Consigli Pro',
+            tutorialCombo: 'Combo',
+            tutorialComboHint: 'Taglia velocemente per più punti',
+            tutorialDifficulty: 'Difficoltà',
+            tutorialDifficultyHint: 'Diventa più difficile col punteggio',
+            tutorialAchievement: 'Obiettivi',
+            tutorialAchievementHint: 'Sblocca 12 obiettivi',
+            tutorialSkin: 'Skin',
+            tutorialSkinHint: 'Punteggi alti sbloccano skin',
+            skip: 'Salta',
+            prev: 'Indietro',
+            next: 'Avanti',
+            finish: 'Fine',
+
+            // Indicazioni touch
+            tapLeft: '← Tocca Sinistra',
+            tapRight: 'Tocca Destra →',
+
+            // Impostazioni volume
+            volumeSettings: '🎵 Volume',
+            sfxVolume: '🔊 Effetti',
+            bgmVolume: '🎵 Musica',
+            vibration: '📳 Vibrazione',
+
+            // Pop-up
+            skinUnlockPopup: 'Nuova Skin Sbloccata!',
+
+            // Sistema replay
+            replayBtn: '🎬 Replay',
+            replayTitle: '🎬 Ultima Partita',
+            replayScore: 'Punteggio',
+            replayCombo: 'Combo Max',
+            replayChops: 'Tagli',
+            replayDuration: 'Durata',
+            replayStart: 'Avvia Replay',
+            replayStop: 'Ferma',
+            replayNoData: 'Nessun dato',
+            replayPlaying: '🎬 In riproduzione...',
+            replaySeconds: 's',
+
+            // Condivisione
+            shareBtn: '📤 Condividi',
+            shareTitle: 'Boscaiolo',
+            shareScoreLabel: 'Punti',
+            shareComboLabel: 'Combo',
+            shareLevelLabel: 'Livello',
+            shareHighScoreLabel: 'Record',
+            shareDownloading: 'Generazione immagine...',
+            shareSuccess: 'Immagine salvata!',
+            shareFailed: 'Condivisione fallita, riprova',
+            sharePanelTitle: '📤 Condividi Punteggio',
+            shareNativeBtn: '📱 Condividi',
+            shareDownloadBtn: '💾 Salva Immagine',
+            shareCopyBtn: '📋 Copia Testo',
+            shareCopySuccess: '✓ Copiato negli appunti!',
+
+            // Modalità infinita
+            endlessBtn: '∞ Modalità Infinita',
+            endlessTitle: '∞ Modalità Infinita',
+            endlessDesc: 'Senza limite di tempo, metti alla prova la tua concentrazione!',
+            endlessBest: 'Miglior Punteggio',
+            endlessTotal: 'Partite Totali',
+            endlessStart: 'Inizia Sfida',
+            endlessOver: '∞ Sfida Terminata',
+            endlessNewRecord: '🎉 Nuovo Record!',
+            endlessHint: 'Solo evitare i rami, nessuna pressione temporale',
+
+            // Conto alla rovescia
+            countdownGo: 'VIA!',
+
+            // Tema
+            themeDarkTip: 'Passa alla Modalità Scura',
+            themeLightTip: 'Passa alla Modalità Chiara',
+
+            // Opzioni velocità
+            speedBtn: '⚡ Velocità',
+            speedTitle: '⚡ Velocità di Gioco',
+            speedSlow: '🐢 Lento',
+            speedNormal: '🚶 Normale',
+            speedFast: '🏃 Veloce',
+            speedSlowDesc: 'Tempo più lento, per principianti',
+            speedNormalDesc: 'Velocità di gioco standard',
+            speedFastDesc: 'Tempo più veloce, modalità sfida',
+            speedCurrent: 'Attuale',
+
+            // Nomi skin
+            skinNames: {
+                default: 'Boscaiolo',
+                ninja: 'Ninja',
+                robot: 'Robot',
+                golden: 'Leggenda Dorata',
+                santa: 'Babbo Natale',
+                pumpkin: 'Testa di Zucca',
+                pirate: 'Capitano Pirata',
+                snowman: 'Pupazzo di Neve',
+                chinese_new_year: 'Dio della Ricchezza',
+                valentine: 'Cupido',
+                easter_bunny: 'Coniglio Pasquale',
+                summer_surfer: 'Surfista Estivo'
+            },
+            skinDescs: {
+                default: 'Il classico boscaiolo in rosso',
+                ninja: 'Il misterioso ninja in nero',
+                robot: 'Il boscaiolo meccanico in acciaio',
+                golden: 'Il leggendario boscaiolo dorato',
+                santa: 'Il gioioso boscaiolo natalizio',
+                pumpkin: 'Il terrificante boscaiolo di Halloween',
+                pirate: 'Il coraggioso avventuriero dei mari',
+                snowman: 'Il boscaiolo del mondo ghiacciato',
+                chinese_new_year: 'Buon anno! Buona fortuna!',
+                valentine: 'Il dio dell\'amore che diffonde affetto',
+                easter_bunny: 'L\'adorabile coniglietto delle uova',
+                summer_surfer: 'Il boscaiolo cool da spiaggia'
+            },
+
+            // Nomi obiettivi
+            achievementNames: {
+                first_chop: 'Primo Taglio',
+                score_10: 'Boscaiolo Principiante',
+                score_50: 'Boscaiolo Esperto',
+                score_100: 'Boscaiolo Professionista',
+                score_200: 'Maestro Boscaiolo',
+                combo_5: 'Mini Combo',
+                combo_10: 'Esperto Combo',
+                combo_20: 'Re del Combo',
+                level_5: 'Livello 5',
+                level_8: 'Livello 8',
+                level_max: 'Livello Massimo',
+                close_call: 'Per un Pelo'
+            },
+            achievementDescs: {
+                first_chop: 'Taglia il tuo primo albero',
+                score_10: 'Raggiungi 10 punti in una partita',
+                score_50: 'Raggiungi 50 punti in una partita',
+                score_100: 'Raggiungi 100 punti in una partita',
+                score_200: 'Raggiungi 200 punti in una partita',
+                combo_5: 'Raggiungi combo 5',
+                combo_10: 'Raggiungi combo 10',
+                combo_20: 'Raggiungi combo 20',
+                level_5: 'Raggiungi difficoltà livello 5',
+                level_8: 'Raggiungi difficoltà livello 8',
+                level_max: 'Raggiungi difficoltà massima livello 11',
+                close_call: 'Taglia 20 volte con tempo sotto il 10%'
+            }
+        },
+        ru: {
+            // Заголовок
+            title: 'Дровосек',
+
+            // Начальный экран
+            startTitle: 'Дровосек',
+            startHint1: 'Нажмите ← → или A/D для рубки',
+            startHint2: 'Или нажмите слева/справа экрана',
+            startHint3: 'Избегайте веток, успейте вовремя!',
+            startHint4: 'Пробел/Enter Старт | ESC/P Пауза',
+            startBtn: 'Начать игру',
+            dailyBtn: '📅 Ежедневный вызов',
+            skinBtn: '👕 Скины',
+            leaderboardBtn: '📊 Рейтинг',
+            statsBtn: '📈 Статистика',
+            tutorialBtn: '❓ Обучение',
+
+            // Конец игры
+            gameOver: 'Игра окончена',
+            score: 'Счёт',
+            maxCombo: 'Макс. комбо',
+            highScore: 'Рекорд',
+            restartBtn: 'Ещё раз',
+            achievementsBtn: '🏆 Достижения',
+
+            // Пауза
+            paused: '⏸️ Пауза',
+            pauseHint: 'Нажмите ESC или P для продолжения',
+            resumeBtn: 'Продолжить',
+
+            // Ежедневный вызов
+            dailyTitle: '📅 Ежедневный вызов',
+            todayDate: 'Сегодня',
+            todayBest: 'Лучший сегодня',
+            attempts: 'Попыток',
+            dailyHint: 'Один уровень для всех, побей свой рекорд!',
+            startChallenge: 'Начать вызов',
+            back: 'Назад',
+            challengeOver: '📅 Вызов завершён',
+            newRecord: '🎉 Новый рекорд!',
+            todayHighScore: 'Лучший сегодня',
+            todayAttempts: 'Попыток сегодня',
+            times: 'раз',
+            retry: 'Ещё раз',
+            backHome: 'Домой',
+
+            // Скины
+            skinTitle: '👕 Скины',
+            skinUnlocked: 'Открыто',
+            skinLocked: '🔒',
+            skinUnlockAt: 'очков для открытия',
+
+            // Рейтинг
+            leaderboardTitle: '📊 Рейтинг',
+            rank: 'Место',
+            lbScore: 'Счёт',
+            lbCombo: 'Комбо',
+            lbDate: 'Дата',
+            clearRecords: 'Очистить всё',
+            clearConfirm: 'Вы уверены, что хотите удалить все записи?',
+            noRecords: 'Нет записей',
+
+            // Достижения
+            achievementsTitle: '🏆 Достижения',
+            achievementUnlock: 'Достижение открыто!',
+
+            // Статистика
+            statsTitle: '📈 Игровая статистика',
+            totalGames: 'Всего игр',
+            totalChops: 'Всего ударов',
+            totalTime: 'Общее время',
+            bestCombo: 'Лучшее комбо',
+            avgScore: 'Средний счёт',
+            unlockedAchievements: '🎖️ Достижения',
+            unlockedSkins: '👕 Скины',
+            dailyAttempts: '📅 Ежедневные вызовы',
+            resetStats: 'Сбросить',
+            resetConfirm: 'Вы уверены, что хотите сбросить всю статистику? Это нельзя отменить.',
+
+            // Обучение
+            tutorialWelcome: 'Добро пожаловать в Дровосека!',
+            tutorialWelcome1: 'Вы храбрый дровосек',
+            tutorialWelcome2: 'Рубите как можно больше деревьев',
+            tutorialWelcome3: 'Избегая опасных веток',
+            tutorialControls: 'Управление',
+            tutorialMoveLeft: 'Двигайтесь влево и рубите',
+            tutorialMoveRight: 'Двигайтесь вправо и рубите',
+            tutorialTouchHint: 'Или нажмите слева/справа экрана',
+            tutorialBranch: 'Избегайте веток!',
+            tutorialBranchWarn: 'Удар веткой = Конец игры!',
+            tutorialBranchHint: 'Смотрите перед рубкой',
+            tutorialTime: 'Управление временем',
+            tutorialTimeHint1: 'Полоса времени постоянно уменьшается',
+            tutorialTimeHint2: 'Каждый удар даёт',
+            tutorialTimeHint3: '+время',
+            tutorialTimeHint4: 'Время вышло = Конец игры',
+            tutorialAdvanced: 'Советы профи',
+            tutorialCombo: 'Комбо',
+            tutorialComboHint: 'Рубите быстро для большего счёта',
+            tutorialDifficulty: 'Сложность',
+            tutorialDifficultyHint: 'Становится сложнее с ростом счёта',
+            tutorialAchievement: 'Достижения',
+            tutorialAchievementHint: 'Откройте 12 достижений',
+            tutorialSkin: 'Скины',
+            tutorialSkinHint: 'Высокий счёт открывает новые скины',
+            skip: 'Пропустить',
+            prev: 'Назад',
+            next: 'Далее',
+            finish: 'Готово',
+
+            // Подсказки касания
+            tapLeft: '← Нажать слева',
+            tapRight: 'Нажать справа →',
+
+            // Настройки громкости
+            volumeSettings: '🎵 Громкость',
+            sfxVolume: '🔊 Звуки',
+            bgmVolume: '🎵 Музыка',
+            vibration: '📳 Вибрация',
+
+            // Всплывающие окна
+            skinUnlockPopup: 'Новый скин открыт!',
+
+            // Система повтора
+            replayBtn: '🎬 Повтор',
+            replayTitle: '🎬 Последняя игра',
+            replayScore: 'Счёт',
+            replayCombo: 'Макс. комбо',
+            replayChops: 'Ударов',
+            replayDuration: 'Длительность',
+            replayStart: 'Начать повтор',
+            replayStop: 'Остановить',
+            replayNoData: 'Нет данных',
+            replayPlaying: '🎬 Воспроизведение...',
+            replaySeconds: 'с',
+
+            // Поделиться
+            shareBtn: '📤 Поделиться',
+            shareTitle: 'Дровосек',
+            shareScoreLabel: 'Счёт',
+            shareComboLabel: 'Комбо',
+            shareLevelLabel: 'Уровень',
+            shareHighScoreLabel: 'Рекорд',
+            shareDownloading: 'Создание изображения...',
+            shareSuccess: 'Изображение сохранено!',
+            shareFailed: 'Ошибка при публикации, попробуйте снова',
+            sharePanelTitle: '📤 Поделиться результатом',
+            shareNativeBtn: '📱 Поделиться',
+            shareDownloadBtn: '💾 Сохранить',
+            shareCopyBtn: '📋 Копировать текст',
+            shareCopySuccess: '✓ Скопировано в буфер обмена!',
+
+            // Бесконечный режим
+            endlessBtn: '∞ Бесконечный режим',
+            endlessTitle: '∞ Бесконечный режим',
+            endlessDesc: 'Без ограничения времени, проверь концентрацию!',
+            endlessBest: 'Лучший счёт',
+            endlessTotal: 'Всего игр',
+            endlessStart: 'Начать вызов',
+            endlessOver: '∞ Вызов завершён',
+            endlessNewRecord: '🎉 Новый рекорд!',
+            endlessHint: 'Только избегайте веток, без давления времени',
+
+            // Обратный отсчёт
+            countdownGo: 'СТАРТ!',
+
+            // Тема
+            themeDarkTip: 'Переключить на тёмную тему',
+            themeLightTip: 'Переключить на светлую тему',
+
+            // Параметры скорости
+            speedBtn: '⚡ Скорость',
+            speedTitle: '⚡ Скорость игры',
+            speedSlow: '🐢 Медленно',
+            speedNormal: '🚶 Обычно',
+            speedFast: '🏃 Быстро',
+            speedSlowDesc: 'Медленнее расход времени, для новичков',
+            speedNormalDesc: 'Стандартная скорость игры',
+            speedFastDesc: 'Быстрее расход времени, режим вызова',
+            speedCurrent: 'Текущая',
+
+            // Названия скинов
+            skinNames: {
+                default: 'Дровосек',
+                ninja: 'Ниндзя',
+                robot: 'Робот',
+                golden: 'Золотая легенда',
+                santa: 'Дед Мороз',
+                pumpkin: 'Тыквенная голова',
+                pirate: 'Капитан пиратов',
+                snowman: 'Снеговик',
+                chinese_new_year: 'Бог богатства',
+                valentine: 'Купидон',
+                easter_bunny: 'Пасхальный кролик',
+                summer_surfer: 'Летний сёрфер'
+            },
+            skinDescs: {
+                default: 'Классический дровосек в красном',
+                ninja: 'Таинственный ниндзя в чёрном',
+                robot: 'Стальной механический рубщик',
+                golden: 'Легендарный золотой дровосек',
+                santa: 'Весёлый праздничный дровосек',
+                pumpkin: 'Жуткий хэллоуинский рубщик',
+                pirate: 'Храбрый морской искатель приключений',
+                snowman: 'Морозный зимний рубщик',
+                chinese_new_year: 'С Новым годом! Удачи!',
+                valentine: 'Бог любви, дарящий любовь',
+                easter_bunny: 'Милый пасхальный кролик',
+                summer_surfer: 'Крутой пляжный сёрфер'
+            },
+
+            // Названия достижений
+            achievementNames: {
+                first_chop: 'Первый удар',
+                score_10: 'Начинающий дровосек',
+                score_50: 'Опытный дровосек',
+                score_100: 'Профи дровосек',
+                score_200: 'Мастер дровосек',
+                combo_5: 'Мини комбо',
+                combo_10: 'Мастер комбо',
+                combo_20: 'Король комбо',
+                level_5: 'Уровень 5',
+                level_8: 'Уровень 8',
+                level_max: 'Макс. уровень',
+                close_call: 'Еле успел'
+            },
+            achievementDescs: {
+                first_chop: 'Срубите своё первое дерево',
+                score_10: 'Наберите 10 очков за игру',
+                score_50: 'Наберите 50 очков за игру',
+                score_100: 'Наберите 100 очков за игру',
+                score_200: 'Наберите 200 очков за игру',
+                combo_5: 'Достигните комбо 5',
+                combo_10: 'Достигните комбо 10',
+                combo_20: 'Достигните комбо 20',
+                level_5: 'Достигните уровня сложности 5',
+                level_8: 'Достигните уровня сложности 8',
+                level_max: 'Достигните макс. уровня сложности 11',
+                close_call: 'Срубите 20 раз при времени ниже 10%'
+            }
+        },
+        tr: {
+            // Başlık
+            title: 'Oduncu',
+
+            // Başlangıç ekranı
+            startTitle: 'Oduncu',
+            startHint1: 'Kesmek için ← → veya A/D tuşlarına bas',
+            startHint2: 'Ekranın soluna/sağına dokun',
+            startHint3: 'Dallardan kaçın, zamanı yen!',
+            startHint4: 'Boşluk/Enter Başlat | ESC/P Duraklat',
+            startBtn: 'Oyuna Başla',
+            dailyBtn: '📅 Günlük Görev',
+            skinBtn: '👕 Kostümler',
+            leaderboardBtn: '📊 Sıralama',
+            statsBtn: '📈 İstatistik',
+            tutorialBtn: '❓ Eğitim',
+
+            // Oyun sonu
+            gameOver: 'Oyun Bitti',
+            score: 'Puan',
+            maxCombo: 'Maks. Kombo',
+            highScore: 'Rekor',
+            restartBtn: 'Tekrar Dene',
+            achievementsBtn: '🏆 Başarımlar',
+
+            // Duraklat
+            paused: '⏸️ Duraklatıldı',
+            pauseHint: 'Devam etmek için ESC veya P tuşuna bas',
+            resumeBtn: 'Devam Et',
+
+            // Günlük görev
+            dailyTitle: '📅 Günlük Görev',
+            todayDate: 'Bugün',
+            todayBest: 'Bugünkü En İyi',
+            attempts: 'Deneme',
+            dailyHint: 'Herkes için aynı seviye, rekorunu kır!',
+            startChallenge: 'Göreve Başla',
+            back: 'Geri',
+            challengeOver: '📅 Görev Tamamlandı',
+            newRecord: '🎉 Yeni Rekor!',
+            todayHighScore: 'Bugünkü En İyi',
+            todayAttempts: 'Bugünkü Denemeler',
+            times: 'kez',
+            retry: 'Tekrar Dene',
+            backHome: 'Ana Sayfa',
+
+            // Kostümler
+            skinTitle: '👕 Kostümler',
+            skinUnlocked: 'Açıldı',
+            skinLocked: '🔒',
+            skinUnlockAt: 'puan ile açılır',
+
+            // Sıralama
+            leaderboardTitle: '📊 Sıralama',
+            rank: 'Sıra',
+            lbScore: 'Puan',
+            lbCombo: 'Kombo',
+            lbDate: 'Tarih',
+            clearRecords: 'Tümünü Sil',
+            clearConfirm: 'Tüm kayıtları silmek istediğinize emin misiniz?',
+            noRecords: 'Kayıt yok',
+
+            // Başarımlar
+            achievementsTitle: '🏆 Başarımlar',
+            achievementUnlock: 'Başarım Açıldı!',
+
+            // İstatistik
+            statsTitle: '📈 Oyun İstatistikleri',
+            totalGames: 'Toplam Oyun',
+            totalChops: 'Toplam Kesim',
+            totalTime: 'Toplam Süre',
+            bestCombo: 'En İyi Kombo',
+            avgScore: 'Ortalama Puan',
+            unlockedAchievements: '🎖️ Başarımlar',
+            unlockedSkins: '👕 Kostümler',
+            dailyAttempts: '📅 Günlük Görevler',
+            resetStats: 'Sıfırla',
+            resetConfirm: 'Tüm istatistikleri sıfırlamak istediğinize emin misiniz? Bu işlem geri alınamaz.',
+
+            // Eğitim
+            tutorialWelcome: 'Oduncu\'ya Hoş Geldin!',
+            tutorialWelcome1: 'Sen cesur bir oduncusun',
+            tutorialWelcome2: 'Mümkün olduğunca çok ağaç kes',
+            tutorialWelcome3: 'Tehlikeli dallardan kaçın',
+            tutorialControls: 'Kontroller',
+            tutorialMoveLeft: 'Sola git ve kes',
+            tutorialMoveRight: 'Sağa git ve kes',
+            tutorialTouchHint: 'Veya ekranın sol/sağına dokun',
+            tutorialBranch: 'Dallardan Kaçın!',
+            tutorialBranchWarn: 'Dala çarpmak = Oyun Biter!',
+            tutorialBranchHint: 'Kesmeden önce bak',
+            tutorialTime: 'Zaman Yönetimi',
+            tutorialTimeHint1: 'Zaman çubuğu sürekli azalır',
+            tutorialTimeHint2: 'Her kesim verir',
+            tutorialTimeHint3: '+zaman',
+            tutorialTimeHint4: 'Zaman biterse = Oyun Biter',
+            tutorialAdvanced: 'Pro İpuçları',
+            tutorialCombo: 'Kombo',
+            tutorialComboHint: 'Daha fazla puan için hızlı kes',
+            tutorialDifficulty: 'Zorluk',
+            tutorialDifficultyHint: 'Puan arttıkça zorlaşır',
+            tutorialAchievement: 'Başarımlar',
+            tutorialAchievementHint: '12 başarım aç',
+            tutorialSkin: 'Kostümler',
+            tutorialSkinHint: 'Yüksek puanlarla yeni kostümler aç',
+            skip: 'Atla',
+            prev: 'Geri',
+            next: 'İleri',
+            finish: 'Bitir',
+
+            // Dokunma ipuçları
+            tapLeft: '← Sola Dokun',
+            tapRight: 'Sağa Dokun →',
+
+            // Ses ayarları
+            volumeSettings: '🎵 Ses Ayarları',
+            sfxVolume: '🔊 Efektler',
+            bgmVolume: '🎵 Müzik',
+            vibration: '📳 Titreşim',
+
+            // Açılır pencere
+            skinUnlockPopup: 'Yeni Kostüm Açıldı!',
+
+            // Tekrar sistemi
+            replayBtn: '🎬 Tekrar',
+            replayTitle: '🎬 Son Oyun',
+            replayScore: 'Puan',
+            replayCombo: 'Maks. Kombo',
+            replayChops: 'Kesimler',
+            replayDuration: 'Süre',
+            replayStart: 'Tekrarı Başlat',
+            replayStop: 'Durdur',
+            replayNoData: 'Veri yok',
+            replayPlaying: '🎬 Oynatılıyor...',
+            replaySeconds: 'sn',
+
+            // Paylaşım
+            shareBtn: '📤 Paylaş',
+            shareTitle: 'Oduncu',
+            shareScoreLabel: 'Puan',
+            shareComboLabel: 'Kombo',
+            shareLevelLabel: 'Seviye',
+            shareHighScoreLabel: 'Rekor',
+            shareDownloading: 'Görsel oluşturuluyor...',
+            shareSuccess: 'Görsel kaydedildi!',
+            shareFailed: 'Paylaşım başarısız, tekrar deneyin',
+            sharePanelTitle: '📤 Sonucu Paylaş',
+            shareNativeBtn: '📱 Paylaş',
+            shareDownloadBtn: '💾 Görseli Kaydet',
+            shareCopyBtn: '📋 Metni Kopyala',
+            shareCopySuccess: '✓ Panoya kopyalandı!',
+
+            // Sonsuz mod
+            endlessBtn: '∞ Sonsuz Mod',
+            endlessTitle: '∞ Sonsuz Mod',
+            endlessDesc: 'Zaman limiti yok, konsantrasyonunu test et!',
+            endlessBest: 'En İyi Puan',
+            endlessTotal: 'Toplam Oyun',
+            endlessStart: 'Göreve Başla',
+            endlessOver: '∞ Görev Tamamlandı',
+            endlessNewRecord: '🎉 Yeni Rekor!',
+            endlessHint: 'Sadece dallardan kaçın, zaman baskısı yok',
+
+            // Tema
+            themeDarkTip: 'Karanlık Moda Geç',
+            themeLightTip: 'Aydınlık Moda Geç',
+
+            // Hız seçenekleri
+            speedBtn: '⚡ Hız',
+            speedTitle: '⚡ Oyun Hızı',
+            speedSlow: '🐢 Yavaş',
+            speedNormal: '🚶 Normal',
+            speedFast: '🏃 Hızlı',
+            speedSlowDesc: 'Daha yavaş zaman tüketimi, yeni başlayanlar için',
+            speedNormalDesc: 'Standart oyun hızı',
+            speedFastDesc: 'Daha hızlı zaman tüketimi, meydan okuma modu',
+            speedCurrent: 'Mevcut',
+
+            // Kostüm isimleri
+            skinNames: {
+                default: 'Oduncu',
+                ninja: 'Ninja',
+                robot: 'Robot',
+                golden: 'Altın Efsane',
+                santa: 'Noel Baba',
+                pumpkin: 'Balkabağı Kafa',
+                pirate: 'Korsan Kaptan',
+                snowman: 'Kardan Adam',
+                chinese_new_year: 'Servet Tanrısı',
+                valentine: 'Cupid',
+                easter_bunny: 'Paskalya Tavşanı',
+                summer_surfer: 'Yaz Sörfçüsü'
+            },
+            skinDescs: {
+                default: 'Klasik kırmızı giysili oduncu',
+                ninja: 'Gizemli siyah giysili ninja',
+                robot: 'Çelik mekanik oduncu',
+                golden: 'Efsanevi altın oduncu',
+                santa: 'Neşeli tatil oduncusu',
+                pumpkin: 'Korkunç Cadılar Bayramı oduncusu',
+                pirate: 'Cesur deniz maceracısı',
+                snowman: 'Buz dünyasından oduncu',
+                chinese_new_year: 'Mutlu yıllar! İyi şanslar!',
+                valentine: 'Aşk tanrısı, sevgi dağıtan',
+                easter_bunny: 'Sevimli yumurta tavşanı',
+                summer_surfer: 'Havalı plaj sörfçüsü'
+            },
+
+            // Başarım isimleri
+            achievementNames: {
+                first_chop: 'İlk Kesim',
+                score_10: 'Acemi Oduncu',
+                score_50: 'Deneyimli Oduncu',
+                score_100: 'Profesyonel Oduncu',
+                score_200: 'Usta Oduncu',
+                combo_5: 'Mini Kombo',
+                combo_10: 'Kombo Uzmanı',
+                combo_20: 'Kombo Kralı',
+                level_5: 'Seviye 5',
+                level_8: 'Seviye 8',
+                level_max: 'Maks. Seviye',
+                close_call: 'Kıl Payı'
+            },
+            achievementDescs: {
+                first_chop: 'İlk ağacını kes',
+                score_10: 'Bir oyunda 10 puan yap',
+                score_50: 'Bir oyunda 50 puan yap',
+                score_100: 'Bir oyunda 100 puan yap',
+                score_200: 'Bir oyunda 200 puan yap',
+                combo_5: '5 kombo yap',
+                combo_10: '10 kombo yap',
+                combo_20: '20 kombo yap',
+                level_5: 'Zorluk seviyesi 5\'e ulaş',
+                level_8: 'Zorluk seviyesi 8\'e ulaş',
+                level_max: 'Maks. zorluk seviyesi 11\'e ulaş',
+                close_call: 'Zaman %10\'un altındayken 20 kez kes'
+            }
+        }
+    },
+
+    // 支持的语言列表（循环切换顺序）
+    langOrder: ['zh', 'en', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'it', 'ru', 'tr'],
+
+    // 语言按钮显示文本
+    langLabels: {
+        zh: '中',
+        en: 'EN',
+        ja: '日',
+        ko: '한',
+        pt: 'PT',
+        es: 'ES',
+        fr: 'FR',
+        de: 'DE',
+        it: 'IT',
+        ru: 'RU',
+        tr: 'TR'
+    },
+
+    // 加载语言设置
+    load() {
+        const saved = localStorage.getItem('timberman_lang');
+        if (saved && this.languages[saved]) {
+            this.currentLang = saved;
+        } else {
+            // 根据浏览器语言自动选择
+            const browserLang = navigator.language.toLowerCase();
+            if (browserLang.startsWith('zh')) {
+                this.currentLang = 'zh';
+            } else if (browserLang.startsWith('ja')) {
+                this.currentLang = 'ja';
+            } else if (browserLang.startsWith('ko')) {
+                this.currentLang = 'ko';
+            } else if (browserLang.startsWith('es')) {
+                this.currentLang = 'es';
+            } else if (browserLang.startsWith('fr')) {
+                this.currentLang = 'fr';
+            } else if (browserLang.startsWith('de')) {
+                this.currentLang = 'de';
+            } else if (browserLang.startsWith('pt')) {
+                this.currentLang = 'pt';
+            } else if (browserLang.startsWith('it')) {
+                this.currentLang = 'it';
+            } else if (browserLang.startsWith('ru')) {
+                this.currentLang = 'ru';
+            } else if (browserLang.startsWith('tr')) {
+                this.currentLang = 'tr';
+            } else {
+                this.currentLang = 'en';
+            }
+        }
+    },
+
+    // 保存语言设置
+    save() {
+        localStorage.setItem('timberman_lang', this.currentLang);
+    },
+
+    // 切换语言（循环切换：中->英->日->韩->中）
+    toggle() {
+        const currentIndex = this.langOrder.indexOf(this.currentLang);
+        const nextIndex = (currentIndex + 1) % this.langOrder.length;
+        this.currentLang = this.langOrder[nextIndex];
+        this.save();
+        this.updateAllTexts();
+    },
+
+    // 设置语言
+    setLang(lang) {
+        if (this.languages[lang]) {
+            this.currentLang = lang;
+            this.save();
+            this.updateAllTexts();
+        }
+    },
+
+    // 获取当前语言包
+    get t() {
+        return this.languages[this.currentLang];
+    },
+
+    // 获取翻译文本
+    getText(key) {
+        return this.t[key] || key;
+    },
+
+    // 更新所有界面文本
+    updateAllTexts() {
+        const t = this.t;
+
+        // 更新HTML lang属性
+        const langCodes = { zh: 'zh-CN', en: 'en', ja: 'ja', ko: 'ko', es: 'es', fr: 'fr', de: 'de', pt: 'pt-BR', it: 'it', ru: 'ru', tr: 'tr' };
+        document.documentElement.lang = langCodes[this.currentLang] || 'en';
+
+        // 标题
+        const titleEl = document.getElementById('title');
+        if (titleEl) titleEl.textContent = t.title;
+        document.title = 'Timberman - ' + t.title;
+
+        // 开始界面
+        const startScreen = document.getElementById('start-screen');
+        if (startScreen) {
+            startScreen.querySelector('h2').textContent = t.startTitle;
+            const hints = startScreen.querySelectorAll('p');
+            if (hints[0]) hints[0].textContent = t.startHint1;
+            if (hints[1]) hints[1].textContent = t.startHint2;
+            if (hints[2]) hints[2].textContent = t.startHint3;
+            if (hints[3]) hints[3].textContent = t.startHint4;
+        }
+
+        // 按钮
+        const setBtn = (id, text) => {
+            const el = document.getElementById(id);
+            if (el) el.textContent = text;
+        };
+
+        setBtn('start-btn', t.startBtn);
+        setBtn('daily-btn', t.dailyBtn);
+        setBtn('skin-btn', t.skinBtn);
+        setBtn('leaderboard-btn', t.leaderboardBtn);
+        setBtn('stats-btn', t.statsBtn);
+        setBtn('tutorial-btn', t.tutorialBtn);
+        setBtn('restart-btn', t.restartBtn);
+        setBtn('achievements-btn', t.achievementsBtn);
+        setBtn('resume-btn', t.resumeBtn);
+        setBtn('daily-start-btn', t.startChallenge);
+        setBtn('daily-back-btn', t.back);
+        setBtn('daily-retry-btn', t.retry);
+        setBtn('daily-exit-btn', t.backHome);
+        setBtn('endless-btn', t.endlessBtn);
+        setBtn('endless-start-btn', t.endlessStart);
+        setBtn('endless-back-btn', t.back);
+        setBtn('endless-retry-btn', t.retry);
+        setBtn('endless-exit-btn', t.backHome);
+        setBtn('skin-back-btn', t.back);
+        setBtn('achievements-back-btn', t.back);
+        setBtn('leaderboard-back-btn', t.back);
+        setBtn('leaderboard-clear-btn', t.clearRecords);
+        setBtn('stats-back-btn', t.back);
+        setBtn('stats-reset-btn', t.resetStats);
+        setBtn('tutorial-skip-btn', t.skip);
+        setBtn('tutorial-prev-btn', t.prev);
+
+        // 教程下一步按钮
+        const nextBtn = document.getElementById('tutorial-next-btn');
+        if (nextBtn) {
+            const currentStep = document.querySelector('.tutorial-step:not(.hidden)');
+            const stepNum = currentStep ? parseInt(currentStep.dataset.step) : 1;
+            nextBtn.textContent = stepNum === 5 ? t.finish : t.next;
+        }
+
+        // 游戏结束界面
+        const gameOverScreen = document.getElementById('game-over-screen');
+        if (gameOverScreen) {
+            gameOverScreen.querySelector('h2').textContent = t.gameOver;
+            const scoreText = gameOverScreen.querySelector('p');
+            if (scoreText) {
+                const scoreSpan = document.getElementById('final-score');
+                const scoreVal = scoreSpan ? scoreSpan.textContent : '0';
+                scoreText.innerHTML = `${t.score}: <span id="final-score">${scoreVal}</span>`;
+            }
+        }
+
+        // 更新最高连击和最高分文本
+        const maxComboText = document.getElementById('max-combo-text');
+        if (maxComboText) {
+            const val = document.getElementById('max-combo')?.textContent || '0';
+            maxComboText.innerHTML = `${t.maxCombo}: <span id="max-combo">${val}</span>`;
+        }
+        const highScoreText = document.getElementById('high-score-text');
+        if (highScoreText) {
+            const val = document.getElementById('high-score')?.textContent || '0';
+            highScoreText.innerHTML = `${t.highScore}: <span id="high-score">${val}</span>`;
+        }
+
+        // 暂停界面
+        const pauseScreen = document.getElementById('pause-screen');
+        if (pauseScreen) {
+            pauseScreen.querySelector('h2').textContent = t.paused;
+            pauseScreen.querySelector('p').textContent = t.pauseHint;
+        }
+
+        // 每日挑战界面
+        const dailyScreen = document.getElementById('daily-screen');
+        if (dailyScreen) {
+            dailyScreen.querySelector('h2').textContent = t.dailyTitle;
+            dailyScreen.querySelector('.daily-date-label').textContent = t.todayDate;
+            const stats = dailyScreen.querySelectorAll('.stat-label');
+            if (stats[0]) stats[0].textContent = t.todayBest;
+            if (stats[1]) stats[1].textContent = t.attempts;
+            dailyScreen.querySelector('.daily-hint').textContent = t.dailyHint;
+        }
+
+        // 每日挑战结束界面
+        const dailyGameOver = document.getElementById('daily-game-over-screen');
+        if (dailyGameOver) {
+            dailyGameOver.querySelector('h2').textContent = t.challengeOver;
+            const newRecordEl = document.getElementById('daily-new-record');
+            if (newRecordEl) newRecordEl.textContent = t.newRecord;
+        }
+
+        // 无限模式界面
+        const endlessScreen = document.getElementById('endless-screen');
+        if (endlessScreen) {
+            endlessScreen.querySelector('h2').textContent = t.endlessTitle;
+            const descEl = endlessScreen.querySelector('.endless-desc');
+            if (descEl) descEl.textContent = t.endlessDesc;
+            const stats = endlessScreen.querySelectorAll('.stat-label');
+            if (stats[0]) stats[0].textContent = t.endlessBest;
+            if (stats[1]) stats[1].textContent = t.endlessTotal;
+            const hintEl = endlessScreen.querySelector('.endless-hint');
+            if (hintEl) hintEl.textContent = t.endlessHint;
+        }
+
+        // 无限模式结束界面
+        const endlessGameOver = document.getElementById('endless-game-over-screen');
+        if (endlessGameOver) {
+            endlessGameOver.querySelector('h2').textContent = t.endlessOver;
+            const newRecordEl = document.getElementById('endless-new-record');
+            if (newRecordEl) newRecordEl.textContent = t.endlessNewRecord;
+        }
+
+        // 皮肤界面
+        const skinScreen = document.getElementById('skin-screen');
+        if (skinScreen) {
+            skinScreen.querySelector('h2').textContent = t.skinTitle;
+        }
+
+        // 成就界面
+        const achieveScreen = document.getElementById('achievements-screen');
+        if (achieveScreen) {
+            achieveScreen.querySelector('h2').textContent = t.achievementsTitle;
+        }
+
+        // 排行榜界面
+        const lbScreen = document.getElementById('leaderboard-screen');
+        if (lbScreen) {
+            lbScreen.querySelector('h2').textContent = t.leaderboardTitle;
+            const headers = lbScreen.querySelectorAll('.leaderboard-header span');
+            if (headers[0]) headers[0].textContent = t.rank;
+            if (headers[2]) headers[2].textContent = t.lbScore;
+            if (headers[3]) headers[3].textContent = t.lbCombo;
+            if (headers[4]) headers[4].textContent = t.lbDate;
+        }
+
+        // 统计界面
+        const statsScreen = document.getElementById('stats-screen');
+        if (statsScreen) {
+            statsScreen.querySelector('h2').textContent = t.statsTitle;
+            const labels = statsScreen.querySelectorAll('.stat-label');
+            const statsLabels = [t.totalGames, t.totalChops, t.totalTime, t.highScore, t.bestCombo, t.avgScore];
+            labels.forEach((el, i) => {
+                if (statsLabels[i]) el.textContent = statsLabels[i];
+            });
+            const rows = statsScreen.querySelectorAll('.stats-row span:first-child');
+            if (rows[0]) rows[0].textContent = t.unlockedAchievements;
+            if (rows[1]) rows[1].textContent = t.unlockedSkins;
+            if (rows[2]) rows[2].textContent = t.dailyAttempts;
+        }
+
+        // 音量面板
+        const volumePanel = document.getElementById('volume-panel');
+        if (volumePanel) {
+            volumePanel.querySelector('.volume-panel-header span').textContent = t.volumeSettings;
+            const labels = volumePanel.querySelectorAll('.volume-label');
+            if (labels[0]) labels[0].textContent = t.sfxVolume;
+            if (labels[1]) labels[1].textContent = t.bgmVolume;
+            if (labels[2]) labels[2].textContent = t.vibration;
+        }
+
+        // 弹窗
+        const achievePopup = document.getElementById('achievement-popup');
+        if (achievePopup) {
+            achievePopup.querySelector('.achievement-label').textContent = t.achievementUnlock;
+        }
+        const skinPopup = document.getElementById('skin-unlock-popup');
+        if (skinPopup) {
+            skinPopup.querySelector('.skin-popup-label').textContent = t.skinUnlockPopup;
+        }
+
+        // 触摸提示
+        const hintLeft = document.querySelector('.hint-left');
+        const hintRight = document.querySelector('.hint-right');
+        if (hintLeft) hintLeft.textContent = t.tapLeft;
+        if (hintRight) hintRight.textContent = t.tapRight;
+
+        // 回放界面
+        const replayScreen = document.getElementById('replay-screen');
+        if (replayScreen) {
+            replayScreen.querySelector('h2').textContent = t.replayTitle;
+            const labels = replayScreen.querySelectorAll('.stat-label');
+            if (labels[0]) labels[0].textContent = t.replayScore;
+            if (labels[1]) labels[1].textContent = t.replayCombo;
+            if (labels[2]) labels[2].textContent = t.replayChops;
+            if (labels[3]) labels[3].textContent = t.replayDuration;
+        }
+        setBtn('replay-btn', t.replayBtn);
+        setBtn('replay-start-btn', t.replayStart);
+        setBtn('replay-back-btn', t.back);
+        setBtn('replay-stop-btn', t.replayStop);
+        const replayNoData = document.getElementById('replay-no-data');
+        if (replayNoData) replayNoData.textContent = t.replayNoData;
+
+        // 分享按钮和面板
+        setBtn('share-btn', t.shareBtn);
+        setBtn('daily-share-btn', t.shareBtn);
+        setBtn('share-native-btn', t.shareNativeBtn);
+        setBtn('share-download-btn', t.shareDownloadBtn);
+        setBtn('share-copy-btn', t.shareCopyBtn);
+        const sharePanelTitle = document.getElementById('share-panel-title');
+        if (sharePanelTitle) sharePanelTitle.textContent = t.sharePanelTitle;
+        const shareCopyHint = document.getElementById('share-copy-hint');
+        if (shareCopyHint) shareCopyHint.textContent = t.shareCopySuccess;
+
+        const replayIndicator = document.getElementById('replay-indicator');
+        if (replayIndicator) {
+            const span = replayIndicator.querySelector('span');
+            if (span) span.textContent = t.replayPlaying;
+        }
+
+        // 教程界面
+        this.updateTutorialTexts();
+
+        // 更新语言切换按钮显示（显示下一个语言）
+        const langBtn = document.getElementById('lang-btn');
+        if (langBtn) {
+            const currentIndex = this.langOrder.indexOf(this.currentLang);
+            const nextIndex = (currentIndex + 1) % this.langOrder.length;
+            const nextLang = this.langOrder[nextIndex];
+            langBtn.textContent = this.langLabels[nextLang];
+            // 多语言提示文本
+            const tooltips = {
+                zh: '切换为中文',
+                en: 'Switch to English',
+                ja: '日本語に切り替え',
+                ko: '한국어로 전환',
+                es: 'Cambiar a Español',
+                fr: 'Passer au Français',
+                de: 'Auf Deutsch wechseln',
+                pt: 'Mudar para Português',
+                it: 'Passa all\'Italiano',
+                ru: 'Переключить на Русский',
+                tr: 'Türkçe\'ye geç'
+            };
+            langBtn.title = tooltips[nextLang];
+        }
+
+        // 更新主题按钮提示文本
+        if (typeof THEME !== 'undefined') {
+            THEME.updateButton();
+        }
+
+        // 刷新动态内容（皮肤列表、成就列表、排行榜）
+        if (typeof renderSkinsList === 'function') renderSkinsList();
+        if (typeof ACHIEVEMENTS !== 'undefined') ACHIEVEMENTS.render();
+        if (typeof LEADERBOARD !== 'undefined') LEADERBOARD.render();
+    },
+
+    // 更新教程文本
+    updateTutorialTexts() {
+        const t = this.t;
+        const tutorial = document.getElementById('tutorial-screen');
+        if (!tutorial) return;
+
+        // 步骤1
+        const step1 = tutorial.querySelector('[data-step="1"]');
+        if (step1) {
+            step1.querySelector('h2').textContent = t.tutorialWelcome;
+            const ps = step1.querySelectorAll('p');
+            if (ps[0]) ps[0].textContent = t.tutorialWelcome1;
+            if (ps[1]) ps[1].textContent = t.tutorialWelcome2;
+            if (ps[2]) ps[2].textContent = t.tutorialWelcome3;
+        }
+
+        // 步骤2
+        const step2 = tutorial.querySelector('[data-step="2"]');
+        if (step2) {
+            step2.querySelector('h2').textContent = t.tutorialControls;
+            const items = step2.querySelectorAll('.control-item span:not(.key)');
+            if (items[0]) items[0].textContent = t.tutorialMoveLeft;
+            if (items[1]) items[1].textContent = t.tutorialMoveRight;
+            const hint = step2.querySelector('.tutorial-hint');
+            if (hint) hint.textContent = t.tutorialTouchHint;
+        }
+
+        // 步骤3
+        const step3 = tutorial.querySelector('[data-step="3"]');
+        if (step3) {
+            step3.querySelector('h2').textContent = t.tutorialBranch;
+            const warn = step3.querySelector('.tutorial-warning');
+            if (warn) warn.textContent = t.tutorialBranchWarn;
+            const hint = step3.querySelectorAll('p:not(.tutorial-warning)');
+            if (hint[0]) hint[0].textContent = t.tutorialBranchHint;
+        }
+
+        // 步骤4
+        const step4 = tutorial.querySelector('[data-step="4"]');
+        if (step4) {
+            step4.querySelector('h2').textContent = t.tutorialTime;
+            const ps = step4.querySelectorAll('p');
+            if (ps[0]) ps[0].textContent = t.tutorialTimeHint1;
+            if (ps[1]) ps[1].innerHTML = `${t.tutorialTimeHint2} <strong>${t.tutorialTimeHint3}</strong>`;
+            if (ps[2]) ps[2].textContent = t.tutorialTimeHint4;
+        }
+
+        // 步骤5
+        const step5 = tutorial.querySelector('[data-step="5"]');
+        if (step5) {
+            step5.querySelector('h2').textContent = t.tutorialAdvanced;
+            const ps = step5.querySelectorAll('.tutorial-tips-list p');
+            if (ps[0]) ps[0].innerHTML = `⚡ <strong>${t.tutorialCombo}</strong> - ${t.tutorialComboHint}`;
+            if (ps[1]) ps[1].innerHTML = `📈 <strong>${t.tutorialDifficulty}</strong> - ${t.tutorialDifficultyHint}`;
+            if (ps[2]) ps[2].innerHTML = `🎖️ <strong>${t.tutorialAchievement}</strong> - ${t.tutorialAchievementHint}`;
+            if (ps[3]) ps[3].innerHTML = `👕 <strong>${t.tutorialSkin}</strong> - ${t.tutorialSkinHint}`;
+        }
+    }
+};
+
+// ============ 主题系统 ============
+const THEME = {
+    current: 'light', // 当前主题：light 或 dark
+
+    // 加载主题设置
+    load() {
+        const saved = localStorage.getItem('timberman_theme');
+        if (saved && (saved === 'light' || saved === 'dark')) {
+            this.current = saved;
+        } else {
+            // 检测系统主题偏好
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                this.current = 'dark';
+            }
+        }
+        this.apply();
+    },
+
+    // 保存主题设置
+    save() {
+        localStorage.setItem('timberman_theme', this.current);
+    },
+
+    // 应用主题
+    apply() {
+        document.documentElement.setAttribute('data-theme', this.current);
+        this.updateButton();
+    },
+
+    // 切换主题
+    toggle() {
+        this.current = this.current === 'light' ? 'dark' : 'light';
+        this.save();
+        this.apply();
+    },
+
+    // 更新主题按钮图标
+    updateButton() {
+        const btn = document.getElementById('theme-btn');
+        if (btn) {
+            btn.textContent = this.current === 'light' ? '🌙' : '☀️';
+            // 多语言提示
+            const tooltips = {
+                zh: this.current === 'light' ? '切换到暗色主题' : '切换到亮色主题',
+                en: this.current === 'light' ? 'Switch to dark theme' : 'Switch to light theme',
+                ja: this.current === 'light' ? 'ダークテーマに切替' : 'ライトテーマに切替',
+                ko: this.current === 'light' ? '다크 테마로 전환' : '라이트 테마로 전환',
+                es: this.current === 'light' ? 'Cambiar a tema oscuro' : 'Cambiar a tema claro',
+                fr: this.current === 'light' ? 'Passer au thème sombre' : 'Passer au thème clair',
+                de: this.current === 'light' ? 'Zum dunklen Design' : 'Zum hellen Design',
+                pt: this.current === 'light' ? 'Mudar para tema escuro' : 'Mudar para tema claro',
+                it: this.current === 'light' ? 'Passa al tema scuro' : 'Passa al tema chiaro',
+                ru: this.current === 'light' ? 'Переключить на тёмную тему' : 'Переключить на светлую тему',
+                tr: this.current === 'light' ? 'Karanlık temaya geç' : 'Açık temaya geç'
+            };
+            btn.title = tooltips[I18N.currentLang] || tooltips.en;
+        }
+    }
+};
+
+// ============ 游戏回放系统 ============
+const REPLAY = {
+    // 回放状态
+    isRecording: false,     // 是否正在录制
+    isPlaying: false,       // 是否正在回放
+
+    // 当前录制数据
+    currentRecording: {
+        startTime: 0,           // 游戏开始时间戳
+        initialTrunks: [],      // 初始树干序列（用于重现）
+        actions: [],            // 操作序列 [{time, side}]
+        score: 0,               // 最终得分
+        maxCombo: 0,            // 最高连击
+        skin: 'default',        // 使用的皮肤
+        date: null              // 录制日期
+    },
+
+    // 上一局的回放数据
+    lastReplay: null,
+
+    // 回放播放状态
+    playback: {
+        actionIndex: 0,         // 当前播放的操作索引
+        startTime: 0,           // 回放开始时间
+        timer: null             // 定时器
+    },
+
+    // 开始录制（游戏开始时调用）
+    startRecording(initialTrunks) {
+        this.isRecording = true;
+        this.currentRecording = {
+            startTime: performance.now(),
+            initialTrunks: initialTrunks.map(t => t.branch), // 只记录树枝方向
+            actions: [],
+            score: 0,
+            maxCombo: 0,
+            skin: SKINS.currentSkin,
+            date: new Date().toISOString()
+        };
+    },
+
+    // 记录操作（砍树时调用）
+    recordAction(side) {
+        if (!this.isRecording) return;
+
+        const time = performance.now() - this.currentRecording.startTime;
+        this.currentRecording.actions.push({
+            time: Math.round(time), // 相对时间（毫秒）
+            side: side
+        });
+    },
+
+    // 结束录制（游戏结束时调用）
+    endRecording(score, maxCombo) {
+        if (!this.isRecording) return;
+
+        this.currentRecording.score = score;
+        this.currentRecording.maxCombo = maxCombo;
+        this.isRecording = false;
+
+        // 保存为上一局回放
+        this.lastReplay = JSON.parse(JSON.stringify(this.currentRecording));
+
+        // 保存到 localStorage
+        this.save();
+    },
+
+    // 保存回放到 localStorage
+    save() {
+        if (this.lastReplay) {
+            localStorage.setItem('timberman_replay', JSON.stringify(this.lastReplay));
+        }
+    },
+
+    // 从 localStorage 加载回放
+    load() {
+        const saved = localStorage.getItem('timberman_replay');
+        if (saved) {
+            try {
+                this.lastReplay = JSON.parse(saved);
+            } catch (e) {
+                this.lastReplay = null;
+            }
+        }
+    },
+
+    // 检查是否有可用的回放
+    hasReplay() {
+        return this.lastReplay && this.lastReplay.actions && this.lastReplay.actions.length > 0;
+    },
+
+    // 开始回放
+    startPlayback() {
+        if (!this.hasReplay()) return false;
+
+        this.isPlaying = true;
+        this.playback.actionIndex = 0;
+        this.playback.startTime = performance.now();
+
+        return true;
+    },
+
+    // 更新回放（在游戏循环中调用）
+    updatePlayback() {
+        if (!this.isPlaying) return;
+
+        const elapsed = performance.now() - this.playback.startTime;
+
+        // 检查是否有待执行的操作
+        while (this.playback.actionIndex < this.lastReplay.actions.length) {
+            const action = this.lastReplay.actions[this.playback.actionIndex];
+
+            if (action.time <= elapsed) {
+                // 执行操作
+                chop(action.side);
+                this.playback.actionIndex++;
+            } else {
+                break;
+            }
+        }
+
+        // 检查回放是否结束
+        if (this.playback.actionIndex >= this.lastReplay.actions.length) {
+            // 标记回放结束避免重复触发
+            this.playback.actionIndex = -1;
+            // 延迟一秒结束回放（等待最后动画）
+            setTimeout(() => {
+                stopReplayPlayback();
+            }, 1000);
+        }
+    },
+
+    // 停止回放（内部方法）
+    stopPlayback() {
+        this.isPlaying = false;
+        this.playback.actionIndex = 0;
+        if (this.playback.timer) {
+            clearTimeout(this.playback.timer);
+            this.playback.timer = null;
+        }
+    },
+
+    // 获取回放信息（用于 UI 显示）
+    getReplayInfo() {
+        if (!this.hasReplay()) return null;
+
+        return {
+            score: this.lastReplay.score,
+            maxCombo: this.lastReplay.maxCombo,
+            actionCount: this.lastReplay.actions.length,
+            duration: this.lastReplay.actions.length > 0
+                ? this.lastReplay.actions[this.lastReplay.actions.length - 1].time
+                : 0,
+            skin: this.lastReplay.skin,
+            date: this.lastReplay.date
+        };
+    }
+};
+
+// ============ 分享系统 ============
+const SHARE = {
+    // 生成分享图片
+    generateShareImage(isDaily = false, isEndless = false) {
+        const canvas = elements.shareCanvas;
+        const ctx = canvas.getContext('2d');
+        const t = i18n[currentLanguage];
+
+        // 清空画布
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // 背景渐变
+        const bgGradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+        bgGradient.addColorStop(0, '#1a1a2e');
+        bgGradient.addColorStop(0.5, '#16213e');
+        bgGradient.addColorStop(1, '#0f3460');
+        ctx.fillStyle = bgGradient;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // 装饰性边框
+        ctx.strokeStyle = 'rgba(100, 180, 255, 0.4)';
+        ctx.lineWidth = 4;
+        ctx.strokeRect(10, 10, canvas.width - 20, canvas.height - 20);
+
+        // 内边框
+        ctx.strokeStyle = 'rgba(255, 215, 0, 0.3)';
+        ctx.lineWidth = 2;
+        ctx.strokeRect(20, 20, canvas.width - 40, canvas.height - 40);
+
+        // 游戏标题
+        ctx.font = 'bold 32px Arial, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillStyle = '#FFD700';
+        ctx.shadowColor = 'rgba(255, 215, 0, 0.5)';
+        ctx.shadowBlur = 10;
+        ctx.fillText(t.shareTitle, canvas.width / 2, 55);
+        ctx.shadowBlur = 0;
+
+        // 分数
+        const score = isDaily ? game.score : game.score;
+        ctx.font = 'bold 64px Arial, sans-serif';
+        ctx.fillStyle = '#FFFFFF';
+        ctx.shadowColor = 'rgba(255, 255, 255, 0.3)';
+        ctx.shadowBlur = 8;
+        ctx.fillText(score.toString(), canvas.width / 2, 130);
+        ctx.shadowBlur = 0;
+
+        // 分数标签
+        ctx.font = '16px Arial, sans-serif';
+        ctx.fillStyle = '#4FC3F7';
+        ctx.fillText(t.shareScoreLabel, canvas.width / 2, 155);
+
+        // 统计信息背景
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.05)';
+        ctx.fillRect(30, 175, canvas.width - 60, 70);
+
+        // 统计信息
+        ctx.font = 'bold 18px Arial, sans-serif';
+        ctx.textAlign = 'left';
+
+        // 连击
+        ctx.fillStyle = '#FFB74D';
+        ctx.fillText(`${t.shareComboLabel}: ${game.combo.maxCount}`, 50, 205);
+
+        // 难度等级
+        const level = getDifficultyLevel() + 1;
+        ctx.fillStyle = level >= 7 ? '#FF5252' : '#81C784';
+        ctx.fillText(`${t.shareLevelLabel}: Lv.${level}`, 50, 230);
+
+        // 最高分
+        ctx.textAlign = 'right';
+        ctx.fillStyle = '#E1BEE7';
+        ctx.fillText(`${t.shareHighScoreLabel}: ${game.highScore}`, canvas.width - 50, 205);
+
+        // 皮肤名称
+        const skinName = t.skinNames[SKINS.currentSkin] || SKINS.currentSkin;
+        ctx.fillStyle = '#90CAF9';
+        ctx.fillText(`👕 ${skinName}`, canvas.width - 50, 230);
+
+        // 日期时间
+        ctx.textAlign = 'center';
+        ctx.font = '12px Arial, sans-serif';
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+        const now = new Date();
+        const dateStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+        ctx.fillText(dateStr, canvas.width / 2, 275);
+
+        // 游戏标识
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+        ctx.fillText('🪓 Timberman Game', canvas.width / 2, 292);
+    },
+
+    // 显示分享面板
+    show(isDaily = false, isEndless = false) {
+        this.generateShareImage(isDaily, isEndless);
+        elements.sharePanel.classList.remove('hidden');
+        elements.shareCopyHint.classList.add('hidden');
+
+        // 检查是否支持原生分享
+        if (navigator.share && navigator.canShare) {
+            elements.shareNativeBtn.classList.remove('hidden');
+        } else {
+            elements.shareNativeBtn.classList.add('hidden');
+        }
+    },
+
+    // 隐藏分享面板
+    hide() {
+        elements.sharePanel.classList.add('hidden');
+    },
+
+    // 下载图片
+    async downloadImage() {
+        const canvas = elements.shareCanvas;
+        const t = i18n[currentLanguage];
+
+        try {
+            const link = document.createElement('a');
+            link.download = `timberman-score-${game.score}.png`;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        } catch (error) {
+            console.error('Download failed:', error);
+            alert(t.shareFailed);
+        }
+    },
+
+    // 原生分享（Web Share API）
+    async nativeShare() {
+        const canvas = elements.shareCanvas;
+        const t = i18n[currentLanguage];
+
+        try {
+            const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+            const file = new File([blob], `timberman-score-${game.score}.png`, { type: 'image/png' });
+
+            await navigator.share({
+                title: t.shareTitle,
+                text: `🪓 ${t.shareTitle} - ${t.shareScoreLabel}: ${game.score} | ${t.shareComboLabel}: ${game.combo.maxCount}`,
+                files: [file]
+            });
+        } catch (error) {
+            if (error.name !== 'AbortError') {
+                console.error('Share failed:', error);
+                // 降级到下载
+                this.downloadImage();
+            }
+        }
+    },
+
+    // 复制文字结果
+    copyText() {
+        const t = i18n[currentLanguage];
+        const text = `🪓 ${t.shareTitle}\n${t.shareScoreLabel}: ${game.score}\n${t.shareComboLabel}: ${game.combo.maxCount}\n${t.shareLevelLabel}: Lv.${getDifficultyLevel() + 1}`;
+
+        navigator.clipboard.writeText(text).then(() => {
+            elements.shareCopyHint.classList.remove('hidden');
+            setTimeout(() => {
+                elements.shareCopyHint.classList.add('hidden');
+            }, 2000);
+        }).catch(err => {
+            console.error('Copy failed:', err);
+        });
+    }
+};
+
+// ============ 无限模式系统 ============
+const ENDLESS_MODE = {
+    // 状态
+    isActive: false,           // 是否正在进行无限模式
+    highScore: 0,              // 无限模式最高分
+    totalGames: 0,             // 总游戏次数
+
+    // 加载数据
+    load() {
+        const saved = localStorage.getItem('timberman_endless');
+        if (saved) {
+            const data = JSON.parse(saved);
+            this.highScore = data.highScore || 0;
+            this.totalGames = data.totalGames || 0;
+        }
+    },
+
+    // 保存数据
+    save() {
+        localStorage.setItem('timberman_endless', JSON.stringify({
+            highScore: this.highScore,
+            totalGames: this.totalGames
+        }));
+    },
+
+    // 开始无限模式
+    start() {
+        this.isActive = true;
+        this.totalGames++;
+        this.save();
+    },
+
+    // 更新最高分
+    updateHighScore(score) {
+        if (score > this.highScore) {
+            this.highScore = score;
+            this.save();
+            return true;
+        }
+        return false;
+    },
+
+    // 结束无限模式
+    end() {
+        this.isActive = false;
+    },
+
+    // 获取信息
+    getInfo() {
+        return {
+            highScore: this.highScore,
+            totalGames: this.totalGames
+        };
     }
 };
 
@@ -344,8 +3977,11 @@ const ACHIEVEMENTS = {
             const nameEl = document.getElementById('achievement-name');
             const iconEl = popup.querySelector('.achievement-icon');
 
+            // 获取国际化的成就名称
+            const achName = I18N.t.achievementNames[achievement.id] || achievement.name;
+
             iconEl.textContent = achievement.icon;
-            nameEl.textContent = achievement.name;
+            nameEl.textContent = achName;
             popup.classList.remove('hidden');
 
             // 播放解锁音效
@@ -407,16 +4043,21 @@ const ACHIEVEMENTS = {
     render() {
         const list = document.getElementById('achievements-list');
         list.innerHTML = '';
+        const t = I18N.t;
 
         this.definitions.forEach(ach => {
             const item = document.createElement('div');
             const isUnlocked = !!this.unlocked[ach.id];
+            // 获取国际化的成就名称和描述
+            const achName = t.achievementNames[ach.id] || ach.name;
+            const achDesc = t.achievementDescs[ach.id] || ach.desc;
+
             item.className = `achievement-item rarity-${ach.rarity} ${isUnlocked ? 'unlocked' : 'locked'}`;
             item.innerHTML = `
                 <span class="icon">${isUnlocked ? ach.icon : '🔒'}</span>
-                <span class="name">${isUnlocked ? ach.name : '???'}</span>
+                <span class="name">${isUnlocked ? achName : '???'}</span>
             `;
-            item.title = isUnlocked ? ach.desc : '未解锁';
+            item.title = isUnlocked ? achDesc : (I18N.currentLang === 'zh' ? '未解锁' : 'Locked');
             list.appendChild(item);
         });
 
@@ -512,9 +4153,11 @@ const LEADERBOARD = {
         if (!list) return;
 
         list.innerHTML = '';
+        const t = I18N.t;
 
         if (this.entries.length === 0) {
-            list.innerHTML = '<div class="leaderboard-empty">暂无记录，快来挑战吧！</div>';
+            const emptyMsg = I18N.currentLang === 'zh' ? '暂无记录，快来挑战吧！' : 'No records yet. Start playing!';
+            list.innerHTML = `<div class="leaderboard-empty">${emptyMsg}</div>`;
             return;
         }
 
@@ -536,6 +4179,154 @@ const LEADERBOARD = {
             `;
             list.appendChild(item);
         });
+    }
+};
+
+// ============ 游戏统计系统 ============
+const GAME_STATS = {
+    // 统计数据
+    data: {
+        totalGames: 0,          // 总游戏次数
+        totalChops: 0,          // 总砍树数
+        totalPlayTime: 0,       // 总游戏时长（毫秒）
+        bestScore: 0,           // 最高分
+        bestCombo: 0,           // 最高连击
+        firstPlayDate: null,    // 首次游戏时间
+        lastPlayDate: null      // 最后游戏时间
+    },
+
+    // 当局游戏开始时间
+    sessionStartTime: 0,
+
+    // 加载统计数据
+    load() {
+        const saved = localStorage.getItem('timberman_stats');
+        if (saved) {
+            this.data = { ...this.data, ...JSON.parse(saved) };
+        }
+    },
+
+    // 保存统计数据
+    save() {
+        localStorage.setItem('timberman_stats', JSON.stringify(this.data));
+    },
+
+    // 开始新游戏（记录开始时间）
+    startSession() {
+        this.sessionStartTime = Date.now();
+        // 记录首次游戏时间
+        if (!this.data.firstPlayDate) {
+            this.data.firstPlayDate = this.sessionStartTime;
+            this.save();
+        }
+    },
+
+    // 结束游戏（更新统计）
+    endSession(score, maxCombo) {
+        const playTime = Date.now() - this.sessionStartTime;
+
+        this.data.totalGames++;
+        this.data.totalChops += score;
+        this.data.totalPlayTime += playTime;
+        this.data.lastPlayDate = Date.now();
+
+        if (score > this.data.bestScore) {
+            this.data.bestScore = score;
+        }
+        if (maxCombo > this.data.bestCombo) {
+            this.data.bestCombo = maxCombo;
+        }
+
+        this.save();
+    },
+
+    // 格式化时间（毫秒 -> 时:分:秒）
+    formatPlayTime(ms) {
+        const totalSeconds = Math.floor(ms / 1000);
+        const hours = Math.floor(totalSeconds / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+
+        if (hours > 0) {
+            return `${hours}小时 ${minutes}分 ${seconds}秒`;
+        } else if (minutes > 0) {
+            return `${minutes}分 ${seconds}秒`;
+        } else {
+            return `${seconds}秒`;
+        }
+    },
+
+    // 格式化日期
+    formatDate(timestamp) {
+        if (!timestamp) return '---';
+        const date = new Date(timestamp);
+        const year = date.getFullYear();
+        const month = (date.getMonth() + 1).toString().padStart(2, '0');
+        const day = date.getDate().toString().padStart(2, '0');
+        return `${year}-${month}-${day}`;
+    },
+
+    // 获取平均分
+    getAverageScore() {
+        if (this.data.totalGames === 0) return 0;
+        return Math.round(this.data.totalChops / this.data.totalGames);
+    },
+
+    // 获取平均游戏时长
+    getAveragePlayTime() {
+        if (this.data.totalGames === 0) return 0;
+        return Math.round(this.data.totalPlayTime / this.data.totalGames);
+    },
+
+    // 清空统计数据
+    clear() {
+        this.data = {
+            totalGames: 0,
+            totalChops: 0,
+            totalPlayTime: 0,
+            bestScore: 0,
+            bestCombo: 0,
+            firstPlayDate: null,
+            lastPlayDate: null
+        };
+        this.save();
+    },
+
+    // 渲染统计界面
+    render() {
+        // 更新主要统计数据
+        const totalGamesEl = document.getElementById('stats-total-games');
+        const totalChopsEl = document.getElementById('stats-total-chops');
+        const totalTimeEl = document.getElementById('stats-total-time');
+        const highScoreEl = document.getElementById('stats-high-score');
+        const bestComboEl = document.getElementById('stats-best-combo');
+        const avgScoreEl = document.getElementById('stats-avg-score');
+
+        if (totalGamesEl) totalGamesEl.textContent = this.data.totalGames;
+        if (totalChopsEl) totalChopsEl.textContent = this.data.totalChops;
+        if (totalTimeEl) totalTimeEl.textContent = this.formatPlayTime(this.data.totalPlayTime);
+        if (highScoreEl) highScoreEl.textContent = this.data.bestScore;
+        if (bestComboEl) bestComboEl.textContent = this.data.bestCombo + 'x';
+        if (avgScoreEl) avgScoreEl.textContent = this.getAverageScore();
+
+        // 更新额外统计数据
+        const achievementsEl = document.getElementById('stats-achievements');
+        const skinsEl = document.getElementById('stats-skins');
+        const dailyEl = document.getElementById('stats-daily-attempts');
+
+        if (achievementsEl) {
+            const unlocked = ACHIEVEMENTS.getUnlockedCount();
+            achievementsEl.textContent = `${unlocked}/12`;
+        }
+        if (skinsEl) {
+            const unlocked = SKINS.unlockedSkins.length;
+            const total = SKINS.definitions.length;
+            skinsEl.textContent = `${unlocked}/${total}`;
+        }
+        if (dailyEl) {
+            const times = I18N.currentLang === 'zh' ? ' 次' : '';
+            dailyEl.textContent = `${DAILY_CHALLENGE.todayAttempts}${times}`;
+        }
     }
 };
 
@@ -599,6 +4390,25 @@ const CONFIG = {
     FLYING_TRUNK_POOL: {
         INITIAL_SIZE: 10,         // 初始池大小
         MAX_SIZE: 20              // 最大池大小
+    },
+
+    // 游戏速度模式配置
+    SPEED_MODES: {
+        slow: {
+            id: 'slow',
+            decayMultiplier: 0.6,      // 时间衰减倍率（更慢）
+            bonusMultiplier: 1.3       // 时间奖励倍率（更多）
+        },
+        normal: {
+            id: 'normal',
+            decayMultiplier: 1.0,      // 标准速度
+            bonusMultiplier: 1.0
+        },
+        fast: {
+            id: 'fast',
+            decayMultiplier: 1.5,      // 时间衰减更快
+            bonusMultiplier: 0.75      // 时间奖励更少
+        }
     }
 };
 
@@ -938,34 +4748,66 @@ const flyingTrunkPool = {
 // ============ 振动反馈系统 (Haptics API) ============
 const haptics = {
     enabled: true,
+    intensity: 1.0,  // 振动强度 (0-1)
 
     // 检查是否支持振动
     isSupported() {
         return 'vibrate' in navigator;
     },
 
+    // 加载振动强度设置
+    loadIntensity() {
+        const saved = localStorage.getItem('timberman_vibration_intensity');
+        if (saved !== null) {
+            this.intensity = parseFloat(saved);
+        }
+    },
+
+    // 保存振动强度设置
+    saveIntensity() {
+        localStorage.setItem('timberman_vibration_intensity', this.intensity.toString());
+    },
+
+    // 设置振动强度 (0-1)
+    setIntensity(value) {
+        this.intensity = Math.max(0, Math.min(1, value));
+        this.saveIntensity();
+    },
+
+    // 根据强度缩放振动时长
+    scaleVibration(duration) {
+        return Math.round(duration * this.intensity);
+    },
+
     // 砍树振动（短促）
     chop() {
-        if (!this.enabled || !this.isSupported()) return;
-        navigator.vibrate(30);
+        if (!this.enabled || !this.isSupported() || this.intensity === 0) return;
+        navigator.vibrate(this.scaleVibration(30));
     },
 
     // 游戏结束振动（稍长）
     gameOver() {
-        if (!this.enabled || !this.isSupported()) return;
-        navigator.vibrate(150);
+        if (!this.enabled || !this.isSupported() || this.intensity === 0) return;
+        navigator.vibrate(this.scaleVibration(150));
     },
 
     // 成就解锁振动（双击模式）
     achievement() {
-        if (!this.enabled || !this.isSupported()) return;
-        navigator.vibrate([50, 50, 50]); // 振动-暂停-振动
+        if (!this.enabled || !this.isSupported() || this.intensity === 0) return;
+        const v = this.scaleVibration(50);
+        navigator.vibrate([v, v, v]); // 振动-暂停-振动
     },
 
     // 时间紧迫振动（轻微）
     warning() {
-        if (!this.enabled || !this.isSupported()) return;
-        navigator.vibrate(15);
+        if (!this.enabled || !this.isSupported() || this.intensity === 0) return;
+        navigator.vibrate(this.scaleVibration(15));
+    },
+
+    // 测试振动（用于调节时预览）
+    test() {
+        if (!this.isSupported() || this.intensity === 0) return;
+        navigator.vibrate(this.scaleVibration(50));
     }
 };
 
@@ -975,8 +4817,11 @@ const audio = {
     enabled: true,
     bgmEnabled: true,
     bgmGain: null,       // 背景音乐音量控制
+    sfxGain: null,       // 音效音量控制
     bgmInterval: null,   // 背景音乐循环定时器
     bgmPlaying: false,   // 背景音乐是否正在播放
+    sfxVolume: 1.0,      // 音效音量 (0-1)
+    bgmVolume: 1.0,      // 背景音乐音量 (0-1)
 
     // 背景音乐配置 - 8-bit 像素风格旋律
     bgmConfig: {
@@ -1029,14 +4874,56 @@ const audio = {
         if (this.ctx) return;
         try {
             this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+            // 加载保存的音量设置
+            this.loadVolume();
             // 创建背景音乐主音量控制节点
             this.bgmGain = this.ctx.createGain();
-            this.bgmGain.gain.value = 0.15; // 背景音乐音量较低
+            this.bgmGain.gain.value = 0.15 * this.bgmVolume;
             this.bgmGain.connect(this.ctx.destination);
+            // 创建音效主音量控制节点
+            this.sfxGain = this.ctx.createGain();
+            this.sfxGain.gain.value = this.sfxVolume;
+            this.sfxGain.connect(this.ctx.destination);
         } catch (e) {
             console.warn('Web Audio API 不支持');
             this.enabled = false;
         }
+    },
+
+    // 加载音量设置
+    loadVolume() {
+        const savedSfxVolume = localStorage.getItem('timberman_sfx_volume');
+        const savedBgmVolume = localStorage.getItem('timberman_bgm_volume');
+        if (savedSfxVolume !== null) {
+            this.sfxVolume = parseFloat(savedSfxVolume);
+        }
+        if (savedBgmVolume !== null) {
+            this.bgmVolume = parseFloat(savedBgmVolume);
+        }
+    },
+
+    // 保存音量设置
+    saveVolume() {
+        localStorage.setItem('timberman_sfx_volume', this.sfxVolume.toString());
+        localStorage.setItem('timberman_bgm_volume', this.bgmVolume.toString());
+    },
+
+    // 设置音效音量 (0-1)
+    setSfxVolume(volume) {
+        this.sfxVolume = Math.max(0, Math.min(1, volume));
+        if (this.sfxGain) {
+            this.sfxGain.gain.value = this.sfxVolume;
+        }
+        this.saveVolume();
+    },
+
+    // 设置背景音乐音量 (0-1)
+    setBgmVolume(volume) {
+        this.bgmVolume = Math.max(0, Math.min(1, volume));
+        if (this.bgmGain && this.bgmEnabled) {
+            this.bgmGain.gain.value = 0.15 * this.bgmVolume;
+        }
+        this.saveVolume();
     },
 
     // 恢复音频上下文（需要用户交互后调用）
@@ -1048,13 +4935,13 @@ const audio = {
 
     // 播放砍树音效（根据连击数调整音调）
     playChop(comboCount = 0) {
-        if (!this.enabled || !this.ctx) return;
+        if (!this.enabled || !this.ctx || !this.sfxGain) return;
 
         const osc = this.ctx.createOscillator();
         const gain = this.ctx.createGain();
 
         osc.connect(gain);
-        gain.connect(this.ctx.destination);
+        gain.connect(this.sfxGain); // 连接到音效音量节点
 
         // 根据连击数计算音调倍数
         const pitchMultiplier = 1 + (comboCount / CONFIG.COMBO.COMBO_FOR_MAX_PITCH) * CONFIG.COMBO.MAX_PITCH_BONUS;
@@ -1075,13 +4962,13 @@ const audio = {
 
     // 播放游戏结束音效
     playGameOver() {
-        if (!this.enabled || !this.ctx) return;
+        if (!this.enabled || !this.ctx || !this.sfxGain) return;
 
         const osc = this.ctx.createOscillator();
         const gain = this.ctx.createGain();
 
         osc.connect(gain);
-        gain.connect(this.ctx.destination);
+        gain.connect(this.sfxGain); // 连接到音效音量节点
 
         // 下降音调表示失败
         osc.type = 'sawtooth';
@@ -1097,13 +4984,13 @@ const audio = {
 
     // 播放时间警告音效
     playTimeWarning() {
-        if (!this.enabled || !this.ctx) return;
+        if (!this.enabled || !this.ctx || !this.sfxGain) return;
 
         const osc = this.ctx.createOscillator();
         const gain = this.ctx.createGain();
 
         osc.connect(gain);
-        gain.connect(this.ctx.destination);
+        gain.connect(this.sfxGain); // 连接到音效音量节点
 
         osc.type = 'sine';
         osc.frequency.setValueAtTime(880, this.ctx.currentTime);
@@ -1117,7 +5004,7 @@ const audio = {
 
     // 播放成就解锁音效
     playAchievement() {
-        if (!this.enabled || !this.ctx) return;
+        if (!this.enabled || !this.ctx || !this.sfxGain) return;
 
         // 上升音阶表示成就解锁
         const notes = [523, 659, 784]; // C5, E5, G5 和弦
@@ -1126,7 +5013,7 @@ const audio = {
             const gain = this.ctx.createGain();
 
             osc.connect(gain);
-            gain.connect(this.ctx.destination);
+            gain.connect(this.sfxGain); // 连接到音效音量节点
 
             osc.type = 'sine';
             osc.frequency.setValueAtTime(freq, this.ctx.currentTime + i * 0.1);
@@ -1239,7 +5126,7 @@ const audio = {
     // 恢复背景音乐
     resumeBGM() {
         if (this.bgmGain && this.bgmEnabled) {
-            this.bgmGain.gain.value = 0.15;
+            this.bgmGain.gain.value = 0.15 * this.bgmVolume;
         }
     },
 
@@ -1265,6 +5152,7 @@ const game = {
     timeLeft: CONFIG.INITIAL_TIME,
     lastTime: 0,
     lastWarningTime: 0,  // 上次警告音播放时间
+    speedMode: 'normal', // 游戏速度模式: 'slow' | 'normal' | 'fast'
 
     // 连击系统
     combo: {
@@ -1294,6 +5182,14 @@ const game = {
         duration: 0,       // 剩余持续时间
         offsetX: 0,        // 当前 X 偏移
         offsetY: 0         // 当前 Y 偏移
+    },
+
+    // 倒计时系统
+    countdown: {
+        active: false,     // 是否正在倒计时
+        value: 3,          // 当前倒计时数值 (3, 2, 1, 0=GO!)
+        startTime: 0,      // 倒计时开始时间
+        scale: 1           // 动画缩放
     }
 };
 
@@ -1409,6 +5305,15 @@ function init() {
         pauseScreen: document.getElementById('pause-screen'),
         resumeBtn: document.getElementById('resume-btn'),
         muteBtn: document.getElementById('mute-btn'),
+        volumeBtn: document.getElementById('volume-btn'),
+        volumePanel: document.getElementById('volume-panel'),
+        volumePanelClose: document.getElementById('volume-panel-close'),
+        sfxVolumeSlider: document.getElementById('sfx-volume'),
+        sfxVolumeValue: document.getElementById('sfx-volume-value'),
+        bgmVolumeSlider: document.getElementById('bgm-volume'),
+        bgmVolumeValue: document.getElementById('bgm-volume-value'),
+        vibrationSlider: document.getElementById('vibration-intensity'),
+        vibrationValue: document.getElementById('vibration-value'),
         fullscreenBtn: document.getElementById('fullscreen-btn'),
         skinsBtn: document.getElementById('skin-btn'),
         skinsScreen: document.getElementById('skin-screen'),
@@ -1432,6 +5337,23 @@ function init() {
         dailyNewRecord: document.getElementById('daily-new-record'),
         dailyRetryBtn: document.getElementById('daily-retry-btn'),
         dailyExitBtn: document.getElementById('daily-exit-btn'),
+        dailyShareBtn: document.getElementById('daily-share-btn'),
+        // 无限模式相关元素
+        endlessBtn: document.getElementById('endless-btn'),
+        endlessScreen: document.getElementById('endless-screen'),
+        endlessBackBtn: document.getElementById('endless-back-btn'),
+        endlessStartBtn: document.getElementById('endless-start-btn'),
+        endlessBestScore: document.getElementById('endless-best-score'),
+        endlessTotalGames: document.getElementById('endless-total-games'),
+        // 无限模式结束界面
+        endlessGameOverScreen: document.getElementById('endless-game-over-screen'),
+        endlessFinalScore: document.getElementById('endless-final-score'),
+        endlessHighScore: document.getElementById('endless-high-score'),
+        endlessMaxCombo: document.getElementById('endless-max-combo'),
+        endlessNewRecord: document.getElementById('endless-new-record'),
+        endlessRetryBtn: document.getElementById('endless-retry-btn'),
+        endlessExitBtn: document.getElementById('endless-exit-btn'),
+        endlessShareBtn: document.getElementById('endless-share-btn'),
         // 教程相关元素
         tutorialBtn: document.getElementById('tutorial-btn'),
         tutorialScreen: document.getElementById('tutorial-screen'),
@@ -1442,7 +5364,38 @@ function init() {
         leaderboardBtn: document.getElementById('leaderboard-btn'),
         leaderboardScreen: document.getElementById('leaderboard-screen'),
         leaderboardBackBtn: document.getElementById('leaderboard-back-btn'),
-        leaderboardClearBtn: document.getElementById('leaderboard-clear-btn')
+        leaderboardClearBtn: document.getElementById('leaderboard-clear-btn'),
+        // 统计页面相关元素
+        statsBtn: document.getElementById('stats-btn'),
+        statsScreen: document.getElementById('stats-screen'),
+        statsBackBtn: document.getElementById('stats-back-btn'),
+        statsResetBtn: document.getElementById('stats-reset-btn'),
+        // 语言切换按钮
+        langBtn: document.getElementById('lang-btn'),
+        // 主题切换按钮
+        themeBtn: document.getElementById('theme-btn'),
+        // 回放相关元素
+        replayBtn: document.getElementById('replay-btn'),
+        replayScreen: document.getElementById('replay-screen'),
+        replayBackBtn: document.getElementById('replay-back-btn'),
+        replayStartBtn: document.getElementById('replay-start-btn'),
+        replayStopBtn: document.getElementById('replay-stop-btn'),
+        replayIndicator: document.getElementById('replay-indicator'),
+        replayNoData: document.getElementById('replay-no-data'),
+        replayScore: document.getElementById('replay-score'),
+        replayCombo: document.getElementById('replay-combo'),
+        replayChops: document.getElementById('replay-chops'),
+        replayDuration: document.getElementById('replay-duration'),
+        // 分享相关元素
+        shareBtn: document.getElementById('share-btn'),
+        dailyShareBtn: document.getElementById('daily-share-btn'),
+        sharePanel: document.getElementById('share-panel'),
+        sharePanelClose: document.getElementById('share-panel-close'),
+        shareCanvas: document.getElementById('share-canvas'),
+        shareNativeBtn: document.getElementById('share-native-btn'),
+        shareDownloadBtn: document.getElementById('share-download-btn'),
+        shareCopyBtn: document.getElementById('share-copy-btn'),
+        shareCopyHint: document.getElementById('share-copy-hint')
     };
 
     // 设置画布
@@ -1467,8 +5420,23 @@ function init() {
     // 加载每日挑战数据
     DAILY_CHALLENGE.load();
 
+    // 加载无限模式数据
+    ENDLESS_MODE.load();
+
     // 加载排行榜数据
     LEADERBOARD.load();
+
+    // 加载回放数据
+    REPLAY.load();
+
+    // 加载游戏统计数据
+    GAME_STATS.load();
+
+    // 加载语言设置
+    I18N.load();
+
+    // 加载主题设置
+    THEME.load();
 
     // 绑定事件
     bindEvents();
@@ -1486,31 +5454,56 @@ function init() {
     // 加载静音设置
     loadMuteSetting();
 
+    // 初始化音量控制
+    initVolumeControl();
+
     // 初始化教程（首次运行检测、进度点点击）
     initTutorial();
 
     // 绘制初始画面
     draw();
+
+    // 更新所有界面文本（应用当前语言）
+    I18N.updateAllTexts();
 }
 
 // 调整画布尺寸
 function resizeCanvas() {
     const container = game.canvas.parentElement;
-    const rect = container.getBoundingClientRect();
+    const isFullscreen = document.fullscreenElement || document.webkitFullscreenElement;
+
+    // 获取可用空间尺寸
+    let availWidth, availHeight;
+    if (isFullscreen) {
+        // 全屏模式使用窗口尺寸
+        availWidth = window.innerWidth;
+        availHeight = window.innerHeight;
+    } else {
+        const rect = container.getBoundingClientRect();
+        availWidth = rect.width;
+        availHeight = rect.height;
+    }
 
     game.canvas.width = CONFIG.WIDTH;
     game.canvas.height = CONFIG.HEIGHT;
 
     // CSS 缩放适配容器
-    const scale = Math.min(rect.width / CONFIG.WIDTH, rect.height / CONFIG.HEIGHT);
-    game.canvas.style.width = `${CONFIG.WIDTH * scale}px`;
-    game.canvas.style.height = `${CONFIG.HEIGHT * scale}px`;
+    const scale = Math.min(availWidth / CONFIG.WIDTH, availHeight / CONFIG.HEIGHT);
+    const scaledWidth = Math.floor(CONFIG.WIDTH * scale);
+    const scaledHeight = Math.floor(CONFIG.HEIGHT * scale);
+
+    game.canvas.style.width = `${scaledWidth}px`;
+    game.canvas.style.height = `${scaledHeight}px`;
 }
 
 // 绑定事件
 function bindEvents() {
     // 键盘控制
     document.addEventListener('keydown', handleKeyDown);
+
+    // 全屏状态变化监听
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
 
     // 触摸/点击控制
     game.canvas.addEventListener('click', handleClick);
@@ -1544,10 +5537,23 @@ function bindEvents() {
     elements.dailyRetryBtn.addEventListener('click', startDailyChallenge);
     elements.dailyExitBtn.addEventListener('click', dailyReturnToStart);
 
+    // 无限模式按钮
+    elements.endlessBtn.addEventListener('click', showEndlessScreen);
+    elements.endlessBackBtn.addEventListener('click', hideEndlessScreen);
+    elements.endlessStartBtn.addEventListener('click', startEndlessMode);
+    elements.endlessRetryBtn.addEventListener('click', startEndlessMode);
+    elements.endlessExitBtn.addEventListener('click', endlessReturnToStart);
+    elements.endlessShareBtn.addEventListener('click', () => SHARE.show(false, true));
+
     // 排行榜按钮
     elements.leaderboardBtn.addEventListener('click', showLeaderboard);
     elements.leaderboardBackBtn.addEventListener('click', hideLeaderboard);
     elements.leaderboardClearBtn.addEventListener('click', clearLeaderboard);
+
+    // 统计页面按钮
+    elements.statsBtn.addEventListener('click', showStats);
+    elements.statsBackBtn.addEventListener('click', hideStats);
+    elements.statsResetBtn.addEventListener('click', resetStats);
 
     // 教程按钮
     elements.tutorialBtn.addEventListener('click', showTutorial);
@@ -1561,6 +5567,30 @@ function bindEvents() {
             goToTutorialStep(step);
         });
     });
+
+    // 语言切换按钮
+    elements.langBtn.addEventListener('click', () => {
+        I18N.toggle();
+    });
+
+    // 主题切换按钮
+    elements.themeBtn.addEventListener('click', () => {
+        THEME.toggle();
+    });
+
+    // 回放按钮
+    elements.replayBtn.addEventListener('click', showReplayScreen);
+    elements.replayBackBtn.addEventListener('click', hideReplayScreen);
+    elements.replayStartBtn.addEventListener('click', startReplayPlayback);
+    elements.replayStopBtn.addEventListener('click', stopReplayPlayback);
+
+    // 分享按钮
+    elements.shareBtn.addEventListener('click', () => SHARE.show(false));
+    elements.dailyShareBtn.addEventListener('click', () => SHARE.show(true));
+    elements.sharePanelClose.addEventListener('click', () => SHARE.hide());
+    elements.shareDownloadBtn.addEventListener('click', () => SHARE.downloadImage());
+    elements.shareNativeBtn.addEventListener('click', () => SHARE.nativeShare());
+    elements.shareCopyBtn.addEventListener('click', () => SHARE.copyText());
 
     // 窗口调整
     window.addEventListener('resize', resizeCanvas);
@@ -1596,10 +5626,175 @@ function hideLeaderboard() {
 
 // 清空排行榜
 function clearLeaderboard() {
-    if (confirm('确定要清空所有排行榜记录吗？此操作不可撤销！')) {
+    const msg = I18N.t.clearConfirm;
+    if (confirm(msg)) {
         LEADERBOARD.clear();
         LEADERBOARD.render();
     }
+}
+
+// ============ 统计页面功能 ============
+
+// 显示统计页面
+function showStats() {
+    renderStats();
+    elements.startScreen.classList.add('hidden');
+    elements.statsScreen.classList.remove('hidden');
+}
+
+// 隐藏统计页面
+function hideStats() {
+    elements.statsScreen.classList.add('hidden');
+    elements.startScreen.classList.remove('hidden');
+}
+
+// 重置统计数据
+function resetStats() {
+    const msg = I18N.t.resetConfirm;
+    if (confirm(msg)) {
+        GAME_STATS.clear();
+        renderStats();
+    }
+}
+
+// ============ 回放功能 ============
+
+// 显示回放界面
+function showReplayScreen() {
+    elements.startScreen.classList.add('hidden');
+    elements.replayScreen.classList.remove('hidden');
+
+    // 更新回放信息显示
+    updateReplayInfo();
+}
+
+// 隐藏回放界面
+function hideReplayScreen() {
+    elements.replayScreen.classList.add('hidden');
+    elements.startScreen.classList.remove('hidden');
+}
+
+// 更新回放信息显示
+function updateReplayInfo() {
+    const info = REPLAY.getReplayInfo();
+
+    if (info) {
+        // 有回放数据
+        elements.replayNoData.classList.add('hidden');
+        elements.replayScore.textContent = info.score;
+        elements.replayCombo.textContent = info.maxCombo;
+        elements.replayChops.textContent = info.actionCount;
+        elements.replayDuration.textContent = (info.duration / 1000).toFixed(1) + I18N.t.replaySeconds;
+        elements.replayStartBtn.disabled = false;
+    } else {
+        // 无回放数据
+        elements.replayNoData.classList.remove('hidden');
+        elements.replayScore.textContent = '-';
+        elements.replayCombo.textContent = '-';
+        elements.replayChops.textContent = '-';
+        elements.replayDuration.textContent = '-';
+        elements.replayStartBtn.disabled = true;
+    }
+}
+
+// 开始回放
+function startReplayPlayback() {
+    if (!REPLAY.hasReplay()) return;
+
+    // 隐藏回放界面
+    elements.replayScreen.classList.add('hidden');
+
+    // 准备游戏状态（与 startGame 类似但不录制）
+    game.score = 0;
+    game.timeLeft = CONFIG.INITIAL_TIME;
+    game.player.side = 'left';
+    game.player.isChopping = false;
+    game.isRunning = true;
+    flyingTrunkPool.clear();
+    particlePool.clear();
+    game.lastWarningTime = 0;
+
+    // 重置连击系统
+    game.combo.count = 0;
+    game.combo.maxCount = 0;
+    game.combo.lastChopTime = 0;
+    game.combo.showTimer = 0;
+
+    // 使用回放的初始树干状态
+    if (REPLAY.lastReplay.initialTrunks) {
+        game.trunks = JSON.parse(JSON.stringify(REPLAY.lastReplay.initialTrunks));
+    } else {
+        initTrunks();
+    }
+
+    // 使用回放的皮肤（如果有）
+    if (REPLAY.lastReplay.skin && SKINS.definitions.find(s => s.id === REPLAY.lastReplay.skin)) {
+        SKINS.currentSkin = REPLAY.lastReplay.skin;
+    }
+
+    // 隐藏其他界面
+    elements.startScreen.classList.add('hidden');
+    elements.gameOverScreen.classList.add('hidden');
+    elements.title.style.display = 'none';
+
+    // 显示回放指示器
+    elements.replayIndicator.classList.remove('hidden');
+
+    // 更新 UI
+    updateUI();
+
+    // 恢复音频上下文
+    audio.resume();
+
+    // 开始背景音乐
+    audio.startBGM();
+
+    // 回放模式不使用倒计时
+    game.countdown.active = false;
+
+    // 开始回放
+    REPLAY.startPlayback();
+
+    // 开始游戏循环
+    game.lastTime = performance.now();
+    requestAnimationFrame(gameLoop);
+}
+
+// 停止回放
+function stopReplayPlayback() {
+    REPLAY.stopPlayback();
+    game.isRunning = false;
+
+    // 隐藏回放指示器
+    elements.replayIndicator.classList.add('hidden');
+
+    // 停止背景音乐
+    audio.stopBGM();
+
+    // 返回开始界面
+    elements.title.style.display = 'block';
+    elements.startScreen.classList.remove('hidden');
+}
+
+// 渲染统计数据到界面
+function renderStats() {
+    // 主要统计卡片
+    document.getElementById('stats-total-games').textContent = GAME_STATS.data.totalGames;
+    document.getElementById('stats-total-chops').textContent = GAME_STATS.data.totalChops;
+    document.getElementById('stats-total-time').textContent = GAME_STATS.formatPlayTime(GAME_STATS.data.totalPlayTime);
+    document.getElementById('stats-high-score').textContent = game.highScore || 0;
+    document.getElementById('stats-best-combo').textContent = GAME_STATS.data.bestCombo;
+    document.getElementById('stats-avg-score').textContent = GAME_STATS.getAverageScore();
+
+    // 额外统计
+    document.getElementById('stats-achievements').textContent =
+        `${ACHIEVEMENTS.getUnlockedCount()}/${ACHIEVEMENTS.definitions.length}`;
+    document.getElementById('stats-skins').textContent =
+        `${SKINS.unlockedSkins.length}/${SKINS.definitions.length}`;
+
+    // 每日挑战次数
+    DAILY_CHALLENGE.load();
+    document.getElementById('stats-daily-attempts').textContent = `${DAILY_CHALLENGE.todayAttempts} 次`;
 }
 
 // ============ 教程功能 ============
@@ -1743,18 +5938,23 @@ function renderSkinsList() {
 
     const allSkins = SKINS.getAll();
     const currentSkin = SKINS.currentSkin;
+    const t = I18N.t;
 
     allSkins.forEach(skin => {
         const item = document.createElement('div');
         item.className = `skin-item ${skin.unlocked ? 'unlocked' : 'locked'} ${skin.id === currentSkin ? 'selected' : ''}`;
         item.dataset.skinId = skin.id;
 
+        // 获取国际化的皮肤名称和描述
+        const skinName = t.skinNames[skin.id] || skin.name;
+        const skinDesc = t.skinDescs[skin.id] || skin.desc;
+
         let unlockHint = '';
         let selectedBadge = '';
         if (!skin.unlocked && skin.unlockCondition) {
-            unlockHint = `<span class="skin-unlock-hint">🔒 ${skin.unlockCondition.value}分解锁</span>`;
+            unlockHint = `<span class="skin-unlock-hint">${t.skinLocked} ${skin.unlockCondition.value}${t.skinUnlockAt}</span>`;
         } else if (skin.id === currentSkin) {
-            selectedBadge = '<span class="skin-selected-badge">✓ 使用中</span>';
+            selectedBadge = `<span class="skin-selected-badge">✓ ${I18N.currentLang === 'zh' ? '使用中' : 'Selected'}</span>`;
         }
 
         // 创建 Canvas 预览容器
@@ -1777,8 +5977,8 @@ function renderSkinsList() {
         const infoDiv = document.createElement('div');
         infoDiv.className = 'skin-info';
         infoDiv.innerHTML = `
-            <span class="skin-name">${skin.name}</span>
-            <span class="skin-desc">${skin.desc}</span>
+            <span class="skin-name">${skinName}</span>
+            <span class="skin-desc">${skinDesc}</span>
             ${unlockHint}
             ${selectedBadge}
         `;
@@ -1942,6 +6142,340 @@ function drawSkinPreview(canvas, skin) {
         ctx.shadowBlur = 0;
     }
 
+    // 圣诞帽特效（弯曲帽尖 + 白色毛球）
+    if (colors.hasSantaHat) {
+        // 帽尖向右弯曲
+        ctx.fillStyle = colors.hat;
+        ctx.beginPath();
+        ctx.moveTo(40, 0);
+        ctx.quadraticCurveTo(50, -8, 48, -18);
+        ctx.quadraticCurveTo(46, -10, 40, 0);
+        ctx.fill();
+        // 白色毛球
+        ctx.fillStyle = isLocked ? '#AAA' : '#FFFFFF';
+        ctx.beginPath();
+        ctx.arc(48, -18, 5, 0, Math.PI * 2);
+        ctx.fill();
+        // 帽檐毛边
+        ctx.fillStyle = isLocked ? '#AAA' : '#FFFFFF';
+        ctx.fillRect(10, 6, 40, 8);
+    }
+
+    // 南瓜头特效
+    if (colors.hasPumpkinHead) {
+        // 覆盖头部为南瓜
+        ctx.fillStyle = isLocked ? '#A67C00' : '#FF6F00';
+        ctx.beginPath();
+        ctx.arc(30, 12, 16, 0, Math.PI * 2);
+        ctx.fill();
+        // 南瓜纹路
+        ctx.strokeStyle = isLocked ? '#8B6914' : '#E65100';
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.moveTo(30, -3);
+        ctx.lineTo(30, 26);
+        ctx.stroke();
+        // 南瓜眼睛
+        ctx.fillStyle = isLocked ? '#AAA' : '#FFD54F';
+        if (!isLocked) {
+            ctx.shadowColor = '#FFD54F';
+            ctx.shadowBlur = 5;
+        }
+        ctx.beginPath();
+        ctx.moveTo(22, 6);
+        ctx.lineTo(26, 12);
+        ctx.lineTo(18, 12);
+        ctx.closePath();
+        ctx.fill();
+        ctx.beginPath();
+        ctx.moveTo(38, 6);
+        ctx.lineTo(42, 12);
+        ctx.lineTo(34, 12);
+        ctx.closePath();
+        ctx.fill();
+        // 南瓜嘴巴
+        ctx.beginPath();
+        ctx.moveTo(22, 16);
+        ctx.lineTo(25, 20);
+        ctx.lineTo(28, 17);
+        ctx.lineTo(32, 20);
+        ctx.lineTo(35, 17);
+        ctx.lineTo(38, 20);
+        ctx.lineTo(38, 22);
+        ctx.lineTo(22, 22);
+        ctx.closePath();
+        ctx.fill();
+        ctx.shadowBlur = 0;
+        // 南瓜茎
+        ctx.fillStyle = isLocked ? '#5D4037' : '#4E342E';
+        ctx.fillRect(27, -6, 6, 8);
+    }
+
+    // 海盗帽特效
+    if (colors.hasPirateHat) {
+        ctx.fillStyle = isLocked ? '#333' : '#1A1A1A';
+        ctx.beginPath();
+        ctx.moveTo(5, 10);
+        ctx.lineTo(55, 10);
+        ctx.lineTo(48, -3);
+        ctx.lineTo(30, -10);
+        ctx.lineTo(12, -3);
+        ctx.closePath();
+        ctx.fill();
+        // 金色帽边
+        ctx.fillStyle = isLocked ? '#AA9900' : '#FFD700';
+        ctx.fillRect(8, 6, 44, 4);
+        // 骷髅标志
+        ctx.fillStyle = isLocked ? '#CCC' : '#FFFFFF';
+        ctx.beginPath();
+        ctx.arc(30, 0, 5, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = isLocked ? '#333' : '#1A1A1A';
+        ctx.fillRect(27, -2, 2, 2);
+        ctx.fillRect(31, -2, 2, 2);
+    }
+
+    // 海盗眼罩
+    if (colors.hasEyePatch) {
+        ctx.fillStyle = isLocked ? '#333' : '#1A1A1A';
+        ctx.fillRect(33, 10, 8, 6);
+        // 眼罩带子
+        ctx.strokeStyle = isLocked ? '#444' : '#333';
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.moveTo(41, 12);
+        ctx.lineTo(48, 10);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(33, 12);
+        ctx.lineTo(15, 10);
+        ctx.stroke();
+    }
+
+    // 雪人冰霜光环
+    if (colors.hasSnowEffect && !isLocked) {
+        ctx.strokeStyle = 'rgba(135, 206, 250, 0.4)';
+        ctx.lineWidth = 1.5;
+        ctx.shadowColor = '#87CEEB';
+        ctx.shadowBlur = 8;
+        ctx.beginPath();
+        ctx.arc(30, 35, 40, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+    }
+
+    // 雪人胡萝卜鼻子
+    if (colors.noseColor) {
+        ctx.fillStyle = isLocked ? '#AA6644' : colors.noseColor;
+        ctx.beginPath();
+        ctx.moveTo(30, 16);
+        ctx.lineTo(38, 18);
+        ctx.lineTo(30, 20);
+        ctx.closePath();
+        ctx.fill();
+    }
+
+    // 财神帽特效（中国新年）
+    if (colors.hasChineseHat) {
+        // 财神帽主体（红色圆顶帽）
+        ctx.fillStyle = isLocked ? '#8B4513' : '#C62828';
+        ctx.beginPath();
+        ctx.arc(30, -2, 16, Math.PI, 0, false);
+        ctx.fill();
+        // 金色帽边
+        ctx.fillStyle = isLocked ? '#AA8800' : '#FFD700';
+        ctx.fillRect(12, 6, 36, 7);
+        // 帽子顶部金球
+        if (!isLocked) {
+            ctx.shadowColor = '#FFD700';
+            ctx.shadowBlur = 6;
+        }
+        ctx.beginPath();
+        ctx.arc(30, -16, 5, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.shadowBlur = 0;
+        // 帽子正面福字装饰
+        ctx.fillRect(26, -8, 8, 8);
+        ctx.fillStyle = isLocked ? '#8B4513' : '#C62828';
+        ctx.fillRect(28, -6, 4, 4);
+    }
+
+    // 财神金色光晕
+    if (colors.hasGoldGlow && !isLocked) {
+        ctx.strokeStyle = 'rgba(255, 215, 0, 0.3)';
+        ctx.lineWidth = 2;
+        ctx.shadowColor = '#FFD700';
+        ctx.shadowBlur = 10;
+        ctx.beginPath();
+        ctx.arc(30, 35, 45, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+    }
+
+    // 丘比特翅膀
+    if (colors.hasWings) {
+        ctx.fillStyle = isLocked ? 'rgba(200, 200, 200, 0.7)' : 'rgba(255, 255, 255, 0.85)';
+        if (!isLocked) {
+            ctx.shadowColor = '#F48FB1';
+            ctx.shadowBlur = 4;
+        }
+        // 左翅膀
+        ctx.beginPath();
+        ctx.moveTo(10, 35);
+        ctx.quadraticCurveTo(-8, 22, -4, 42);
+        ctx.quadraticCurveTo(0, 35, 10, 35);
+        ctx.fill();
+        // 右翅膀
+        ctx.beginPath();
+        ctx.moveTo(50, 35);
+        ctx.quadraticCurveTo(68, 22, 64, 42);
+        ctx.quadraticCurveTo(60, 35, 50, 35);
+        ctx.fill();
+        ctx.shadowBlur = 0;
+    }
+
+    // 丘比特爱心光环
+    if (colors.hasHeartAura && !isLocked) {
+        ctx.fillStyle = 'rgba(233, 30, 99, 0.5)';
+        ctx.shadowColor = '#E91E63';
+        ctx.shadowBlur = 5;
+        // 头顶小爱心
+        const heartX = 30;
+        const heartY = -20;
+        const heartSize = 5;
+        ctx.beginPath();
+        ctx.moveTo(heartX, heartY + heartSize / 4);
+        ctx.bezierCurveTo(heartX, heartY, heartX - heartSize / 2, heartY, heartX - heartSize / 2, heartY + heartSize / 4);
+        ctx.bezierCurveTo(heartX - heartSize / 2, heartY + heartSize / 2, heartX, heartY + heartSize * 0.75, heartX, heartY + heartSize);
+        ctx.bezierCurveTo(heartX, heartY + heartSize * 0.75, heartX + heartSize / 2, heartY + heartSize / 2, heartX + heartSize / 2, heartY + heartSize / 4);
+        ctx.bezierCurveTo(heartX + heartSize / 2, heartY, heartX, heartY, heartX, heartY + heartSize / 4);
+        ctx.fill();
+        ctx.shadowBlur = 0;
+    }
+
+    // 复活节兔子耳朵
+    if (colors.hasBunnyEars) {
+        ctx.fillStyle = isLocked ? '#CCC' : '#FFFFFF';
+        if (!isLocked) {
+            ctx.shadowColor = '#F48FB1';
+            ctx.shadowBlur = 2;
+        }
+        // 左耳
+        ctx.beginPath();
+        ctx.ellipse(18, -16, 5, 15, -0.2, 0, Math.PI * 2);
+        ctx.fill();
+        // 右耳
+        ctx.beginPath();
+        ctx.ellipse(42, -16, 5, 15, 0.2, 0, Math.PI * 2);
+        ctx.fill();
+        // 耳朵内部粉色
+        ctx.fillStyle = isLocked ? '#AAA' : '#F8BBD0';
+        ctx.beginPath();
+        ctx.ellipse(18, -14, 2.5, 10, -0.2, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.ellipse(42, -14, 2.5, 10, 0.2, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.shadowBlur = 0;
+    }
+
+    // 复活节彩蛋装饰
+    if (colors.hasEasterEgg) {
+        ctx.fillStyle = isLocked ? '#AA9900' : '#FFD54F';
+        ctx.beginPath();
+        ctx.ellipse(30, 45, 4, 6, 0, 0, Math.PI * 2);
+        ctx.fill();
+        // 彩蛋条纹
+        ctx.strokeStyle = isLocked ? '#888' : '#81D4FA';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(26, 43);
+        ctx.lineTo(34, 43);
+        ctx.stroke();
+        ctx.strokeStyle = isLocked ? '#888' : '#F48FB1';
+        ctx.beginPath();
+        ctx.moveTo(26, 47);
+        ctx.lineTo(34, 47);
+        ctx.stroke();
+    }
+
+    // 复活节兔子粉色鼻子
+    if (colors.noseColor && colors.hasBunnyEars) {
+        ctx.fillStyle = isLocked ? '#AAA' : colors.noseColor;
+        ctx.beginPath();
+        ctx.ellipse(30, 18, 3, 2.5, 0, 0, Math.PI * 2);
+        ctx.fill();
+    }
+
+    // 夏日草帽特效
+    if (colors.hasStrawHat) {
+        // 草帽主体
+        ctx.fillStyle = isLocked ? '#CCC' : '#FFF59D';
+        ctx.beginPath();
+        ctx.ellipse(30, 6, 28, 7, 0, 0, Math.PI * 2);
+        ctx.fill();
+        // 帽顶
+        ctx.fillStyle = isLocked ? '#BBB' : '#FFF176';
+        ctx.beginPath();
+        ctx.ellipse(30, -2, 15, 8, 0, Math.PI, 0);
+        ctx.fill();
+        // 草帽纹理
+        ctx.strokeStyle = isLocked ? '#DDD' : '#FFECB3';
+        ctx.lineWidth = 0.8;
+        for (let i = -12; i <= 12; i += 4) {
+            ctx.beginPath();
+            ctx.moveTo(18 + i, -6);
+            ctx.lineTo(18 + i, 2);
+            ctx.stroke();
+        }
+        // 帽带
+        ctx.fillStyle = isLocked ? '#888' : '#FF7043';
+        ctx.fillRect(14, 0, 32, 3);
+    }
+
+    // 夏日太阳镜
+    if (colors.hasSunglasses) {
+        ctx.fillStyle = isLocked ? '#444' : '#212121';
+        // 左镜片
+        ctx.fillRect(18, 10, 9, 6);
+        // 右镜片
+        ctx.fillRect(33, 10, 9, 6);
+        // 镜架
+        ctx.fillRect(27, 12, 6, 2);
+        // 镜腿
+        ctx.fillRect(15, 12, 4, 1.5);
+        ctx.fillRect(41, 12, 4, 1.5);
+        // 镜片反光
+        if (!isLocked) {
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+            ctx.fillRect(19, 11, 3, 2);
+            ctx.fillRect(34, 11, 3, 2);
+        }
+    }
+
+    // 夏日花衬衫图案
+    if (colors.hasFlowerShirt) {
+        ctx.fillStyle = isLocked ? '#AA9900' : '#FFEB3B';
+        ctx.beginPath();
+        ctx.arc(22, 38, 2.5, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(38, 42, 2.5, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = isLocked ? '#888' : '#E91E63';
+        ctx.beginPath();
+        ctx.arc(30, 50, 2.5, 0, Math.PI * 2);
+        ctx.fill();
+        // 小叶子
+        ctx.fillStyle = isLocked ? '#666' : '#4CAF50';
+        ctx.beginPath();
+        ctx.ellipse(25, 40, 1.5, 3, 0.5, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.ellipse(35, 44, 1.5, 3, -0.5, 0, Math.PI * 2);
+        ctx.fill();
+    }
+
     // 胡子（如果有）
     if (colors.beard) {
         ctx.fillStyle = colors.beard;
@@ -2039,6 +6573,179 @@ function updateMuteButton() {
     }
 }
 
+// 初始化音量控制
+function initVolumeControl() {
+    // 加载音量和振动强度设置并更新滑块
+    audio.loadVolume();
+    haptics.loadIntensity();
+    updateVolumeSliders();
+
+    // 音量设置按钮点击 - 切换面板显示
+    elements.volumeBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleVolumePanel();
+    });
+
+    // 关闭按钮
+    elements.volumePanelClose.addEventListener('click', () => {
+        closeVolumePanel();
+    });
+
+    // 点击面板外部关闭
+    document.addEventListener('click', (e) => {
+        if (!elements.volumePanel.classList.contains('hidden') &&
+            !elements.volumePanel.contains(e.target) &&
+            e.target !== elements.volumeBtn) {
+            closeVolumePanel();
+        }
+    });
+
+    // 音效音量滑块
+    elements.sfxVolumeSlider.addEventListener('input', (e) => {
+        const volume = parseInt(e.target.value) / 100;
+        audio.setSfxVolume(volume);
+        elements.sfxVolumeValue.textContent = e.target.value + '%';
+        // 播放测试音效
+        audio.playChop(0);
+    });
+
+    // 背景音乐音量滑块
+    elements.bgmVolumeSlider.addEventListener('input', (e) => {
+        const volume = parseInt(e.target.value) / 100;
+        audio.setBgmVolume(volume);
+        elements.bgmVolumeValue.textContent = e.target.value + '%';
+    });
+
+    // 振动强度滑块
+    if (elements.vibrationSlider) {
+        elements.vibrationSlider.addEventListener('input', (e) => {
+            const intensity = parseInt(e.target.value) / 100;
+            haptics.setIntensity(intensity);
+            elements.vibrationValue.textContent = e.target.value + '%';
+            // 测试振动反馈
+            haptics.test();
+        });
+    }
+
+    // 音效预览按钮
+    const sfxPreviewBtns = document.querySelectorAll('.sfx-preview-btn');
+    sfxPreviewBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const sfxType = btn.dataset.sfx;
+
+            // 添加播放动画
+            btn.classList.add('playing');
+            setTimeout(() => btn.classList.remove('playing'), 300);
+
+            // 播放对应音效
+            audio.init();
+            audio.resume();
+
+            switch (sfxType) {
+                case 'chop':
+                    audio.playChop(5); // 带一点连击效果
+                    break;
+                case 'gameover':
+                    audio.playGameOver();
+                    break;
+                case 'warning':
+                    audio.playTimeWarning();
+                    break;
+                case 'achievement':
+                    audio.playAchievement();
+                    break;
+            }
+        });
+    });
+}
+
+// 更新音量滑块显示
+function updateVolumeSliders() {
+    const sfxPercent = Math.round(audio.sfxVolume * 100);
+    const bgmPercent = Math.round(audio.bgmVolume * 100);
+    const vibrationPercent = Math.round(haptics.intensity * 100);
+    elements.sfxVolumeSlider.value = sfxPercent;
+    elements.sfxVolumeValue.textContent = sfxPercent + '%';
+    elements.bgmVolumeSlider.value = bgmPercent;
+    elements.bgmVolumeValue.textContent = bgmPercent + '%';
+    if (elements.vibrationSlider) {
+        elements.vibrationSlider.value = vibrationPercent;
+        elements.vibrationValue.textContent = vibrationPercent + '%';
+    }
+}
+
+// 切换音量面板显示
+function toggleVolumePanel() {
+    const isHidden = elements.volumePanel.classList.contains('hidden');
+    if (isHidden) {
+        openVolumePanel();
+    } else {
+        closeVolumePanel();
+    }
+}
+
+// 打开音量面板
+function openVolumePanel() {
+    elements.volumePanel.classList.remove('hidden');
+    elements.volumeBtn.classList.add('active');
+}
+
+// 关闭音量面板
+function closeVolumePanel() {
+    elements.volumePanel.classList.add('hidden');
+    elements.volumeBtn.classList.remove('active');
+}
+
+// 切换全屏模式
+function toggleFullscreen() {
+    const container = document.getElementById('game-container');
+
+    if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+        // 进入全屏
+        if (container.requestFullscreen) {
+            container.requestFullscreen();
+        } else if (container.webkitRequestFullscreen) {
+            // Safari 支持
+            container.webkitRequestFullscreen();
+        }
+    } else {
+        // 退出全屏
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        }
+    }
+}
+
+// 处理全屏状态变化
+function handleFullscreenChange() {
+    updateFullscreenButton();
+    // 延迟调用 resizeCanvas，等待浏览器完成全屏切换
+    setTimeout(() => {
+        resizeCanvas();
+        // 全屏切换后重新绘制
+        if (!game.isRunning) {
+            draw();
+        }
+    }, 100);
+}
+
+// 更新全屏按钮显示
+function updateFullscreenButton() {
+    const isFullscreen = document.fullscreenElement || document.webkitFullscreenElement;
+    if (isFullscreen) {
+        elements.fullscreenBtn.textContent = '⛶';
+        elements.fullscreenBtn.classList.add('active');
+        elements.fullscreenBtn.title = '退出全屏';
+    } else {
+        elements.fullscreenBtn.textContent = '⛶';
+        elements.fullscreenBtn.classList.remove('active');
+        elements.fullscreenBtn.title = '全屏模式';
+    }
+}
+
 // 暂停游戏
 function pauseGame() {
     if (!game.isRunning || game.isPaused) return;
@@ -2102,6 +6809,12 @@ function handleKeyDown(e) {
         return;
     }
 
+    // F 键切换全屏（任何时候都可用）
+    if (e.key === 'f' || e.key === 'F') {
+        toggleFullscreen();
+        return;
+    }
+
     // 暂停时不处理其他按键
     if (!game.isRunning || game.isPaused) return;
 
@@ -2150,20 +6863,25 @@ function getDifficultyLevel() {
 // 获取当前时间衰减速度
 function getCurrentTimeDecay() {
     const level = getDifficultyLevel();
-    return CONFIG.TIME_DECAY * (1 + level * CONFIG.DIFFICULTY.DECAY_MULTIPLIER);
+    const speedConfig = CONFIG.SPEED_MODES[game.speedMode] || CONFIG.SPEED_MODES.normal;
+    return CONFIG.TIME_DECAY * (1 + level * CONFIG.DIFFICULTY.DECAY_MULTIPLIER) * speedConfig.decayMultiplier;
 }
 
 // 获取当前砍树时间奖励
 function getCurrentTimeBonus() {
     const level = getDifficultyLevel();
+    const speedConfig = CONFIG.SPEED_MODES[game.speedMode] || CONFIG.SPEED_MODES.normal;
     const bonus = CONFIG.TIME_BONUS - level * CONFIG.DIFFICULTY.TIME_BONUS_DECAY;
-    return Math.max(bonus, 3); // 最少奖励 3 点时间
+    return Math.max(bonus * speedConfig.bonusMultiplier, 2); // 最少奖励 2 点时间
 }
 
 // 开始游戏
 function startGame() {
     // 恢复音频上下文（需要用户交互）
     audio.resume();
+
+    // 记录游戏开始时间（用于统计）
+    GAME_STATS.startSession();
 
     // 重置状态
     game.score = 0;
@@ -2187,6 +6905,11 @@ function startGame() {
     // 初始化树干
     initTrunks();
 
+    // 开始录制回放（普通模式且非回放模式时）
+    if (!REPLAY.isPlaying) {
+        REPLAY.startRecording(game.trunks);
+    }
+
     // 隐藏界面
     elements.startScreen.classList.add('hidden');
     elements.gameOverScreen.classList.add('hidden');
@@ -2203,6 +6926,12 @@ function startGame() {
     // 开始背景音乐
     audio.startBGM();
 
+    // 启动倒计时
+    game.countdown.active = true;
+    game.countdown.value = 3;
+    game.countdown.startTime = performance.now();
+    game.countdown.scale = 1;
+
     // 开始游戏循环
     game.lastTime = performance.now();
     requestAnimationFrame(gameLoop);
@@ -2217,6 +6946,9 @@ function startDailyChallenge() {
 
     // 恢复音频上下文
     audio.resume();
+
+    // 记录游戏开始时间（用于统计）
+    GAME_STATS.startSession();
 
     // 重置状态（与 startGame 相同）
     game.score = 0;
@@ -2256,6 +6988,12 @@ function startDailyChallenge() {
     // 开始背景音乐
     audio.startBGM();
 
+    // 启动倒计时
+    game.countdown.active = true;
+    game.countdown.value = 3;
+    game.countdown.startTime = performance.now();
+    game.countdown.scale = 1;
+
     // 开始游戏循环
     game.lastTime = performance.now();
     requestAnimationFrame(gameLoop);
@@ -2283,6 +7021,96 @@ function dailyReturnToStart() {
     elements.dailyGameOverScreen.classList.add('hidden');
     elements.startScreen.classList.remove('hidden');
     elements.title.style.display = 'block';
+}
+
+// ============ 无限模式函数 ============
+
+// 开始无限模式
+function startEndlessMode() {
+    // 开始无限模式
+    ENDLESS_MODE.start();
+
+    // 恢复音频上下文
+    audio.resume();
+
+    // 记录游戏开始时间（用于统计）
+    GAME_STATS.startSession();
+
+    // 重置状态
+    game.score = 0;
+    game.timeLeft = CONFIG.INITIAL_TIME; // 无限模式也初始化时间（但不会衰减）
+    game.player.side = 'left';
+    game.player.isChopping = false;
+    game.isRunning = true;
+    flyingTrunkPool.clear();
+    particlePool.clear();
+    game.lastWarningTime = 0;
+
+    // 重置连击系统
+    game.combo.count = 0;
+    game.combo.maxCount = 0;
+    game.combo.lastChopTime = 0;
+    game.combo.showTimer = 0;
+
+    // 重置成就单局统计
+    ACHIEVEMENTS.resetRoundStats();
+
+    // 初始化树干
+    initTrunks();
+
+    // 隐藏界面
+    elements.startScreen.classList.add('hidden');
+    elements.endlessScreen.classList.add('hidden');
+    elements.endlessGameOverScreen.classList.add('hidden');
+    elements.title.style.display = 'none';
+
+    // 添加无限模式样式类（隐藏时间条）
+    document.getElementById('game-container').classList.add('endless-mode');
+
+    // 更新 UI
+    updateUI();
+
+    // 显示触摸区域指示
+    touchZones.show();
+    setTimeout(() => touchZones.startFadeOut(), 2000);
+
+    // 开始背景音乐
+    audio.startBGM();
+
+    // 启动倒计时
+    game.countdown.active = true;
+    game.countdown.value = 3;
+    game.countdown.startTime = performance.now();
+    game.countdown.scale = 1;
+
+    // 开始游戏循环
+    game.lastTime = performance.now();
+    requestAnimationFrame(gameLoop);
+}
+
+// 显示无限模式界面
+function showEndlessScreen() {
+    const info = ENDLESS_MODE.getInfo();
+    elements.endlessBestScore.textContent = info.highScore;
+    elements.endlessTotalGames.textContent = info.totalGames;
+
+    elements.startScreen.classList.add('hidden');
+    elements.endlessScreen.classList.remove('hidden');
+}
+
+// 隐藏无限模式界面
+function hideEndlessScreen() {
+    elements.endlessScreen.classList.add('hidden');
+    elements.startScreen.classList.remove('hidden');
+}
+
+// 从无限模式结束界面返回开始界面
+function endlessReturnToStart() {
+    elements.endlessGameOverScreen.classList.add('hidden');
+    elements.startScreen.classList.remove('hidden');
+    elements.title.style.display = 'block';
+    // 移除无限模式样式类
+    document.getElementById('game-container').classList.remove('endless-mode');
 }
 
 // 初始化树干
@@ -2313,7 +7141,14 @@ function generateBranch(forceNone = false) {
 
 // 砍树动作
 function chop(side) {
+    // 倒计时期间禁止砍树
+    if (game.countdown.active) return;
     if (game.player.isChopping) return;
+
+    // 记录回放操作（非回放模式时）
+    if (!REPLAY.isPlaying) {
+        REPLAY.recordAction(side);
+    }
 
     // 移动伐木工
     game.player.side = side;
@@ -2408,6 +7243,19 @@ function updateScreenShake(deltaTime) {
 function gameOver() {
     game.isRunning = false;
 
+    // 结束回放录制（普通模式，非回放模式时）
+    if (!DAILY_CHALLENGE.isActive && !ENDLESS_MODE.isActive && !REPLAY.isPlaying) {
+        REPLAY.endRecording(game.score, game.combo.maxCount);
+    }
+
+    // 停止回放（如果正在回放）
+    if (REPLAY.isPlaying) {
+        REPLAY.stopPlayback();
+    }
+
+    // 更新游戏统计
+    GAME_STATS.endSession(game.score, game.combo.maxCount);
+
     // 停止背景音乐
     audio.stopBGM();
 
@@ -2427,6 +7275,8 @@ function gameOver() {
 
     // 每日挑战模式处理
     const isDaily = DAILY_CHALLENGE.isActive;
+    const isEndless = ENDLESS_MODE.isActive;
+
     if (isDaily) {
         const isNewRecord = DAILY_CHALLENGE.updateHighScore(game.score);
         DAILY_CHALLENGE.endChallenge();
@@ -2446,6 +7296,25 @@ function gameOver() {
 
         // 显示每日挑战结束界面
         elements.dailyGameOverScreen.classList.remove('hidden');
+    } else if (isEndless) {
+        // 无限模式处理
+        const isNewRecord = ENDLESS_MODE.updateHighScore(game.score);
+        ENDLESS_MODE.end();
+
+        // 更新无限模式结束界面
+        elements.endlessFinalScore.textContent = game.score;
+        elements.endlessHighScore.textContent = ENDLESS_MODE.highScore;
+        elements.endlessMaxCombo.textContent = game.combo.maxCount;
+
+        // 新纪录标识
+        if (isNewRecord) {
+            elements.endlessNewRecord.classList.remove('hidden');
+        } else {
+            elements.endlessNewRecord.classList.add('hidden');
+        }
+
+        // 显示无限模式结束界面
+        elements.endlessGameOverScreen.classList.remove('hidden');
     } else {
         // 普通模式：更新最高分
         if (game.score > game.highScore) {
@@ -2465,6 +7334,9 @@ function gameOver() {
         // 保存成绩到排行榜（普通模式才记录）
         const level = getDifficultyLevel() + 1;
         LEADERBOARD.add(game.score, game.combo.maxCount, level, SKINS.currentSkin);
+
+        // 更新游戏统计
+        GAME_STATS.endSession(game.score, game.combo.maxCount);
 
         // 显示普通结束界面
         elements.finalScore.textContent = game.score;
@@ -2526,6 +7398,11 @@ function gameLoop(currentTime) {
     const deltaTime = currentTime - game.lastTime;
     game.lastTime = currentTime;
 
+    // 回放模式：执行回放操作
+    if (REPLAY.isPlaying) {
+        REPLAY.updatePlayback();
+    }
+
     // 更新
     update(deltaTime);
 
@@ -2538,6 +7415,32 @@ function gameLoop(currentTime) {
 
 // 更新游戏状态
 function update(deltaTime) {
+    // 更新倒计时
+    if (game.countdown.active) {
+        const elapsed = performance.now() - game.countdown.startTime;
+        const phase = Math.floor(elapsed / 800); // 每800ms切换一次
+
+        if (phase === 0) {
+            game.countdown.value = 3;
+        } else if (phase === 1) {
+            game.countdown.value = 2;
+        } else if (phase === 2) {
+            game.countdown.value = 1;
+        } else if (phase === 3) {
+            game.countdown.value = 0; // GO!
+        } else {
+            // 倒计时结束
+            game.countdown.active = false;
+        }
+
+        // 计算缩放动画（每阶段从大到小）
+        const phaseProgress = (elapsed % 800) / 800;
+        game.countdown.scale = 1.5 - phaseProgress * 0.5;
+
+        // 倒计时期间不更新时间和其他逻辑，只绘制
+        return;
+    }
+
     // 更新砍树动画计时
     if (game.player.isChopping) {
         game.player.chopTimer -= deltaTime;
@@ -2558,16 +7461,18 @@ function update(deltaTime) {
     // 更新粒子（使用对象池）
     particlePool.update(deltaTime);
 
-    // 减少时间（使用动态衰减速度）
-    game.timeLeft -= getCurrentTimeDecay() * (deltaTime / 16.67); // 基于 60fps 标准化
+    // 减少时间（使用动态衰减速度）- 无限模式不减时间
+    if (!ENDLESS_MODE.isActive) {
+        game.timeLeft -= getCurrentTimeDecay() * (deltaTime / 16.67); // 基于 60fps 标准化
 
-    // 时间紧迫警告音（时间低于20%时每0.5秒播放一次）
-    if (game.timeLeft < 20 && game.timeLeft > 0) {
-        const now = performance.now();
-        if (now - game.lastWarningTime > 500) {
-            audio.playTimeWarning();
-            haptics.warning(); // 振动反馈
-            game.lastWarningTime = now;
+        // 时间紧迫警告音（时间低于20%时每0.5秒播放一次）
+        if (game.timeLeft < 20 && game.timeLeft > 0) {
+            const now = performance.now();
+            if (now - game.lastWarningTime > 500) {
+                audio.playTimeWarning();
+                haptics.warning(); // 振动反馈
+                game.lastWarningTime = now;
+            }
         }
     }
 
@@ -2604,27 +7509,97 @@ function draw() {
 
     // 绘制地面
     drawGround();
+
+    // 绘制倒计时
+    if (game.countdown.active) {
+        drawCountdown();
+    }
+}
+
+// 绘制倒计时
+function drawCountdown() {
+    const ctx = game.ctx;
+    const centerX = CONFIG.WIDTH / 2;
+    const centerY = CONFIG.HEIGHT / 2 - 50;
+
+    // 半透明背景遮罩
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.3)';
+    ctx.fillRect(0, 0, CONFIG.WIDTH, CONFIG.HEIGHT);
+
+    // 倒计时文本
+    const text = game.countdown.value === 0 ? I18N.t.countdownGo : game.countdown.value.toString();
+    const scale = game.countdown.scale;
+    const baseSize = game.countdown.value === 0 ? 60 : 100;
+
+    ctx.save();
+    ctx.translate(centerX, centerY);
+    ctx.scale(scale, scale);
+
+    // 文字阴影
+    ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
+    ctx.shadowBlur = 10;
+    ctx.shadowOffsetX = 3;
+    ctx.shadowOffsetY = 3;
+
+    // 文字颜色
+    if (game.countdown.value === 0) {
+        // GO! - 绿色渐变
+        const gradient = ctx.createLinearGradient(0, -baseSize/2, 0, baseSize/2);
+        gradient.addColorStop(0, '#4CAF50');
+        gradient.addColorStop(1, '#2E7D32');
+        ctx.fillStyle = gradient;
+    } else {
+        // 3, 2, 1 - 白色
+        ctx.fillStyle = '#FFFFFF';
+    }
+
+    ctx.font = `bold ${baseSize}px Arial, sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+
+    // 描边
+    ctx.strokeStyle = game.countdown.value === 0 ? '#1B5E20' : '#333';
+    ctx.lineWidth = 4;
+    ctx.strokeText(text, 0, 0);
+    ctx.fillText(text, 0, 0);
+
+    ctx.restore();
 }
 
 // 绘制背景
 function drawBackground() {
     const ctx = game.ctx;
+    const isDark = THEME.current === 'dark';
 
-    // 天空渐变 - 更柔和的颜色
+    // 天空渐变 - 根据主题调整颜色
     const gradient = ctx.createLinearGradient(0, 0, 0, CONFIG.HEIGHT);
-    gradient.addColorStop(0, '#7EC8E3');
-    gradient.addColorStop(0.4, '#A8E6CF');
-    gradient.addColorStop(0.7, '#88C070');
-    gradient.addColorStop(1, '#5D8A4D');
+    if (isDark) {
+        // 暗色主题：夜空渐变
+        gradient.addColorStop(0, '#0f0f23');
+        gradient.addColorStop(0.3, '#1a1a2e');
+        gradient.addColorStop(0.6, '#16213e');
+        gradient.addColorStop(1, '#1a2a3a');
+    } else {
+        // 亮色主题：日间天空
+        gradient.addColorStop(0, '#7EC8E3');
+        gradient.addColorStop(0.4, '#A8E6CF');
+        gradient.addColorStop(0.7, '#88C070');
+        gradient.addColorStop(1, '#5D8A4D');
+    }
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, CONFIG.WIDTH, CONFIG.HEIGHT);
 
-    // 太阳
-    drawSun(350, 60, 30);
+    // 太阳/月亮
+    if (isDark) {
+        drawMoon(350, 60, 25);
+        drawStars();
+    } else {
+        drawSun(350, 60, 30);
+    }
 
     // 远处的山（多层次）
     // 最远的山
-    ctx.fillStyle = '#6B9D5A';
+    ctx.fillStyle = isDark ? '#2a3a4a' : '#6B9D5A';
     ctx.beginPath();
     ctx.moveTo(0, 420);
     ctx.lineTo(80, 340);
@@ -2639,7 +7614,7 @@ function drawBackground() {
     ctx.fill();
 
     // 近处的山
-    ctx.fillStyle = '#5D8A4D';
+    ctx.fillStyle = isDark ? '#1e2a3a' : '#5D8A4D';
     ctx.beginPath();
     ctx.moveTo(0, 450);
     ctx.lineTo(60, 380);
@@ -2654,14 +7629,84 @@ function drawBackground() {
     ctx.closePath();
     ctx.fill();
 
-    // 云朵
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+    // 云朵（暗色主题下更暗淡）
+    ctx.fillStyle = isDark ? 'rgba(100, 120, 140, 0.3)' : 'rgba(255, 255, 255, 0.9)';
     drawCloud(50, 80, 30);
     drawCloud(300, 50, 25);
     drawCloud(180, 120, 20);
 
-    // 飞鸟（简单像素风格）
-    drawBirds();
+    // 飞鸟（仅亮色主题显示）
+    if (!isDark) {
+        drawBirds();
+    }
+}
+
+// 绘制月亮（暗色主题）
+function drawMoon(x, y, radius) {
+    const ctx = game.ctx;
+
+    // 月亮光晕
+    const glowGradient = ctx.createRadialGradient(x, y, radius * 0.5, x, y, radius * 2.5);
+    glowGradient.addColorStop(0, 'rgba(200, 220, 255, 0.3)');
+    glowGradient.addColorStop(1, 'rgba(200, 220, 255, 0)');
+    ctx.fillStyle = glowGradient;
+    ctx.beginPath();
+    ctx.arc(x, y, radius * 2.5, 0, Math.PI * 2);
+    ctx.fill();
+
+    // 月亮主体
+    ctx.fillStyle = '#E8E8E8';
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, Math.PI * 2);
+    ctx.fill();
+
+    // 月亮阴影（月牙效果）
+    ctx.fillStyle = '#1a1a2e';
+    ctx.beginPath();
+    ctx.arc(x + 8, y - 5, radius * 0.85, 0, Math.PI * 2);
+    ctx.fill();
+
+    // 月亮高光
+    ctx.fillStyle = '#FFFFFF';
+    ctx.beginPath();
+    ctx.arc(x - 6, y - 6, radius * 0.15, 0, Math.PI * 2);
+    ctx.fill();
+}
+
+// 绘制星星（暗色主题）
+function drawStars() {
+    const ctx = game.ctx;
+    ctx.fillStyle = '#FFFFFF';
+
+    // 固定位置的星星
+    const stars = [
+        { x: 30, y: 40, size: 2 },
+        { x: 80, y: 80, size: 1.5 },
+        { x: 150, y: 30, size: 2 },
+        { x: 200, y: 90, size: 1 },
+        { x: 250, y: 50, size: 1.5 },
+        { x: 280, y: 110, size: 2 },
+        { x: 100, y: 140, size: 1 },
+        { x: 320, y: 130, size: 1.5 },
+        { x: 380, y: 100, size: 1 },
+        { x: 60, y: 180, size: 1 },
+        { x: 170, y: 160, size: 2 },
+        { x: 240, y: 170, size: 1 },
+        { x: 50, y: 250, size: 1.5 },
+        { x: 130, y: 220, size: 1 },
+        { x: 300, y: 200, size: 1.5 }
+    ];
+
+    // 绘制星星（带闪烁效果）
+    const time = performance.now() * 0.001;
+    stars.forEach((star, i) => {
+        const twinkle = Math.sin(time * 2 + i) * 0.3 + 0.7;
+        ctx.globalAlpha = twinkle;
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+        ctx.fill();
+    });
+    ctx.globalAlpha = 1;
 }
 
 // 绘制太阳
@@ -3101,6 +8146,350 @@ function drawPlayer() {
         ctx.arc(x + 30, y - 15, 4, 0, Math.PI * 2);
         ctx.fill();
         ctx.shadowBlur = 0;
+    }
+
+    // 圣诞帽特效（弯曲帽尖 + 白色毛球）
+    if (colors.hasSantaHat) {
+        // 帽尖向右弯曲
+        ctx.fillStyle = colors.hat;
+        ctx.beginPath();
+        ctx.moveTo(x + 40, y);
+        ctx.quadraticCurveTo(x + 50, y - 8, x + 48, y - 18);
+        ctx.quadraticCurveTo(x + 46, y - 10, x + 40, y);
+        ctx.fill();
+        // 白色毛球
+        ctx.fillStyle = '#FFFFFF';
+        ctx.beginPath();
+        ctx.arc(x + 48, y - 18, 5, 0, Math.PI * 2);
+        ctx.fill();
+        // 帽檐毛边（覆盖原有帽檐）
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fillRect(x + 10, y + 6, 40, 8);
+    }
+
+    // 南瓜头特效
+    if (colors.hasPumpkinHead) {
+        // 覆盖头部为南瓜
+        ctx.fillStyle = '#FF6F00';
+        ctx.beginPath();
+        ctx.arc(x + 30, y + 12, 18, 0, Math.PI * 2);
+        ctx.fill();
+        // 南瓜纹路
+        ctx.strokeStyle = '#E65100';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(x + 30, y - 5);
+        ctx.lineTo(x + 30, y + 28);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(x + 15, y + 12);
+        ctx.quadraticCurveTo(x + 30, y + 5, x + 45, y + 12);
+        ctx.stroke();
+        // 南瓜眼睛（三角形发光）
+        ctx.fillStyle = '#FFD54F';
+        ctx.shadowColor = '#FFD54F';
+        ctx.shadowBlur = 8;
+        ctx.beginPath();
+        ctx.moveTo(x + 22, y + 6);
+        ctx.lineTo(x + 27, y + 14);
+        ctx.lineTo(x + 17, y + 14);
+        ctx.closePath();
+        ctx.fill();
+        ctx.beginPath();
+        ctx.moveTo(x + 38, y + 6);
+        ctx.lineTo(x + 43, y + 14);
+        ctx.lineTo(x + 33, y + 14);
+        ctx.closePath();
+        ctx.fill();
+        // 南瓜嘴巴（锯齿状）
+        ctx.beginPath();
+        ctx.moveTo(x + 20, y + 18);
+        ctx.lineTo(x + 24, y + 24);
+        ctx.lineTo(x + 28, y + 19);
+        ctx.lineTo(x + 32, y + 24);
+        ctx.lineTo(x + 36, y + 19);
+        ctx.lineTo(x + 40, y + 24);
+        ctx.lineTo(x + 40, y + 26);
+        ctx.lineTo(x + 20, y + 26);
+        ctx.closePath();
+        ctx.fill();
+        ctx.shadowBlur = 0;
+        // 南瓜茎
+        ctx.fillStyle = '#4E342E';
+        ctx.fillRect(x + 27, y - 8, 6, 10);
+    }
+
+    // 海盗帽特效
+    if (colors.hasPirateHat) {
+        // 三角海盗帽
+        ctx.fillStyle = '#1A1A1A';
+        ctx.beginPath();
+        ctx.moveTo(x + 5, y + 10);
+        ctx.lineTo(x + 55, y + 10);
+        ctx.lineTo(x + 48, y - 5);
+        ctx.lineTo(x + 30, y - 12);
+        ctx.lineTo(x + 12, y - 5);
+        ctx.closePath();
+        ctx.fill();
+        // 金色帽边
+        ctx.fillStyle = '#FFD700';
+        ctx.fillRect(x + 8, y + 6, 44, 5);
+        // 骷髅标志
+        ctx.fillStyle = '#FFFFFF';
+        ctx.beginPath();
+        ctx.arc(x + 30, y - 1, 6, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#1A1A1A';
+        ctx.fillRect(x + 26, y - 3, 3, 3);
+        ctx.fillRect(x + 31, y - 3, 3, 3);
+        ctx.fillRect(x + 28, y + 2, 4, 2);
+    }
+
+    // 海盗眼罩
+    if (colors.hasEyePatch) {
+        ctx.fillStyle = '#1A1A1A';
+        ctx.fillRect(x + 33, y + 10, 9, 7);
+        // 眼罩带子
+        ctx.strokeStyle = '#333';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(x + 42, y + 13);
+        ctx.lineTo(x + 50, y + 10);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(x + 33, y + 13);
+        ctx.lineTo(x + 15, y + 10);
+        ctx.stroke();
+    }
+
+    // 雪人冰霜光环
+    if (colors.hasSnowEffect) {
+        ctx.strokeStyle = 'rgba(135, 206, 250, 0.5)';
+        ctx.lineWidth = 2;
+        ctx.shadowColor = '#87CEEB';
+        ctx.shadowBlur = 15;
+        ctx.beginPath();
+        ctx.arc(x + 30, y + 35, 50, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+    }
+
+    // 雪人胡萝卜鼻子
+    if (colors.noseColor) {
+        ctx.fillStyle = colors.noseColor;
+        ctx.beginPath();
+        ctx.moveTo(x + 30, y + 16);
+        ctx.lineTo(x + 40, y + 18);
+        ctx.lineTo(x + 30, y + 20);
+        ctx.closePath();
+        ctx.fill();
+    }
+
+    // 财神帽特效（中国新年）
+    if (colors.hasChineseHat) {
+        // 财神帽主体（红色圆顶帽）
+        ctx.fillStyle = '#C62828';
+        ctx.beginPath();
+        ctx.arc(x + 30, y - 2, 18, Math.PI, 0, false);
+        ctx.fill();
+        // 金色帽边
+        ctx.fillStyle = '#FFD700';
+        ctx.fillRect(x + 10, y + 6, 40, 8);
+        // 帽子顶部金球
+        ctx.fillStyle = '#FFD700';
+        ctx.shadowColor = '#FFD700';
+        ctx.shadowBlur = 8;
+        ctx.beginPath();
+        ctx.arc(x + 30, y - 18, 6, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.shadowBlur = 0;
+        // 帽子正面福字装饰（简化版）
+        ctx.fillStyle = '#FFD700';
+        ctx.fillRect(x + 26, y - 8, 8, 8);
+        ctx.fillStyle = '#C62828';
+        ctx.fillRect(x + 28, y - 6, 4, 4);
+    }
+
+    // 财神金色光晕
+    if (colors.hasGoldGlow) {
+        ctx.strokeStyle = 'rgba(255, 215, 0, 0.4)';
+        ctx.lineWidth = 3;
+        ctx.shadowColor = '#FFD700';
+        ctx.shadowBlur = 15;
+        ctx.beginPath();
+        ctx.arc(x + 30, y + 35, 55, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+    }
+
+    // 丘比特翅膀
+    if (colors.hasWings) {
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+        ctx.shadowColor = '#F48FB1';
+        ctx.shadowBlur = 5;
+        // 左翅膀
+        ctx.beginPath();
+        ctx.moveTo(x + 10, y + 35);
+        ctx.quadraticCurveTo(x - 15, y + 20, x - 10, y + 45);
+        ctx.quadraticCurveTo(x - 5, y + 35, x + 10, y + 35);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.moveTo(x + 10, y + 38);
+        ctx.quadraticCurveTo(x - 12, y + 28, x - 5, y + 50);
+        ctx.quadraticCurveTo(x, y + 40, x + 10, y + 38);
+        ctx.fill();
+        // 右翅膀
+        ctx.beginPath();
+        ctx.moveTo(x + 50, y + 35);
+        ctx.quadraticCurveTo(x + 75, y + 20, x + 70, y + 45);
+        ctx.quadraticCurveTo(x + 65, y + 35, x + 50, y + 35);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.moveTo(x + 50, y + 38);
+        ctx.quadraticCurveTo(x + 72, y + 28, x + 65, y + 50);
+        ctx.quadraticCurveTo(x + 60, y + 40, x + 50, y + 38);
+        ctx.fill();
+        ctx.shadowBlur = 0;
+    }
+
+    // 丘比特爱心光环
+    if (colors.hasHeartAura) {
+        ctx.fillStyle = 'rgba(233, 30, 99, 0.6)';
+        ctx.shadowColor = '#E91E63';
+        ctx.shadowBlur = 8;
+        // 头顶小爱心
+        const heartX = x + 30;
+        const heartY = y - 25;
+        const heartSize = 6;
+        ctx.beginPath();
+        ctx.moveTo(heartX, heartY + heartSize / 4);
+        ctx.bezierCurveTo(heartX, heartY, heartX - heartSize / 2, heartY, heartX - heartSize / 2, heartY + heartSize / 4);
+        ctx.bezierCurveTo(heartX - heartSize / 2, heartY + heartSize / 2, heartX, heartY + heartSize * 0.75, heartX, heartY + heartSize);
+        ctx.bezierCurveTo(heartX, heartY + heartSize * 0.75, heartX + heartSize / 2, heartY + heartSize / 2, heartX + heartSize / 2, heartY + heartSize / 4);
+        ctx.bezierCurveTo(heartX + heartSize / 2, heartY, heartX, heartY, heartX, heartY + heartSize / 4);
+        ctx.fill();
+        ctx.shadowBlur = 0;
+    }
+
+    // 复活节兔子耳朵
+    if (colors.hasBunnyEars) {
+        ctx.fillStyle = '#FFFFFF';
+        ctx.shadowColor = '#F48FB1';
+        ctx.shadowBlur = 3;
+        // 左耳
+        ctx.beginPath();
+        ctx.ellipse(x + 18, y - 18, 6, 18, -0.2, 0, Math.PI * 2);
+        ctx.fill();
+        // 右耳
+        ctx.beginPath();
+        ctx.ellipse(x + 42, y - 18, 6, 18, 0.2, 0, Math.PI * 2);
+        ctx.fill();
+        // 耳朵内部粉色
+        ctx.fillStyle = '#F8BBD0';
+        ctx.beginPath();
+        ctx.ellipse(x + 18, y - 16, 3, 12, -0.2, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.ellipse(x + 42, y - 16, 3, 12, 0.2, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.shadowBlur = 0;
+    }
+
+    // 复活节彩蛋装饰（身体上的花纹）
+    if (colors.hasEasterEgg) {
+        // 身上绘制彩蛋图案
+        ctx.fillStyle = '#FFD54F';
+        ctx.beginPath();
+        ctx.ellipse(x + 30, y + 45, 5, 7, 0, 0, Math.PI * 2);
+        ctx.fill();
+        // 彩蛋条纹
+        ctx.strokeStyle = '#81D4FA';
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.moveTo(x + 25, y + 43);
+        ctx.lineTo(x + 35, y + 43);
+        ctx.stroke();
+        ctx.strokeStyle = '#F48FB1';
+        ctx.beginPath();
+        ctx.moveTo(x + 25, y + 47);
+        ctx.lineTo(x + 35, y + 47);
+        ctx.stroke();
+    }
+
+    // 复活节兔子粉色鼻子
+    if (colors.noseColor && colors.hasBunnyEars) {
+        ctx.fillStyle = colors.noseColor;
+        ctx.beginPath();
+        ctx.ellipse(x + 30, y + 18, 4, 3, 0, 0, Math.PI * 2);
+        ctx.fill();
+    }
+
+    // 夏日草帽特效
+    if (colors.hasStrawHat) {
+        // 草帽主体（大圆帽檐）
+        ctx.fillStyle = '#FFF59D';
+        ctx.beginPath();
+        ctx.ellipse(x + 30, y + 6, 32, 8, 0, 0, Math.PI * 2);
+        ctx.fill();
+        // 帽顶
+        ctx.fillStyle = '#FFF176';
+        ctx.beginPath();
+        ctx.ellipse(x + 30, y - 2, 18, 10, 0, Math.PI, 0);
+        ctx.fill();
+        // 草帽纹理
+        ctx.strokeStyle = '#FFECB3';
+        ctx.lineWidth = 1;
+        for (let i = -15; i <= 15; i += 5) {
+            ctx.beginPath();
+            ctx.moveTo(x + 15 + i, y - 8);
+            ctx.lineTo(x + 15 + i, y + 2);
+            ctx.stroke();
+        }
+        // 帽带
+        ctx.fillStyle = '#FF7043';
+        ctx.fillRect(x + 12, y + 0, 36, 4);
+    }
+
+    // 夏日太阳镜
+    if (colors.hasSunglasses) {
+        ctx.fillStyle = '#212121';
+        // 左镜片
+        ctx.fillRect(x + 18, y + 10, 10, 7);
+        // 右镜片
+        ctx.fillRect(x + 32, y + 10, 10, 7);
+        // 镜架
+        ctx.fillRect(x + 28, y + 12, 4, 2);
+        // 镜腿
+        ctx.fillRect(x + 15, y + 12, 4, 2);
+        ctx.fillRect(x + 41, y + 12, 4, 2);
+        // 镜片反光
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+        ctx.fillRect(x + 19, y + 11, 3, 2);
+        ctx.fillRect(x + 33, y + 11, 3, 2);
+    }
+
+    // 夏日花衬衫图案
+    if (colors.hasFlowerShirt) {
+        // 衬衫上的花朵图案
+        ctx.fillStyle = '#FFEB3B';
+        ctx.beginPath();
+        ctx.arc(x + 22, y + 38, 3, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(x + 38, y + 42, 3, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#E91E63';
+        ctx.beginPath();
+        ctx.arc(x + 30, y + 50, 3, 0, Math.PI * 2);
+        ctx.fill();
+        // 小叶子
+        ctx.fillStyle = '#4CAF50';
+        ctx.beginPath();
+        ctx.ellipse(x + 25, y + 40, 2, 4, 0.5, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.ellipse(x + 35, y + 44, 2, 4, -0.5, 0, Math.PI * 2);
+        ctx.fill();
     }
 
     // 胡子（如果有）

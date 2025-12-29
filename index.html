@@ -16,10 +16,55 @@
 
         <!-- 游戏 UI 覆盖层 -->
         <div id="ui-overlay">
+            <!-- 主题切换按钮 -->
+            <button id="theme-btn" class="theme-btn" title="切换主题">🌙</button>
+            <!-- 语言切换按钮 -->
+            <button id="lang-btn" class="lang-btn" title="Switch Language">EN</button>
             <!-- 静音按钮 -->
             <button id="mute-btn" class="mute-btn" title="切换音效">🔊</button>
+            <!-- 音量设置按钮 -->
+            <button id="volume-btn" class="volume-btn" title="音量设置">🎚️</button>
             <!-- 全屏按钮 -->
             <button id="fullscreen-btn" class="fullscreen-btn" title="全屏模式">⛶</button>
+
+            <!-- 音量设置面板 -->
+            <div id="volume-panel" class="volume-panel hidden">
+                <div class="volume-panel-header">
+                    <span>🎵 音量设置</span>
+                    <button id="volume-panel-close" class="volume-panel-close">✕</button>
+                </div>
+                <div class="volume-control">
+                    <label>
+                        <span class="volume-label">🔊 音效</span>
+                        <input type="range" id="sfx-volume" min="0" max="100" value="100">
+                        <span class="volume-value" id="sfx-volume-value">100%</span>
+                    </label>
+                </div>
+                <div class="volume-control">
+                    <label>
+                        <span class="volume-label">🎵 音乐</span>
+                        <input type="range" id="bgm-volume" min="0" max="100" value="100">
+                        <span class="volume-value" id="bgm-volume-value">100%</span>
+                    </label>
+                </div>
+                <div class="volume-control vibration-control">
+                    <label>
+                        <span class="volume-label">📳 振动</span>
+                        <input type="range" id="vibration-intensity" min="0" max="100" value="100">
+                        <span class="volume-value" id="vibration-value">100%</span>
+                    </label>
+                </div>
+                <!-- 音效预览区域 -->
+                <div class="sfx-preview-section">
+                    <div class="sfx-preview-header">🎧 音效试听</div>
+                    <div class="sfx-preview-btns">
+                        <button class="sfx-preview-btn" data-sfx="chop" title="砍树音效">🪓</button>
+                        <button class="sfx-preview-btn" data-sfx="gameover" title="游戏结束">💀</button>
+                        <button class="sfx-preview-btn" data-sfx="warning" title="时间警告">⏰</button>
+                        <button class="sfx-preview-btn" data-sfx="achievement" title="成就解锁">🏆</button>
+                    </div>
+                </div>
+            </div>
 
             <!-- 分数显示 -->
             <div id="score-display">
@@ -46,9 +91,13 @@
             <div id="start-btns">
                 <button id="start-btn">开始游戏</button>
                 <button id="daily-btn" class="daily-btn">📅 每日挑战</button>
+                <button id="endless-btn" class="endless-btn">∞ 无限模式</button>
                 <button id="skin-btn" class="secondary-btn">👕 皮肤</button>
+                <button id="speed-btn" class="secondary-btn">⚡ 速度</button>
                 <button id="leaderboard-btn" class="secondary-btn">📊 排行榜</button>
+                <button id="stats-btn" class="secondary-btn">📈 统计</button>
                 <button id="tutorial-btn" class="secondary-btn">❓ 教程</button>
+                <button id="replay-btn" class="secondary-btn replay-btn">🎬 回放</button>
             </div>
         </div>
 
@@ -76,6 +125,41 @@
             </div>
         </div>
 
+        <!-- 无限模式界面 -->
+        <div id="endless-screen" class="screen hidden">
+            <h2>∞ 无限模式</h2>
+            <p class="endless-desc">没有时间限制，挑战你的专注力！</p>
+            <div class="endless-stats">
+                <div class="endless-stat">
+                    <span class="stat-label">最高分</span>
+                    <span class="stat-value" id="endless-best-score">0</span>
+                </div>
+                <div class="endless-stat">
+                    <span class="stat-label">总游戏次数</span>
+                    <span class="stat-value" id="endless-total-games">0</span>
+                </div>
+            </div>
+            <p class="endless-hint">只需躲避树枝，没有时间压力</p>
+            <div class="endless-btns">
+                <button id="endless-start-btn">开始挑战</button>
+                <button id="endless-back-btn" class="secondary-btn">返回</button>
+            </div>
+        </div>
+
+        <!-- 无限模式结束界面 -->
+        <div id="endless-game-over-screen" class="screen hidden">
+            <h2>∞ 挑战结束</h2>
+            <p id="endless-new-record" class="new-record hidden">🎉 新纪录！</p>
+            <p>得分: <span id="endless-final-score">0</span></p>
+            <p>最高分: <span id="endless-high-score">0</span></p>
+            <p class="endless-combo-text">最高连击: <span id="endless-max-combo">0</span></p>
+            <div id="endless-game-over-btns">
+                <button id="endless-retry-btn">再来一次</button>
+                <button id="endless-share-btn" class="share-btn">📤 分享</button>
+                <button id="endless-exit-btn" class="secondary-btn">返回首页</button>
+            </div>
+        </div>
+
         <!-- 每日挑战结束界面 -->
         <div id="daily-game-over-screen" class="screen hidden">
             <h2>📅 挑战结束</h2>
@@ -86,8 +170,42 @@
             <p class="daily-attempts-text">今日挑战: <span id="daily-attempts">0</span> 次</p>
             <div id="daily-game-over-btns">
                 <button id="daily-retry-btn">再来一次</button>
+                <button id="daily-share-btn" class="share-btn">📤 分享</button>
                 <button id="daily-exit-btn" class="secondary-btn">返回首页</button>
             </div>
+        </div>
+
+        <!-- 速度选择界面 -->
+        <div id="speed-screen" class="screen hidden">
+            <h2>⚡ 速度设置</h2>
+            <p class="speed-desc">选择适合你的游戏速度</p>
+            <div id="speed-list">
+                <div class="speed-item" data-speed="slow">
+                    <div class="speed-icon">🐢</div>
+                    <div class="speed-info">
+                        <div class="speed-name">慢速</div>
+                        <div class="speed-detail">时间衰减 -40%，适合新手</div>
+                    </div>
+                    <div class="speed-check">✓</div>
+                </div>
+                <div class="speed-item selected" data-speed="normal">
+                    <div class="speed-icon">🏃</div>
+                    <div class="speed-info">
+                        <div class="speed-name">标准</div>
+                        <div class="speed-detail">默认游戏速度</div>
+                    </div>
+                    <div class="speed-check">✓</div>
+                </div>
+                <div class="speed-item" data-speed="fast">
+                    <div class="speed-icon">🚀</div>
+                    <div class="speed-info">
+                        <div class="speed-name">快速</div>
+                        <div class="speed-detail">时间衰减 +50%，挑战高手</div>
+                    </div>
+                    <div class="speed-check">✓</div>
+                </div>
+            </div>
+            <button id="speed-back-btn">返回</button>
         </div>
 
         <!-- 皮肤选择界面 -->
@@ -99,7 +217,7 @@
                 <div id="skin-preview-name">伐木工</div>
             </div>
             <div id="skin-list"></div>
-            <p id="skin-progress">已解锁: <span id="skin-unlocked-count">0</span>/4</p>
+            <p id="skin-progress">已解锁: <span id="skin-unlocked-count">0</span>/10</p>
             <button id="skin-back-btn">返回</button>
         </div>
 
@@ -111,7 +229,27 @@
             <p id="high-score-text">最高分: <span id="high-score">0</span></p>
             <div id="game-over-btns">
                 <button id="restart-btn">再来一次</button>
+                <button id="share-btn" class="share-btn">📤 分享</button>
                 <button id="achievements-btn" class="secondary-btn">🏆 成就</button>
+            </div>
+        </div>
+
+        <!-- 分享面板 -->
+        <div id="share-panel" class="share-panel hidden">
+            <div class="share-panel-content">
+                <div class="share-panel-header">
+                    <h3 id="share-panel-title">📤 分享成绩</h3>
+                    <button id="share-panel-close" class="share-panel-close">✕</button>
+                </div>
+                <div class="share-preview-container">
+                    <canvas id="share-canvas" width="400" height="300"></canvas>
+                </div>
+                <div class="share-btns">
+                    <button id="share-native-btn" class="share-action-btn hidden">📱 分享</button>
+                    <button id="share-download-btn" class="share-action-btn">💾 保存图片</button>
+                    <button id="share-copy-btn" class="share-action-btn">📋 复制文字</button>
+                </div>
+                <p id="share-copy-hint" class="share-copy-hint hidden">✓ 已复制到剪贴板！</p>
             </div>
         </div>
 
@@ -137,6 +275,61 @@
             <div class="leaderboard-btns">
                 <button id="leaderboard-back-btn">返回</button>
                 <button id="leaderboard-clear-btn" class="danger-btn">清空记录</button>
+            </div>
+        </div>
+
+        <!-- 统计界面 -->
+        <div id="stats-screen" class="screen hidden">
+            <h2>📈 游戏统计</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-icon">🎮</span>
+                    <span class="stat-value" id="stats-total-games">0</span>
+                    <span class="stat-label">总游戏次数</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">🪓</span>
+                    <span class="stat-value" id="stats-total-chops">0</span>
+                    <span class="stat-label">总砍树次数</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">⏱️</span>
+                    <span class="stat-value" id="stats-total-time">0:00</span>
+                    <span class="stat-label">总游戏时长</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">🏆</span>
+                    <span class="stat-value" id="stats-high-score">0</span>
+                    <span class="stat-label">最高分</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">⚡</span>
+                    <span class="stat-value" id="stats-best-combo">0</span>
+                    <span class="stat-label">最高连击</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">📊</span>
+                    <span class="stat-value" id="stats-avg-score">0</span>
+                    <span class="stat-label">平均分数</span>
+                </div>
+            </div>
+            <div class="stats-extra">
+                <div class="stats-row">
+                    <span>🎖️ 解锁成就</span>
+                    <span id="stats-achievements">0/12</span>
+                </div>
+                <div class="stats-row">
+                    <span>👕 解锁皮肤</span>
+                    <span id="stats-skins">1/10</span>
+                </div>
+                <div class="stats-row">
+                    <span>📅 每日挑战</span>
+                    <span id="stats-daily-attempts">0 次</span>
+                </div>
+            </div>
+            <div class="stats-btns">
+                <button id="stats-back-btn">返回</button>
+                <button id="stats-reset-btn" class="danger-btn">重置统计</button>
             </div>
         </div>
 
@@ -245,6 +438,44 @@
                     <button id="tutorial-next-btn">下一步</button>
                 </div>
             </div>
+        </div>
+
+        <!-- 回放界面 -->
+        <div id="replay-screen" class="screen hidden">
+            <h2 id="replay-title">🎬 回放上局</h2>
+            <div class="replay-info">
+                <div class="replay-stat">
+                    <span class="stat-icon">🎯</span>
+                    <span class="stat-value" id="replay-score">0</span>
+                    <span class="stat-label" id="replay-score-label">得分</span>
+                </div>
+                <div class="replay-stat">
+                    <span class="stat-icon">⚡</span>
+                    <span class="stat-value" id="replay-combo">0</span>
+                    <span class="stat-label" id="replay-combo-label">最高连击</span>
+                </div>
+                <div class="replay-stat">
+                    <span class="stat-icon">🪓</span>
+                    <span class="stat-value" id="replay-chops">0</span>
+                    <span class="stat-label" id="replay-chops-label">砍树次数</span>
+                </div>
+                <div class="replay-stat">
+                    <span class="stat-icon">⏱️</span>
+                    <span class="stat-value" id="replay-duration">0s</span>
+                    <span class="stat-label" id="replay-duration-label">用时</span>
+                </div>
+            </div>
+            <p class="replay-no-data hidden" id="replay-no-data">暂无回放数据</p>
+            <div class="replay-btns">
+                <button id="replay-start-btn">开始回放</button>
+                <button id="replay-back-btn" class="secondary-btn">返回</button>
+            </div>
+        </div>
+
+        <!-- 回放中提示 -->
+        <div id="replay-indicator" class="replay-indicator hidden">
+            <span>🎬 回放中...</span>
+            <button id="replay-stop-btn">停止</button>
         </div>
 
         <!-- 移动端触摸区域指示 -->
