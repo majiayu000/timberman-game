@@ -8188,8 +8188,13 @@ const DAILY_CHALLENGE = {
         this.seededRandom.setSeed(seed);
 
         // 预生成足够长的树枝序列（比如1000个）
+        // 与 generateBranch 相同：若最近两次为非 none 且左右交替，先插入 none 再抽随机
         this.branchSequence = [];
         for (let i = 0; i < 1000; i++) {
+            if (shouldForceNoneBranch(this.branchSequence)) {
+                this.branchSequence.push('none');
+                continue;
+            }
             const rand = this.seededRandom.next();
             if (rand < 0.35) {
                 this.branchSequence.push('left');
@@ -11495,6 +11500,15 @@ function initTrunks() {
     }
 }
 
+// 最近两次为非 none 且左右相反时，下一次应强制 none（防必死局）
+function shouldForceNoneBranch(history) {
+    if (!history || history.length < 2) return false;
+    const len = history.length;
+    const last = history[len - 1];
+    const prev = history[len - 2];
+    return last !== 'none' && prev !== 'none' && last !== prev;
+}
+
 // 生成树枝 (随机左/右/无)
 function generateBranch(forceNone = false) {
     if (forceNone) return 'none';
@@ -11506,19 +11520,11 @@ function generateBranch(forceNone = false) {
 
     // 检查最近的树枝，防止连续交替导致必死局
     // 如果最近2个树枝是 左-右 或 右-左 的交替模式，强制生成 none
-    if (game.lastBranches && game.lastBranches.length >= 2) {
-        const last = game.lastBranches;
-        const len = last.length;
-        // 检测交替模式：左右左右 或 右左右左
-        if (len >= 2 &&
-            last[len-1] !== 'none' &&
-            last[len-2] !== 'none' &&
-            last[len-1] !== last[len-2]) {
-            // 已经有连续交替，这次强制无树枝，给玩家喘息
-            game.lastBranches.push('none');
-            if (game.lastBranches.length > 4) game.lastBranches.shift();
-            return 'none';
-        }
+    if (shouldForceNoneBranch(game.lastBranches)) {
+        // 已经有连续交替，这次强制无树枝，给玩家喘息
+        game.lastBranches.push('none');
+        if (game.lastBranches.length > 4) game.lastBranches.shift();
+        return 'none';
     }
 
     // 普通模式随机生成
