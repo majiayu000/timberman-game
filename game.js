@@ -8389,10 +8389,67 @@ const LEADERBOARD = {
     MAX_ENTRIES: 20,  // 最多保存前20名
     entries: [],      // 排行榜条目: { score, combo, level, date, skin }
 
-    // 加载排行榜数据
+    // 校验并规范化单条记录；畸形数据返回 null（丢弃）
+    sanitizeEntry(raw) {
+        if (!raw || typeof raw !== 'object') return null;
+
+        const score = Number(raw.score);
+        const combo = Number(raw.combo);
+        const level = Number(raw.level);
+        const date = Number(raw.date);
+
+        if (!Number.isFinite(score) || score < 0) return null;
+        if (!Number.isFinite(combo) || combo < 0) return null;
+        if (!Number.isFinite(level) || level < 0) return null;
+        if (!Number.isFinite(date) || date <= 0) return null;
+
+        const skinId = typeof raw.skin === 'string' ? raw.skin : 'default';
+        const skinDef = SKINS.definitions.find(s => s.id === skinId);
+        const skin = skinDef ? skinDef.id : 'default';
+
+        return {
+            score: Math.floor(score),
+            combo: Math.floor(combo),
+            level: Math.floor(level),
+            skin,
+            date: Math.floor(date)
+        };
+    },
+
+    // 加载排行榜数据（校验 localStorage，丢弃畸形条目）
     load() {
         const saved = localStorage.getItem('timberman_leaderboard');
-        this.entries = saved ? JSON.parse(saved) : [];
+        if (!saved) {
+            this.entries = [];
+            return;
+        }
+
+        let parsed;
+        try {
+            parsed = JSON.parse(saved);
+        } catch (_) {
+            this.entries = [];
+            this.save();
+            return;
+        }
+
+        if (!Array.isArray(parsed)) {
+            this.entries = [];
+            this.save();
+            return;
+        }
+
+        const sanitized = parsed
+            .map(entry => this.sanitizeEntry(entry))
+            .filter(Boolean)
+            .sort((a, b) => b.score - a.score)
+            .slice(0, this.MAX_ENTRIES);
+
+        this.entries = sanitized;
+        // 若有条目被丢弃或字段被规范化，写回干净数据
+        if (JSON.stringify(sanitized) !== JSON.stringify(parsed)) {
+            this.save();
+        }
     },
 
     // 保存排行榜数据
@@ -8402,13 +8459,14 @@ const LEADERBOARD = {
 
     // 添加一条记录
     add(score, combo, level, skin) {
-        const entry = {
+        const entry = this.sanitizeEntry({
             score,
             combo,
             level,
             skin: skin || 'default',
             date: Date.now()
-        };
+        });
+        if (!entry) return -1;
 
         this.entries.push(entry);
         // 按分数降序排序
@@ -8466,17 +8524,20 @@ const LEADERBOARD = {
         return `${month}/${day} ${hour}:${min}`;
     },
 
-    // 渲染排行榜
+    // 渲染排行榜（使用 textContent，避免 localStorage 字段注入 HTML）
     render() {
         const list = document.getElementById('leaderboard-list');
         if (!list) return;
 
-        list.innerHTML = '';
-        const t = I18N.t;
+        list.replaceChildren();
 
         if (this.entries.length === 0) {
-            const emptyMsg = I18N.currentLang === 'zh' ? '暂无记录，快来挑战吧！' : 'No records yet. Start playing!';
-            list.innerHTML = `<div class="leaderboard-empty">${emptyMsg}</div>`;
+            const empty = document.createElement('div');
+            empty.className = 'leaderboard-empty';
+            empty.textContent = I18N.currentLang === 'zh'
+                ? '暂无记录，快来挑战吧！'
+                : 'No records yet. Start playing!';
+            list.appendChild(empty);
             return;
         }
 
@@ -8489,13 +8550,27 @@ const LEADERBOARD = {
             const skinDef = SKINS.definitions.find(s => s.id === entry.skin);
             const skinIcon = skinDef ? skinDef.icon : '👷';
 
-            item.innerHTML = `
-                <span class="lb-rank">${rankIcon}</span>
-                <span class="lb-skin">${skinIcon}</span>
-                <span class="lb-score">${entry.score}</span>
-                <span class="lb-combo">${entry.combo}x</span>
-                <span class="lb-date">${this.formatDate(entry.date)}</span>
-            `;
+            const rankEl = document.createElement('span');
+            rankEl.className = 'lb-rank';
+            rankEl.textContent = rankIcon;
+
+            const skinEl = document.createElement('span');
+            skinEl.className = 'lb-skin';
+            skinEl.textContent = skinIcon;
+
+            const scoreEl = document.createElement('span');
+            scoreEl.className = 'lb-score';
+            scoreEl.textContent = String(entry.score);
+
+            const comboEl = document.createElement('span');
+            comboEl.className = 'lb-combo';
+            comboEl.textContent = `${entry.combo}x`;
+
+            const dateEl = document.createElement('span');
+            dateEl.className = 'lb-date';
+            dateEl.textContent = this.formatDate(entry.date);
+
+            item.append(rankEl, skinEl, scoreEl, comboEl, dateEl);
             list.appendChild(item);
         });
     }
