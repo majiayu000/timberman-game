@@ -8204,6 +8204,8 @@ const DAILY_CHALLENGE = {
                 this.branchSequence.push('none');
             }
         }
+        // getNextBranch 会循环复用序列；修补首尾窗口，避免 wrap 后出现左-右-非none 必死局
+        enforceCircularBranchSequenceGuard(this.branchSequence);
         this.sequenceIndex = 0;
     },
 
@@ -11507,6 +11509,18 @@ function shouldForceNoneBranch(history) {
     const last = history[len - 1];
     const prev = history[len - 2];
     return last !== 'none' && prev !== 'none' && last !== prev;
+}
+
+// 预生成序列循环复用时，线性 guard 管不到 [n-2,n-1,0] / [n-1,0,1]；生成后修补这两个边界窗口
+function enforceCircularBranchSequenceGuard(sequence) {
+    if (!sequence || sequence.length < 2) return;
+    const n = sequence.length;
+    if (shouldForceNoneBranch([sequence[n - 2], sequence[n - 1]])) {
+        sequence[0] = 'none';
+    }
+    if (shouldForceNoneBranch([sequence[n - 1], sequence[0]])) {
+        sequence[1] = 'none';
+    }
 }
 
 // 生成树枝 (随机左/右/无)
