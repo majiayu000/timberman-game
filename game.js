@@ -209,7 +209,18 @@ const SKINS = {
         const savedUnlocked = localStorage.getItem('timberman_skins_unlocked');
 
         if (savedUnlocked) {
-            this.unlockedSkins = JSON.parse(savedUnlocked);
+            try {
+                const parsed = JSON.parse(savedUnlocked);
+                if (Array.isArray(parsed)) {
+                    this.unlockedSkins = parsed;
+                } else {
+                    localStorage.removeItem('timberman_skins_unlocked');
+                    this.unlockedSkins = ['default'];
+                }
+            } catch (e) {
+                localStorage.removeItem('timberman_skins_unlocked');
+                this.unlockedSkins = ['default'];
+            }
         }
 
         // 确保默认皮肤始终解锁
@@ -8070,9 +8081,17 @@ const ENDLESS_MODE = {
     load() {
         const saved = localStorage.getItem('timberman_endless');
         if (saved) {
-            const data = JSON.parse(saved);
-            this.highScore = data.highScore || 0;
-            this.totalGames = data.totalGames || 0;
+            try {
+                const data = JSON.parse(saved);
+                if (data && typeof data === 'object' && !Array.isArray(data)) {
+                    this.highScore = data.highScore || 0;
+                    this.totalGames = data.totalGames || 0;
+                } else {
+                    localStorage.removeItem('timberman_endless');
+                }
+            } catch (e) {
+                localStorage.removeItem('timberman_endless');
+            }
         }
     },
 
@@ -8156,14 +8175,22 @@ const DAILY_CHALLENGE = {
         const saved = localStorage.getItem('timberman_daily');
 
         if (saved) {
-            const data = JSON.parse(saved);
-            if (data.date === todayKey) {
-                this.todayHighScore = data.highScore || 0;
-                this.todayAttempts = data.attempts || 0;
-            } else {
-                // 新的一天，重置记录
-                this.todayHighScore = 0;
-                this.todayAttempts = 0;
+            try {
+                const data = JSON.parse(saved);
+                if (data && typeof data === 'object' && !Array.isArray(data)) {
+                    if (data.date === todayKey) {
+                        this.todayHighScore = data.highScore || 0;
+                        this.todayAttempts = data.attempts || 0;
+                    } else {
+                        // 新的一天，重置记录
+                        this.todayHighScore = 0;
+                        this.todayAttempts = 0;
+                    }
+                } else {
+                    localStorage.removeItem('timberman_daily');
+                }
+            } catch (e) {
+                localStorage.removeItem('timberman_daily');
             }
         }
     },
@@ -8272,7 +8299,22 @@ const ACHIEVEMENTS = {
     // 加载已解锁成就
     load() {
         const saved = localStorage.getItem('timberman_achievements');
-        this.unlocked = saved ? JSON.parse(saved) : {};
+        if (!saved) {
+            this.unlocked = {};
+            return;
+        }
+        try {
+            const parsed = JSON.parse(saved);
+            if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
+                this.unlocked = parsed;
+            } else {
+                localStorage.removeItem('timberman_achievements');
+                this.unlocked = {};
+            }
+        } catch (e) {
+            localStorage.removeItem('timberman_achievements');
+            this.unlocked = {};
+        }
     },
 
     // 保存成就
@@ -8399,7 +8441,22 @@ const LEADERBOARD = {
     // 加载排行榜数据
     load() {
         const saved = localStorage.getItem('timberman_leaderboard');
-        this.entries = saved ? JSON.parse(saved) : [];
+        if (!saved) {
+            this.entries = [];
+            return;
+        }
+        try {
+            const parsed = JSON.parse(saved);
+            if (Array.isArray(parsed)) {
+                this.entries = parsed;
+            } else {
+                localStorage.removeItem('timberman_leaderboard');
+                this.entries = [];
+            }
+        } catch (e) {
+            localStorage.removeItem('timberman_leaderboard');
+            this.entries = [];
+        }
     },
 
     // 保存排行榜数据
@@ -8528,7 +8585,16 @@ const GAME_STATS = {
     load() {
         const saved = localStorage.getItem('timberman_stats');
         if (saved) {
-            this.data = { ...this.data, ...JSON.parse(saved) };
+            try {
+                const parsed = JSON.parse(saved);
+                if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
+                    this.data = { ...this.data, ...parsed };
+                } else {
+                    localStorage.removeItem('timberman_stats');
+                }
+            } catch (e) {
+                localStorage.removeItem('timberman_stats');
+            }
         }
     },
 
