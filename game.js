@@ -11215,21 +11215,21 @@ function togglePause() {
 }
 
 // ============ 输入处理 ============
+function isSpaceEnterControl(el) {
+    const tag = el && el.tagName;
+    return !!el && el !== document.body && el !== document.documentElement && (tag === 'BUTTON' || tag === 'A' || tag === 'INPUT' || tag === 'SELECT' || tag === 'TEXTAREA' || el.isContentEditable || el.getAttribute('role') === 'button');
+}
+function isBlockingOverlayOpen() { return ['tutorialScreen', 'achievementsScreen', 'leaderboardScreen', 'statsScreen', 'skinsScreen', 'speedScreen', 'replayScreen', 'dailyScreen', 'endlessScreen', 'sharePanel', 'volumePanel'].some(key => elements[key] && !elements[key].classList.contains('hidden')); }
 function handleKeyDown(e) {
-    // 空格键/回车键 - 开始/重新开始游戏
     if (e.key === ' ' || e.key === 'Enter') {
+        if (game.isPaused) { e.preventDefault(); resumeGame(); return; }
+        if (game.isRunning) { e.preventDefault(); return; }
+        if (isSpaceEnterControl(document.activeElement)) return;
         e.preventDefault();
-        if (!game.isRunning && !game.isPaused) {
-            // 如果在成就页面，先返回
-            if (!elements.achievementsScreen.classList.contains('hidden')) {
-                hideAchievements();
-                return;
-            }
-            startGame();
-        } else if (game.isPaused) {
-            // 暂停时按空格继续
-            resumeGame();
-        }
+        if (isBlockingOverlayOpen()) return;
+        if (!elements.dailyGameOverScreen.classList.contains('hidden')) startDailyChallenge();
+        else if (!elements.endlessGameOverScreen.classList.contains('hidden')) startEndlessMode();
+        else if (!elements.startScreen.classList.contains('hidden') || !elements.gameOverScreen.classList.contains('hidden')) startGame();
         return;
     }
 
