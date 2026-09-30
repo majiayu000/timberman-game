@@ -7246,7 +7246,9 @@ const I18N = {
         // 标题
         const titleEl = document.getElementById('title');
         if (titleEl) titleEl.textContent = t.title;
-        document.title = 'Timberman - ' + t.title;
+        document.title = this.currentLang === 'zh'
+            ? 'Timberman 伐木人 · 浏览器砍树游戏'
+            : 'Timberman - ' + t.title;
 
         // 开始界面
         const startScreen = document.getElementById('start-screen');
