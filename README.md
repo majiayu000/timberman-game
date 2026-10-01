@@ -4,6 +4,8 @@
 
 [在线试玩](https://majiayu000.github.io/timberman-game/) · [本地运行](#本地运行) · [操作说明](#操作说明)
 
+
+[玩法与常见问题](https://majiayu000.github.io/timberman-game/guide.html)
 ## 本地运行
 
 克隆仓库后，在项目目录启动静态 HTTP 服务：
