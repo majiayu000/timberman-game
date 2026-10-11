@@ -11279,7 +11279,8 @@ function handleTouch(e) {
     e.preventDefault();
     if (!game.isRunning || game.isPaused) return;
 
-    const touch = e.touches[0];
+    // Use the new contact, not a finger that is still held on the screen.
+    const touch = e.changedTouches[0];
     const rect = game.canvas.getBoundingClientRect();
     const x = touch.clientX - rect.left;
     const centerX = rect.width / 2;
